@@ -4,7 +4,7 @@ last_modified_at: 2020-09-05T16:17:20
 categories:
   - Blog
 tags:
-  - General
+  - Post Formats
 ---
 
 Hello World!
