@@ -10,9 +10,9 @@ The overall aim of the project is to gain a better understanding of minor, serio
 
 I am investigating combined multibody physics and deep learning approaches to traumatic injury biomechanics. Rapid developments in deep learning based pose and shape estimation presents the opportunity to investigate in-the-wild impact kinematics and dynamics. 
 
-![image](/assets/images/poseandshape.png)
+![image](/assets/images/pitchover-openpose.gif)
 
-![image](/assets/images/poseandshape2.png)
+![image](/assets/images/skidonwetroad-vibe.gif)
 
 
 Parametric computational modelling is applied to representative collision scenarios using multibody dynamics, and finite element analysis, with the aim of determining injury reduction strategies. 
