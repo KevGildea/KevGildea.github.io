@@ -10,16 +10,20 @@ The overall aim of the project is to gain a better understanding of minor, serio
 
 I am investigating combined multibody physics and deep learning approaches to traumatic injury biomechanics. Rapid developments in deep learning based pose and shape estimation presents the opportunity to investigate in-the-wild impact kinematics and dynamics. 
 
-![image](/assets/images/pitchover-openpose.gif)
+,!---![image](/assets/images/pitchover-openpose.gif)
 
-<img src="/assets/images/pitchover-openpose.gif" width="48">
+<img src="/assets/images/pitchover-openpose.gif" width="250">
 
 ![image](/assets/images/skidonwetroad-vibe.gif)
+
+<img src="/assets/images/skidonwetroad-vibe.gif" width="250">
 
 
 Parametric computational modelling is applied to representative collision scenarios using multibody dynamics, and finite element analysis, with the aim of determining injury reduction strategies. 
 
 ![image](/assets/images/MADYMO-Cyclist.gif)
+
+<img src="/assets/images/skidonwetroad-vibe.gif" width="250">
 
 This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions, and will assist road safety stakeholders to develop evidence based interventions to reduce their occurrence and severity.
 
