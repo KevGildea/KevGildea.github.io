@@ -12,8 +12,6 @@ I am investigating combined multibody physics and deep learning approaches to tr
 
 ![image](/assets/images/poseandshape.png)
 
-![image](/assets/images/poseandshape2.png)
-
 
 Parametric computational modelling is applied to representative collision scenarios using multibody dynamics, and finite element analysis, with the aim of determining injury reduction strategies. This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions, and will assist road safety stakeholders to develop evidence based interventions to reduce their occurrence and severity.
 
