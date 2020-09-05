@@ -4,19 +4,24 @@ title: "Research"
 ---
 
 
-The overall aim of the project is to gain a better understanding of minor, serious and fatal cyclist collisions in Ireland, and find ways to effectively increase cyclist safety. Details of cyclist collisions in Ireland are first established through a national survey, and an in-depth analysis of Police investigation files.
+The overall aim of the project is to gain a better understanding of minor, serious and fatal cyclist collisions in Ireland, and find ways to effectively increase cyclist safety. 
 
-- [Cyclist collision survey questionnaire](https://drive.google.com/file/d/1BccQ-QF-NfwIx27Dy9hZv3fSVpXt5DsH/view?usp=sharing)
+Details of cyclist collisions in Ireland are first established through 1) a national survey([Questionnaire](https://drive.google.com/file/d/1BccQ-QF-NfwIx27Dy9hZv3fSVpXt5DsH/view?usp=sharing)), and 2) an in-depth analysis of Police investigation files. The analysis of these data is focused on finding the most common and injurious cyclist collision configurations and kinematic forms:
+
+
+
+
+
 
 Rapid developments in deep learning based pose and shape estimation presents the opportunity to investigate in-the-wild impact kinematics and dynamics: 
 
-Using 2D pose method, e.g. [Openpose] (https://github.com/CMU-Perceptual-Computing-Lab/openpose):
+Using 2D pose method, e.g. [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose):
 
 
 <img src="/assets/images/pitchover-openpose.gif" width="250">
 
 
-Or, 3D pose pose and shape estimation, e.g. [VIBE] (https://github.com/mkocabas/VIBE):
+Or, 3D pose pose and shape estimation, e.g. [VIBE](https://github.com/mkocabas/VIBE):
 
 
 <img src="/assets/images/skidonwetroad-vibe.gif" width="500">
