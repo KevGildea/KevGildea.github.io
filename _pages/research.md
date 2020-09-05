@@ -15,21 +15,21 @@ Details of cyclist collisions in Ireland are first established through 1) a nati
 
 
 #### Deep learning approaches to injury biomechanics
-Rapid developments in deep learning based pose and shape estimation presents the opportunity to investigate in-the-wild impact kinematics and dynamics: 
+Rapid developments in deep learning based pose and shape estimation presents the opportunity to investigate in-the-wild impact kinematics and dynamics;
 
-Using 2D pose method, e.g. [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose):
+using 2D pose estimation, e.g. [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose):
 
 
 <img src="/assets/images/pitchover-openpose.gif" width="250">
 
 
-Or, 3D pose pose and shape estimation, e.g. [VIBE](https://github.com/mkocabas/VIBE):
+or, 3D pose and shape estimation, e.g. [VIBE](https://github.com/mkocabas/VIBE):
 
 
 <img src="/assets/images/skidonwetroad-vibe.gif" width="500">
 
 
-Parametric computational modelling may then be applied to representative collision scenarios using multibody dynamics, and finite element analysis, with the aim of determining injury reduction strategies. 
+Parametric computational modelling may then be applied to representative collision scenarios using multibody dynamics, and finite element analysis, to determine injury reduction strategies:
 
 
 <img src="/assets/images/MADYMO-Cyclist.gif" width="500">
