@@ -8,6 +8,6 @@ tags:
 ---
 
 ```python
-print_hi('Hello World!')
+print('Hello World!')
 ```
 
