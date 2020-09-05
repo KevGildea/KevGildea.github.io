@@ -8,18 +8,21 @@ The overall aim of the project is to gain a better understanding of minor, serio
 
 - [Cyclist collision survey questionnaire](https://drive.google.com/file/d/1BccQ-QF-NfwIx27Dy9hZv3fSVpXt5DsH/view?usp=sharing)
 
-I am investigating combined multibody physics and deep learning approaches to traumatic injury biomechanics. Rapid developments in deep learning based pose and shape estimation presents the opportunity to investigate in-the-wild impact kinematics and dynamics. 
+Rapid developments in deep learning based pose and shape estimation presents the opportunity to investigate in-the-wild impact kinematics and dynamics: 
+
+Using 2D pose method, e.g. [Openpose] (https://github.com/CMU-Perceptual-Computing-Lab/openpose):
 
 
 <img src="/assets/images/pitchover-openpose.gif" width="250">
 
 
+Or, 3D pose pose and shape estimation, e.g. [VIBE] (https://github.com/mkocabas/VIBE):
+
 
 <img src="/assets/images/skidonwetroad-vibe.gif" width="500">
 
 
-Parametric computational modelling is applied to representative collision scenarios using multibody dynamics, and finite element analysis, with the aim of determining injury reduction strategies. 
-
+Parametric computational modelling may then be applied to representative collision scenarios using multibody dynamics, and finite element analysis, with the aim of determining injury reduction strategies. 
 
 
 <img src="/assets/images/MADYMO-Cyclist.gif" width="500">
