@@ -22,7 +22,7 @@ Parametric computational modelling is applied to representative collision scenar
 
 
 
-<img src="/assets/images/skidonwetroad-vibe.gif" width="500">
+<img src="/assets/images/MADYMOcyclist.gif" width="500">
 
 
 
