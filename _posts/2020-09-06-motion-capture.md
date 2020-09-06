@@ -48,11 +48,9 @@ For (near) real-time and in-the-wild applications there is a need for automatic 
 
 Many deep learning approaches to 2D pose estimation have been developed [[29](https://arxiv.org/abs/1812.08008), [30](https://arxiv.org/abs/1312.4659), [31](https://arxiv.org/abs/1612.00137), [32](https://arxiv.org/abs/1902.09212)]. Due to its accuracy and robustness, Openpose is widely considered to be the state of the art (SOTA) method for 2D multi-person pose estimation [[29](https://arxiv.org/abs/1812.08008)]. Openpose is a bottom-up approach that uses Part Affinity Fields (PAFs), to learn to associate body parts with individuals in images.
 
-![image](/assets/images/dance_foot.gif)
+![image](/assets/images/openpose-kevin.gif)
 
 However, a more recent approach HRNet outperforms Openpose slightly by retaining a high-resolution image representation throughout the training process [[32](https://arxiv.org/abs/1312.4659)]. 
-
-![image](/assets/images/hrnet.png)
 
 3D pose estimation methods generally employ a 2D pose estimator as a backbone, and use techniques to project these into the 3D realm. For multi-camera setups, a simple approach involves geometric triangulation, i.e. exploiting the knowledge of camera intrinsic and extrinsic parameters of a camera to triangulate 2 or more views of a keypoint into 3D space [[33](https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A)]; in fact, Openpose contains a module for this [[34](https://github.com/CMU-Perceptual-Computing-Lab/openpose#3-d-reconstruction-module-body-foot-face-and-hands)]. 
 
@@ -60,11 +58,17 @@ However, a more recent approach HRNet outperforms Openpose slightly by retaining
 
 A promising approach which does not require pre-defined calibration parameters, learnable triangulation, includes this geometric triangulation into the architecture. In effect the 2D joint estimates are no longer fixed, but are refined based on the 3D predictions [[35](https://arxiv.org/abs/1905.05754)]. 
 
-3D single-camera approaches have also been developed e.g. [[36](https://arxiv.org/abs/1912.05656), [37](https://arxiv.org/abs/1903.02330), [38](https://arxiv.org/abs/2003.14179)]. GAST-Net (Graph Attention Spatio-Temporal convolutional Network) is the SOTA method, and addresses problems experienced around occlusion and depth ambiguities in previous methods by including spatiotemporal information (i.e. learning kinematic constraints such as posture, 2nd order joint relations, and symmetry) [38](https://arxiv.org/abs/2003.14179)]. GAST-NET has achieved accuracy within 2.2cm of marker-based motion capture methods, and outperforms previous methods particularly in cases involving heavy self-occlusion and fast motion.
+3D single-camera approaches have also been developed e.g. [[36](https://arxiv.org/abs/1912.05656), [37](https://arxiv.org/abs/1903.02330), [38](https://arxiv.org/abs/2003.14179)]. GAST-Net (Graph Attention Spatio-Temporal convolutional Network) is the SOTA method, and addresses problems experienced around occlusion and depth ambiguities in previous methods by including spatiotemporal information (i.e. learning kinematic constraints such as posture, 2nd order joint relations, and symmetry) [[38](https://arxiv.org/abs/2003.14179)]. GAST-NET has achieved accuracy within 2.2cm of marker-based motion capture methods, and outperforms previous methods particularly in cases involving heavy self-occlusion and fast motion.
 
-![image](/assets/images/gastnet-baseball.gif)
+![image](/assets/images/gastnet-kevin.gif)
 
-3D pose and shape estimation methods also exist, which allow for the inclusion of body shape predictions. Combined body pose and shape estimation is useful from an injury biomechanics perspective; with both kinematics (pose) and estimates for body segment inertia tensors (inferred from the body shape estimate) inverse dynamics can be performed, which may allow for more detailed injury predictions. The most promising approaches involve the use of a statistical human body shape model (SMPL), i.e. a skinned vertex-based model that accurately represents a wide variety of body shapes in natural human poses via dimensionality reduction [[39](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. The current state-of the art 3D pose and shape estimation method VIBE estimates SMPL body model parameters for each frame in a video sequence using a temporal generation network, which is trained together with a motion discriminator i.e. AMASS [[40](http://files.is.tue.mpg.de/black/papers/amass.pdf)].
+3D pose and shape estimation methods also exist, which allow for the inclusion of body shape predictions. Combined body pose and shape estimation is useful from an injury biomechanics perspective; with both kinematics (pose) and estimates for body segment inertia tensors (inferred from the body shape estimate) inverse dynamics can be performed, which may allow for more detailed injury predictions. The most promising approaches involve the use of a statistical human body shape model (e.g. SMPL [[39](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)], GraphCMR [[40](https://arxiv.org/pdf/1905.03244.pdf)], ), i.e. a skinned vertex-based model that accurately represents a wide variety of body shapes in natural human poses, developed via dimensionality reduction techniques i.e. Principal Component Analysis (PCA). 
+
+![image](/assets/images/GT-SMPL-STAR.PNG)
+
+
+The current state-of the art 3D pose and shape estimation method VIBE estimates SMPL body model parameters for each frame in a video sequence using a temporal generation network, which is trained together with a motion discriminator i.e. AMASS [[41](http://files.is.tue.mpg.de/black/papers/amass.pdf)].
+
 
 
 #### Conclusions and future directions
