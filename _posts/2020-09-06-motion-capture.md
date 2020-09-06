@@ -29,6 +29,7 @@ For (near) real-time and in-the-wild applications there is a need for automatic 
 
 However, a more recent approach HRNet outperforms Openpose slightly by retaining a high-resolution image representation throughout the training process [[31](https://arxiv.org/abs/1312.4659)]. 
 
+![image](/assets/images/hrnet.png)
 
 3D pose estimation methods generally employ a 2D pose estimator as a backbone, and use techniques to project these into the 3D realm. For multi-camera setups, a simple approach involves geometric triangulation, i.e. exploiting the knowledge of camera intrinsic and extrinsic parameters of a camera to triangulate 2 views of a keypoint into 3D space [[32](https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A)]. A promising approach, learnable triangulation includes this geometric triangulation into the architecture, in effect the 2D joint estimates are no longer fixed, but are refined based on the 3D predictions [[33](https://arxiv.org/abs/1905.05754)]. 
 
