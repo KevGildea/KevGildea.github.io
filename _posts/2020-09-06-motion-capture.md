@@ -25,7 +25,7 @@ Though the accuracy of many of these marker/sensor-based systems are high; they 
 #### Machine learning approaches
 For (near) real-time and in-the-wild applications there is a need for automatic 3D tracking of joint positions using simple inexpensive cameras. Deep learning has recently been applied in this area with great success. These approaches have allowed for robust and fast (multi) human pose estimation outside of laboratory conditions. Generally, these systems involve the training of a model with prior ground truth data. Pose estimation approaches can be categorized as 1) bottom-up approaches, which first find the keypoints and then maps them to different people in the image, and 2) top-down approaches, which use a mechanism to detect people in an image, apply a bounding box around each person, and then estimate keypoint configurations within the bounding boxes. There have been many deep learning approaches to 2D pose estimation [[28](https://arxiv.org/abs/1812.08008), [29](https://arxiv.org/abs/1312.4659), [30](https://arxiv.org/abs/1612.00137), [31](https://arxiv.org/abs/1902.09212)]. Due to its accuracy and robustness, Openpose is widely considered to be the state of the art (SOTA) method for 2D multi-person pose estimation [[28](https://arxiv.org/abs/1812.08008)]. Openpose is a bottom-up approach that uses Part Affinity Fields (PAFs), to learn to associate body parts with individuals in images.
 
-![image](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/media/dance_foot.gif)
+![image](/assets/images/dance_foot.gif)
 
 However, a more recent approach HRNet outperforms Openpose slightly by retaining a high-resolution image representation throughout the training process [[31](https://arxiv.org/abs/1312.4659)]. 
 
