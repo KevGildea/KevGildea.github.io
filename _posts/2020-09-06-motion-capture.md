@@ -53,7 +53,7 @@ Though MBIM achieves high accuracy for certain applications [[28](https://pubmed
 
 #### Machine learning approaches
 For (near) real-time and in-the-wild applications there is a need for automatic 3D tracking of joint positions using simple inexpensive cameras. Deep learning has recently been applied in this area with great success. These approaches have allowed for robust and fast (multi) human pose estimation outside of laboratory conditions. Generally, these systems involve the training of a model with prior ground truth data. Pose estimation approaches can be categorized as: 
-1. bottom-up approaches, which first find the keypoints and then maps them to different people in the image,. 
+1. bottom-up approaches, which first find the keypoints and then maps them to different people in the image. 
 2. top-down approaches, which use a mechanism to detect people in an image, apply a bounding box around each person, and then estimate keypoint configurations within the bounding boxes. 
 
 Many deep learning approaches to 2D pose estimation have been developed [[30](https://arxiv.org/abs/1812.08008), [31](https://arxiv.org/abs/1312.4659), [32](https://arxiv.org/abs/1612.00137), [33](https://arxiv.org/abs/1902.09212)]. Due to its accuracy and robustness, Openpose is widely considered to be the state-of-the-art method for 2D multi-person pose estimation [[29](https://arxiv.org/abs/1812.08008)]. Openpose is a bottom-up approach that uses Part Affinity Fields (PAFs), to learn to associate body parts with individuals in images.
