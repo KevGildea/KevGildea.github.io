@@ -40,10 +40,10 @@ Parametric computational modelling may then be applied to representative collisi
 
 
 #### Selected publications:
-- Li, G., Gildea, K., Wisch, M., Zander, O., Simms, C., 2020. An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence. IRCOBI, Beijing, pp. 80–84.
-- Tierney, GJ, Gildea, K, Krosshaug, T, Simms, CK. Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study. International Journal of Sports Science & Coaching. 2019;14(2):190-196. doi: 10.1177/1747954119833477
-- Foley, J., Cronin, M., Brent, L., Lawrence, T., Simms, C., Gildea, K., Ryan, J., Deasy, C., Cronin, J., 2020. Cycling related major trauma in Ireland. Injury.
-- Gildea, K., Simms, C., 2019. Assessment of Self-reported Cycling Injuries in Ireland: Analysis of Single Cyclist Collisions. IRCOBI, Florence, pp. 258–259.
+- Li, G., Gildea, K., Wisch, M., Zander, O., Simms, C., 2020. An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence. IRCOBI, Beijing, pp. 80–84. [[link](http://www.ircobi.org/wordpress/downloads/irc20-asia/pdf-files/2029a.pdf)]
+- Tierney, GJ, Gildea, K, Krosshaug, T, Simms, CK. Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study. International Journal of Sports Science & Coaching. 2019;14(2):190-196. doi: 10.1177/1747954119833477 [[link](https://journals.sagepub.com/doi/10.1177/1747954119833477)]
+- Foley, J., Cronin, M., Brent, L., Lawrence, T., Simms, C., Gildea, K., Ryan, J., Deasy, C., Cronin, J., 2020. Cycling related major trauma in Ireland. Injury. [[link](https://pubmed.ncbi.nlm.nih.gov/31784058/)]
+- Gildea, K., Simms, C., 2019. Assessment of Self-reported Cycling Injuries in Ireland: Analysis of Single Cyclist Collisions. IRCOBI, Florence, pp. 258–259. [[link](http://www.ircobi.org/wordpress/downloads/irc18/pdf-files/29.pdf)]
 
 
 
