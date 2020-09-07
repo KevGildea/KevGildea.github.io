@@ -66,7 +66,7 @@ However, a more recent approach HRNet outperforms Openpose slightly by retaining
 
 ![image](/assets/images/openpose3d.gif)
 
-A promising approach which does not require pre-defined calibration parameters, learnable triangulation, includes this geometric triangulation into the architecture. In effect the 2D joint estimates are no longer fixed, but are refined based on the 3D predictions [[36](https://arxiv.org/abs/1905.05754)]. 
+A promising approach which does not require pre-defined calibration parameters, learnable triangulation, includes this geometric triangulation into the architecture [[36](https://arxiv.org/abs/1905.05754)]. 
 
 3D single-camera approaches have also been developed e.g. [[37](https://arxiv.org/abs/1912.05656), [38](https://arxiv.org/abs/1903.02330), [39](https://arxiv.org/abs/2003.14179)]. GAST-Net (Graph Attention Spatio-Temporal convolutional Network) is the state-of-the-art method, and addresses problems experienced around occlusion and depth ambiguities in previous methods by including spatiotemporal information (i.e. learning kinematic constraints such as posture, 2nd order joint relations, and symmetry) [[40](https://arxiv.org/abs/2003.14179)]. GAST-Net has achieved accuracy within 2.2cm of marker-based motion capture methods, and outperforms previous methods particularly in cases involving heavy self-occlusion and fast motion.
 
