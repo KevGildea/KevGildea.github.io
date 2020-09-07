@@ -81,8 +81,10 @@ The trajectory of advancement in deep learning motion capture methods has mirror
 
 ##### Sources to monitor for developments:
 
-https://github.com.cnpmjs.org/topics/3d-pose-estimation
-https://github.com.cnpmjs.org/Arthur151/SOTA-on-monocular-3D-pose-and-shape-estimation
+- [Github](https://github.com/topics/3d-pose-estimation)
+- [Papers with code](https://paperswithcode.com/task/3d-human-pose-estimation)
+
+
 
 
 
