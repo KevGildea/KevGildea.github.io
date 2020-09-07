@@ -1,7 +1,7 @@
 
 Pages to add: 
 
-1. 4B17 teaching and multibody dynamics include information on IK, ID, FK and FD
+1. 4B17 teaching and multibody dynamics
 
 2. Personal projects in 3D pose and shape estimation (Motion capture, Kinect, Openpose, HR-NET, VIBE, SMPL, GraphCMR, STAR, GAST-NET), visual show with the kinect, 3D scanning, 3D printing
 
