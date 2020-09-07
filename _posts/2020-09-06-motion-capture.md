@@ -46,7 +46,7 @@ More recent computer-based methods now exist which employ spatially calibrated m
 
 ![image](/assets/images/ipisoft.gif)
 
-One manual method used in the realm of biomechanical research called Multibody Image Matching (MBIM) has allowed for extraction of 3D pose from in-the-wild videos e.g. [[4](https://journals.sagepub.com/doi/10.1177/1747954119833477)]. 
+One manual method used in the realm of biomechanical research called Multibody Image Matching (MBIM) has allowed for extraction of 3D pose from multi-view in-the-wild videos e.g. [[4](https://journals.sagepub.com/doi/10.1177/1747954119833477)]. 
 
 <img src="/assets/images/poser.PNG" width="350">
 
