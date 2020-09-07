@@ -52,7 +52,7 @@ One manual method used in the realm of biomechanical research called Multibody I
 
 Though MBIM achieves high accuracy for certain applications [[28](https://pubmed.ncbi.nlm.nih.gov/28632058/)], it is labor-intensive and are unsuitable for real-time applications. Furthermore, currently available automatic markerless systems involve a large number of calibrated cameras in controlled lab-based settings.
 
-#### Machine learning approaches
+#### Deep learning approaches
 For (near) real-time and in-the-wild applications there is a need for automatic 3D tracking of joint positions using simple inexpensive cameras. Deep learning has recently been applied in this area with great success. These approaches have allowed for robust and fast (multi) human pose estimation outside of laboratory conditions. Generally, these systems involve the training of a model with prior ground truth data. Pose estimation approaches can be categorized as: 
 1. bottom-up approaches, which first find the keypoints and then maps them to different people in the image. 
 2. top-down approaches, which use a mechanism to detect people in an image, apply a bounding box around each person, and then estimate keypoint configurations within the bounding boxes. 
