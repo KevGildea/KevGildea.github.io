@@ -33,7 +33,7 @@ e.g. 3D pose and shape estimation, e.g. [VIBE](https://github.com/mkocabas/VIBE)
 <img src="/assets/images/skidonwetroad-vibe.gif" width="400">
 
 
-'For more information see my blog post: [['Deep learning techniques for human motion capture: an injury biomechanics perspective'](https://kevgildea.github.io/blog/motion-capture/)]'
+`<addr>` For more information see my blog post: [['Deep learning techniques for human motion capture: an injury biomechanics perspective'](https://kevgildea.github.io/blog/motion-capture/)]
 
 
 Parametric computational modelling may then be applied to representative collision scenarios using multibody dynamics, and finite element analysis, to determine injury reduction strategies:
