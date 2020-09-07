@@ -51,7 +51,7 @@ Though the accuracy of many of these marker/sensor-based systems are high; they 
 More recent computer-based methods now exist which employ spatially calibrated multi camera setups; streamlining the process and allowing for 3D analysis to be performed. These systems may be automatic e.g. [[21](https://www.cs.cmu.edu/~hanbyulj/panoptic-studio/), [24](http://www.simi.com/en/)] or require manual annotation [[25](https://www.posersoftware.com/)]. Systems involving both colour and depth maps (i.e. RGB-D cameras) such as the Microsoft Kinect has potential to allow for accurate single-camera motion capture, though the accuracy of the Kinect V2 is currently inadequate for many biomechanical applications. There have been efforts to improve upon the accuracy of the Kinect's skeletal tracking capabilities, all in some way involve optimizing certain parameters to achieve more realistic motions. The most successful (using 3 Kinect V1s) involved a physics-based approach utilizing body segment mass estimates from the Kinect depth sensors, insole pressure sensors, and optimization of the equations of motion [[26](https://dl.acm.org/doi/10.1145/2661229.2661286)]. Another approach that achieved a similar, albeit slightly lower level of accuracy involved imposing ellipsoids on body segments based on a mesh and minimizing cross over between them, and joint rotation angle boundaries (using 2x Kinect v2s) [[27](https://ieeexplore.ieee.org/document/7390092)]. This approach did not involve the equations of motion and did not require the use of any wearable sensors. Comercially available softwares such as Ipisoft [[28](http://ipisoft.com/)] also exist which allow for the use of multiple fused depth sensors in a relatively inexpensive and accurate motion capture setup.
 
 <p align="center">
-  ![image](/assets/images/ipisoft.gif)
+  <img src="/assets/images/ipisoft.gif" width="500">
 </p>
 
 However, the requirement of multiple RGB-D sensors makes a system such as this unsuitable for in-the-wild biomechanics applications. One manual method used in the realm of biomechanical research called Multibody Image Matching (MBIM) has allowed for extraction of 3D pose from multi-view in-the-wild videos e.g. [[4](https://journals.sagepub.com/doi/10.1177/1747954119833477)]. 
@@ -86,7 +86,7 @@ A promising approach which does not require pre-defined calibration parameters, 
 3D single-camera approaches have also been developed e.g. [[37](https://arxiv.org/abs/1912.05656), [38](https://arxiv.org/abs/1903.02330), [39](https://arxiv.org/abs/2003.14179)]. GAST-Net (Graph Attention Spatio-Temporal convolutional Network) is the state-of-the-art method, and addresses problems experienced around occlusion and depth ambiguities in previous methods by including spatiotemporal information (i.e. learning kinematic constraints such as posture, 2nd order joint relations, and symmetry) [[39](https://arxiv.org/abs/2003.14179)]. GAST-Net has achieved accuracy within 2.2cm of marker-based motion capture methods, and outperforms previous methods particularly in cases involving heavy self-occlusion and fast motion.
 
 <p align="center">
-  ![image](/assets/images/gastnet-kevin.gif)
+  <img src="/assets/images/gastnet-kevin.gif" width="500">
 </p>
 
 3D pose and shape estimation methods also exist, which allow for the inclusion of body shape predictions. Combined body pose and shape estimation is useful from an injury biomechanics perspective; with both kinematics (pose) and estimates for body segment inertia tensors (inferred from the body shape estimate) inverse dynamics can be performed, which may allow for more detailed injury predictions. The most promising approaches involve the use of a statistical human body shape model (e.g. SMPL [[40](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)], GraphCMR [[41](https://arxiv.org/pdf/1905.03244.pdf)], SPIN [[42](https://arxiv.org/pdf/1909.12828.pdf)], STAR (state-of-the-art) [[43](https://arxiv.org/abs/2008.08535)]), i.e. a skinned vertex-based model that accurately represents a wide variety of body shapes in natural human poses, developed via dimensionality reduction techniques i.e. Principal Component Analysis (PCA). 
@@ -98,7 +98,7 @@ A promising approach which does not require pre-defined calibration parameters, 
 The current state-of the art 3D pose and shape estimation method VIBE [[44](https://arxiv.org/abs/1912.05656)] estimates SMPL body model parameters for each frame in a video sequence using a temporal generation network, which is trained together with a motion discriminator i.e. AMASS [[45](http://files.is.tue.mpg.de/black/papers/amass.pdf)].
 
 <p align="center">
-  ![image](/assets/images/vibe-kevin.gif)
+  <img src="/assets/images/vibe-kevin.gif" width="500">
 </p>
 
 
