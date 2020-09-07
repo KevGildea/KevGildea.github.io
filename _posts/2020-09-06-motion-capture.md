@@ -41,9 +41,11 @@ More recent computer-based methods now exist which employ spatially calibrated m
 
 ![image](/assets/images/ipisoft.gif)
 
-One manual method used in the realm of biomechanical research called Multibody Image Matching (MBIM) has allowed for extraction of 3D pose from in-the-wild videos e.g. [[4](https://journals.sagepub.com/doi/10.1177/1747954119833477)]. Though MBIM achieves high accuracy for certain applications [[28](https://pubmed.ncbi.nlm.nih.gov/28632058/)], it is labor-intensive and are unsuitable for real-time applications. Furthermore, currently available automatic markerless systems involve a large number of calibrated cameras in controlled lab-based settings.
+One manual method used in the realm of biomechanical research called Multibody Image Matching (MBIM) has allowed for extraction of 3D pose from in-the-wild videos e.g. [[4](https://journals.sagepub.com/doi/10.1177/1747954119833477)]. 
 
 ![image](/assets/images/poser.PNG)
+
+Though MBIM achieves high accuracy for certain applications [[28](https://pubmed.ncbi.nlm.nih.gov/28632058/)], it is labor-intensive and are unsuitable for real-time applications. Furthermore, currently available automatic markerless systems involve a large number of calibrated cameras in controlled lab-based settings.
 
 #### Machine learning approaches
 For (near) real-time and in-the-wild applications there is a need for automatic 3D tracking of joint positions using simple inexpensive cameras. Deep learning has recently been applied in this area with great success. These approaches have allowed for robust and fast (multi) human pose estimation outside of laboratory conditions. Generally, these systems involve the training of a model with prior ground truth data. Pose estimation approaches can be categorized as: 
