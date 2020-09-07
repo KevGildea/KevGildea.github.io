@@ -39,7 +39,7 @@ There are also a variety of alternative motion capture systems that involve mark
 
 Though the accuracy of many of these marker/sensor-based systems are high; they are prohibitively expensive for many, and the experimental setups are unsuitable for many in-the-wild biomechanical applications. Markerless motion capture systems allow for more natural subject motion and aim for capture in less experimentally constrained environments (i.e. outside of a motion capture laboratory) [[21](https://www.cs.cmu.edu/~hanbyulj/panoptic-studio/), [22](http://www.thecaptury.com/), [23](https://tracklab.com.au/organic-motion/), [24](http://www.simi.com/en/)]. The first human motion capture system to be used for biomechanical analysis, the Rotoscope, invented by Max Fleisher in 1919, was in fact a markerless system. The system involves manual tracing of character outlines for individual frames of an image sequence. Most famously, this system was used by to investigate human and equine gait [[1](https://www.loc.gov/item/79051299/)]. 
 
-![image](/assets/images/rotoscope.png)
+<img src="/assets/images/rotoscope.png" width="350">
 
 More recent computer-based methods now exist which employ spatially calibrated multi camera setups; streamlining the process and allowing for 3D analysis to be performed. These systems may be automatic e.g. [[21](https://www.cs.cmu.edu/~hanbyulj/panoptic-studio/), [24](http://www.simi.com/en/)] or require manual annotation [[25](https://www.posersoftware.com/)]. Systems involving both colour and depth maps (i.e. RGB-D cameras) such as the Microsoft Kinect has potential to allow for accurate single-camera motion capture, though the accuracy of the Kinect V2 is currently inadequate for many biomechanical applications. There have been efforts to improve upon the accuracy of the Kinect's skeletal tracking capabilities, all in some way involve optimizing certain parameters to achieve more realistic motions. The most successful (using 3 Kinect V1s) involved a physics-based approach utilizing body segment mass estimates from the Kinect depth sensors, insole pressure sensors, and optimization of the equations of motion [[26](https://dl.acm.org/doi/10.1145/2661229.2661286)]. Another approach that achieved a similar, albeit slightly lower level of accuracy involved imposing ellipsoids on body segments based on a mesh and minimizing cross over between them, and joint rotation angle boundaries (using 2x Kinect v2s) [[27](https://ieeexplore.ieee.org/document/7390092)]. This approach did not involve the equations of motion and did not require the use of any wearable sensors. However, the requirement of multiple RGB-D sensors makes a system such as this unsuitable for in-the-wild biomechanics applications. Comercially available softwares also exist which allow for the use of multiple fused depth sensors in a relatively inexpensive and accurate motion capture setup [[28](http://ipisoft.com/)].
 
@@ -47,7 +47,7 @@ More recent computer-based methods now exist which employ spatially calibrated m
 
 One manual method used in the realm of biomechanical research called Multibody Image Matching (MBIM) has allowed for extraction of 3D pose from in-the-wild videos e.g. [[4](https://journals.sagepub.com/doi/10.1177/1747954119833477)]. 
 
-![image](/assets/images/poser.PNG)
+<img src="/assets/images/poser.PNG" width="350">
 
 Though MBIM achieves high accuracy for certain applications [[28](https://pubmed.ncbi.nlm.nih.gov/28632058/)], it is labor-intensive and are unsuitable for real-time applications. Furthermore, currently available automatic markerless systems involve a large number of calibrated cameras in controlled lab-based settings.
 
@@ -64,7 +64,7 @@ However, a more recent approach HRNet outperforms Openpose slightly by retaining
 
 3D pose estimation methods generally employ a 2D pose estimator as a backbone, and use techniques to project these into the 3D realm. For multi-camera setups, a simple approach involves geometric triangulation, i.e. exploiting the knowledge of camera intrinsic and extrinsic parameters of a camera to triangulate 2 or more views of a keypoint into 3D space [[34](https://www.cambridge.org/core/books/multiple-view-geometry-in-computer-vision/0B6F289C78B2B23F596CAA76D3D43F7A)]; in fact, Openpose contains a module for this [[35](https://github.com/CMU-Perceptual-Computing-Lab/openpose#3-d-reconstruction-module-body-foot-face-and-hands)]. 
 
-![image](/assets/images/openpose3d.gif)
+<img src="/assets/images/openpose3d.gif" width="350">
 
 A promising approach which does not require pre-defined calibration parameters, learnable triangulation, includes this geometric triangulation into the architecture [[36](https://arxiv.org/abs/1905.05754)]. 
 
@@ -79,7 +79,6 @@ A promising approach which does not require pre-defined calibration parameters, 
 The current state-of the art 3D pose and shape estimation method VIBE [[45](https://arxiv.org/abs/1912.05656)] estimates SMPL body model parameters for each frame in a video sequence using a temporal generation network, which is trained together with a motion discriminator i.e. AMASS [[46](http://files.is.tue.mpg.de/black/papers/amass.pdf)].
 
 ![image](/assets/images/vibe-kevin.gif)
-
 
 
 #### Conclusions and future directions
