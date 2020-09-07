@@ -14,23 +14,26 @@ Details of cyclist collisions in Ireland are first established through:
 
 The analysis of these data is focused on finding the most common and injurious cyclist collision configurations and kinematic forms:
 
-<img src="/assets/images/MVCsSCCs.png" width="500">
+<img src="/assets/images/MVCsSCCs.png" width="300">
 
 
 
 #### Deep learning approaches to injury biomechanics
 Rapid developments in deep learning based pose and shape estimation presents the opportunity to investigate in-the-wild impact kinematics and dynamics;
 
-using 2D pose estimation, e.g. [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose):
+e.g. 2D pose estimation, e.g. [Openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose):
 
 
-<img src="/assets/images/pitchover-openpose.gif" width="250">
+<img src="/assets/images/pitchover-openpose.gif" width="200">
 
 
-or, 3D pose and shape estimation, e.g. [VIBE](https://github.com/mkocabas/VIBE):
+e.g. 3D pose and shape estimation, e.g. [VIBE](https://github.com/mkocabas/VIBE):
 
 
-<img src="/assets/images/skidonwetroad-vibe.gif" width="500">
+<img src="/assets/images/skidonwetroad-vibe.gif" width="400">
+
+
+For more information see my blog post: [['Deep learning techniques for human motion capture: an injury biomechanics perspective'](https://kevgildea.github.io/blog/motion-capture/)]
 
 
 Parametric computational modelling may then be applied to representative collision scenarios using multibody dynamics, and finite element analysis, to determine injury reduction strategies:
