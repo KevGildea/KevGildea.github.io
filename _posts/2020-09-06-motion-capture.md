@@ -83,7 +83,7 @@ The current state-of the art 3D pose and shape estimation method VIBE [[45](http
 
 
 #### Conclusions and future directions
-The trajectory of advancement in deep learning motion capture methods has mirrored that of traditional ones. Early iterations of deep learning-based motion capture have focused on planar joint position estimates from monocular viewpoints. These systems have achieved remarkable accuracy, and consequently, more recent efforts have been pushing towards the 3D realm. The accuracy of these systems are currently below that of gold standard marber based systems, or other markerless systems involving depth sensors or multi-camera setups, however, this is an emerging research topic, and with the transformative effects deep learning approaches have had in other fields in the near future we can expect to see rapid improvements.
+The trajectory of advancement in deep learning motion capture methods has mirrored that of traditional ones. Early iterations of deep learning-based motion capture have focused on planar joint position estimates from monocular viewpoints. These systems have achieved remarkable accuracy, and consequently, more recent efforts have been pushing towards the 3D realm. The accuracy of these systems are currently below that of gold standard marker based systems, or other markerless systems involving depth sensors or multi-camera setups, however, this is an emerging research topic, and with the transformative effects deep learning approaches have had in other fields in the near future we can expect to see rapid improvements.
 
 ##### Sources to monitor for developments:
 
