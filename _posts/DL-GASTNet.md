@@ -11,6 +11,22 @@ tags:
 ---
 
 - Introduction
+  - describe the approach
+  - explain why this is important (previous approaches)
+
+- Methods
+  - overall DL pipeline
+  - describe the kinematic constraints
+
+- Results
+  - describe the increase in accuracy in benchmark tests
+
+- Discussion
+  - importance of this study in the field of accident reconstruction
+  - importance of this study towards automatic DL based whole collison reconstruction
+
+
+
 
 
 
