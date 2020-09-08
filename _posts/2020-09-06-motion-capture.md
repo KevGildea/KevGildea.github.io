@@ -20,7 +20,7 @@ Motion capture is the process of recording human motion, it can be used for a va
 This post is focused on the recent emergence of markerless deep learning approaches, for context, and since the accuracy assessment of many of these modern approaches rely on comparisons to traditional methods, a brief introduction to marker-based, sensor-based, and markerless systems is also presented. Though body and joint positional accuracy are important considerations in all applications of motion capture, they are of notable importance for human biomechanical analysis e.g. traumatic injury biomechanics, or physiotherapy. For this reason, this review focuses on the current and potential uses of motion capture in the field of traumatic injury biomechanics. Notwithstanding the significant developments in this area driven by the aim of improving motion realism in the entertainment industry.
 
 The operating principles of motion capture generally involve: 
-1. the tracking of human body keypoints which correspond to anatomical joint positions
+1. the tracking of human body keypoints which correspond to anatomical joint positions.
 2. inference of tracked keypoint locations to body kinematics by use of a defined kinematic chain i.e. a hierarchical chain of links and joints. 
 
 <p align="center">
