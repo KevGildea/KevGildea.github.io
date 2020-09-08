@@ -60,7 +60,7 @@ However, the requirement of multiple RGB-D sensors makes a system such as this u
   <img src="/assets/images/poser.PNG" width="350">
 </p>
 
-Though MBIM achieves high accuracy for certain applications [[28](https://pubmed.ncbi.nlm.nih.gov/28632058/)], it requires multiple views on the scene, is labor-intensive, and is unsuitable for real-time applications. 
+Though MBIM achieves high accuracy for certain applications [[28](https://pubmed.ncbi.nlm.nih.gov/28632058/)], it requires multiple views of the scene, is labor-intensive, and is unsuitable for real-time applications. 
 
 #### Deep learning approaches
 For (near) real-time and in-the-wild applications there is a need for automatic 3D tracking of joint positions using simple inexpensive cameras. Deep learning has recently been applied in this area with great success. These approaches have allowed for robust and fast (multi) human pose estimation outside of laboratory conditions. Generally, these systems involve the training of a model with prior ground truth data. Pose estimation approaches can be categorized as: 
