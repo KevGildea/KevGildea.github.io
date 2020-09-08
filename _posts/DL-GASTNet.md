@@ -22,15 +22,7 @@ tags:
   - describe the increase in accuracy in benchmark tests
 
 - Discussion
-  - importance of this study in the field of accident reconstruction
-  - importance of this study towards automatic DL based whole collison reconstruction
-
-
-
-
-
-
-
+  - importance of this study in the various fields
 
 
 
