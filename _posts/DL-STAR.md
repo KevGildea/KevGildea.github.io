@@ -11,9 +11,18 @@ tags:
 ---
 
 - Introduction
+  - describe the approach
+  - explain why this is important (previous approaches)
 
+- Methods
+  - overall optimization pipeline
+  - describe the novelty (better data)
 
+- Results
+  - describe the increase in accuracy in tests
 
+- Discussion
+  - importance of this study in various fields
 
 
 
