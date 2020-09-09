@@ -40,7 +40,7 @@ The value of this study lies in its adaptations to an existing shape estimation 
 2. there are added terms to the optimization procedure
 
 <p align="center">
-  <img src="/assets/images/Ped-PosePred.PNG" width="500">
+  <img src="/assets/images/Ped-Pose-Pred.PNG" width="500">
 </p>
 
 
