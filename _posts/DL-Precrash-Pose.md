@@ -38,9 +38,9 @@ They can also:
   </p>
 
 | Attempt | #1  |
-| Jump | <img src="/assets/images/Ped-Pose-Jump.png" width="200"> |
-| Avoid | <img src="/assets/images/Ped-Pose-Avoid.png" width="200"> |
-| Freeze | <img src="/assets/images/Ped-Pose-Freeze.png" width="200"> |
+| Jump | ![](/assets/images/Ped-Pose-Jump.png)  |
+| Avoid | ![](/assets/images/Ped-Pose-Avoid.png)  |
+| Freeze | ![](/assets/images/Ped-Pose-Freeze.png)  |
 
 
 
