@@ -27,7 +27,6 @@ Pedestrian safety in vehcicle collisions is assesed by regulated type-testing, o
   <img src="/assets/images/Ped-AEB.gif" width="500">
 </p>
 
-ADD: gif/image of vehicle type testing beside the above
 
 However, it is known that pedestrians exhibit certain reactionary postures and motions before being impacted by a car, as described in this paper and other published literature [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/), [2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)].
 
