@@ -35,13 +35,15 @@ They can also:
 
 
 <p align="center">
-  | Attempt | #1  |
-  | :---:   | :-: |
-  | Jump | <img src="/assets/images/Ped-Pose-Jump.PNG" width="500"> |
-  | Avoid | <img src="/assets/images/Ped-Pose-Avoid.PNG" width="500"> |
-  | Freeze | <img src="/assets/images/Ped-Pose-Freeze.PNG" width="500"> |
+  </p>
 
-</p>
+| Attempt | #1  |
+| :---:   | :-: |
+| Jump | <img src="/assets/images/Ped-Pose-Jump.PNG" width="500"> |
+| Avoid | <img src="/assets/images/Ped-Pose-Avoid.PNG" width="500"> |
+| Freeze | <img src="/assets/images/Ped-Pose-Freeze.PNG" width="500"> |
+
+
 
   - describe the approach simply with a series of images
 The value of this study lies in its adaptations to an existing shape estimation method called SMPLify [[1](http://smplify.is.tue.mpg.de/)] to create a toolchain. SMPLify is an optimization approach that allows for 3D body pose and shape estimates to be made from a single input image with 2D pose estimates as input. This study effectively uses SMPLify, with two adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
