@@ -37,10 +37,10 @@ They can also:
 <p align="center">
   </p>
 
-
-| Jump | <img src="/assets/images/Ped-Pose-Jump.png" width="500"> |
-| Avoid | <img src="/assets/images/Ped-Pose-Avoid.png" width="500"> |
-| Freeze | <img src="/assets/images/Ped-Pose-Freeze.png" width="500"> |
+| Attempt | #1  |
+| Jump | <img src="/assets/images/Ped-Pose-Jump.png" width="200"> |
+| Avoid | <img src="/assets/images/Ped-Pose-Avoid.png" width="200"> |
+| Freeze | <img src="/assets/images/Ped-Pose-Freeze.png" width="200"> |
 
 
 
