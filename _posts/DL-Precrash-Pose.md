@@ -34,18 +34,32 @@ However, it is known that pedestrians exhibit certain reactionary postures and m
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](/assets/images/Ped-Pose-Jump.png)  |  ![](/assets/images/Ped-Pose-Avoid.png)  |  ![](/assets/images/Ped-Pose-Freeze.png)
 
-The value of this study lies in its adaptations to an existing shape estimation method called SMPLify [[3](http://smplify.is.tue.mpg.de/)] to create a toolchain. SMPLify is an optimization approach that allows for 3D body pose and shape estimates to be made from a single input image with 2D pose estimates as input. This study effectively uses SMPLify, with two adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
-1. the 2D pose estimates from openpose are manually improved
-2. there are added terms to the optimization procedure
+The value of this study lies in its adaptations to an existing shape estimation method called SMPLify [[3](http://files.is.tue.mpg.de/black/papers/BogoECCV2016.pdf)] to create a toolchain. SMPLify is an optimization approach that allows for 3D body pose and shape estimates to be made from a single input image with 2D pose estimates as input. 
 
 ![](/assets/images/Ped-Pose-Pred.png)
 
-  - explain why this is important (previous approaches)
+As context, SMPLify fits the a statistical human body model called SMPL [4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf) to an image with DeepCut 2D pose estimates as input [5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf). It achieves this by employing an optimization proceedure with an objective function containing five error terms: 
+1. a joint-based data term
+2. pose prior 1
+3. pose prior 2
+4. pose prior 3 
+5. a shape prior
+
+This study effectively uses SMPLify, with three adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
+1. the 2D pose estimates are inferred using Openpose [6](https://arxiv.org/abs/1812.08008) 
+2. 2D estimates are manually improved
+2. there are added terms to the optimization procedure
+
+- ADD a figure of the error term formula highlighting what is new and what is from SMPLify
 
 
 
-- Methods
-  - description of the DL pipeline (Keep it SMPL)
+This method improves on all previous attempts in quantitatively characterising pre-impact pedestrian pose, which relied on visual inspections of crash footage [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/), [2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)], and may be a step towards a fully automated toolchain.
+
+
+
+
+
 
 ADD: gif of inference of myself using this method
 
