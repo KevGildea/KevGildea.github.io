@@ -42,6 +42,9 @@ They can also:
 | Avoid | ![](/assets/images/Ped-Pose-Avoid.png)  |
 | Freeze | ![](/assets/images/Ped-Pose-Freeze.png)  |
 
+| Italic             |  Block letters |  Block letters |
+:-------------------------:|:-------------------------:|:-------------------------:
+![](/assets/images/Ped-Pose-Jump.png)  |  ![](/assets/images/Ped-Pose-Avoid.png)  |  ![](/assets/images/Ped-Pose-Freeze.png)
 
 
   - describe the approach simply with a series of images
