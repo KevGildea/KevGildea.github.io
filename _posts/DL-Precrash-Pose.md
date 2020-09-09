@@ -20,6 +20,10 @@ Firstly for some context, let me tell you a little about the background of vehic
 Pedestrian safety in vehcicle collisions is assesed by regulated type-testing, or by consumer organisations with more comprehensive testing protocols for passive and active safety systems (e.g. EuroNCAP). These tests include assesments of the effects of vehicle front geometry on injury outcomes, and the effectiveness of autonomous emergency braking or evasive steering assistant systems. Vehicle type-testing protocols for both active and passive safety systems currently use a simplified poses and motions exemplifying an unaware pedestrian walking in front of the vehicle with no consideration of reactions.
 
 <p align="center">
+  <img src="/assets/images/Ped-Passive.PNG" width="500">
+</p>
+
+<p align="center">
   <img src="/assets/images/Ped-AEB.gif" width="500">
 </p>
 
