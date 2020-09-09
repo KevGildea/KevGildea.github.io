@@ -25,7 +25,7 @@ ADD: gif/image of vehicle type testing beside the above
 
 However, it is known that pedestrians exhibit certain reactionary postures and motions before being impacted by a car, as described in this paper and other published literature [ADD refs].
 
-| Italic             |  Block letters |  Block letters |
+| Jump            |  Attempt to avoid |  Freeze in place |
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](/assets/images/Ped-Pose-Jump.png)  |  ![](/assets/images/Ped-Pose-Avoid.png)  |  ![](/assets/images/Ped-Pose-Freeze.png)
 
