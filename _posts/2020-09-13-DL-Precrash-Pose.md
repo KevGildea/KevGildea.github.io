@@ -31,8 +31,6 @@ However, it is known that pedestrians exhibit certain reactionary postures and m
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](/assets/images/Ped-Pose-Jump.png)  |  ![](/assets/images/Ped-Pose-Avoid.png)  |  ![](/assets/images/Ped-Pose-Freeze.png)
 
-
-  - describe the approach simply with a series of images
 The value of this study lies in its adaptations to an existing shape estimation method called SMPLify [[3](http://smplify.is.tue.mpg.de/)] to create a toolchain. SMPLify is an optimization approach that allows for 3D body pose and shape estimates to be made from a single input image with 2D pose estimates as input. This study effectively uses SMPLify, with two adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
 1. the 2D pose estimates from openpose are manually improved
 2. there are added terms to the optimization procedure
