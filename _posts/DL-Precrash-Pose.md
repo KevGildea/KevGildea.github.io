@@ -38,10 +38,7 @@ The value of this study lies in its adaptations to an existing shape estimation 
 1. the 2D pose estimates from openpose are manually improved
 2. there are added terms to the optimization procedure
 
-<p align="center">
-  <img src="/assets/images/Ped-Pose-Pred.png" width="700">
-</p>
-
+![](/assets/images/Ped-Pose-Pred.png)
 
   - explain why this is important (previous approaches)
 
