@@ -1,5 +1,5 @@
 ---
-title: "A novel DL approach to determining pedestrian pre-crash posture"
+title: "Review: A novel DL approach to determining pedestrian pre-crash posture"
 date: 2020-09-13
 categories:
   - blog
