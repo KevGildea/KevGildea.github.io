@@ -30,8 +30,17 @@ They can also:
 2. jump up
 3. attempt to move out of the way of the vehicle
 
-<p align="center">
+
   <img src="/assets/images/Ped-Pose.PNG" width="500">
+
+
+<p align="center">
+  | Attempt | #1  |
+  | :---:   | :-: |
+  | Jump | <img src="/assets/images/Ped-Pose-Jump.PNG" width="500"> |
+  | Avoid | <img src="/assets/images/Ped-Pose-Avoid.PNG" width="500"> |
+  | Freeze | <img src="/assets/images/Ped-Pose-Freeze.PNG" width="500"> |
+
 </p>
 
   - describe the approach simply with a series of images
