@@ -13,6 +13,8 @@ tags:
   - Injury biomechanics
 ---
 
+This is a review of a paper recently published in and presented at IRCOBI Europe 2020 (International Research Council on Injury Biomechanics). The study involves applying deep learning approaches to the task of classifying pedestrian pre-crash pose. This paper is exciting for a number of reasons, primarily due to the fact that this is the first published attempt to use pose and shape estimation in the field of traumatic injury biomechanics.
+
 Firstly for some context, let me tell you a little about the background of vehicle safety systems. They can be classified as being 'active', 'passive', or a combination of the two. Active safety systems are onboard electronic devices that are continuously 'active' and monitoring to avoid collision occurence, e.g. traction control, automatic emergency braking, blind spot detection. Whereas, passive safety systems are design features or devices that are generally inactive, only taking effect upon collision occurence to reduce injury outcomes, e.g. helmets, seat belts, air bags, vehicle/infrastructural design (softer/energy dissapating impact surfaces). Integrated safety systems are a combination of the two, where there is an elmement of continuous monitoring with informs the deployment of a passive safety system, e.g. advanced airbag deployment systems.
 
 Pedestrian safety in vehcicle collisions is assesed by regulated type-testing, or by consumer organisations with more comprehensive testing protocols for passive and active safety systems (e.g. EuroNCAP). These tests include assesments of the effects of vehicle front geometry on injury outcomes, and the effectiveness of autonomous emergency braking or evasive steering assistant systems. Vehicle type-testing protocols for both active and passive safety systems currently use a simplified poses and motions exemplifying an unaware pedestrian walking in front of the vehicle with no consideration of reactions.
@@ -23,7 +25,7 @@ Pedestrian safety in vehcicle collisions is assesed by regulated type-testing, o
 
 ADD: gif/image of vehicle type testing beside the above
 
-However, it is known that pedestrians exhibit certain reactionary postures and motions before being impacted by a car, as described in this paper and other published literature [ADD refs].
+However, it is known that pedestrians exhibit certain reactionary postures and motions before being impacted by a car, as described in this paper and other published literature [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/), [2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)].
 
 | Jump            |  Attempt to avoid |  Freeze in place |
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -31,7 +33,7 @@ However, it is known that pedestrians exhibit certain reactionary postures and m
 
 
   - describe the approach simply with a series of images
-The value of this study lies in its adaptations to an existing shape estimation method called SMPLify [[1](http://smplify.is.tue.mpg.de/)] to create a toolchain. SMPLify is an optimization approach that allows for 3D body pose and shape estimates to be made from a single input image with 2D pose estimates as input. This study effectively uses SMPLify, with two adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
+The value of this study lies in its adaptations to an existing shape estimation method called SMPLify [[3](http://smplify.is.tue.mpg.de/)] to create a toolchain. SMPLify is an optimization approach that allows for 3D body pose and shape estimates to be made from a single input image with 2D pose estimates as input. This study effectively uses SMPLify, with two adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
 1. the 2D pose estimates from openpose are manually improved
 2. there are added terms to the optimization procedure
 
