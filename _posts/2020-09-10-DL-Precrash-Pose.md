@@ -46,14 +46,14 @@ The value of this study lies in its adaptations to an existing shape estimation 
 
 As context, SMPLify fits the a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It achieves this by employing an optimization procedure with an objective function containing five error terms. The current study effectively uses SMPLify, with six adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
 
-1) the 2D pose estimates are inferred using Openpose [[6](https://arxiv.org/abs/1812.08008)], which outperforms DeepCut. 
+1) The 2D pose estimates are inferred using Openpose [[6](https://arxiv.org/abs/1812.08008)], which outperforms DeepCut. 
 2) 2D estimates are manually improved on visual inspection.
 
 <p align="center">
   <img src="/assets/images/Openpose-Manual-Annotation.PNG" width="500">
 </p>
 
-3) 4) & 5) three adaptations are made to the SMPLify optimization procedure: 
+3) 4) & 5) Three adaptations are made to the SMPLify optimization procedure: 
    - the shape coefficients  are optimised globally over all images in a sequence leading up to the impact.
    - temporal information has been included an error term to be minimized i.e. the sum of joint distances across adjacent frames.
    - the interpenetration term (Pose prior 3) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[7](https://arxiv.org/abs/1901.08274)].
@@ -72,16 +72,20 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 
 7) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when they impacted, the results may be conservative for frames in the impact phase i.e. predict less realistic poses in the impact phase. For this reason the weighting factors for pose and shape terms in the optimization were relaxed in the final iterations of the optimization procedure, in effect allowing for less natural poses.
 
+The
+
 Overcoming problems associated with MPJPE (use of joint angles)
 
 
 #### Discussion
 
-This method improves on all previous attempts to quantitatively characterise pre-impact pedestrian pose, which relied on either volunteer test in simulated environments [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/)], or  visual inspection of crash footage [[2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)]. Approaches like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing. Though the system is not automatic and requires some manual annotation, this may be a step towards a fully automated toolchain. This technique may be a first step towards integrated pedestrian safety systems e.g. pose dependent bonnet deployment systems [EXAMPLES].
+This method improves on all previous attempts to quantitatively characterise pre-impact pedestrian pose, which relied on either volunteer test in simulated environments [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/)], or  visual inspection of crash footage [[2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)]. Approaches like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing. Though the system is not automatic and requires some manual annotation, this may be a step towards a fully automated toolchain. This technique may also be a first step towards integrated pedestrian safety systems e.g. pose dependent bonnet deployment systems.
 
-More generally, this study demonstrates the importance of adaptations on deep learning approached in task specific approaches.
+ADD EXAMPLES
 
-ADD INFOR ON POSSIBLE IMPROVEMENTS AND FUTURE DIRECTIONS
-Add context information for VIBE (SMPL - SMPLify - SPIN - VIBE & AMASS - STAR - Graph-CMR) to the DL-MoCap post. Mention that improvements and a more automatic procedure may be achieved using SPIN or VIBE (which may be further improved using STAR in place of SMPL). Mention that the SOTA changes so rapidly (twice or 3 times since this paper was submitted).
+More generally, this study demonstrates the importance of task specific approaches, i.e. making adaptations to existing deep learning techniques before applying them to defined tasks.
+
+ADD INFO ON POSSIBLE IMPROVEMENTS AND FUTURE DIRECTIONS
+i.e. add context information for VIBE (SMPL - SMPLify - SPIN - VIBE & AMASS - STAR - Graph-CMR) to the DL-MoCap post. Mention that improvements and a more automatic procedure may be achieved using SPIN or VIBE (which may be further improved using STAR in place of SMPL). Mention that the SOTA changes so rapidly (twice or 3 times since this paper was submitted).
 
 
