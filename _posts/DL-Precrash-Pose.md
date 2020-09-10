@@ -15,6 +15,10 @@ tags:
 
 This is a review of a paper recently published in and presented at IRCOBI Europe 2020 (International Research Council on Injury Biomechanics). The study involves applying deep learning approaches to the task of classifying pedestrian pre-crash pose. This paper is exciting for a number of reasons, primarily due to the fact that this is the first published attempt to use pose and shape estimation in the field of traumatic injury biomechanics.
 
+>['Extracting Quantitative Descriptions of Pedestrian Pre-crash Postures from Real-world Accident
+Videos
+'](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)
+
 Firstly for some context, let me tell you a little about the background of vehicle safety systems. They can be classified as being 'active', 'passive', or a combination of the two. Active safety systems are onboard electronic devices that are continuously 'active' and monitoring to avoid collision occurence, e.g. traction control, automatic emergency braking, blind spot detection. Whereas, passive safety systems are design features or devices that are generally inactive, only taking effect upon collision occurence to reduce injury outcomes, e.g. helmets, seat belts, air bags, vehicle/infrastructural design (softer/energy dissapating impact surfaces). Integrated safety systems are a combination of the two, where there is an elmement of continuous monitoring with informs the deployment of a passive safety system, e.g. advanced airbag deployment systems.
 
 Pedestrian safety in vehcicle collisions is assesed by regulated type-testing, or by consumer organisations with more comprehensive testing protocols for passive and active safety systems (e.g. EuroNCAP). These tests include assesments of the effects of vehicle front geometry on injury outcomes, and the effectiveness of autonomous emergency braking or evasive steering assistant systems. Vehicle type-testing protocols for both active and passive safety systems currently use a simplified poses and motions exemplifying an unaware pedestrian walking in front of the vehicle with no consideration of reactions.
@@ -38,17 +42,19 @@ The value of this study lies in its adaptations to an existing shape estimation 
 
 ![](/assets/images/Ped-Pose-Pred.png)
 
-As context, SMPLify fits the a statistical human body model called SMPL [4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf) to an image with DeepCut 2D pose estimates as input [5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf). It achieves this by employing an optimization proceedure with an objective function containing five error terms: 
-1. a joint-based data term
-2. pose prior 1
-3. pose prior 2
-4. pose prior 3 
-5. a shape prior
+As context, SMPLify fits the a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It achieves this by employing an optimization proceedure with an objective function containing five error terms: 
+1. a joint-based data term.
+2. pose prior 1.
+3. pose prior 2.
+4. pose prior 3.
+5. a shape prior.
 
 This study effectively uses SMPLify, with three adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
-1. the 2D pose estimates are inferred using Openpose [6](https://arxiv.org/abs/1812.08008) 
-2. 2D estimates are manually improved
-2. there are added terms to the optimization procedure
+1. the 2D pose estimates are inferred using Openpose [[6](https://arxiv.org/abs/1812.08008)], which outperforms DeepCut. 
+2. 2D estimates are manually improved on visual inspection.
+3. there are terms added to the optimization procedure.
+
+
 
 - ADD a figure of the error term formula highlighting what is new and what is from SMPLify
 
