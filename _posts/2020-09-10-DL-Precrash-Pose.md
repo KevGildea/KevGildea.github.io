@@ -89,7 +89,7 @@ MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for be
   <img src="/assets/images/MPJPE.png" width="350">
 </p>
 
-However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., certain incomparible poses when compared can have misleadlingly low values of MPJPE. For this reason the autrhors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
+However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., some obviously different poses can have misleadlingly low values of MPJPE. For this reason the autrhors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
 
 
 #### Discussion
