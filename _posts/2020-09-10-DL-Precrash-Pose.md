@@ -13,7 +13,7 @@ tags:
   - Injury biomechanics
 ---
 
-This is a review of a paper recently published in and presented at IRCOBI Europe 2020 (International Research Council on Injury Biomechanics). The study involves applying deep learning approaches to the task of classifying pedestrian pre-crash pose. This paper is exciting for a number of reasons; primarily due to the fact that this is the first published attempt to use pose and shape estimation in the field of traumatic injury biomechanics, but also the tailored approach they use with existing pose/shape estimation method to achieve more accurate predictions for the task.
+This is a review of a paper recently published in and presented at IRCOBI Europe 2020 (International Research Council on Injury Biomechanics). The study involves applying deep learning approaches to the task of classifying pedestrian pre-crash pose. This paper is interesting for a number of reasons; primarily due to the fact that this is the first published attempt to use pose and shape estimation in the field of traumatic injury biomechanics, but also the tailored approach they use with existing pose/shape estimation method to achieve more accurate predictions for the task.
 
 >['Extracting Quantitative Descriptions of Pedestrian Pre-crash Postures from Real-world Accident
 Videos
