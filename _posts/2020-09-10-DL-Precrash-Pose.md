@@ -72,7 +72,11 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 
 7) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when they impacted, the results may be conservative for frames in the impact phase i.e. predict less realistic poses in the impact phase. For this reason the weighting factors for pose and shape terms in the optimization were relaxed in the final iterations of the optimization procedure, in effect allowing for less natural poses.
 
-The
+The optimization weights were determined using a commonly used and publicly available motion capture dataset, i.e., the h36m dataset [[10](hhttp://vision.imar.ro/human3.6m/description.php)]. 
+
+<p align="center">
+  <img src="/assets/images/h36mVsSMPL.png" width="500">
+</p>
 
 Overcoming problems associated with MPJPE (use of joint angles)
 
@@ -87,5 +91,7 @@ More generally, this study demonstrates the importance of task specific approach
 
 ADD INFO ON POSSIBLE IMPROVEMENTS AND FUTURE DIRECTIONS
 i.e. add context information for VIBE (SMPL - SMPLify - SPIN - VIBE & AMASS - STAR - Graph-CMR) to the DL-MoCap post. Mention that improvements and a more automatic procedure may be achieved using SPIN or VIBE (which may be further improved using STAR in place of SMPL). Mention that the SOTA changes so rapidly (twice or 3 times since this paper was submitted).
+
+h36m dataset only contains natural poses?
 
 
