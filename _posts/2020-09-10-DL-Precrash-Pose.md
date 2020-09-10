@@ -17,7 +17,7 @@ This is a review of a paper recently published in and presented at IRCOBI Europe
 
 >['Extracting Quantitative Descriptions of Pedestrian Pre-crash Postures from Real-world Accident
 Videos
-, M. Schachner et al. (2020)'](http://www.ircobi.org/wordpress/downloads/irc20/pdf-files/37.pdf)
+, Schachner et al. (2020)'](http://www.ircobi.org/wordpress/downloads/irc20/pdf-files/37.pdf)
 
 Firstly for some context, let me tell you a little about the background of vehicle safety systems. They can be classified as being 'active', 'passive', or a combination of the two. Active safety systems are onboard electronic devices that are continuously 'active' and monitoring to avoid collision occurence, e.g. traction control, automatic emergency braking, blind spot detection. Whereas, passive safety systems are design features or devices that are generally inactive, only taking effect upon collision occurence to reduce injury outcomes, e.g. helmets, seat belts, air bags, vehicle/infrastructural design (softer/energy dissapating impact surfaces). Integrated safety systems are a combination of the two, where there is an elmement of continuous monitoring with informs the deployment of a passive safety system, e.g. advanced airbag deployment systems.
 
@@ -92,19 +92,15 @@ MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for be
 However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., certain incomparible poses when compared can have misleadlingly low values of MPJPE. For this reason the autrhors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
 
 
-
-
 #### Discussion
 
 This method improves on all previous attempts to quantitatively characterise pre-impact pedestrian pose, which relied on either volunteer test in simulated environments [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/)], or  visual inspection of crash footage [[2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)]. Approaches like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing. Though the system is not automatic and requires some manual annotation, this may be a step towards a fully automated toolchain. This technique may also be a first step towards integrated pedestrian safety systems e.g. pose dependent bonnet deployment systems.
 
-ADD EXAMPLES
+3D pose and shape estimation is a rapidly evolving field, and since the submission of this paper, state-of-the-art methods in the area have changed multiple times. Though unlikely to significantly alter the effectiveness of a technique such as this there is now a new state-of-the-art human body shape model (STAR) [[11](https://arxiv.org/pdf/2008.08535.pdf)]. There have also been a couple state-of-the-art temporal shape and pose estimation methods which include the optimization procedure into the 2D pose estimator deep neural network, i.e. SPIN (SMPL oPtimization IN the loop) [[13](https://arxiv.org/pdf/1909.12828.pdf)], and VIBE (Video Inference for Human Body Pose and Shape Estimation) [[14](https://arxiv.org/pdf/1912.05656.pdf)]. Similar to this study by Schachner et al. (2020), VIBE includes a temporal aspect which improves their predictions. It reasonable to speculate that a simialar approach to the one taken in this study with the optimization procedure included 'in the loop' along with the 2D pose estimator may achieve a more accurate and automatic results. 
 
-More generally, this study demonstrates the importance of task specific approaches, i.e. making adaptations to existing deep learning techniques before applying them to defined tasks.
+More generally, this study demonstrates the importance of task specific approaches, i.e. making adaptations to existing deep learning techniques before applying them to defined tasks. This method overcomes a task specific issue relating to the penalisation of unnatural poses in other 3D pose estimation methods. However, the study also highlights the difficulties in obtaining sufficient quality in-the-wild footage, due to occlusions, low lighting conditions, low spatial resolution (image/video quality), or low temporal resolution (framerate).
 
-ADD INFO ON POSSIBLE IMPROVEMENTS AND FUTURE DIRECTIONS
-i.e. add context information for VIBE (SMPL - SMPLify - SPIN - VIBE & AMASS - STAR - Graph-CMR) to the DL-MoCap post. Mention that improvements and a more automatic procedure may be achieved using SPIN or VIBE (which may be further improved using STAR in place of SMPL). Mention that the SOTA changes so rapidly (twice or 3 times since this paper was submitted).
 
-h36m dataset only contains natural poses?
+
 
 
