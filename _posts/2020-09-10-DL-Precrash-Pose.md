@@ -63,19 +63,19 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 6) SMPL joints do not represent the human skeleton , i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system used in the optimization procedure were defined to best approximate the recommendations of the International Society of Biomechanics (ISB) [[8](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [9](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
 
 <p align="center">
-  <img src="/assets/images/SMPLjoints.PNG" width="500">
+  <img src="/assets/images/SMPLjoints.PNG" width="400">
 </p>
 
 <p align="center">
-  <img src="/assets/images/ISBApproximations.PNG" width="500">
+  <img src="/assets/images/ISBApproximations.PNG" width="400">
 </p>
 
 7) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when they impacted, the results may be conservative for frames in the impact phase i.e. predict less realistic poses in the impact phase. For this reason the weighting factors for pose and shape terms in the optimization were relaxed in the final iterations of the optimization procedure, in effect allowing for less natural poses.
 
-The optimization weights were determined using a commonly used and publicly available motion capture dataset, i.e., the Human3.6M dataset [[10](hhttp://vision.imar.ro/human3.6m/description.php)]. 
+The optimization weights were determined using a commonly used and publicly available motion capture dataset, i.e., Human3.6M [[10](hhttp://vision.imar.ro/human3.6m/description.php)]. 
 
 <p align="center">
-  <img src="/assets/images/h36mVsSMPL.png" width="500">
+  <img src="/assets/images/h36mVsSMPL.png" width="400">
 </p>
 
 MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for bencmark tests in 3D human pose estimation, i.e. the mean of per joint position error (euclidian distance from ground truth) for all joints.
