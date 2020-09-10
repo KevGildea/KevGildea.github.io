@@ -59,7 +59,7 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 
 ![](/assets/images/SMPLifyAdaptations.png)
 
-6) SMPL joints do not represent the human skeleton , i.e., in SMPL the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system used in the optimization procedure were defined to best approximate the recommendations of the International Society of Biomechanics (ISB) [[8](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [9](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
+6) SMPL joints do not represent the human skeleton , i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system used in the optimization procedure were defined to best approximate the recommendations of the International Society of Biomechanics (ISB) [[8](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [9](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
 
 <p align="center">
   <img src="/assets/images/SMPLjoints.PNG" width="500">
