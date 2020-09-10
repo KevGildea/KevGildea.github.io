@@ -1,6 +1,6 @@
 ---
 title: "A novel deep learning based approach to characterising pedestrian pre-crash posture"
-date: 2020-09-13
+date: 2020-09-10
 categories:
   - blog
 
