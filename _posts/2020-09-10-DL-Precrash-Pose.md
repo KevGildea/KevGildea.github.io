@@ -67,7 +67,7 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 </p>
 
 <p align="center">
-  <img src="/assets/images/ISBApproximations.PNG" width="400">
+  <img src="/assets/images/ISBApproximations.PNG" width="500">
 </p>
 
 7) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when they impacted, the results may be conservative for frames in the impact phase i.e. predict less realistic poses in the impact phase. For this reason the weighting factors for pose and shape terms in the optimization were relaxed in the final iterations of the optimization procedure, in effect allowing for less natural poses.
