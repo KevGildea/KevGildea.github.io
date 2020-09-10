@@ -67,7 +67,7 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 </p>
 
 
-The optimization weights were determined using a commonly used and publicly available motion capture dataset, i.e., Human3.6M [[10](http://vision.imar.ro/human3.6m/description.php)]. 
+The optimization weights were determined using a commonly used and publicly available motion capture dataset, i.e., Human3.6M [[8](http://vision.imar.ro/human3.6m/description.php)]. 
 
 <p align="center">
   <img src="/assets/images/h36mVsSMPL.png" width="400">
@@ -81,7 +81,7 @@ MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for be
 
 However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., some obviously different poses can have misleadlingly low values of MPJPE. For this reason the autrhors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
 
-SMPL joints do not represent the human skeleton , i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system was revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[8](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [9](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
+SMPL joints do not represent the human skeleton , i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system was revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[9](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [10](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
 
 <p align="center">
   <img src="/assets/images/SMPLjoints.PNG" width="400">
