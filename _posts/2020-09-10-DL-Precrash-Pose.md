@@ -60,17 +60,7 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 
 ![](/assets/images/SMPLifyAdaptations.png)
 
-6) SMPL joints do not represent the human skeleton , i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system used in the optimization procedure were defined to best approximate the recommendations of the International Society of Biomechanics (ISB) [[8](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [9](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
-
-<p align="center">
-  <img src="/assets/images/SMPLjoints.PNG" width="400">
-</p>
-
-<p align="center">
-  <img src="/assets/images/ISBApproximations.PNG" width="500">
-</p>
-
-7) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when a pedestrian is impacted by a car, the results may be conservative for frames in the impact phase i.e. predict less realistic poses. For this reason the weighting factors for the pose and shape terms in the optimization were relaxed in the final 100 (out of 1000) iterations of the procedure, in effect allowing for less natural poses upon impact.
+6) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when a pedestrian is impacted by a car, the results may be conservative for frames in the impact phase i.e. predict less realistic poses. For this reason the weighting factors for the pose and shape terms in the optimization were relaxed in the final 100 (out of 1000) iterations of the procedure, in effect allowing for less natural poses upon impact.
 
 <p align="center">
   <img src="/assets/images/Ped-Pose-Config.PNG" width="500">
@@ -90,6 +80,17 @@ MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for be
 </p>
 
 However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., some obviously different poses can have misleadlingly low values of MPJPE. For this reason the autrhors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
+
+SMPL joints do not represent the human skeleton , i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system was revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[8](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [9](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
+
+<p align="center">
+  <img src="/assets/images/SMPLjoints.PNG" width="400">
+</p>
+
+<p align="center">
+  <img src="/assets/images/ISBApproximations.PNG" width="500">
+</p>
+
 
 
 #### Discussion
