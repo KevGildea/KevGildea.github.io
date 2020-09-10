@@ -50,9 +50,11 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 3. three adaptations are made to the SMPLify optimization procedure: 
    - the shape coefficients  are optimised globally over all images in a sequence leading up to the impact.
    - temporal information has been included an error term to be minimized i.e. the sum of joint distances across adjacent frames.
-   - the interpenetration term (Pose prior 3) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[1](https://arxiv.org/abs/1901.08274)].
+   - the interpenetration term (Pose prior 3) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[7](https://arxiv.org/abs/1901.08274)].
 
 ![](/assets/images/SMPLifyAdaptations.png)
+
+ADD INFO HOW CERTAIN WEIGHTING FACTORS WERE RELAXED IN THE LAST FEW FRAMES
 
 ADD JOINT CONVENTIONS INFO HERE
 
