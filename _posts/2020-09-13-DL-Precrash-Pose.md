@@ -45,6 +45,7 @@ The value of this study lies in its adaptations to an existing shape estimation 
 ![](/assets/images/Ped-Pose-Pred.png)
 
 As context, SMPLify fits the a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It achieves this by employing an optimization procedure with an objective function containing five error terms. The current study effectively uses SMPLify, with six adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
+
 1) the 2D pose estimates are inferred using Openpose [[6](https://arxiv.org/abs/1812.08008)], which outperforms DeepCut. 
 2) 2D estimates are manually improved on visual inspection.
 
