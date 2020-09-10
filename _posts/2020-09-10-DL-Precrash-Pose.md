@@ -81,7 +81,7 @@ The optimization weights were determined using a commonly used and publicly avai
 MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for bencmark tests in 3D human pose estimation, i.e. the mean of per joint position error (euclidian distance from ground truth) for all joints.
 
 <p align="center">
-  <img src="/assets/images/MPJPE.png" width="200">
+  <img src="/assets/images/MPJPE.png" width="350">
 </p>
 
 
