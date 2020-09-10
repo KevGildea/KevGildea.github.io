@@ -38,73 +38,34 @@ However, it is known that pedestrians exhibit certain reactionary postures and m
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](/assets/images/Ped-Pose-Jump.png)  |  ![](/assets/images/Ped-Pose-Avoid.png)  |  ![](/assets/images/Ped-Pose-Freeze.png)
 
+#### Methodology
+
 The value of this study lies in its adaptations to an existing shape estimation method called SMPLify [[3](http://files.is.tue.mpg.de/black/papers/BogoECCV2016.pdf)] to create a toolchain. SMPLify is an optimization approach that allows for 3D body pose and shape estimates to be made from a single input image with 2D pose estimates as input. 
 
 ![](/assets/images/Ped-Pose-Pred.png)
 
-As context, SMPLify fits the a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It achieves this by employing an optimization proceedure with an objective function containing five error terms: 
-1. a joint-based data term.
-2. pose prior 1.
-3. pose prior 2.
-4. pose prior 3.
-5. a shape prior.
-
-![](/assets/images/SMPLify.png)
-
-This study effectively uses SMPLify, with three adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
+As context, SMPLify fits the a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It achieves this by employing an optimization proceedure with an objective function containing five error terms. The current study effectively uses SMPLify, with five adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
 1. the 2D pose estimates are inferred using Openpose [[6](https://arxiv.org/abs/1812.08008)], which outperforms DeepCut. 
 2. 2D estimates are manually improved on visual inspection.
-3. there are terms added to the optimization procedure.
+3. three adaptations are made to the SMPLify optimization procedure: 
+   - the shape coefficients  are optimised globally over all images in a sequence leading up to the impact.
+   - temporal information has been included an error term to be minimized i.e. the sum of joint distances across adjacent frames.
+   - the interpenetration term (Pose prior 3) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[1](https://arxiv.org/abs/1901.08274)].
+
+![](/assets/images/SMPLifyAdaptations.png)
+
+ADD JOINT CONVENTIONS INFO HERE
+
+Overcoming problems associated with MPJPE (use of joint angles)
 
 
+#### Discussion
 
-- ADD a figure of the error term formula highlighting what is new and what is from SMPLify
-
-
-
-This method improves on all previous attempts in quantitatively characterising pre-impact pedestrian pose, which relied on visual inspections of crash footage [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/), [2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)], and may be a step towards a fully automated toolchain.
-
-
-
-
-
-
-ADD: gif of inference of myself using this method
-
-  - custom joint optimization approach used
-  - overcoming problems associated with MPJPE (use of joint angles)
-
-
-
-
-
-- Results
-  - describe the resulting dataset
-
-
-
-- Discussion
-  - importance of this study in the field of accident reconstruction
-Studies like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing.
-
-
-  - relevance to integrated safety systems
-Though the system is not automatic and requires some manual annotation, this technique may be a valuable first step towards an integrated pedestrian safety system involving tailored bonnet deployment systems,
-file:///D:/Collision_render/Camera1/DPPS-1-09e.pdf
-https://www.youtube.com/watch?v=h8as10paBy0
-or .....
-
-
-  - importance of this study towards automatic DL based whole collison reconstruction
+This method improves on all previous attempts in quantitatively characterising pre-impact pedestrian pose, which relied on visual inspections of crash footage [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/), [2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)], and may be a step towards a fully automated toolchain. Studies like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing. Though the system is not automatic and requires some manual annotation, this technique may be a valuable first step towards an integrated pedestrian safety system involving tailored bonnet deployment systems (GIVE EXAMPLES AND GIFS)
 
 This study demonstrates the importance of adaptations on deep learning approached in task specific approaches.
 
-  - possible improvements
+ADD INFOR ON POSSIBLE IMPROVEMENTS AND FUTURE DIRECTIONS
 Add context information for VIBE (SMPL - SMPLify - SPIN - VIBE & AMASS - STAR - Graph-CMR) to the DL-MoCap post. Mention that improvements and a more automatic proceedure may be achieved using SPIN or VIBE (which may be further improved using STAR in place of SMPL). Mention that the SOTA changes so rapidly (twice or 3 times since this paper was submitted).
-
-
-
-
-#### XXX
 
 
