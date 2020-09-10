@@ -17,7 +17,7 @@ This is a review of a paper recently published in and presented at IRCOBI Europe
 
 >['Extracting Quantitative Descriptions of Pedestrian Pre-crash Postures from Real-world Accident
 Videos
-, M. Schachner et al. (2020)'](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)
+, M. Schachner et al. (2020)'](http://www.ircobi.org/wordpress/downloads/irc20/pdf-files/37.pdf)
 
 Firstly for some context, let me tell you a little about the background of vehicle safety systems. They can be classified as being 'active', 'passive', or a combination of the two. Active safety systems are onboard electronic devices that are continuously 'active' and monitoring to avoid collision occurence, e.g. traction control, automatic emergency braking, blind spot detection. Whereas, passive safety systems are design features or devices that are generally inactive, only taking effect upon collision occurence to reduce injury outcomes, e.g. helmets, seat belts, air bags, vehicle/infrastructural design (softer/energy dissapating impact surfaces). Integrated safety systems are a combination of the two, where there is an elmement of continuous monitoring with informs the deployment of a passive safety system, e.g. advanced airbag deployment systems.
 
