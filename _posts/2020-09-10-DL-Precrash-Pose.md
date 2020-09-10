@@ -40,13 +40,14 @@ However, it is known that pedestrians exhibit certain reactionary postures and m
 
 #### Methodology
 
-The value of this study lies in its adaptations to an existing shape estimation method called SMPLify [[3](http://files.is.tue.mpg.de/black/papers/BogoECCV2016.pdf)] to create a toolchain. SMPLify is an optimization approach that allows for 3D body pose and shape estimates to be made from a single input image with 2D pose estimates as input. 
+The value of this study lies in its adaptations to an existing pose/shape estimation method called SMPLify [[3](http://files.is.tue.mpg.de/black/papers/BogoECCV2016.pdf)] to create a toolchain. 
 
 ![](/assets/images/Ped-Pose-Pred.png)
 
-As context, SMPLify fits the a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It achieves this by employing an optimization procedure with an objective function containing five error terms. The current study effectively uses SMPLify, with six adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
+For context, SMPLify fits the a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It achieves this by employing an optimization procedure with an objective function containing five error terms. The current study effectively uses SMPLify, with six adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
 
 1) The 2D pose estimates are inferred using Openpose [[6](https://arxiv.org/abs/1812.08008)], which outperforms DeepCut. 
+
 2) 2D estimates are manually improved on visual inspection.
 
 <p align="center">
@@ -54,13 +55,13 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
 </p>
 
 3) 4) & 5) Three adaptations are made to the SMPLify optimization procedure: 
-   - the shape coefficients  are optimised globally over all images in a sequence leading up to the impact.
-   - temporal information has been included an error term to be minimized i.e. the sum of joint distances across adjacent frames.
-   - the interpenetration term (Pose prior 3) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[7](https://arxiv.org/abs/1901.08274)].
+   - The shape coefficients  are optimised globally over all images in a sequence leading up to the impact.
+   - Temporal information has been included an error term to be minimized i.e. the sum of joint distances across adjacent frames.
+   - The interpenetration term (Pose prior 3) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[7](https://arxiv.org/abs/1901.08274)].
 
 ![](/assets/images/SMPLifyAdaptations.png)
 
-6) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when a pedestrian is impacted by a car, the results may be conservative for frames in the impact phase i.e. predict less realistic poses. For this reason the weighting factors for the pose and shape terms in the optimization were relaxed in the final 100 (out of 1000) iterations of the procedure, in effect allowing for less natural poses upon impact.
+6) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and mesh interpenetrations, which are likely to occur when a pedestrian is impacted by a car, the results may be conservative for frames in the impact phase i.e. predict less realistic poses. For this reason the weighting factors for the pose and shape terms were relaxed in the final 100 (out of 1000) iterations of the optimization procedure, effectively allowing for less natural poses upon impact.
 
 <p align="center">
   <img src="/assets/images/Ped-Pose-Config.PNG" width="500">
@@ -95,11 +96,11 @@ SMPL joints do not represent the human skeleton , i.e., the joint locations are 
 
 #### Discussion
 
-This method improves on all previous attempts to quantitatively characterise pre-impact pedestrian pose, which relied on either volunteer test in simulated environments [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/)], or  visual inspection of crash footage [[2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)]. This method overcomes a task specific issue relating to the penalisation of unnatural poses in other 3D pose estimation methods. Approaches like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing. Though the system is not automatic and requires some manual annotation, this may be a step towards a fully automated toolchain. This technique may also be a first step towards integrated pedestrian safety systems e.g. pose dependent bonnet deployment systems.
+This method improves on all previous attempts to quantitatively characterise pre-impact pedestrian pose, which relied on either volunteer test in simulated environments [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/)], or  visual inspection of crash footage [[2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)]. This method also  overcomes a task specific issue for traumatic injury biomechanics relating to the penalisation of unnatural poses in other 3D pose/shape estimation methods. Approaches like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing. Though the system is not automatic and requires some manual annotation, this may be a step towards a fully automated toolchain. This technique may also be a first step towards integrated pedestrian safety systems e.g. pose dependent bonnet deployment systems.
 
-3D pose and shape estimation is a rapidly evolving field, and since the submission of this paper, state-of-the-art methods in the area have changed multiple times. Though unlikely to significantly alter the effectiveness of a technique such as this there is now a new state-of-the-art statistical human body shape model (STAR) [[11](https://arxiv.org/pdf/2008.08535.pdf)], which is intended as a replacement for SMPL. There have also been a couple of changes in state-of-the-art for pose and shape estimation, both of which have included the optimization procedure into the 2D pose estimator's deep neural network, i.e. SPIN (SMPL oPtimization IN the loop) [[13](https://arxiv.org/pdf/1909.12828.pdf)], and VIBE (Video Inference for Human Body Pose and Shape Estimation) [[14](https://arxiv.org/pdf/1912.05656.pdf)]. Similar to this study by Schachner et al. (2020), VIBE includes a temporal aspect which improves their predictions. It reasonable to speculate that a simialar approach to the one taken in this study with the optimization procedure included 'in the loop' along with the 2D pose estimator may achieve more accurate and automatic results. 
+3D pose and shape estimation is a rapidly evolving field, and since the submission of this paper, state-of-the-art methods in the area have changed multiple times. Though unlikely to significantly alter the effectiveness of a technique such as this, there is now a new state-of-the-art statistical human body shape model (STAR) [[11](https://arxiv.org/pdf/2008.08535.pdf)], which is intended as a replacement for SMPL. There have also been a couple of changes in state-of-the-art for pose and shape estimation, both of which have included the optimization procedure into the 2D pose estimator's deep neural network, i.e. SPIN (SMPL oPtimization IN the loop) [[13](https://arxiv.org/pdf/1909.12828.pdf)], and VIBE (Video Inference for Human Body Pose and Shape Estimation) [[14](https://arxiv.org/pdf/1912.05656.pdf)]. Similar to this study by Schachner et al. (2020), VIBE includes a temporal aspect which improves their predictions. It reasonable to speculate that a simialar approach with the optimization procedure included 'in the loop' along with the 2D pose estimator may achieve more accurate and automatic results for pedestrian pre-crash pose. 
 
-More generally, this study demonstrates the importance of task specific approaches, i.e. making adaptations to existing deep learning techniques before applying them to defined tasks. The study also highlights the difficulties in obtaining sufficient quality in-the-wild footage, due to occlusions, low lighting conditions, low spatial resolution (image/video quality), or low temporal resolution (framerate).
+More generally, this study demonstrates the importance of task specific approaches, i.e. making adaptations to existing deep learning techniques when applying them to defined tasks. The study also highlights the difficulties in obtaining sufficient quality in-the-wild footage, due to occlusions, low lighting conditions, low spatial resolution (image/video quality), or low temporal resolution (framerate).
 
 
 
