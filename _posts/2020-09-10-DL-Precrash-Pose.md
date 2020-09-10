@@ -70,7 +70,12 @@ As context, SMPLify fits the a statistical human body model called SMPL [[4](htt
   <img src="/assets/images/ISBApproximations.PNG" width="500">
 </p>
 
-7) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when they impacted, the results may be conservative for frames in the impact phase i.e. predict less realistic poses in the impact phase. For this reason the weighting factors for pose and shape terms in the optimization were relaxed in the final iterations of the optimization procedure, in effect allowing for less natural poses.
+7) Since the pose prior terms of the optimization procedure penalize unnatural human poses, and interpenetrations, which are likely to occur when they impacted, the results may be conservative for frames in the impact phase i.e. predict less realistic poses in the impact phase. For this reason the weighting factors for pose and shape terms in the optimization were relaxed in the final 100 (out of 1000) iterations of the optimization procedure, in effect allowing for less natural poses upon impact.
+
+<p align="center">
+  <img src="/assets/images/Ped-Pose-Config.png" width="500">
+</p>
+
 
 The optimization weights were determined using a commonly used and publicly available motion capture dataset, i.e., Human3.6M [[10](http://vision.imar.ro/human3.6m/description.php)]. 
 
@@ -84,8 +89,9 @@ MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for be
   <img src="/assets/images/MPJPE.png" width="350">
 </p>
 
+However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., certain incomparible poses when compared can have misleadlingly low values of MPJPE. For this reason the autrhors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
 
-Overcoming problems associated with MPJPE (use of joint angles)
+
 
 
 #### Discussion
