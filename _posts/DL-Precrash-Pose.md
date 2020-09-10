@@ -13,7 +13,7 @@ tags:
   - Injury biomechanics
 ---
 
-This is a review of a paper recently published in and presented at IRCOBI Europe 2020 (International Research Council on Injury Biomechanics). The study involves applying deep learning approaches to the task of classifying pedestrian pre-crash pose. This paper is exciting for a number of reasons, primarily due to the fact that this is the first published attempt to use pose and shape estimation in the field of traumatic injury biomechanics.
+This is a review of a paper recently published in and presented at IRCOBI Europe 2020 (International Research Council on Injury Biomechanics). The study involves applying deep learning approaches to the task of classifying pedestrian pre-crash pose. This paper is exciting for a number of reasons; primarily due to the fact that this is the first published attempt to use pose and shape estimation in the field of traumatic injury biomechanics, but also the tailored approach they use with existing pose/shape estimation method to achieve more accurate predictions for the task.
 
 >['Extracting Quantitative Descriptions of Pedestrian Pre-crash Postures from Real-world Accident
 Videos
@@ -95,6 +95,7 @@ or .....
 
   - importance of this study towards automatic DL based whole collison reconstruction
 
+This study demonstrates the importance of adaptations on deep learning approached in task specific approaches.
 
   - possible improvements
 Add context information for VIBE (SMPL - SMPLify - SPIN - VIBE & AMASS - STAR - Graph-CMR) to the DL-MoCap post. Mention that improvements and a more automatic proceedure may be achieved using SPIN or VIBE (which may be further improved using STAR in place of SMPL). Mention that the SOTA changes so rapidly (twice or 3 times since this paper was submitted).
