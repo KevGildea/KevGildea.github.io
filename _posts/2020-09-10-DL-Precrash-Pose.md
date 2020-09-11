@@ -55,7 +55,7 @@ For context, SMPLify fits a statistical human body model called SMPL [[4](http:/
 </p>
 
 3) 4) & 5) Three adaptations are made to the SMPLify optimization procedure: 
-   - The shape coefficients (*β) are optimised globally over all images in a sequence leading up to the impact.
+   - The shape coefficients (*β*) are optimised globally over all images in a sequence leading up to the impact.
    - Temporal information has been included an error term to be minimized (*E<sub>fr</sub>*) i.e. the sum of joint distances across adjacent frames.
    - The interpenetration term (*E<sub>sp</sub>*) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[7](https://arxiv.org/abs/1901.08274)].
 
