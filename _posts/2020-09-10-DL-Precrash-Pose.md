@@ -55,7 +55,7 @@ For context, SMPLify fits a statistical human body model called SMPL [[4](http:/
 </p>
 
 3) 4) & 5) Three adaptations are made to the SMPLify optimization procedure: 
-   - The shape coefficients (*\beta*) are optimised globally over all images in a sequence leading up to the impact.
+   - The shape coefficients (\*beta*) are optimised globally over all images in a sequence leading up to the impact.
    - Temporal information has been included an error term to be minimized (*E<sub>fr</sub>*) i.e. the sum of joint distances across adjacent frames.
    - The interpenetration term (*E<sub>sp</sub>*) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[7](https://arxiv.org/abs/1901.08274)].
 
@@ -80,9 +80,9 @@ MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for be
   <img src="/assets/images/MPJPE.png" width="350">
 </p>
 
-However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., some obviously different poses can have misleadlingly low values of MPJPE. For this reason the authors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
+However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., some obviously different poses can have misleadingly low values of MPJPE. So, the authors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
 
-SMPL joints do not represent the human skeleton , i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system was revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[9](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [10](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
+SMPL joints do not represent the human skeleton, i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system was revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[9](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [10](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
 
 <p align="center">
   <img src="/assets/images/SMPLjoints.PNG" width="400">
@@ -96,7 +96,7 @@ SMPL joints do not represent the human skeleton , i.e., the joint locations are 
 
 #### Discussion
 
-This method improves on all previous attempts to quantitatively characterise pre-impact pedestrian pose, which relied on either volunteer test in simulated environments [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/)], or  visual inspection of crash footage [[2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)]. This method also  overcomes a task specific issue for traumatic injury biomechanics relating to the penalisation of unnatural poses in other 3D pose/shape estimation methods. Approaches like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing. Though the system is not automatic and requires some manual annotation, this may be a step towards a fully automated toolchain. This technique may also be a first step towards integrated pedestrian safety systems e.g. pose dependent bonnet deployment/active hood systems, or external airbag systems.
+This method improves on all previous attempts to quantitatively characterise pre-impact pedestrian pose, which relied on either volunteer test in simulated environments [[1](https://pubmed.ncbi.nlm.nih.gov/24435730/)], or  visual inspection of crash footage [[2](http://www.ircobi.org/wordpress/downloads/irc17/pdf-files/26.pdf)]. This method also  overcomes a task specific issue for traumatic injury biomechanics relating to the penalisation of unnatural poses. Approaches like this may help guide changes to the boundary conditions of vehicle safety assesment tests, i.e., provide more representative postures for vehicle type-testing. Though the system is not automatic and requires some manual annotation, this may be a step towards a fully automated toolchain. This technique may also be a first step towards integrated pedestrian safety systems e.g. pose dependent bonnet deployment/active hood systems, or external airbag systems.
 
 <p align="center">
   <img src="/assets/images/ActiveHood.gif" width="500">
