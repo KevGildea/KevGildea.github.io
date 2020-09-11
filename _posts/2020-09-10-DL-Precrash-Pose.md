@@ -44,7 +44,7 @@ The value of this study lies in its adaptations to an existing pose/shape estima
 
 ![](/assets/images/Ped-Pose-Pred.png)
 
-For context, SMPLify fits the a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It achieves this by employing an optimization procedure with an objective function containing five error terms. The current study effectively uses SMPLify, with six adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
+For context, SMPLify fits a statistical human body model called SMPL [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)] to an image with DeepCut 2D pose estimates as input [[5](https://pose.mpi-inf.mpg.de/contents/pishchulin16cvpr.pdf)]. It does this by using an optimization procedure with an objective function containing five error terms. The current study uses SMPLify, with six adaptations to improve pose and shape estimation results for pedestrian pre-crash posture:
 
 1) The 2D pose estimates are inferred using Openpose [[6](https://arxiv.org/abs/1812.08008)], which outperforms DeepCut. 
 
@@ -55,9 +55,9 @@ For context, SMPLify fits the a statistical human body model called SMPL [[4](ht
 </p>
 
 3) 4) & 5) Three adaptations are made to the SMPLify optimization procedure: 
-   - The shape coefficients  are optimised globally over all images in a sequence leading up to the impact.
-   - Temporal information has been included an error term to be minimized i.e. the sum of joint distances across adjacent frames.
-   - The interpenetration term (Pose prior 3) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[7](https://arxiv.org/abs/1901.08274)].
+   - The shape coefficients (*\beta*) are optimised globally over all images in a sequence leading up to the impact.
+   - Temporal information has been included an error term to be minimized (*E<sub>fr</sub>*) i.e. the sum of joint distances across adjacent frames.
+   - The interpenetration term (*E<sub>sp</sub>*) is replaced with a more recent approach which uses rays to detect self-intersection of outer surfaces of the mesh [[7](https://arxiv.org/abs/1901.08274)].
 
 ![](/assets/images/SMPLifyAdaptations.png)
 
