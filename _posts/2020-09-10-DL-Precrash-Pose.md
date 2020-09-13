@@ -91,7 +91,7 @@ SMPL joints do not represent the human skeleton, i.e., the joint locations are e
   <img src="/assets/images/ISBApproximations.PNG" width="500">
 </p>
 
-The table above shows how each joint's local coordinate system is defined relative to surrounding vectors. For example, the coordinate system of the left hip is defined using two vectors: 1) the vector between *J<sub>4</sub>* and *J<sub>1</sub>* (correcponding to the femur), and 2) the vector between *J<sub>1</sub>* and *J<sub>2</sub>*. Then the local *x*-axis is defined as being in the direction of the cross product of the former and the latter, and the local y axis defined as being in the direction of the femur (upwards).
+The table above shows how each joint's local coordinate system is defined relative to surrounding vectors. For example, the coordinate system of the left hip is defined using two vectors: 1) the vector between *J<sub>4</sub>* and *J<sub>1</sub>* (correcponding to the femur), and 2) the vector between *J<sub>1</sub>* and *J<sub>2</sub>*. Then the local *x*-axis is defined as being in the direction of the cross product of the former and the latter (i.e. perpindicular to the plane that they form), and the local y axis defined as being in the direction of the femur (upwards).
 
 #### Discussion
 
