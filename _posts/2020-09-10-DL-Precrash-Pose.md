@@ -79,7 +79,7 @@ MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for be
   <img src="/assets/images/MPJPE.png" width="350">
 </p>
 
-However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., some obviously different poses can have misleadingly low values of MPJPE. So, the authors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing. In reporting, joint angles were revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[9](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [10](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
+However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., some obviously different poses can have misleadingly low values of MPJPE. So, the authors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing. 
 
 <p align="center">
   <img src="/assets/images/SMPLjoints.PNG" width="400">
@@ -89,7 +89,7 @@ However, the authors claim that the this metric has limitations, and that in som
   <img src="/assets/images/ISBApproximations.PNG" width="500">
 </p>
 
-The table above shows how each joint's local coordinate system was defined relative to surrounding vectors. For example, the coordinate system of the left hip is defined using two vectors: 1) the vector between *J<sub>4</sub>* and *J<sub>1</sub>* (corresponding to the femur), and 2) the vector between *J<sub>1</sub>* and *J<sub>2</sub>*. Then the local *x*-axis is defined as being in the direction of the cross product of the former and the latter (i.e. rerwards, perpindicular to the plane that the two vectors form), and the local y axis defined as being in the direction of the femur (upwards).
+In reporting, joint angles were revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[9](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [10](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)]. The table above shows how each joint's local coordinate system was defined relative to surrounding vectors. For example, the coordinate system of the left hip is defined using two vectors: 1) the vector between *J<sub>4</sub>* and *J<sub>1</sub>* (corresponding to the femur), and 2) the vector between *J<sub>1</sub>* and *J<sub>2</sub>*. Then the local *x*-axis is defined as being in the direction of the cross product of the former and the latter (i.e. rerwards, perpindicular to the plane that the two vectors form), and the local y axis defined as being in the direction of the femur (upwards).
 
 #### Discussion
 
