@@ -81,7 +81,7 @@ MPJPE or 'Mean Per Joint Position Error' is the most commonly used metric for be
 
 However, the authors claim that the this metric has limitations, and that in some cases there can be low errors for incomparible poses, i.e., some obviously different poses can have misleadingly low values of MPJPE. So, the authors also investigate elbow and knee angles. Configuration 1 above was selected as having the best overall performance in testing.
 
-SMPL joints do not represent the human skeleton, i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason the joint system was revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[9](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [10](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
+SMPL joints do not represent the human skeleton, i.e., the joint locations are estimated based on a regressor that predicts the location of the joints as a function of the body shape [[4](http://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)]. For this reason, in reporting of the joint system was revised to best approximate the recommendations of the International Society of Biomechanics (ISB) [[9](https://www.sciencedirect.com/science/article/abs/pii/S0021929001002226), [10](https://www.sciencedirect.com/science/article/abs/pii/S002192900400301X)].
 
 <p align="center">
   <img src="/assets/images/SMPLjoints.PNG" width="400">
@@ -91,7 +91,7 @@ SMPL joints do not represent the human skeleton, i.e., the joint locations are e
   <img src="/assets/images/ISBApproximations.PNG" width="500">
 </p>
 
-
+The table above shows how each joint's local coordinate system is defined relative to surrounding vectors. For example, the coordinate system of the left hip is defined using two vectors: 1) the vector between joint 4 and joint 1 (correcponding to the femur), and 2) the vector between joint 1 and joint 2. Then the local x-axis is defined as being in the direction of the cross product of the former and the latter (*J<sub>4</sub>J<sub>1</sub>*)
 
 #### Discussion
 
