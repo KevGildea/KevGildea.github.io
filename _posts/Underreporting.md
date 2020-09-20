@@ -15,7 +15,7 @@ tags:
 It is well documented that cycling collisions are underreported in Police data both internationally (Department for Transport, 2017; International Transport Forum, 2013; Madsen et al., 2018; Rizzi et al., 2013; Shinar et al., 2018; Watson et al., 2015) and in Ireland (Bedford et al., 2011; Foley et al., 2016; Short and Caulfield, 2014). Using probabilistically matched Police and hospital data, Short and Caulfield (2014) estimated that there are roughly 6 times as many cyclist injuries than recorded in Police statistics (reporting rate of roughly 17%)
 
 <p align="center">
-  <img src="/assets/images/underreporting.gif" width="500">
+  <img src="/assets/images/underreporting.gif" width="700">
 </p>
 
 It is known that collisions where a motorised vehicle is not involved as a collision partner i.e. single cyclist, cyclist-pedestrian or cyclist-cyclist collisions have lower odds of being reported to the Police (International Transport Forum, 2013; Rizzi et al., 2013; Shinar et al., 2018). The biased nature of cyclist collision reporting has clear implications for policy makers and road safety researchers, who generally rely on Police data to determine road safety priorities.
