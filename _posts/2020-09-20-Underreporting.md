@@ -17,7 +17,6 @@ It is well documented that cycling collisions are underreported in Police data b
 <p align="center">
   <img src="/assets/images/underreporting.gif" width="700">
 </p>
-
 It is known that collisions where a motorised vehicle is not involved as a collision partner i.e. single cyclist, cyclist-pedestrian or cyclist-cyclist collisions have lower odds of being reported to the Police (International Transport Forum, 2013; Rizzi et al., 2013; Shinar et al., 2018). The biased nature of cyclist collision reporting has clear implications for policy makers and road safety researchers, who generally rely on Police data to determine road safety priorities.
 
 IMAGE WITH REPRESENTATIONS OF THE KINDS OF COLLISIONS THAT ARE UNDERREPORTED
