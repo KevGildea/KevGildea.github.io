@@ -1,7 +1,7 @@
 
 Pages to add: 
 
-1. 4B17 teaching and multibody dynamics (Brief introduction and videos)
+1. 4B17 teaching and multibody dynamics (Brief introduction and prezi slides: https://prezi.github.io/prezi-player/demo/PreziPlayer/multiple_players_with_jQuery/)
   - 3D rotations (basis vectors and formulation of a rotation matrix) -> Euler angles, Quaternion representation
   - Kinematic Differential Equations
   - Inertia, Kinetic Energy, and angular momentum
