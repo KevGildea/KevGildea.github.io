@@ -27,7 +27,7 @@ Firstly, the study highlights a large amount of underreporting for cyclist colli
 This is a tricky issue. Some countries systematically link their Police and hospital data (e.g. Sweden). Our study indicates that combined monitoring of Garda and hospital data may be effective for monitoring Serious injury collisions, however, they would not effectively capture Minor injury collisions. Our results indicate that roughly 80% of Minor injuries would not be tracked. For these we must make it easier for road users to self-report their collisions, possibly via an online platform. For example, in the Metropolitan Police in London have an online platform for reporting collisions (https://www.met.police.uk/). Another option would be to include a module on road traffic collisions in the Irish National Travel Survey.
 
 <p align="center">
-  <img src="/assets/images/Figure3.PNG" width="400">
+  <img src="/assets/images/Figure3.PNG" width="700">
 </p>
 
 
@@ -36,7 +36,7 @@ This is a tricky issue. Some countries systematically link their Police and hosp
 We also investigated the factors that have effect on whether or not cyclist collisions are reported to the Gardaí. Our main findings here is that injury severity, and collision type have an effect. Collisions involving motorised vehicles were more likely to be reported to the Gardaí – this is evident from analyses of Garda reported data in which the majority (over 90%) involve vehicles. The results highlighted the relative importance of single cyclist collisions in particular, which comprised roughly 30% of the cases, but were much less likely to be reported to the Gardaí. Specifically, the odds of Garda reporting was 20 times greater for greater for collisions with motorised vehicles. Furthermore, Minor injuries were much less likely to be reported to the police than Serious injuries. Specifically, the odds of Garda reporting was 7 times greater for Serious injuries.
 
 <p align="center">
-  <img src="/assets/images/underreporting.gif" width="400">
+  <img src="/assets/images/underreporting.gif" width="700">
 </p>
 
 ### What are the implications?
@@ -48,6 +48,6 @@ The implications are that road safety priorities are biased towards collisions w
 We are working on this. We are currently performing a further analysis of the details of cyclist to motorised vehicle collisions and single cyclist collisions, with the inclusion of unreported collision types. Pre-crash scenarios and impact configurations for cyclist collisions with bonnet-type vehicles, and collision factors and fall types for single cyclist collisions are being coded. This analysis will provide an evidence base for road safety stakeholders, and (hopefully) lead to improvements in cycling safety in Ireland.
 
 <p align="center">
-  <img src="/assets/images/Collcoding.png" width="400">
+  <img src="/assets/images/Collcoding.png" width="500">
 </p>
 
