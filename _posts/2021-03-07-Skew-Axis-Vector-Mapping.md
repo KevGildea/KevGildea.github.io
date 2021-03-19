@@ -20,5 +20,9 @@ For example, the orientation of one coordinate system represented using basis ve
 </p>
 
 
-Euler's rotation theorem states that, in three-dimensional space, any displacement of a rigid body such that a point on the rigid body remains fixed, is equivalent to a single rotation about some axis that runs through the fixed point.
+Euler's rotation theorem states that, in three-dimensional space, any displacement of a rigid body such that a point on the rigid body remains fixed, is equivalent to a single rotation about some axis that runs through the origin of the coordinate system.
+
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig2.png" width="700">
+</p>
 
