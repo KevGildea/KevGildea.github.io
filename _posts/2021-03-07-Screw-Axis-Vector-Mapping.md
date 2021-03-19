@@ -36,7 +36,7 @@ Now, consider the case where instead of having two complete coordinate systems r
 implementation of screw axis approach:
 
 ```python
-def A21_from_vectors(vec1, vec2):
+def Vector_mapping_cross_product(vec1, vec2):
     """ Calculate the rotation matrix that maps unit vector a to align with unit vector b"""
     a, b = (vec1 / np.linalg.norm(vec1)).reshape(3), (vec2 / np.linalg.norm(vec2)).reshape(3)
     V = np.cross(a, b)
@@ -51,21 +51,33 @@ def A21_from_vectors(vec1, vec2):
 
 implementation of user-defined axis approach:
 ```python
-def A21_from_vectors(vec1, vec2):
-    """ Calculate the rotation matrix that maps unit vector a to align with unit vector b"""
+def Vector_mapping_UDaxis(vec1, vec2, axis): 
+    """ Calculate the rotation matrix that maps unit vector a to align with unit vector b along an user defined axis"""
     a, b = (vec1 / np.linalg.norm(vec1)).reshape(3), (vec2 / np.linalg.norm(vec2)).reshape(3)
-    V = np.cross(a, b)
+    V = axis
     n = (V / np.linalg.norm(V)).reshape(3)
-    adotb=np.dot(a, b)
-    rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(adotb),n[0]*n[1]*(1-adotb)-n[2]*np.linalg.norm(V),n[0]*n[2]*(1-adotb)+n[1]*np.linalg.norm(V)],
-                                [n[0]*n[1]*(1-adotb)+n[2]*np.linalg.norm(V),n[1]**2+(n[0]**2+n[2]**2)*(adotb),n[1]*n[2]*(1-adotb)-n[0]*np.linalg.norm(V)],
-                                [n[0]*n[2]*(1-adotb)-n[1]*np.linalg.norm(V),n[1]*n[2]*(1-adotb)+n[0]*np.linalg.norm(V),n[2]**2+(n[0]**2+n[1]**2)*(adotb)]])
+    # project vectors to form a cone around new axis
+    a, b = np.cross(a,n), np.cross(b,n)
+    a, b = (a / np.linalg.norm(a)).reshape(3), (b / np.linalg.norm(b)).reshape(3)
+    θ = -abs(2*np.arcsin((np.sqrt((b[0]-a[0])**2+(b[1]-a[1])**2+(b[2]-a[2])**2))/2*np.linalg.norm(b)))
+    rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(np.cos(θ)),n[0]*n[1]*(1-np.cos(θ))-n[2]*np.sin(θ),n[0]*n[2]*(1-np.cos(θ))+n[1]*np.sin(θ)],
+                                [n[0]*n[1]*(1-np.cos(θ))+n[2]*np.sin(θ),n[1]**2+(n[0]**2+n[2]**2)*(np.cos(θ)),n[1]*n[2]*(1-np.cos(θ))-n[0]*np.sin(θ)],
+                                [n[0]*n[2]*(1-np.cos(θ))-n[1]*np.sin(θ),n[1]*n[2]*(1-np.cos(θ))+n[0]*np.sin(θ),n[2]**2+(n[0]**2+n[1]**2)*(np.cos(θ))]])
 
     return rotation_matrix
 ```
 
+We can use the two points obtained from vector summation and cross product along with the origin to define the plane that contains all possible rotation axes.
 
-We can then use these two points along with the origin to define the plane that contains all possible rotation axes
+
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig4.gif" width="700">
+</p>
+
+
+
+
+
 
 
 
