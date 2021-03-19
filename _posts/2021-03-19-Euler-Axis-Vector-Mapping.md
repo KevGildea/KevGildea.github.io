@@ -33,7 +33,7 @@ Now, consider the case where instead of having two complete coordinate systems r
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig3.png" width="700">
 </p>
 
-implementation of screw axis approach:
+implementation of cross product approach:
 
 ```python
 def Vector_mapping_cross_product(vec1, vec2):
