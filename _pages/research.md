@@ -10,7 +10,7 @@ This research has the potential to significantly strengthen our understanding of
 
 
 <p align="center">
-  <img src="/assets/images/reconstruction pipeline.png" width="500">
+  <img src="/assets/images/reconstruction pipeline.png" width="700">
 </p>
 
 
