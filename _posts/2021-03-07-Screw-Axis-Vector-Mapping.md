@@ -33,6 +33,16 @@ Now, consider the case where instead of having two complete coordinate systems r
   <img src="/assets/images/Skew-Axis-Vector-Mapping/fig3.png" width="700">
 </p>
 
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig5.png" width="700">
+</p>
+
+
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig6.png" width="700">
+</p>
+
+
 implementation of screw axis approach:
 
 ```python
@@ -48,6 +58,20 @@ def Vector_mapping_cross_product(vec1, vec2):
 
     return rotation_matrix
 ```
+
+We can use the two points obtained from vector summation and cross product along with the origin to define the plane that contains all possible rotation axes.
+
+
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig4.gif" width="700">
+</p>
+
+The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle for mapping can be seen.
+
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig7.png" width="700">
+</p>
+
 
 implementation of user-defined axis approach:
 ```python
@@ -67,25 +91,22 @@ def Vector_mapping_UDaxis(vec1, vec2, axis):
     return rotation_matrix
 ```
 
-We can use the two points obtained from vector summation and cross product along with the origin to define the plane that contains all possible rotation axes.
+
+Examples of valid mapping for arbitrarily chosen axes on the plane (it works!):
+
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig8.png" width="700">
+</p>
 
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig4.gif" width="700">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig9.png" width="700">
 </p>
 
 
 
-
-
-
-
-
-
-
-
-
-
+### Implications
+With a lack of complete basis vector representation for the two coordinate systems, there are an infinite number of rotation matrices, or axis-angle combinations that can a achieve a desired vector mapping. However, here I have demonstrated that candidate Screw axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane. 
 
 
 
