@@ -16,7 +16,7 @@ For example, the orientation of one coordinate system represented using basis ve
 
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig1.png" width="1000">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig1.png" width="700">
 </p>
 
 
