@@ -33,7 +33,7 @@ Now, consider the case where instead of having two complete coordinate systems r
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig3.png" width="700">
 </p>
 
-implementation of cross product approach:
+Implementation of cross product approach:
 
 ```python
 def Vector_mapping_cross_product(vec1, vec2):
@@ -73,7 +73,7 @@ The axis-angle combination can be visualised by looking down the chosen axis to 
 </p>
 
 
-implementation of user-defined axis approach:
+Implementation of user-defined axis approach:
 ```python
 def Vector_mapping_UDaxis(vec1, vec2, axis): 
     """ Calculate the rotation matrix that maps unit vector a to align with unit vector b along an user defined axis"""
