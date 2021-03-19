@@ -16,21 +16,21 @@ For example, the orientation of one coordinate system represented using basis ve
 
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig1.png" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig1.png" width="700">
 </p>
 
 
 Euler's rotation theorem states that, in three-dimensional space, any displacement of a rigid body such that a point on the rigid body remains fixed, is equivalent to a single rotation about some axis that runs through the origin of the coordinate system. This axis is called the Euler axis, or the Screw axis.
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig2.png" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig2.png" width="700">
 </p>
 
 ### Mapping of two vectors
 Now, consider the case where instead of having two complete coordinate systems represented by basis vectors, we only have two vectors a and b, which we want to use to represent a rotation between the two coordinate systems. In this case we need to define the Screw axis about which we rotate. Two obvious candidate axes that can be chosen for this are 1) the cross product of the vectors, which will be mutually perpindicular to both a and b, or 2) the sum of the normalised vectors a and b, which symmetrically bisects a and b.
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig3.png" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig3.png" width="700">
 </p>
 
 implementation of screw axis approach:
@@ -50,12 +50,12 @@ def Vector_mapping_cross_product(vec1, vec2):
 ```
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig5.PNG" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig5.PNG" width="700">
 </p>
 
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig6.PNG" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig6.PNG" width="700">
 </p>
 
 
@@ -63,13 +63,13 @@ We can use the two points obtained from vector summation and cross product along
 
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig4.gif" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig4.gif" width="700">
 </p>
 
 The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle for mapping can be seen.
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig7.PNG" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig7.PNG" width="700">
 </p>
 
 
@@ -95,12 +95,12 @@ def Vector_mapping_UDaxis(vec1, vec2, axis):
 Examples of valid mapping for arbitrarily chosen axes on the plane (it works!):
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig8.PNG" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig8.PNG" width="700">
 </p>
 
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig9.PNG" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig9.PNG" width="700">
 </p>
 
 
