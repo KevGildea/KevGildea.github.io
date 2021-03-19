@@ -11,7 +11,7 @@ tags:
 ---
 
 ### Background
-This post requires some background knowledge of theoretical undepinnings of the 3D rotation group, or the special orthogonal group in three dimensions (i.e. SO(3)). This is an area of Linear Algebra in which special orthogonal matrices are used in three-dimensional Euclidean space. This is widely used for representing object orientations.
+This post requires some background knowledge of theoretical undepinnings of the 3D rotation group, or the special orthogonal group in three dimensions (i.e. SO(3)). This is an area of Linear Algebra in which special orthogonal matrices are used in three-dimensional Euclidean space. This group is widely used for representing object orientations.
 For example, the orientation of one coordinate system represented using basis vector e<sup>2</sup> can be represented wrt. another coordinate system e<sup>1</sup> by multiplying the latter by a 3x3 rotation matrix [A<sup>21</sup>]. If we know the orientations of both of these coordinate systems wrt. a 3<sup>rd</sup> coordinate system e<sup>0</sup>, i.e. the global coordinate system, then we can find [A<sup>21</sup>].
 
 
@@ -32,8 +32,6 @@ Now, consider the case where instead of having two complete coordinate systems r
 <p align="center">
   <img src="/assets/images/Skew-Axis-Vector-Mapping/fig3.png" width="700">
 </p>
-
-
 
 implementation of screw axis approach:
 
@@ -61,7 +59,6 @@ def Vector_mapping_cross_product(vec1, vec2):
 </p>
 
 
-
 We can use the two points obtained from vector summation and cross product along with the origin to define the plane that contains all possible rotation axes.
 
 
@@ -86,7 +83,7 @@ def Vector_mapping_UDaxis(vec1, vec2, axis):
     # project vectors to form a cone around new axis
     a, b = np.cross(a,n), np.cross(b,n)
     a, b = (a / np.linalg.norm(a)).reshape(3), (b / np.linalg.norm(b)).reshape(3)
-    θ = -abs(2*np.arcsin((np.sqrt((b[0]-a[0])**2+(b[1]-a[1])**2+(b[2]-a[2])**2))/2*np.linalg.norm(b)))
+    θ = abs(2*np.arcsin((np.sqrt((b[0]-a[0])**2+(b[1]-a[1])**2+(b[2]-a[2])**2))/2*np.linalg.norm(b)))
     rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(np.cos(θ)),n[0]*n[1]*(1-np.cos(θ))-n[2]*np.sin(θ),n[0]*n[2]*(1-np.cos(θ))+n[1]*np.sin(θ)],
                                 [n[0]*n[1]*(1-np.cos(θ))+n[2]*np.sin(θ),n[1]**2+(n[0]**2+n[2]**2)*(np.cos(θ)),n[1]*n[2]*(1-np.cos(θ))-n[0]*np.sin(θ)],
                                 [n[0]*n[2]*(1-np.cos(θ))-n[1]*np.sin(θ),n[1]*n[2]*(1-np.cos(θ))+n[0]*np.sin(θ),n[2]**2+(n[0]**2+n[1]**2)*(np.cos(θ))]])
@@ -109,7 +106,7 @@ Examples of valid mapping for arbitrarily chosen axes on the plane (it works!):
 
 
 ### Implications
-With a lack of complete basis vector representation for the two coordinate systems, there are an infinite number of rotation matrices, or axis-angle combinations that can be used to achieve a desired vector mapping. However, here I have demonstrated that candidate Screw axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane. 
+With a lack of complete basis vector representation for the two coordinate systems, there are an infinite number of rotation matrices, or axis-angle combinations that can be applied to achieve a desired vector mapping. However, here I have demonstrated that candidate Screw axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane. 
 
 
 
