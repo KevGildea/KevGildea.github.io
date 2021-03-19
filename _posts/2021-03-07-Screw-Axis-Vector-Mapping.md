@@ -27,13 +27,45 @@ Euler's rotation theorem states that, in three-dimensional space, any displaceme
 </p>
 
 ### Mapping of two vectors
-Now, consider the case where instead of having two complete coordinate systems represented by basis vectors, we only have two vectors a and b, which we want to use to represent a rotation between the two coordinate systems. In this case we need to define the Screw axis to rotate about. Two obvious candidate axes that can be chosen for this are 1) the cross product of the vectors, which will be mutually perpindicular to both a and b, or 2) the sum of the normalised vectors a and b, which symmetrically bisects a and b.
+Now, consider the case where instead of having two complete coordinate systems represented by basis vectors, we only have two vectors a and b, which we want to use to represent a rotation between the two coordinate systems. In this case we need to define the Screw axis about which we need to rotate. Two obvious candidate axes that can be chosen for this are 1) the cross product of the vectors, which will be mutually perpindicular to both a and b, or 2) the sum of the normalised vectors a and b, which symmetrically bisects a and b.
 
 <p align="center">
   <img src="/assets/images/Skew-Axis-Vector-Mapping/fig3.png" width="700">
 </p>
 
+implementation of screw axis approach:
 
+```python
+def A21_from_vectors(vec1, vec2):
+    """ Calculate the rotation matrix that maps unit vector a to align with unit vector b"""
+    a, b = (vec1 / np.linalg.norm(vec1)).reshape(3), (vec2 / np.linalg.norm(vec2)).reshape(3)
+    V = np.cross(a, b)
+    n = (V / np.linalg.norm(V)).reshape(3)
+    adotb=np.dot(a, b)
+    rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(adotb),n[0]*n[1]*(1-adotb)-n[2]*np.linalg.norm(V),n[0]*n[2]*(1-adotb)+n[1]*np.linalg.norm(V)],
+                                [n[0]*n[1]*(1-adotb)+n[2]*np.linalg.norm(V),n[1]**2+(n[0]**2+n[2]**2)*(adotb),n[1]*n[2]*(1-adotb)-n[0]*np.linalg.norm(V)],
+                                [n[0]*n[2]*(1-adotb)-n[1]*np.linalg.norm(V),n[1]*n[2]*(1-adotb)+n[0]*np.linalg.norm(V),n[2]**2+(n[0]**2+n[1]**2)*(adotb)]])
+
+    return rotation_matrix
+```
+
+implementation of user-defined axis approach:
+```python
+def A21_from_vectors(vec1, vec2):
+    """ Calculate the rotation matrix that maps unit vector a to align with unit vector b"""
+    a, b = (vec1 / np.linalg.norm(vec1)).reshape(3), (vec2 / np.linalg.norm(vec2)).reshape(3)
+    V = np.cross(a, b)
+    n = (V / np.linalg.norm(V)).reshape(3)
+    adotb=np.dot(a, b)
+    rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(adotb),n[0]*n[1]*(1-adotb)-n[2]*np.linalg.norm(V),n[0]*n[2]*(1-adotb)+n[1]*np.linalg.norm(V)],
+                                [n[0]*n[1]*(1-adotb)+n[2]*np.linalg.norm(V),n[1]**2+(n[0]**2+n[2]**2)*(adotb),n[1]*n[2]*(1-adotb)-n[0]*np.linalg.norm(V)],
+                                [n[0]*n[2]*(1-adotb)-n[1]*np.linalg.norm(V),n[1]*n[2]*(1-adotb)+n[0]*np.linalg.norm(V),n[2]**2+(n[0]**2+n[1]**2)*(adotb)]])
+
+    return rotation_matrix
+```
+
+
+We can then use these two points along with the origin to define the plane that contains all possible rotation axes
 
 
 
