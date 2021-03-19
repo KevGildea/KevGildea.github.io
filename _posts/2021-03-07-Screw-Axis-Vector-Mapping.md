@@ -33,14 +33,6 @@ Now, consider the case where instead of having two complete coordinate systems r
   <img src="/assets/images/Skew-Axis-Vector-Mapping/fig3.png" width="700">
 </p>
 
-<p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig5.png" width="700">
-</p>
-
-
-<p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig6.png" width="700">
-</p>
 
 
 implementation of screw axis approach:
@@ -59,6 +51,17 @@ def Vector_mapping_cross_product(vec1, vec2):
     return rotation_matrix
 ```
 
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig5.PNG" width="700">
+</p>
+
+
+<p align="center">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig6.PNG" width="700">
+</p>
+
+
+
 We can use the two points obtained from vector summation and cross product along with the origin to define the plane that contains all possible rotation axes.
 
 
@@ -69,7 +72,7 @@ We can use the two points obtained from vector summation and cross product along
 The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle for mapping can be seen.
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig7.png" width="700">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig7.PNG" width="700">
 </p>
 
 
@@ -95,12 +98,12 @@ def Vector_mapping_UDaxis(vec1, vec2, axis):
 Examples of valid mapping for arbitrarily chosen axes on the plane (it works!):
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig8.png" width="700">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig8.PNG" width="700">
 </p>
 
 
 <p align="center">
-  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig9.png" width="700">
+  <img src="/assets/images/Skew-Axis-Vector-Mapping/fig9.PNG" width="700">
 </p>
 
 
