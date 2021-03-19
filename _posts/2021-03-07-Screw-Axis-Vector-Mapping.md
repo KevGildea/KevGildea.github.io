@@ -106,7 +106,7 @@ Examples of valid mapping for arbitrarily chosen axes on the plane (it works!):
 
 
 ### Implications
-With a lack of complete basis vector representation for the two coordinate systems, there are an infinite number of rotation matrices, or axis-angle combinations that can be applied to achieve a desired vector mapping. However, here I have demonstrated that candidate Screw axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane. 
+With a lack of complete basis vector representation for the two coordinate systems, there are an infinite number of rotation matrices, or axis-angle combinations that can be applied to achieve a desired vector mapping. However, here I have demonstrated that candidate Screw axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane. With this knowledge we can programatically solve for all possible a vector mapping solutions. 
 
 
 
