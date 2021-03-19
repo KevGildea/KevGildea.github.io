@@ -1,6 +1,6 @@
 ---
 title: "Non-uniqueness of the Euler axis in vector mapping"
-date: 2021-03-21
+date: 2021-03-19
 categories:
   - blog
 
