@@ -25,5 +25,5 @@ This research has the potential to significantly strengthen our understanding of
 
 [4] Foley, J., Cronin, M., Brent, L., Lawrence, T., Simms, C., Gildea, K., Ryan, J., Deasy, C., Cronin, J., 2020. Cycling related major trauma in Ireland. Injury. [[link](https://pubmed.ncbi.nlm.nih.gov/31784058/)]
 
-[[ORCID](https://orcid.org/0000-0003-3802-0675)]
+[ORCID](https://orcid.org/0000-0003-3802-0675)
 
