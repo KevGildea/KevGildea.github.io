@@ -5,12 +5,14 @@ title: "Research"
 
 
 The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. Novel and detailed data sources are collected and analysed to provide a comprehensive view of the vulnerabilities of cyclists as a group (i.e. Forensic Investigation Files, and self-reported collisions). Representative collision scenarios are identified to inform an engineering analysis.
+
 The engineering analysis involves combined Multibody Dynamics and Deep Learning approaches to traumatic injury biomechanics. An optimisation procedure is used to develop parametric computational models of representative collision scenarios, which are used to determine injury reduction strategies.
+
 This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
 
 
 <p align="center">
-  <img src="/assets/images/reconstruction pipeline.png" width="700">
+  <img src="/assets/images/reconstruction pipeline.png" width="900">
 </p>
 
 
@@ -23,5 +25,5 @@ This research has the potential to significantly strengthen our understanding of
 
 [4] Foley, J., Cronin, M., Brent, L., Lawrence, T., Simms, C., Gildea, K., Ryan, J., Deasy, C., Cronin, J., 2020. Cycling related major trauma in Ireland. Injury. [[link](https://pubmed.ncbi.nlm.nih.gov/31784058/)]
 
+[[ORCID](https://orcid.org/0000-0003-3802-0675)]
 
-ORCID iD: https://orcid.org/0000-0003-3802-0675
