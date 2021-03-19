@@ -12,7 +12,9 @@ tags:
 
 ### Background
 This post requires some background knowledge of theoretical undepinnings of the 3D rotation group, or the special orthogonal group in three dimensions (i.e. SO(3)). This is an area of Linear Algebra in which special orthogonal matrices are used in 3 three-dimensional Euclidean space. This is widely used for representing object orientations in 3D space.
-These orientations can be represented by rotation matrices (A<sup>12</sup>)
+For example, the orientation of one coordinate system represented using basis vector e<sup>1</sup> can be represented with respect to another coordinate system e<sup>2</sup> by multiplying the latter by a 3x3 rotation matrix [A<sup>12</sup>].
+
+
 
 Euler's rotation theorem states that, in three-dimensional space, any displacement of a rigid body such that a point on the rigid body remains fixed, is equivalent to a single rotation about some axis that runs through the fixed point.
 
