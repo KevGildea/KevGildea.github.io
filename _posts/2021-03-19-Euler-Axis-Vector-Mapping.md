@@ -13,7 +13,7 @@ tags:
 ### Background
 This post requires some background theoretical knowledge of the 3D rotation group, or the special orthogonal group in three dimensions (SO(3)). This is an area of Linear Algebra in which special orthogonal matrices are used in three-dimensional Euclidean space. This group is widely used for representing object orientations.
 
-For this task, basis vectors are used to describe the directions of the cardinal axes of the object's local coordinate system. For example, for object '0' the local coordinate system can be described as follows using basis vectors. In this case the object is alligned witht the global coordinate system, so the the basis vector system is equal to the identity matrix (I), and each if the basis vectors ({e<sub>1</sub>}<sup>0</sup>, {e<sub>2</sub>}<sup>0</sup>, and {e<sub>3</sub>}<sup>0</sup>) extend 1 unit from the origin along each of the cardinal axes.
+For this task, basis vectors are used to describe the directions of the cardinal axes of the object's local coordinate system. For example, for object '0' the local coordinate system can be described as follows using basis vectors. In this case the object is alligned witht the global coordinate system, so the the basis vector system is equal to the identity matrix (I), and each of the basis vectors ({e<sub>1</sub>}<sup>0</sup>, {e<sub>2</sub>}<sup>0</sup>, and {e<sub>3</sub>}<sup>0</sup>) extend 1 unit from the origin along each of the cardinal axes.
 
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig0.png" width="700">
