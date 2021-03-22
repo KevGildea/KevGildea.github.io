@@ -86,7 +86,7 @@ Now, we can use the two points obtained from the a+b approach and the axb approa
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig4.gif" width="700">
 </p>
 
-The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle becomes clear. This rotation can be visualised as a cone, where vectors a and b span the length of the cone along the surface, and n points down the centre.
+The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle becomes clear. This rotation can be visualised as a rotation of a cone, where the vectors a and b lay on the surface of the bace pointing outwards from the centre (i.e. the origin), and n points down the centre.
 
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig7.PNG" width="700">
