@@ -33,7 +33,7 @@ Euler's rotation theorem states that, in three-dimensional space, any displaceme
 </p>
 
 ### Mapping of two vectors
-Now, consider the case where instead of having two complete coordinate systems represented by basis vectors, we only have two vectors a and b, which we want to use to represent a rotation between the two coordinate systems. Obviously, there will not be a unique solution to this problem so we need to define the Screw axis about which we rotate. 
+Now, consider the case where instead of having two complete coordinate systems represented by basis vectors, we only have two vectors a and b, which we want to use to represent a rotation between the two coordinate systems. Clearly, there will not be a unique solution to this problem so we need to define the Screw axis about which we rotate. 
 
 Two obvious candidate axes that can be chosen for this are:
 1) the cross product of the vectors, which will be mutually perpindicular to both a and b, or
@@ -86,7 +86,7 @@ Now, we can use the two points obtained from the a+b approach and the axb approa
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig4.gif" width="700">
 </p>
 
-The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle becomes clear. This rotation can be visualised as a rotation of a cone, where the vectors a and b lay on the surface of the bace pointing outwards from the centre (i.e. the origin), and n points down the centre.
+The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle becomes clear. This rotation can be visualised as a rotation of a right circular cone about its axis, where the vectors norm(a) and norm(b) lay on the surface of the base pointing outwards from the centre (i.e. the origin) to the directrix, and n points outwards from the centre of the base to the apex.
 
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig7.PNG" width="700">
