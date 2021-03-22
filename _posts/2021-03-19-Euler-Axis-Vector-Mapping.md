@@ -100,7 +100,8 @@ def Vector_mapping_UDaxis(vec1, vec2, axis):
     n = (axis / np.linalg.norm(axis)).reshape(3)
     # project vectors to form a cone around the Euler axis
     a, b = (np.cross(a,n) / np.linalg.norm(np.cross(a,n))).reshape(3), (np.cross(b,n) / np.linalg.norm(np.cross(b,n))).reshape(3)
-    θ = abs(2*np.arcsin((np.sqrt((b[0]-a[0])**2+(b[1]-a[1])**2+(b[2]-a[2])**2))/2*np.linalg.norm(b)))
+    θ = np.arccos(np.dot(a,b))
+    θ = θ*np.sign(np.dot(n, np.cross(a,b)))
     rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(np.cos(θ)),n[0]*n[1]*(1-np.cos(θ))-n[2]*np.sin(θ),n[0]*n[2]*(1-np.cos(θ))+n[1]*np.sin(θ)],
                                 [n[0]*n[1]*(1-np.cos(θ))+n[2]*np.sin(θ),n[1]**2+(n[0]**2+n[2]**2)*(np.cos(θ)),n[1]*n[2]*(1-np.cos(θ))-n[0]*np.sin(θ)],
                                 [n[0]*n[2]*(1-np.cos(θ))-n[1]*np.sin(θ),n[1]*n[2]*(1-np.cos(θ))+n[0]*np.sin(θ),n[2]**2+(n[0]**2+n[1]**2)*(np.cos(θ))]])
