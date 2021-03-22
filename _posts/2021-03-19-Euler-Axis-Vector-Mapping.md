@@ -126,6 +126,3 @@ With a lack of complete basis vector representation for the two coordinate syste
 
 The full code is available [here](https://github.com/KevGildea/RotationTheory/blob/fe2cb2b7230284d3944cd7d76d5fd2341a96d3b6/Non-uniqueness%20of%20the%20Euler%20axis%20in%20vector%20mapping/Non_uniqueness_Euler_axis_vector_mapping.py).
 
-
-
-
