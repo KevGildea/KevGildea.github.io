@@ -36,8 +36,8 @@ Euler's rotation theorem states that, in three-dimensional space, any displaceme
 Now, consider the case where instead of having two complete coordinate systems represented by basis vectors, we only have two vectors a and b, which we want to use to represent a rotation between the two coordinate systems. Clearly, there will not be a unique solution to this problem so we need to define the Screw axis about which we rotate. 
 
 Two obvious candidate axes that can be chosen for this are:
-1) the cross product of the vectors, which will be mutually perpindicular to both a and b, or
-2) the sum of the normalised vectors a and b, which symmetrically bisects a and b.
+1. the cross product of the vectors, which will be mutually perpindicular to both a and b, or
+2. the sum of the normalised vectors a and b, which symmetrically bisects a and b.
 
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig3.png" width="700">
