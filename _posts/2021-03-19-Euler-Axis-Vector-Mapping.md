@@ -126,8 +126,7 @@ Examples of valid mapping for arbitrarily chosen axes on the plane (it works!):
 With a lack of complete basis vector representation for the two coordinate systems, there are an infinite number of rotation matrices, or axis-angle combinations that can be applied to achieve a desired vector mapping. However, here I have demonstrated that candidate Euler/Screw axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane. With this knowledge we can programatically solve for all possible vector mapping solutions. 
 
 
-
-
+The full code is available [here](https://github.com/KevGildea/RotationTheory/blob/fe2cb2b7230284d3944cd7d76d5fd2341a96d3b6/Non-uniqueness%20of%20the%20Euler%20axis%20in%20vector%20mapping/Non_uniqueness_Euler_axis_vector_mapping.py).
 
 
 
