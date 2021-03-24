@@ -99,17 +99,36 @@ The axis-angle combination can be visualised by looking down the chosen axis to 
 
 Implementation of user-defined axis approach:
 ```python
-def Vector_mapping_UDaxis(vec1, vec2, axis): 
+def Vector_mapping_UDaxis(vec1, vec2): 
     """ Calculate the rotation matrix that maps unit vector a to align with unit vector b along an user defined axis"""
-    a, b = vec1 / np.linalg.norm(vec1), vec2 / np.linalg.norm(vec2)
-    n = axis / np.linalg.norm(axis)
-    # project vectors to form the base of a right cone around the Euler axis
-    a, b = np.cross(a,n) / np.linalg.norm(np.cross(a,n)), np.cross(b,n) / np.linalg.norm(np.cross(b,n))
-    θ = np.arccos(np.dot(a,b))*np.sign(np.dot(n, np.cross(a,b)))
-    rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(np.cos(θ)),n[0]*n[1]*(1-np.cos(θ))-n[2]*np.sin(θ),n[0]*n[2]*(1-np.cos(θ))+n[1]*np.sin(θ)],
-                                [n[0]*n[1]*(1-np.cos(θ))+n[2]*np.sin(θ),n[1]**2+(n[0]**2+n[2]**2)*(np.cos(θ)),n[1]*n[2]*(1-np.cos(θ))-n[0]*np.sin(θ)],
-                                [n[0]*n[2]*(1-np.cos(θ))-n[1]*np.sin(θ),n[1]*n[2]*(1-np.cos(θ))+n[0]*np.sin(θ),n[2]**2+(n[0]**2+n[1]**2)*(np.cos(θ))]])
-    return rotation_matrix
+    a, b = (vec1 / np.linalg.norm(vec1)), (vec2 / np.linalg.norm(vec2))
+    p1 = np.array([0,0,0])
+    p2 = b / np.linalg.norm(b) + (a / np.linalg.norm(a))
+    p3 = np.cross(a, b) / np.linalg.norm(np.cross(a, b))
+    n=[]
+    # create a list of candidate Euler axes
+    for i in range(0,360,1):
+        Φ=np.radians(i)
+        x_Φ=p1[0]+np.cos(Φ)*(p2[0]-p1[0])+np.sin(Φ)*(p3[0]-p1[0])
+        y_Φ=p1[1]+np.cos(Φ)*(p2[1]-p1[1])+np.sin(Φ)*(p3[1]-p1[1])
+        z_Φ=p1[2]+np.cos(Φ)*(p2[2]-p1[2])+np.sin(Φ)*(p3[2]-p1[2])
+        n_Φ=[x_Φ,y_Φ,z_Φ]
+        n.append(n_Φ / np.linalg.norm(n_Φ))
+    # project vectors to form a cone around the Euler axis, and determine required angle for mapping
+    rotation_matrices=[]
+    Euler_axes=[]
+    Euler_angles=[]
+    for i in range(len(n)):
+        Euler_axes.append(n[i])
+        a_Φ, b_Φ = (np.cross(a,n[i]) / np.linalg.norm(np.cross(a,n[i]))), (np.cross(b,n[i]) / np.linalg.norm(np.cross(b,n[i])))
+        θ = np.arccos(np.dot(a_Φ,b_Φ))
+        θ = θ*np.sign(np.dot(n[i], np.cross(a_Φ,b_Φ)))
+        Euler_angles.append(θ)
+        rotation_matrices.append(np.array([[n[i][0]**2+(n[i][1]**2+n[i][2]**2)*(np.cos(θ)),n[i][0]*n[i][1]*(1-np.cos(θ))-n[i][2]*np.sin(θ),n[i][0]*n[i][2]*(1-np.cos(θ))+n[i][1]*np.sin(θ)],
+                                    [n[i][0]*n[i][1]*(1-np.cos(θ))+n[i][2]*np.sin(θ),n[i][1]**2+(n[i][0]**2+n[i][2]**2)*(np.cos(θ)),n[i][1]*n[i][2]*(1-np.cos(θ))-n[i][0]*np.sin(θ)],
+                                    [n[i][0]*n[i][2]*(1-np.cos(θ))-n[i][1]*np.sin(θ),n[i][1]*n[i][2]*(1-np.cos(θ))+n[i][0]*np.sin(θ),n[i][2]**2+(n[i][0]**2+n[i][1]**2)*(np.cos(θ))]]))
+    
+    return Euler_axes, Euler_angles, rotation_matrices
 ```
 
 
