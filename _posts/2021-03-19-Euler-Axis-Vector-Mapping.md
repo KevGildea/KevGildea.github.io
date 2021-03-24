@@ -54,12 +54,13 @@ Implementation of cross product approach (axb):
 
 ```python
 def Vector_mapping_cross_product(vec1, vec2):
-    """ Calculate the rotation matrix that maps unit vector a to align with unit vector b about an axis aligned with the cross product"""
-    a, b = vec1 / np.linalg.norm(vec1), vec2 / np.linalg.norm(vec2)
+    """ Calculate the rotation matrix that maps vector a to align with vector b about an axis aligned with the cross product"""
+    a, b = (vec1 / np.linalg.norm(vec1)), (vec2 / np.linalg.norm(vec2))
     n = np.cross(a, b) / np.linalg.norm(np.cross(a, b))
-    rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(np.dot(a, b)),n[0]*n[1]*(1-np.dot(a, b))-n[2]*np.linalg.norm(np.cross(a, b)),n[0]*n[2]*(1-np.dot(a, b))+n[1]*np.linalg.norm(np.cross(a, b))],
-                                [n[0]*n[1]*(1-np.dot(a, b))+n[2]*np.linalg.norm(np.cross(a, b)),n[1]**2+(n[0]**2+n[2]**2)*(np.dot(a, b)),n[1]*n[2]*(1-np.dot(a, b))-n[0]*np.linalg.norm(np.cross(a, b))],
-                                [n[0]*n[2]*(1-np.dot(a, b))-n[1]*np.linalg.norm(np.cross(a, b)),n[1]*n[2]*(1-np.dot(a, b))+n[0]*np.linalg.norm(np.cross(a, b)),n[2]**2+(n[0]**2+n[1]**2)*(np.dot(a, b))]])
+    adotb=np.dot(a, b)
+    rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(adotb),n[0]*n[1]*(1-adotb)-n[2]*np.linalg.norm(np.cross(a, b)),n[0]*n[2]*(1-adotb)+n[1]*np.linalg.norm(np.cross(a, b))],
+                                [n[0]*n[1]*(1-adotb)+n[2]*np.linalg.norm(np.cross(a, b)),n[1]**2+(n[0]**2+n[2]**2)*(adotb),n[1]*n[2]*(1-adotb)-n[0]*np.linalg.norm(np.cross(a, b))],
+                                [n[0]*n[2]*(1-adotb)-n[1]*np.linalg.norm(np.cross(a, b)),n[1]*n[2]*(1-adotb)+n[0]*np.linalg.norm(np.cross(a, b)),n[2]**2+(n[0]**2+n[1]**2)*(adotb)]])
     return rotation_matrix
 ```
 
@@ -67,11 +68,11 @@ def Vector_mapping_cross_product(vec1, vec2):
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig5.PNG" width="700">
 </p>
 
-Implementation of bisecting vector approach (a+b):
+Implementation of bisecting vector approach (norm(a)+norm(b)):
 ```python
 def Vector_mapping_bisect(vec1, vec2):
-    """ Calculate the rotation matrix that maps unit vector a to align with unit vector b about an axis aligned with norm(a) + norm(b)"""
-    a, b = vec1 / np.linalg.norm(vec1), vec2 / np.linalg.norm(vec2)
+    """ Calculate the rotation matrix that maps vector a to align with vector b about an axis aligned with norm(a) + norm(b)"""
+    a, b = (vec1 / np.linalg.norm(vec1)), (vec2 / np.linalg.norm(vec2))
     n = (a+b) / np.linalg.norm(a+b)
     θ = math.pi
     rotation_matrix = np.array([[n[0]**2+(n[1]**2+n[2]**2)*(np.cos(θ)),n[0]*n[1]*(1-np.cos(θ))-n[2]*np.sin(θ),n[0]*n[2]*(1-np.cos(θ))+n[1]*np.sin(θ)],
@@ -143,8 +144,6 @@ This function outputs valid mapping for all Euler axes on the plane (it works!):
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig11.gif" width="700">
 </p>
-
-
 
 
 ### Implications
