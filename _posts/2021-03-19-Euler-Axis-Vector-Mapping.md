@@ -91,6 +91,8 @@ Now, we can use the two points obtained from the a+b approach and the axb approa
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig4.gif" width="700">
 </p>
 
+Or, more appropriately, we can define the 
+
 The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle becomes clear. This rotation can be visualised as a rotation of a right circular cone about its axis, where the vectors norm(a) and norm(b) lay on the surface of the base pointing outwards from the centre (i.e. the origin) to the directrix, and n points outwards from the centre of the base to the apex.
 
 <p align="center">
@@ -100,13 +102,13 @@ The axis-angle combination can be visualised by looking down the chosen axis to 
 Implementation of user-defined axis approach:
 ```python
 def Vector_mapping_UDaxis(vec1, vec2): 
-    """ Calculate the rotation matrix that maps unit vector a to align with unit vector b along an user defined axis"""
+    """ Calculate all rotation matrices that map unit vector a to align with unit vector b"""
     a, b = (vec1 / np.linalg.norm(vec1)), (vec2 / np.linalg.norm(vec2))
     p1 = np.array([0,0,0])
     p2 = b / np.linalg.norm(b) + (a / np.linalg.norm(a))
     p3 = np.cross(a, b) / np.linalg.norm(np.cross(a, b))
     n=[]
-    # create a list of candidate Euler axes
+    # create a list of candidate Euler axes (discritised to 1 degree)
     for i in range(0,360,1):
         Φ=np.radians(i)
         x_Φ=p1[0]+np.cos(Φ)*(p2[0]-p1[0])+np.sin(Φ)*(p3[0]-p1[0])
