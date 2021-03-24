@@ -107,7 +107,7 @@ The axis-angle combination can be visualised by looking down the chosen axis to 
 Implementation of the devised approach:
 ```python
 def Vector_mapping_Euler_Axis_Space(vec1, vec2): 
-    """ Calculate all rotation matrices that map unit vector a to align with unit vector b"""
+    """ Calculate all rotation matrices that map vector a to align with vector b"""
     a, b = (vec1 / np.linalg.norm(vec1)), (vec2 / np.linalg.norm(vec2))
     p1 = np.array([0,0,0])
     p2 = b / np.linalg.norm(b) + (a / np.linalg.norm(a))
