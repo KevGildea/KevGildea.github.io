@@ -39,15 +39,16 @@ Two obvious candidate axes that can be chosen for this are:
 1. the cross product of the vectors, which will be mutually perpindicular to both a and b, or
 2. the sum of the normalised vectors a and b, which symmetrically bisects a and b.
 
-choosing:
-```python
-a=[0.1,0.3,0.4]
-b=[0.3,0.1,0.2]
-```
 
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig3.png" width="700">
 </p>
+
+Choosing:
+```python
+a=[0.1,0.3,0.4]
+b=[0.3,0.1,0.2]
+```
 
 Implementation of cross product approach (axb):
 
