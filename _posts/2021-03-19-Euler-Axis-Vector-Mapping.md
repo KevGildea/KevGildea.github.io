@@ -141,7 +141,7 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
 
 This function outputs valid mapping for all Euler axes on the plane (it works!):
 
-For
+for,
 ```python
 a=[0.1,0.3,0.4]
 b=[0.3,0.1,0.2]
@@ -151,7 +151,7 @@ b=[0.3,0.1,0.2]
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig11.gif" width="700">
 </p>
 
-For
+for,
 ```python
 a=[0.1,0.3,0.4]
 b=[-0.3,-0.1,-0.2]
