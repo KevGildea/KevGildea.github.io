@@ -86,12 +86,15 @@ def Vector_mapping_bisect(vec1, vec2):
 
 Now, we can use the two points obtained from the a+b approach and the axb approach along with the origin to define the plane that contains all possible rotation axes.
 
-
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig4.gif" width="700">
 </p>
 
-Or, more appropriately, we can define the 
+Or, more appropriately, we can define the Euler axis space as all unit vectors on the plane.
+
+<p align="center">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig10.gif" width="700">
+</p>
 
 The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle becomes clear. This rotation can be visualised as a rotation of a right circular cone about its axis, where the vectors norm(a) and norm(b) lay on the surface of the base pointing outwards from the centre (i.e. the origin) to the directrix, and n points outwards from the centre of the base to the apex.
 
