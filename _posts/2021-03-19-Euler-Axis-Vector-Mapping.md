@@ -137,16 +137,12 @@ def Vector_mapping_UDaxis(vec1, vec2):
 ```
 
 
-Examples of valid mapping for arbitrarily chosen axes on the plane (it works!):
+This function outputs valid mapping for all Euler axes on the plane (it works!):
 
 <p align="center">
-  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig8.PNG" width="700">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig11.gif" width="700">
 </p>
 
-
-<p align="center">
-  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig9.PNG" width="700">
-</p>
 
 
 
