@@ -15,12 +15,11 @@ tags:
 ### Background
 In a previous post, I described how in SO(3) an infinite number of rotation matrices, or axis-angle combinations can be applied to map one vector (a) onto another vector (b). However, the solution space is constrained such that the Euler/Screw axis must lay on the plane that bisects the vectors.
 
-> See my blog post:
-> ['Non-uniqueness of the Euler axis in vector mapping'](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/)
-
 <p align="center">
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig0.gif" width="700">
 </p>
+> For more infor see my blog post:
+> ['Non-uniqueness of the Euler axis in vector mapping'](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/)
 
 Now, if we assign an initial local coordinate system to vector a, for example, if we set choose it to be aligned with the global coordinate system then we can see the solution space for reorientation of this local coordinate system after mapping. This can be used to represent the rotation of a joint.
 
