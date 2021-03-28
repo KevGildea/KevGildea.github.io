@@ -18,6 +18,7 @@ In a previous post, I described how in SO(3) an infinite number of rotation matr
 <p align="center">
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig0.gif" width="700">
 </p>
+
 > For more infor see my blog post:
 > ['Non-uniqueness of the Euler axis in vector mapping'](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/)
 
