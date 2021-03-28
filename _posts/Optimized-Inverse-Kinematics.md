@@ -19,12 +19,13 @@ In a [previous post](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig0.gif" width="700">
 </p>
 
-Now, if we assign an initial local coordinate system to vector a, for example, if we set choose it to be aligned with the global coordinate system then we can see the solution space for reorientation of this local coordinate system after mapping.
+Now, if we assign an initial local coordinate system to vector a, for example, if we set choose it to be aligned with the global coordinate system then we can see the solution space for reorientation of this local coordinate system after mapping. This can be used to represent the rotation of a joint.
 
 <p align="center">
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig1.gif" width="700">
 </p>
 
+In biomechanics, animation, robotics, and any field where kinematic chains are used to represent physical systems, there are often going to be constrains on joint reorientations, i.e. joint ranges of motion (ROMs). Constraints take the form of angular ranges about each of the initial local joint coordinate system's cardinal axes, which effectively eliminates certain ranges of Euler axes about which the rotation can take place, and Euler angles which can be performed. 
 
 
 
