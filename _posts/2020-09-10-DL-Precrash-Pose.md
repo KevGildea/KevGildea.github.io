@@ -39,7 +39,7 @@ However, it is known that pedestrians exhibit certain reactionary postures and m
 
 #### Methodology
 
-The value of this study lies in its adaptations to an existing pose/shape estimation method called SMPLify [[3](http://files.is.tue.mpg.de/black/papers/BogoECCV2016.pdf)] to create a toolchain that is capable of quantitatively characterise pedestrian pre-crash posture. 
+The value of this study lies in its adaptations to an existing pose/shape estimation method called SMPLify [[3](http://files.is.tue.mpg.de/black/papers/BogoECCV2016.pdf)] to create a toolchain that is capable of quantitatively characterising pedestrian pre-crash posture. 
 
 ![](/assets/images/Ped-Pose-Pred.png)
 
