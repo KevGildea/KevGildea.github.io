@@ -30,6 +30,11 @@ Now, if we assign an initial local coordinate system to vector a, for example, i
 
 In biomechanics, animation, robotics, and any field where kinematic chains are used to represent physical systems, there are often going to be constraints on joint reorientations, i.e. joint ranges of motion (ROMs). Constraints take the form of angular ranges about each of the initial local joint coordinate system's cardinal axes, which effectively eliminates certain ranges of Euler axes about which the rotation can take place, and Euler angles which can be performed. This allows for the representation of physical joint types with differing degrees of freedom (DOF) e.g Free Joint: 6DOF, Ball/Spherical Joint: 3DOFs, Hardy Spicer/Universal Joint: 2DOFs, Hinge/Revolute Joint: 1DOF. 
 
+If we choose an initial local coordinate system for vector a, where the Y axis is alligned with the vector we can see that the solution space for reorientation of this local coordinate system after mapping is reduced. 
+
+<p align="center">
+  <img src="/assets/images/Optimized-Inverse-Kinematics/fig2.gif" width="700">
+</p>
 
 
 
