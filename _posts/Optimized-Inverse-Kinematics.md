@@ -38,6 +38,11 @@ If we choose a simpler example, with an initial local coordinate system for vect
 
 If we want our rotation to act about the local Z axis (blue), then we can reduce the solution space further. Here we are choosing the local Z axis as the EUler axis, however, notice that no exact solution exists for this i.e. the the local Z axis does not lay on the Euler axis solution space.
 
+ - Closest solution on the Euler axis solution space (fig3.png)
+ #- Effect of choosing Z as the the rotation axis
+ - We can also define a range of acceptable offsets from the Z axis (fig4.gif)
+ - How does this relate to ROMs?
+
 
 
 ### Analytical solution
