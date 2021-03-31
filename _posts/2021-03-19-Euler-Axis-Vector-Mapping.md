@@ -98,11 +98,43 @@ Or, more appropriately, we can define the Euler axis space as all unit vectors o
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig10.gif" width="700">
 </p>
 
-The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle becomes clear. This rotation can be visualised as a rotation of a right circular cone about its axis, where the vectors norm(a) and norm(b) lay on the surface of the base pointing outwards from the centre (i.e. the origin) to the directrix, and n points outwards from the centre of the base to the apex.
+The axis-angle combination can be visualised by looking down the chosen axis to the origin - with the projection of the vectors a and b onto this plane the required angle becomes clear. This rotation can be visualised as a rotation of a right circular cone about its axis, where projections of vectors norm(a) and norm(b) lay on the surface of the base pointing outwards from the centre (i.e. the origin) to the directrix, and n points outwards from the centre of the base to the apex.
 
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig7.PNG" width="700">
 </p>
+
+More formally, first choose two points which we know are on the Euler axis space.
+<p align="center">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig13.png" width="700">
+</p>
+
+Use these points to define the Euler axis space.
+<p align="center">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig14.png" width="700">
+</p>
+
+Use these points to define the Euler axis space.
+<p align="center">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig14.png" width="700">
+</p>
+
+Project vectors norm(a) and norm(b) to lay on the base of a cone with the Euler axis as the cone's axis.
+<p align="center">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig15.png" width="700">
+</p>
+
+The angle between these projected vectors is the Euler/Screw angle.
+<p align="center">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig16.png" width="700">
+</p>
+
+Now, we can formulate the all possible rotation matrices representing all possible Euler axis-angle combinations, i.e. the Euler axis-angle space (EAS).
+<p align="center">
+  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig17.png" width="700">
+</p>
+
+
 
 Implementation of the devised approach:
 ```python
