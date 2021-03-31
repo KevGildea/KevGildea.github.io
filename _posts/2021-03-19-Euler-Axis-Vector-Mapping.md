@@ -114,11 +114,6 @@ Use these points to define the Euler axis space.
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig14.png" width="700">
 </p>
 
-Use these points to define the Euler axis space.
-<p align="center">
-  <img src="/assets/images/Euler-Axis-Vector-Mapping/fig14.png" width="700">
-</p>
-
 Project vectors norm(a) and norm(b) to lay on the base of a cone with the Euler axis as the cone's axis.
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig15.png" width="700">
