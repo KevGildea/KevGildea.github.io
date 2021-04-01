@@ -73,7 +73,7 @@ author:
       icon: "fa fa-google"
       url: "https://scholar.google.com/citations?user=rwRjfN8AAAAJ&hl=en/"
     - label: "ORCID"
-      icon: "fab fa-fw fa-ORCID"
+      icon: "fab fa-orcid"
       url: "https://orcid.org/0000-0003-3802-0675"
 
 footer:
