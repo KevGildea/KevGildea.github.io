@@ -125,7 +125,7 @@ The angle between these projected vectors is the Euler/Screw angle.
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig16.png" width="700">
 </p>
 
-Now, we can formulate the all possible rotation matrices representing all possible Euler axis-angle combinations, i.e. the Euler axis-angle space (EAS).
+Now, we can formulate the all possible rotation matrices representing all possible Euler axis-angle combinations, i.e. the Euler axis-angle solution space (EAS).
 <p align="center">
   <img src="/assets/images/Euler-Axis-Vector-Mapping/fig17.png" width="700">
 </p>
@@ -140,24 +140,24 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
     p1 = np.array([0,0,0])
     p2 = b / np.linalg.norm(b) + (a / np.linalg.norm(a))
     p3 = np.cross(a, b) / np.linalg.norm(np.cross(a, b))
-    n=[]
     # create a list of candidate Euler axes (discritised to 1 degree)
+    n=[]
     for i in range(0,360,1):
-        Φ=np.radians(i)
-        x_Φ=p1[0]+np.cos(Φ)*(p2[0]-p1[0])+np.sin(Φ)*(p3[0]-p1[0])
-        y_Φ=p1[1]+np.cos(Φ)*(p2[1]-p1[1])+np.sin(Φ)*(p3[1]-p1[1])
-        z_Φ=p1[2]+np.cos(Φ)*(p2[2]-p1[2])+np.sin(Φ)*(p3[2]-p1[2])
-        n_Φ=[x_Φ,y_Φ,z_Φ]
-        n.append(n_Φ / np.linalg.norm(n_Φ))
+        α=np.radians(i)
+        x_α=p1[0]+np.cos(α)*(p2[0]-p1[0])+np.sin(α)*(p3[0]-p1[0])
+        y_α=p1[1]+np.cos(α)*(p2[1]-p1[1])+np.sin(α)*(p3[1]-p1[1])
+        z_α=p1[2]+np.cos(α)*(p2[2]-p1[2])+np.sin(α)*(p3[2]-p1[2])
+        n_α=[x_α,y_α,z_α]
+        n.append(n_α / np.linalg.norm(n_α))
     # project vectors to form a cone around the Euler axis, and determine required angle for mapping
     rotation_matrices=[]
     Euler_axes=[]
     Euler_angles=[]
     for i in range(len(n)):
         Euler_axes.append(n[i])
-        a_Φ, b_Φ = (np.cross(a,n[i]) / np.linalg.norm(np.cross(a,n[i]))), (np.cross(b,n[i]) / np.linalg.norm(np.cross(b,n[i])))
-        θ = np.arccos(np.dot(a_Φ,b_Φ))
-        θ = θ*np.sign(np.dot(n[i], np.cross(a_Φ,b_Φ)))
+        a_α, b_α = (np.cross(a,n[i]) / np.linalg.norm(np.cross(a,n[i]))), (np.cross(b,n[i]) / np.linalg.norm(np.cross(b,n[i])))
+        θ = np.arccos(np.dot(a_α,b_α))
+        θ = θ*np.sign(np.dot(n[i], np.cross(a_α,b_α)))
         Euler_angles.append(θ)
         if θ != θ: # if θ is NaN
             rotation_matrices.append(np.array([[ 1, 0, 0],
