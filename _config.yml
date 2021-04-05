@@ -60,6 +60,9 @@ author:
   avatar : "/assets/images/profilepic.png"
   bio    : "cycling - accidentology - multibody physics - deep learning"
   links:
+    - label: "Email"
+      icon: "fab fa-fw fa-orcid"
+      url: "kgildea@tcd.ie"
     - label: "Linkedin"
       icon: "fab fa-linkedin-in"
       url: "https://www.linkedin.com/in/kgildeatcd"
