@@ -61,7 +61,7 @@ author:
   bio    : "cycling - accidentology - multibody physics - deep learning"
   links:
     - label: "Email"
-      icon: "fab fa-envelope"
+      icon: "fa fa-envelope"
       url: "mailto:kgildea@tcd.ie"
     - label: "Linkedin"
       icon: "fab fa-linkedin-in"
