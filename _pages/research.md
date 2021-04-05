@@ -16,14 +16,13 @@ This research has the potential to significantly strengthen our understanding of
 </p>
 
 
-|#### Selected publications:|
+|# Selected publications:|
 | ------------- |
-|[1] Gildea, K., Simms, C., 2021. Characteristics of cyclist collisions in Ireland: Analysis of a self-reported survey. Accident Analysis and Prevention. [[link](https://www.sciencedirect.com/science/article/pii/S0001457520317681)] [[questionnaire](https://github.com/KevGildea/kevgildea.github.io/blob/master/assets/images/Research/Survey%20questionnaire.pdf)]
+| [1] Gildea, K., Simms, C., 2021. Characteristics of cyclist collisions in Ireland: Analysis of a self-reported survey. Accident Analysis and Prevention. [[link](https://www.sciencedirect.com/science/article/pii/S0001457520317681)] [[questionnaire](https://github.com/KevGildea/kevgildea.github.io/blob/master/assets/images/Research/Survey%20questionnaire.pdf)] |
 
-[2] Li, G., Gildea, K., Wisch, M., Zander, O., Simms, C., 2020. An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence. IRCOBI, Beijing, pp. 80–84. [[link](http://www.ircobi.org/wordpress/downloads/irc20-asia/pdf-files/2029a.pdf)]
+| [2] Li, G., Gildea, K., Wisch, M., Zander, O., Simms, C., 2020. An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence. IRCOBI, Beijing, pp. 80–84. [[link](http://www.ircobi.org/wordpress/downloads/irc20-asia/pdf-files/2029a.pdf)] |
 
-[3] Tierney, GJ, Gildea, K, Krosshaug, T, Simms, C., 2019 Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study. International Journal of Sports Science & Coaching. [[link](https://journals.sagepub.com/doi/10.1177/1747954119833477)]
-
-[4] Foley, J., Cronin, M., Brent, L., Lawrence, T., Simms, C., Gildea, K., Ryan, J., Deasy, C., Cronin, J., 2020. Cycling related major trauma in Ireland. Injury. [[link](https://pubmed.ncbi.nlm.nih.gov/31784058/)]|
+| [3] Tierney, GJ, Gildea, K, Krosshaug, T, Simms, C., 2019 Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study. International Journal of Sports Science & Coaching. [[link](https://journals.sagepub.com/doi/10.1177/1747954119833477)]
+[4] Foley, J., Cronin, M., Brent, L., Lawrence, T., Simms, C., Gildea, K., Ryan, J., Deasy, C., Cronin, J., 2020. Cycling related major trauma in Ireland. Injury. [[link](https://pubmed.ncbi.nlm.nih.gov/31784058/)] |
 
 [ORCID](https://orcid.org/0000-0003-3802-0675)
