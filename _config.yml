@@ -63,6 +63,12 @@ author:
     - label: "Email"
       icon: "fa fa-envelope"
       url: "mailto:kgildea@tcd.ie"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google"
+      url: "https://scholar.google.com/citations?user=rwRjfN8AAAAJ&hl=en/"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0003-3802-0675"
     - label: "Linkedin"
       icon: "fab fa-linkedin-in"
       url: "https://www.linkedin.com/in/kgildeatcd"
@@ -72,12 +78,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/KevGildea"
-    - label: "Google Scholar"
-      icon: "fab fa-fw fa-google"
-      url: "https://scholar.google.com/citations?user=rwRjfN8AAAAJ&hl=en/"
-    - label: "ORCID"
-      icon: "fab fa-fw fa-orcid"
-      url: "https://orcid.org/0000-0003-3802-0675"
 
 footer:
 #  links:
