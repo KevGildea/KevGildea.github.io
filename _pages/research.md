@@ -17,7 +17,7 @@ This research has the potential to significantly strengthen our understanding of
 
 
 |**Selected publications:**|
-| [1] Characteristics of cyclist collisions in Ireland: Analysis of a self-reported survey., 2021. Accident Analysis and Prevention. ([paper](https://www.sciencedirect.com/science/article/pii/S0001457520317681)) ([questionnaire](https://github.com/KevGildea/kevgildea.github.io/blob/master/assets/images/Research/Survey%20questionnaire.pdf)) |
-| [2] An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence., 2020. IRCOBI. ([paper](http://www.ircobi.org/wordpress/downloads/irc20-asia/pdf-files/2029a.pdf)) |
-| [3] Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study., 2019. International Journal of Sports Science & Coaching. ([paper](https://journals.sagepub.com/doi/10.1177/1747954119833477)) |
-| [4] Cycling related major trauma in Ireland., 2020. Injury. ([paper](https://pubmed.ncbi.nlm.nih.gov/31784058/)) |
+| [1] Characteristics of cyclist collisions in Ireland: Analysis of a self-reported survey. Accident Analysis and Prevention. 2021. ([paper](https://www.sciencedirect.com/science/article/pii/S0001457520317681)) ([questionnaire](https://github.com/KevGildea/kevgildea.github.io/blob/master/assets/images/Research/Survey%20questionnaire.pdf)) |
+| [2] An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence. IRCOBI. 2020. ([paper](http://www.ircobi.org/wordpress/downloads/irc20-asia/pdf-files/2029a.pdf)) |
+| [3] Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study. International Journal of Sports Science & Coaching. 2019. ([paper](https://journals.sagepub.com/doi/10.1177/1747954119833477)) |
+| [4] Cycling related major trauma in Ireland. Injury. 2020. ([paper](https://pubmed.ncbi.nlm.nih.gov/31784058/)) |
