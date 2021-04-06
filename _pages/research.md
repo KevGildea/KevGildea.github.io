@@ -21,4 +21,4 @@ This research has the potential to significantly strengthen our understanding of
 | [2] An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence. IRCOBI. 2020. ([paper](http://www.ircobi.org/wordpress/downloads/irc20-asia/pdf-files/2029a.pdf)) |
 | [3] Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study. International Journal of Sports Science & Coaching. 2019. ([paper](https://journals.sagepub.com/doi/10.1177/1747954119833477)) |
 | [4] Cycling related major trauma in Ireland. Injury. 2020. ([paper](https://pubmed.ncbi.nlm.nih.gov/31784058/)) |
-| [See more...](https://orcid.org/0000-0003-3802-0675)
+ [See more...](https://orcid.org/0000-0003-3802-0675)
