@@ -31,7 +31,7 @@ This is a tricky issue. Some countries systematically link their Police and hosp
 </p>
 
 
-## Reporting Biases
+## Reporting biases
 
 We also investigated the factors that have effect on whether or not cyclist collisions are reported to the Gardaí. Our main findings here is that injury severity, and collision type have an effect. Collisions involving motorised vehicles were more likely to be reported to the Gardaí – this is evident from analyses of Garda reported data in which the majority (over 90%) involve vehicles. The results highlighted the relative importance of single cyclist collisions in particular, which comprised roughly 30% of the cases, but were much less likely to be reported to the Gardaí. Specifically, the odds of Garda reporting was 20 times greater for greater for collisions with motorised vehicles. Furthermore, Minor injuries were much less likely to be reported to the police than Serious injuries. Specifically, the odds of Garda reporting was 7 times greater for Serious injuries.
 
