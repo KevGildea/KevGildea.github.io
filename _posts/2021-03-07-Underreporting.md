@@ -13,7 +13,7 @@ tags:
 
 This is a repost of an [article](https://cyclist.ie/2021/02/under-reporting-cyclist-collisions-kevin-gildea/) I recently penned for The Irish Cycling Advocacy Network. It contains a brief summary of findings from my recent journal publication in Accident Analysis and Prevention: 
 
->['Characteristics of cyclist collisions in Ireland: Analysis of a self-reported survey, Gildea and Simms (2021)'](https://doi.org/10.1016/j.aap.2020.105948)
+>['Characteristics of cyclist collisions in Ireland: Analysis of a self-reported survey, Gildea and Simms (2021)'](https://doi.org/10.1016/j.aap.2020.105948) ([questionnaire](https://github.com/KevGildea/kevgildea.github.io/blob/master/assets/images/Research/Survey%20questionnaire.pdf))
 
 ## Under-reporting in Ireland
 
