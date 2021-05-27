@@ -13,7 +13,7 @@ tags:
 ---
 
 ### Background
-In biomechanics, animation, robotics, and any field where kinematic chains are used to represent physical systems, there are often going to be constraints on joint reorientations, i.e. joint ranges of motion (ROMs). Constraints take the form of angular ranges about each of the initial local joint coordinate system's cardinal axes, which effectively eliminates certain ranges of Euler axes about which the rotation can take place, and Euler angles which can be performed. This allows for the representation of physical joint types with differing degrees of freedom (DOF) e.g Free Joint: 6DOF, Ball/Spherical Joint: 3DOFs, Hardy Spicer/Universal Joint: 2DOFs, Hinge/Revolute Joint: 1DOF. 
+In biomechanics, animation, robotics, and any field where kinematic chains are used to represent physical systems, there are often going to be constraints on joint reorientations, i.e. joint ranges of motion (ROMs). Constraints take the form of angular ranges about each of the local joint coordinate system's cardinal axes, which effectively eliminates certain ranges of Euler axes about which the rotation can take place, and Euler angles which can be performed. This allows for the representation of physical joint types with differing degrees of freedom (DOF) e.g Free Joint: 6DOF, Ball/Spherical Joint: 3DOFs, Hardy Spicer/Universal Joint: 2DOFs, Hinge/Revolute Joint: 1DOF. 
 
 ADD AN INTERESTING IMAGE HERE
 
