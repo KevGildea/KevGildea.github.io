@@ -43,7 +43,7 @@ If we choose a simpler example, with an initial local coordinate system for vect
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig2.gif" width="700">
 </p>
 
-If we want our rotation to act about the local Z axis (blue), then we can reduce the solution space further. Here we are choosing the local Z axis as the EUler axis, however, notice that no exact solution exists for this i.e. the the local Z axis does not lay on the Euler axis solution space.
+If we want our rotation to act about the local Z axis (blue), then we can reduce the solution space further. Here we are choosing the local Z axis as the Euler axis, however, notice that no exact solution exists for this i.e. the the local Z axis does not lay on the Euler axis solution space.
 
  - Closest solution on the Euler axis solution space (fig3.png)
  - Effect of choosing Z as the the rotation axis
