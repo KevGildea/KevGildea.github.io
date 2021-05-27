@@ -17,7 +17,7 @@ In biomechanics, animation, robotics, and any field where kinematic chains are u
 
 ADD AN INTERESTING IMAGE HERE
 
-In a previous post, I described how in SO(3) an infinite number of rotation matrices, or axis-angle combinations can be applied to map one vector (a) onto another vector (b). However, the solution space is constrained such that the Euler/Screw axis must lay on the plane that bisects the vectors.
+In a previous post, I described how in SO(3) an infinite number of rotation matrices, or Euler/Screw axis-angle combinations can be applied to map one vector (a) onto another vector (b). However, the solution space is constrained such that the Euler/Screw axis must lay on the plane that bisects the vectors.
 
 <p align="center">
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig0.gif" width="700">
