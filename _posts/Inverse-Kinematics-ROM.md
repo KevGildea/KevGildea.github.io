@@ -1,5 +1,5 @@
 ---
-title: "Joint reorientations and ranges of motion for inverse kinematics of simple open kinematic chains"
+title: "Joint reorientations and ranges of motion for inverse kinematics of open kinematic chains"
 #date: 2021-04-04
 categories:
   - blog
