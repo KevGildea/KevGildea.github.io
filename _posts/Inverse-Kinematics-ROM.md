@@ -31,6 +31,8 @@ In a previous post, I described how in SO(3) an infinite number of rotation matr
 
 Now, if we assign an initial local coordinate system to vector a, for example, if we set choose it to be aligned with the global coordinate system then we can see the solution space for reorientation of this local coordinate system after mapping. 
 
+WE DON'T NEED FIG1
+
 <p align="center">
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig1.gif" width="700">
 </p>
