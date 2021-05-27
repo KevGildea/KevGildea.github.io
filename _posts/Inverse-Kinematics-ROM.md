@@ -1,12 +1,12 @@
 ---
-title: "Optimization of joint reorientations for inverse kinematics"
+title: "Joint reorientations and ranges of motion for inverse kinematics of simple open kinematic chains"
 #date: 2021-04-04
 categories:
   - blog
 
 tags:
   - Kinematics
-  - Optimization
+  - Inverse Kinematics
   - Linear Algebra
   - Rotations
 
@@ -50,11 +50,8 @@ If we want our rotation to act about the local Z axis (blue), then we can reduce
 - Need for an approach for mapping dissimilar open kinematic chains (one without joint orientations)
 - describe inverse kinematics
 - vector mapping
-- describe that it involves a nonlinear solution
-- describe optimization
-
-
-### Optimized solution
+- describe that it involves a nonlinear solution?
+- describe optimization?
 
 
 ### Implications
