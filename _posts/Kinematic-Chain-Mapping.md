@@ -68,7 +68,9 @@ def FK_local2global(chain, dir_graph):
 
 We can then define chain b using only joint positions in the global coordinate system, and the same directed graph as chain a.
 
-PLOT OF SIMPLE CHAINS A AND B
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
+</p>
 
 MATHEMATICALLY DESCRIBE 'def IK_simple_open_chain'
 
