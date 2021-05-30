@@ -203,6 +203,10 @@ def IK_simple_open_chain(chain_a, chain_b, dir_graph): # Consider renaming Could
 
 DESCRIBE THE MATHEMATICS OF EXTENDING THIS TO A COMPLEX KINEMATIC CHAIN
 
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig5.gif" width="700">
+</p>
+
 Implementation of a modified inverse kinematics approach for mapping a complex kinematic chain:
 
 ```python
