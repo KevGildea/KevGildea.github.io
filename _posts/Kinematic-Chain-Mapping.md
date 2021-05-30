@@ -1,5 +1,5 @@
 ---
-title: "Euler axis solution space for mapping kinematic chains: A modified inverse kinematics approach"
+title: "Euler axis-angle solution space for mapping kinematic chains: A modified inverse kinematics approach"
 #date: 2021-04-04
 categories:
   - blog
@@ -23,7 +23,7 @@ In a previous post, I described how in SO(3) an infinite number of rotation matr
 > ['Non-uniqueness of the Euler axis in vector mapping'](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/)
 
 
-### Euler axis solution space for mapping kinematic chains
+### Euler axis-angle solution space for mapping kinematic chains
 If we assign an initial local coordinate system to vector a, for example, if we set choose it to be aligned with the global coordinate system then we can see the Euler axis solution space for reorientation of this local coordinate system. 
 
 <p align="center">
