@@ -38,7 +38,7 @@ Alternatively, we can choose a simpler example, with an initial local coordinate
   <img src="/assets/images/Kinematic-Chain-Mapping/fig2.gif" width="700">
 </p>
 
-We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis solution space for each joint throughout the chain.
+We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain.
 
 Firstly, we can define a simple open kinematic chain a. We express chain a using... joint orientations and positions relative to their parent joints, and for the root node.. (See 4B17 notes and Wittenburg).. We can apply forward kinematics to bring calculate the joint positions and orientations in the global coordinate system.
 
