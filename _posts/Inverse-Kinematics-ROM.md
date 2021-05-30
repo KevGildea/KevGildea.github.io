@@ -42,6 +42,8 @@ WE DON'T NEED FIG1
 
 If we choose a simpler example, with an initial local coordinate system for vector a where the Y axis (green) is alligned with the vector we can see that the solution space for reorientation of this local coordinate system after mapping is reduced. 
 
+PLOT FIG 2 AS 2 SEPARATED VECTORS - DEMONSTRATINF THE USE CASE OF HAVING a VECTOR WITH NO ORIENTATION INFORMATION (b), AND ANOTHER WITH ORIENTATION INFORMATION (a) THAT WE WANT TO MAP.
+
 <p align="center">
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig2.gif" width="700">
 </p>
