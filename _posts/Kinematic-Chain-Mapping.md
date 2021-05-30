@@ -19,24 +19,16 @@ ADD A FIGURE FOR THE MAPPED COMPLEX KINEMATIC CHAIN
 
 In a previous post, I described how in SO(3) an infinite number of rotation matrices, or Euler/Screw axis-angle combinations can be applied to map one vector (a) onto another vector (b). However, the solution space is constrained such that the Euler/Screw axis must lay on the plane that bisects the vectors.
 
-<p align="center">
-  <img src="/assets/images/Optimized-Inverse-Kinematics/fig0.gif" width="700">
-</p>
-
 > For more infor see my blog post:
 > ['Non-uniqueness of the Euler axis in vector mapping'](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/)
 
-Now, if we assign an initial local coordinate system to vector a, for example, if we set choose it to be aligned with the global coordinate system then we can see the solution space for reorientation of this local coordinate system after mapping. 
-
-WE DON'T NEED FIG1
+If we assign an initial local coordinate system to vector a, for example, if we set choose it to be aligned with the global coordinate system then we can see the solution space for reorientation of this local coordinate system after mapping. 
 
 <p align="center">
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig1.gif" width="700">
 </p>
 
-If we choose a simpler example, with an initial local coordinate system for vector a where the Y axis (green) is alligned with the vector we can see that the solution space for reorientation of this local coordinate system after mapping is reduced. 
-
-PLOT FIG 2 AS 2 SEPARATED VECTORS - DEMONSTRATINF THE USE CASE OF HAVING a VECTOR WITH NO ORIENTATION INFORMATION (b), AND ANOTHER WITH ORIENTATION INFORMATION (a) THAT WE WANT TO MAP.
+Alternatively, we can choose a simpler example, with an initial local coordinate system for vector a where the Y axis (green) is alligned with the vector. It is clear that the solution space for reorientation of this local coordinate system is reduced. 
 
 <p align="center">
   <img src="/assets/images/Optimized-Inverse-Kinematics/fig2.gif" width="700">
