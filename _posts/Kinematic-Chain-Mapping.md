@@ -42,8 +42,50 @@ We would like to extend this method to a kinematic chain, which will require an 
 
 Firstly, we can define a simple open kinematic chain a. We express chain a using... joint orientations and positions relative to their parent joints, and for the root node.. (See 4B17 notes and Wittenburg).. We can apply forward kinematics to bring calculate the joint positions and orientations in the global coordinate system.
 
+```python
+chain_a.append(['jnt_a0', np.array([[ 1, 0, 0],
+                                    [ 0, 1, 0],
+                                    [ 0, 0, 1]]),
+                          np.array([0,0.2,0])])
+chain_a.append(['jnt_a1', np.array([[ 0, 1, 0],
+                                    [ 0, 0, 1],
+                                    [ 1, 0, 0]]),
+                          np.array([0,0.2,0])])
+chain_a.append(['jnt_a2', np.array([[ 1, 0, 0],
+                                    [ 0, 0, 1],
+                                    [ 0, 1, 0]]),
+                          np.array([0.5,0,0])])
+chain_a.append(['jnt_a3', np.array([[ 0, 0, 1],
+                                    [ 1, 0, 0],
+                                    [ 0, 1, 0]]),
+                          np.array([0,0.2,0])])
+chain_a.append(['jnt_a4', np.array([[ 1, 0, 0],
+                                    [ 0, 0, 1],
+                                    [ 0, 1, 0]]),
+                          np.array([0,0,0.2])])
+```
+```python
+dir_graph = {0: [1],
+             1: [2],
+             2: [3],
+             3: [4]}
+```
+
 Implementation of forward kinematics:
 
+```python
+def jnt_path(graph, start, end, path=[]):
+    path = path + [start]
+    if start == end:
+        return path
+    if not start in graph:
+        return None
+    for node in graph[start]:
+        if node not in path:
+            newpath = jnt_path(graph, node, end, path)
+            if newpath: return newpath
+    return None
+```
 ```python
 def FK_local2global(chain, dir_graph): 
     """ perform forward kinematics to to convert joint orientations and position vectors into the global coordinate system"""
@@ -76,6 +118,43 @@ MATHEMATICALLY DESCRIBE 'def IK_simple_open_chain'
 
 Implementation of a modified inverse kinematics approach for mapping a simple kinematic chain:
 
+```python
+def Vector_mapping_Euler_Axis_Space(vec1, vec2): 
+    """ Calculate all rotation matrices that map vector a to align with vector b"""
+    a, b = (vec1 / np.linalg.norm(vec1)), (vec2 / np.linalg.norm(vec2))
+    p1 = np.array([0,0,0])
+    p2 = b / np.linalg.norm(b) + (a / np.linalg.norm(a))
+    p3 = np.cross(a, b) / np.linalg.norm(np.cross(a, b))
+    n=[]
+    # create a list of candidate Euler axes (discritised to 1 degree)
+    for i in range(0,360,1):
+        Φ=np.radians(i)
+        x_Φ=p1[0]+np.cos(Φ)*(p2[0]-p1[0])+np.sin(Φ)*(p3[0]-p1[0])
+        y_Φ=p1[1]+np.cos(Φ)*(p2[1]-p1[1])+np.sin(Φ)*(p3[1]-p1[1])
+        z_Φ=p1[2]+np.cos(Φ)*(p2[2]-p1[2])+np.sin(Φ)*(p3[2]-p1[2])
+        n_Φ=[x_Φ,y_Φ,z_Φ]
+        n.append(n_Φ / np.linalg.norm(n_Φ))
+    # project vectors to form a cone around the Euler axis, and determine required angle for mapping
+    rotation_matrices=[]
+    Euler_axes=[]
+    Euler_angles=[]
+    for i in range(len(n)):
+        Euler_axes.append(n[i])
+        a_Φ, b_Φ = (np.cross(a,n[i]) / np.linalg.norm(np.cross(a,n[i]))), (np.cross(b,n[i]) / np.linalg.norm(np.cross(b,n[i])))
+        θ = np.arccos(np.dot(a_Φ,b_Φ))
+        θ = θ*np.sign(np.dot(n[i], np.cross(a_Φ,b_Φ)))
+        Euler_angles.append(θ)
+        if θ != θ: # if θ is NaN
+            rotation_matrices.append(np.array([[ 1, 0, 0],
+                                               [ 0, 1, 0],
+                                               [ 0, 0, 1]]))
+        else:
+            rotation_matrices.append(np.array([[n[i][0]**2+(n[i][1]**2+n[i][2]**2)*(np.cos(θ)),n[i][0]*n[i][1]*(1-np.cos(θ))-n[i][2]*np.sin(θ),n[i][0]*n[i][2]*(1-np.cos(θ))+n[i][1]*np.sin(θ)],
+                                        [n[i][0]*n[i][1]*(1-np.cos(θ))+n[i][2]*np.sin(θ),n[i][1]**2+(n[i][0]**2+n[i][2]**2)*(np.cos(θ)),n[i][1]*n[i][2]*(1-np.cos(θ))-n[i][0]*np.sin(θ)],
+                                        [n[i][0]*n[i][2]*(1-np.cos(θ))-n[i][1]*np.sin(θ),n[i][1]*n[i][2]*(1-np.cos(θ))+n[i][0]*np.sin(θ),n[i][2]**2+(n[i][0]**2+n[i][1]**2)*(np.cos(θ))]]))
+    
+    return Euler_axes, Euler_angles, rotation_matrices
+```
 ```python
 def IK_simple_open_chain(chain_a, chain_b, dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
     """ perform inverse kinematics to map a simple kinematic chain a (an open chain without forking) to chain b, which must have the same directed graph"""
