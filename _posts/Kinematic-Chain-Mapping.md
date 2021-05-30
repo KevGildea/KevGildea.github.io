@@ -13,12 +13,7 @@ tags:
 ---
 
 ### Background
-
-1. INTRODUCTION TO KINEMATIC CHAINS, AND INVERSE KINEMATICS
-Generally, a kinematic chain can be described as a hierarchical chain of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system, using a directed graph. 
-
-https://en.wikipedia.org/wiki/Inverse_kinematics : inverse kinematics makes use of the kinematics equations to determine the joint parameters that provide a desired configuration (position and rotation) for each of the robot's end-effectors.
-2. In this post I develop a method for mapping one kinematic chain (a) to another which does not contain any information on the orientations of the joints in the system.
+Generally, a kinematic chain can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system, using a directed graph. Inverse kinematics is an approach used to reorient a kinematic chain to achieve a desidered location and orientation for the final joint in the chain (referred to as the end-effector in robitics). This problem can be solved either analytically or numerically depending on the complexity of the chain, i.e. the Degrees of freedom of its joints. If the degrees of freedom of the chain exceeds the degrees of freedom of the end-effector then there exists an infinite number of solutions, and numerical optimization should be used. In this post I develop a method for mapping one kinematic chain (a) to another which does not contain any information on the orientations of the joints in the system. Where the chains must have the same number of joints and the same joint heirarchy, but may have differing and dsproportional link lengths. This is distict from traditional forms of inverse kinematics, in that the target involves mapping vectors throughout the chain, and does not specify degrees of freedom in terms of joint locations nor orientations.
 
 ADD A FIGURE FOR THE MAPPED COMPLEX KINEMATIC CHAIN
 
