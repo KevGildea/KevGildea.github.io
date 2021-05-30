@@ -116,7 +116,11 @@ def IK_simple_open_chain(chain_a, chain_b, dir_graph): # Consider renaming Could
     return reori_a_EAS, repos_a_EAS, Euler_axes
 ```
 
-PLOT EXAMPLE OF THE SOLUTION SPACE FOR 'def IK_simple_open_chain'
+
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig4.gif" width="700">
+</p>
+
 
 DESCRIBE THE MATHEMATICS OF EXTENDING THIS TO A COMPLEX KINEMATIC CHAIN
 
