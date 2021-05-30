@@ -1,6 +1,6 @@
 ---
 title: "Euler axis-angle solution space for mapping kinematic chains: A modified inverse kinematics approach"
-#date: 2021-04-04
+#date: 2021-05-30
 categories:
   - blog
 
