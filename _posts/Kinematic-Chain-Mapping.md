@@ -1,5 +1,5 @@
 ---
-title: "Solution space for inverse kinematics of open kinematic chains"
+title: "Solution space for mapping kinematic chains"
 #date: 2021-04-04
 categories:
   - blog
@@ -14,10 +14,8 @@ tags:
 
 ### Background
 
-REFORMAT THIS BLOG ONLY APPLYING INVERSE KINEMATICS TO SIMPLE AND COMPLEX OPEN KINEMATIC CHAINS
-- The next post can consider ROMS and Optimization
-
-START WITH AN INTRODUCTION TO INVERSE KINEMATICS OF OPEN KINEMATIC CHAINS
+1. INTRODUCTION TO KINEMATIC CHAINS, AND INVERSE KINEMATICS
+2. 
  
 
 ADD AN INTERESTING IMAGE HERE
