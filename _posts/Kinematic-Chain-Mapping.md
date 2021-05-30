@@ -21,7 +21,7 @@ Generally, a kinematic chain can be described as a hierarchical system of links 
 
 In a previous post, I described how in SO(3) an infinite number of rotation matrices, or Euler/Screw axis-angle combinations can be applied to map one vector (a) onto another vector (b). However, the solution space is constrained such that the Euler/Screw axis must lay on the plane that bisects the vectors.
 
-> For more infor see my blog post:
+> For more information see my blog post:
 > ['Non-uniqueness of the Euler axis in vector mapping'](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/)
 
 
