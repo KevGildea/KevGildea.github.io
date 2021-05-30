@@ -1,5 +1,5 @@
 ---
-title: "Solution space for mapping kinematic chains"
+title: "Euler axis solution space for mapping kinematic chains: A modified inverse kinematics approach"
 #date: 2021-04-04
 categories:
   - blog
@@ -15,10 +15,12 @@ tags:
 ### Background
 
 1. INTRODUCTION TO KINEMATIC CHAINS, AND INVERSE KINEMATICS
-2. 
- 
+Generally, a kinematic chain can be described as a hierarchical chain of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system, using a directed graph. 
 
-ADD AN INTERESTING IMAGE HERE
+https://en.wikipedia.org/wiki/Inverse_kinematics : inverse kinematics makes use of the kinematics equations to determine the joint parameters that provide a desired configuration (position and rotation) for each of the robot's end-effectors.
+2. In this post I develop a method for mapping one kinematic chain (a) to another which does not contain any information on the orientations of the joints in the system.
+
+ADD A FIGURE FOR THE MAPPED COMPLEX KINEMATIC CHAIN
 
 In a previous post, I described how in SO(3) an infinite number of rotation matrices, or Euler/Screw axis-angle combinations can be applied to map one vector (a) onto another vector (b). However, the solution space is constrained such that the Euler/Screw axis must lay on the plane that bisects the vectors.
 
