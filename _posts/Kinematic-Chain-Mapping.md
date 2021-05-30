@@ -94,7 +94,7 @@ def IK_simple_open_chain(chain_a,chain_b,dir_graph): # Consider renaming Could m
         repos_a=copy.deepcopy(pos_a)
         Euler_axis=[]
         for j in range(len(chain_a)):
-            downchain = list(nx.nodes(nx.dfs_tree(dir_graph, j))) # list of index values for j and all joints down chain #CREATE MY OWN FN. FOR THIS?
+            downchain = list(nx.nodes(nx.dfs_tree(dir_graph, j))) # list of index values for j and all joints down chain
             if j < len(chain_a)-1:
                 ROTM= Vector_mapping_Euler_Axis_Space(repos_a[j+1]-repos_a[j], pos_b[j+1]-pos_b[j])[2][i]
                 Euler_axis.append(Vector_mapping_Euler_Axis_Space(repos_a[j+1]-repos_a[j], pos_b[j+1]-pos_b[j])[0][i])
