@@ -43,7 +43,7 @@ Firstly, we can define a simple open kinematic chain a. We express chain a using
 Implementation of forward kinematics:
 
 ```python
-def FK_local2global(chain,dir_graph): 
+def FK_local2global(chain, dir_graph): 
     """ perform forward kinematics to to convert joint orientations and position vectors into the global coordinate system"""
     ref_space_ori = np.array([[1, 0, 0],
                               [0, 1, 0],
@@ -73,7 +73,7 @@ MATHEMATICALLY DESCRIBE 'def IK_simple_open_chain'
 Implementation of a modified inverse kinematics approach for mapping a simple kinematic chain:
 
 ```python
-def IK_simple_open_chain(chain_a,chain_b,dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
+def IK_simple_open_chain(chain_a, chain_b, dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
     """ perform inverse kinematics to map a simple kinematic chain a (an open chain without forking) to chain b, which must have the same directed graph"""
     ori_a, pos_a = FK_local2global(chain_a,dir_graph)
     _, pos_b = FK_local2global(chain_b,dir_graph)
@@ -119,7 +119,7 @@ DESCRIBE THE MATHEMATICS OF EXTENDING THIS TO A COMPLEX KINEMATIC CHAIN
 Implementation of a modified inverse kinematics approach for mapping a complex kinematic chain:
 
 ```python
-def IK_complex_open_chain(chain_a, chain_b,dir_graph): 
+def IK_complex_open_chain(chain_a, chain_b, dir_graph): 
     """ perform inverse kinematics to map a complex kinematic chain a (an open chain with forking) to chain b, which must have the same directed graph"""
 
 
