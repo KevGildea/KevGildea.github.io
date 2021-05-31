@@ -12,13 +12,15 @@ tags:
 
 ---
 
-### Background
+### Kinematic chains
 Generally, a kinematic chain can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system, e.g. using a directed graph. Inverse kinematics is an approach used to reorient an open kinematic chain (i.e. no looping) to achieve a desidered location and orientation for the final joint in the chain (referred to as the end-effector in robotics). This problem can be solved either analytically or numerically depending on the complexity of the chain, i.e. the Degrees of freedom of the system. If the degrees of freedom of the chain exceeds the degrees of freedom of the end-effector then there exists an infinite number of solutions, and numerical optimization should be used. In this post I develop a method for calculating the solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. Where the chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This is distinct from traditional forms of inverse kinematics, in that the target involves mapping vectors throughout the chain, and does not specify degrees of freedom in terms of joint locations nor orientations.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig0.png" width="700">
 </p>
 
+
+### Vector mapping
 In a previous post, I described how in SO(3) an infinite number of rotation matrices, or Euler/Screw axis-angle combinations can be applied to map one vector (a) onto another vector (b). However, the solution space is constrained such that the Euler/Screw axis must lay on the plane that bisects the vectors.
 
 > For more information see my blog post:
@@ -38,9 +40,17 @@ Alternatively, we can choose a simpler orientation, with an initial local coordi
   <img src="/assets/images/Kinematic-Chain-Mapping/fig2.gif" width="700">
 </p>
 
-We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain.
+We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints.
 
-Firstly, we can define a simple open kinematic chain a. We express chain a using... joint orientations and positions relative to their parent joints, and for the root node.. (See 4B17 notes and Wittenburg).. We can apply forward kinematics to bring calculate the joint positions and orientations in the global coordinate system.
+We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because..
+
+We must aslo specify the heirarchical structure of the chain using a directed graph. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint). We can apply forward kinematics to calculate the joint positions and orientations in the global coordinate system.
+
+PLOT DEMONSTRATING THIS CONVENTION 
+1) draw a kinematic chain example
+2) create the directed graph
+3) calculation of forward kinematics
+
 
 ```python
 chain_a.append(['jnt_a0', np.array([[ 1, 0, 0],
@@ -64,12 +74,16 @@ chain_a.append(['jnt_a4', np.array([[ 1, 0, 0],
                                     [ 0, 1, 0]]),
                           np.array([0,0,0.2])])
 ```
+
 ```python
 dir_graph = {0: [1],
              1: [2],
              2: [3],
              3: [4]}
 ```
+
+
+
 
 Implementation of forward kinematics:
 
