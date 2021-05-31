@@ -41,7 +41,7 @@ Alternatively, we can choose a simpler orientation, with an initial local coordi
 
 ### Definining a kinematic chain and applying forward kinematics 
 
-We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint).
+We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint), where joint 0 is the root joint which is connected to the reference space. [See here](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group) for a brief overview of some relevant theory for the 3D rotation group.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig6.png" width="700">
@@ -85,10 +85,11 @@ dir_graph = {0: [1],
              3: [4]}
 ```
 
-Implementation of forward kinematics:
+For implementation of forward kinematics we must use the directed graph to define the path for each joint (i.e. a list of all joints on the path from the root joint).
 
 ```python
 def jnt_path(graph, start, end, path=[]):
+    """ list all joints on the path to a specified joint"""
     path = path + [start]
     if start == end:
         return path
@@ -102,7 +103,7 @@ def jnt_path(graph, start, end, path=[]):
 ```
 ```python
 def FK_local2global(chain, dir_graph): 
-    """ perform forward kinematics to to convert joint orientations and position vectors into the global coordinate system"""
+    """ perform forward kinematics to to convert locally defined joint DOFs into the global coordinate system"""
     ref_space_ori = np.array([[1, 0, 0],
                               [0, 1, 0],
                               [0, 0, 1]])
@@ -129,15 +130,13 @@ Plot:
 
 Since we use a directed graph, this approach also works for more complex kinematic chains with branching (i.e. where joints may have multiple children).
 
-DOUBLE CHECK THIS IS CORRECT..
-
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig9.PNG" width="700">
 </p>
 
 ### Solution space for mapping kinematic chains
 
-The goal is to use kinematics knowledge to extend the [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/) I previously developed for use on a kinematic chain. As I previously described, this is a kinematical approach that which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints. The method developed here does not fit the definitions of forward kinematics nor inverse kinematics in that it.... 
+The goal is to use kinematics knowledge to extend the [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) I previously developed for use on a kinematic chain. As I previously described, this is a kinematical approach that which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints. The method developed here does not fit the definitions of forward kinematics nor inverse kinematics in that it.... 
 
 
 
