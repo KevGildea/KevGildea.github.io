@@ -27,7 +27,6 @@ In a previous post, I described how in SO(3) an infinite number of rotation matr
 > ['Non-uniqueness of the Euler axis in vector mapping'](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/)
 
 
-### Solution space for mapping kinematic chains
 If we assign an initial local coordinate system to vector a, for example, if we set it to be aligned with the global coordinate system then we can see the Euler axis-angle solution space for reorientation of this local coordinate system. 
 
 <p align="center">
@@ -39,6 +38,9 @@ Alternatively, we can choose a simpler orientation, with an initial local coordi
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig2.gif" width="700">
 </p>
+
+
+### Solution space for mapping kinematic chains
 
 We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints.
 
