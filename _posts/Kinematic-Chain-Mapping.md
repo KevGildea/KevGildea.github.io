@@ -13,7 +13,7 @@ tags:
 ---
 
 ### Background
-Generally, a kinematic chain can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system, e.g. using a directed graph. Inverse kinematics is an approach used to reorient an open kinematic chain (i.e. no looping) to achieve a desidered location and orientation for the final joint in the chain (referred to as the end-effector in robotics). This problem can be solved either analytically or numerically depending on the complexity of the chain, i.e. the Degrees of freedom of the system. If the degrees of freedom of the chain exceeds the degrees of freedom of the end-effector then there exists an infinite number of solutions, and numerical optimization should be used. In this post I develop a method for calculating the solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. Where the chains must have the same number of joints and the same joint heirarchy, but may have differing and dsproportional link lengths. This is distinct from traditional forms of inverse kinematics, in that the target involves mapping vectors throughout the chain, and does not specify degrees of freedom in terms of joint locations nor orientations.
+Generally, a kinematic chain can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system, e.g. using a directed graph. Inverse kinematics is an approach used to reorient an open kinematic chain (i.e. no looping) to achieve a desidered location and orientation for the final joint in the chain (referred to as the end-effector in robotics). This problem can be solved either analytically or numerically depending on the complexity of the chain, i.e. the Degrees of freedom of the system. If the degrees of freedom of the chain exceeds the degrees of freedom of the end-effector then there exists an infinite number of solutions, and numerical optimization should be used. In this post I develop a method for calculating the solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. Where the chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This is distinct from traditional forms of inverse kinematics, in that the target involves mapping vectors throughout the chain, and does not specify degrees of freedom in terms of joint locations nor orientations.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig0.png" width="700">
@@ -26,13 +26,13 @@ In a previous post, I described how in SO(3) an infinite number of rotation matr
 
 
 ### Euler axis-angle solution space for mapping kinematic chains
-If we assign an initial local coordinate system to vector a, for example, if we set choose it to be aligned with the global coordinate system then we can see the Euler axis solution space for reorientation of this local coordinate system. 
+If we assign an initial local coordinate system to vector a, for example, if we set it to be aligned with the global coordinate system then we can see the Euler axis-angle solution space for reorientation of this local coordinate system. 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig1.gif" width="700">
 </p>
 
-Alternatively, we can choose a simpler example, with an initial local coordinate system for vector a where the Y axis (green) is alligned with the vector. In this case, the solution space is more easily visualised. 
+Alternatively, we can choose a simpler orientation, with an initial local coordinate system for vector a where the Y axis (green) is alligned with the vector. In this case, the solution space is more easily visualised. 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig2.gif" width="700">
