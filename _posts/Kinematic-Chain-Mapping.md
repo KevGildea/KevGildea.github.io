@@ -40,21 +40,23 @@ Alternatively, we can choose a simpler orientation, with an initial local coordi
 </p>
 
 
-### Solution space for mapping kinematic chains
+### Definining a kinematic chain and applying forward kinematics 
 
 We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints.
 
-We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because.. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint)
+We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint)
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig6.png" width="700">
 </p>
 
-We can apply forward kinematics to calculate the joint positions and orientations in the global coordinate system. We must aslo specify the heirarchical structure of the chain using a directed graph. 
+In order to perform kinematic operation on the chain we must aslo specify its heirarchical structure using a directed graph. 
 
-PLOT DEMONSTRATING THIS CONVENTION 
-1) create the directed graph
-2) calculation of forward kinematics
+DIRECTED GRAPH MATHS FIGURE
+
+We can use this information to calculate the joint positions and orientations in the global coordinate system i.e. forward kinematics.
+
+FORWARD KINEMATICS MATHS FIGURE
 
 
 Programatically: 
@@ -129,7 +131,12 @@ def FK_local2global(chain, dir_graph):
     return oris, poss
 ```
 
-We can then define chain b using only joint positions in the global coordinate system, and the same directed graph as chain a.
+
+### Solution space for mapping kinematic chains
+
+The problem statement is to...
+
+We can then define chain b using only joint positions in the global coordinate system, and the same directed graph as chain a which we previously defined.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
