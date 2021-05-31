@@ -39,10 +39,9 @@ Alternatively, we can choose a simpler orientation, with an initial local coordi
   <img src="/assets/images/Kinematic-Chain-Mapping/fig2.gif" width="700">
 </p>
 
+We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints.
 
 ### Definining a kinematic chain and applying forward kinematics 
-
-We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints.
 
 We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint)
 
