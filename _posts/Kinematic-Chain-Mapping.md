@@ -13,7 +13,7 @@ tags:
 ---
 
 ### Kinematic chains
-Generally, a kinematic chain can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system, e.g. using a directed graph. Inverse kinematics is an approach used to reorient an open kinematic chain (i.e. no looping) to achieve a desidered location and orientation for the final joint in the chain (referred to as the end-effector in robotics). This problem can be solved either analytically or numerically depending on the complexity of the chain, i.e. the Degrees of freedom of the system. If the degrees of freedom of the chain exceeds the degrees of freedom of the end-effector then there exists an infinite number of solutions, and numerical optimization should be used. In this post I develop a method for calculating the solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. Where the chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This is distinct from traditional forms of inverse kinematics, in that the target involves mapping vectors throughout the chain, and does not specify degrees of freedom in terms of joint locations nor orientations.
+Generally, a kinematic chain can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system, e.g. using a directed graph. Inverse kinematics is an approach used to reorient an open kinematic chain (i.e. no looping) to achieve a desidered location and orientation for the final joint in the chain (referred to as the end-effector in robotics). This problem can be solved either analytically or numerically depending on the complexity of the chain, i.e. the Degrees of freedom of the system. If the degrees of freedom of the chain exceeds the degrees of freedom of the end-effector then there exists an infinite number of solutions, and numerical optimization should be used. In this post I develop a method for calculating the solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This is distinct from traditional forms of inverse kinematics, in that the target involves mapping vectors throughout the chain, and does not specify degrees of freedom in terms of joint locations nor orientations.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig0.png" width="700">
@@ -101,6 +101,8 @@ def jnt_path(graph, start, end, path=[]):
             if newpath: return newpath
     return None
 ```
+The forward kinematics solution first defines the reference space to be at (0,0,0) with an identity matrix orientation, then reads in the locally defined joint DOFs for each joint and sequentially calculates the global DOFs along the path to the joint.
+
 ```python
 def FK_local2global(chain, dir_graph): 
     """ perform forward kinematics to to convert locally defined joint DOFs into the global coordinate system"""
@@ -122,13 +124,13 @@ def FK_local2global(chain, dir_graph):
     
     return oris, poss
 ```
-Plot:
+Plotting the kinematic chain in the global coordinate sysem:
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig8.PNG" width="700">
 </p>
 
-Since we use a directed graph, this approach also works for more complex kinematic chains with branching (i.e. where joints may have multiple children).
+Since we use the path to each joint from the directed graph, this approach also works for more complex kinematic chains with branching (i.e. where joints may have multiple children).
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig9.PNG" width="700">
@@ -136,11 +138,9 @@ Since we use a directed graph, this approach also works for more complex kinemat
 
 ### Solution space for mapping kinematic chains
 
-The goal is to use kinematics knowledge to extend the [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) I previously developed for use on a kinematic chain. As I previously described, this is a kinematical approach that which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints. The method developed here does not fit the definitions of forward kinematics nor inverse kinematics in that it.... 
+The goal is to use kinematics knowledge to extend the [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) I previously developed for use on a kinematic chain. Specifically, I would like to develop a method for calculating the solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This will require a kinematical approach involving sequential calculations of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints. 
 
-
-
-We can define chain b using only joint positions in the global coordinate system, and the same directed graph as chain a which we previously defined.
+Firstly, we can use the simple open kinematic chain defined above. We define chain b using only joint positions in the global coordinate system, and use same directed graph as chain a which we previously defined.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
@@ -251,4 +251,4 @@ def IK_complex_open_chain(chain_a, chain_b, dir_graph):
 ```
 
 ### Implications
-
+The method developed here does not fit the definitions of forward kinematics nor inverse kinematics in that it.... 
