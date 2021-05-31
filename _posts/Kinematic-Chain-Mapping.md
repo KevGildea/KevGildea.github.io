@@ -129,6 +129,8 @@ Plot:
 
 Since we use a directed graph, this approach also works for more complex kinematic chains with branching (i.e. where joints may have multiple children).
 
+DOUBLE CHECK THIS IS CORRECT..
+
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig9.PNG" width="700">
 </p>
