@@ -228,7 +228,7 @@ def simple_open_chain_mapping(chain_a, chain_b, dir_graph): # Consider renaming 
 
     return reori_a_EAS, repos_a_EAS, Euler_axes
 ```
-
+THE FUNCTION IS NOT OUTPUTTING THE FULL SOLUTION SPACE - EULER AXES-ANGLE SOLUTION SPACE IS ONLY BEING OUTPUT FOR THE NUMBER OF SOLUTIONS SPECIFIED FOR THE FIRST JOINT e.g. 'for i in range(1,360,5):' results in a shape of (72, 4, 3) for 'Euler_axes'
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig4.gif" width="700">
