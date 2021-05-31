@@ -1,5 +1,5 @@
 ---
-title: "Solution space for mapping kinematic chains: A modified inverse kinematics approach"
+title: "Solution space for mapping kinematic chains: A modified inverse/forward kinematics approach"
 #date: 2021-05-30
 categories:
   - blog
@@ -39,8 +39,6 @@ Alternatively, we can choose a simpler orientation, with an initial local coordi
   <img src="/assets/images/Kinematic-Chain-Mapping/fig2.gif" width="700">
 </p>
 
-We would like to extend this method to a kinematic chain, which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints.
-
 ### Definining a kinematic chain and applying forward kinematics 
 
 We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint).
@@ -55,7 +53,7 @@ We can use this information to calculate the joint positions and orientations in
   <img src="/assets/images/Kinematic-Chain-Mapping/fig7.png" width="700">
 </p>
 
-Programatically: 
+Using this knowledge we can programatically define a kinematic chain and plot it in the global coordinate system using forward kinematics: 
 
 ```python
 chain_a.append(['jnt_a0', np.array([[ 1, 0, 0],
@@ -86,9 +84,6 @@ dir_graph = {0: [1],
              2: [3],
              3: [4]}
 ```
-
-
-
 
 Implementation of forward kinematics:
 
@@ -126,13 +121,19 @@ def FK_local2global(chain, dir_graph):
     
     return oris, poss
 ```
+PNG OF SIMPLE CHAIN A
 
+Since we use a directed graph, this approach also works for more complex kinematic chains with branching (i.e. where joints may have multiple children).
+
+PNG OF COMPLEX CHAIN A
 
 ### Solution space for mapping kinematic chains
 
-The problem statement is to...
+The goal is to use kinematics knowledge to extend the [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/) I previously developed for use on a kinematic chain. As I previously described, this is a kinematical approach that which will require an iterative calculation of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for downchain joints. The method developed here does not fit the definitions of forward kinematics nor inverse kinematics in that it.... 
 
-We can then define chain b using only joint positions in the global coordinate system, and the same directed graph as chain a which we previously defined.
+
+
+We can define chain b using only joint positions in the global coordinate system, and the same directed graph as chain a which we previously defined.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
@@ -235,7 +236,7 @@ Implementation of a modified inverse kinematics approach for mapping a complex k
 
 ```python
 def IK_complex_open_chain(chain_a, chain_b, dir_graph): 
-    """ perform inverse kinematics to map a complex kinematic chain a (an open chain with forking) to chain b, which must have the same directed graph"""
+    """ perform inverse kinematics to map a complex kinematic chain a (an open chain with branching) to chain b, which must have the same directed graph"""
 
 
     return 
