@@ -43,20 +43,17 @@ We would like to extend this method to a kinematic chain, which will require an 
 
 ### Definining a kinematic chain and applying forward kinematics 
 
-We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint)
+We can define a simple open kinematic chain 'a' using a parent-child convention, where DOFs of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint).
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig6.png" width="700">
 </p>
 
-In order to perform kinematic operation on the chain we must aslo specify its heirarchical structure using a directed graph. 
-
-DIRECTED GRAPH MATHS FIGURE
-
 We can use this information to calculate the joint positions and orientations in the global coordinate system i.e. forward kinematics.
 
-FORWARD KINEMATICS MATHS FIGURE
-
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig7.png" width="700">
+</p>
 
 Programatically: 
 
@@ -82,7 +79,7 @@ chain_a.append(['jnt_a4', np.array([[ 1, 0, 0],
                                     [ 0, 1, 0]]),
                           np.array([0,0,0.2])])
 ```
-
+In order to perform kinematic operation on the chain we must aslo specify its heirarchical structure using a directed graph. 
 ```python
 dir_graph = {0: [1],
              1: [2],
