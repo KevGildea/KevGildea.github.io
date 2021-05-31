@@ -121,11 +121,17 @@ def FK_local2global(chain, dir_graph):
     
     return oris, poss
 ```
-PNG OF SIMPLE CHAIN A
+Plot:
+
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig8.png" width="700">
+</p>
 
 Since we use a directed graph, this approach also works for more complex kinematic chains with branching (i.e. where joints may have multiple children).
 
-PNG OF COMPLEX CHAIN A
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig9.png" width="700">
+</p>
 
 ### Solution space for mapping kinematic chains
 
