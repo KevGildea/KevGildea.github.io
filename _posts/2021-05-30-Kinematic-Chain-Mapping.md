@@ -145,25 +145,25 @@ The goal is to use kinematics knowledge to extend the [vector mapping method](ht
 </p>
 
 Step 1: Transform chains a and b such that the current joint a<sub>k</sub>, and b<sub>k</sub> are at the origin. i.e. first apply this to the root nodes a<sub>0</sub>, and b<sub>0</sub>.
-...
+
 <p align="leftr">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="400">
 </p>
 
-Step 2:
-...
+Step 2: Determine the Euler axis-angle solution space for mapping vector a to vector b.
+
 <p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig11.png" width="700">
 </p>
 
-Step 3:
-...
+Step 3: Perform forward kinematics on downchain joints in chain a, including the Euler axis solution space.
+
 <p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig12.png" width="400">
 </p>
 
-Step 4:
-...
+Step 4: Repeat steps 1 to 3 for each joint in the chain (k+1).
+
 
 Implementation for a simple open kinematic chain:
 Firstly, we can use the simple open kinematic chain defined above. We define chain b using only joint positions in the global coordinate system, and use same directed graph as chain a which we previously defined.
