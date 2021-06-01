@@ -80,7 +80,7 @@ chain_a.append(['jnt_a4', np.array([[ 1, 0, 0],
                                     [ 0, 1, 0]]),
                           np.array([0,0,0.2])])
 ```
-In order to perform kinematic operation on the chain we must aslo specify its heirarchical structure using a directed graph. 
+In order to perform kinematic operations on the chain we must also specify its heirarchical structure using a directed graph. 
 ```python
 dir_graph = {0: [1],
              1: [2],
