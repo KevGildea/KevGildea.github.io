@@ -7,8 +7,8 @@ categories:
 tags:
   - Kinematics
   - Forward kinematics
-  - Inverse Kinematics
-  - Linear Algebra
+  - Inverse kinematics
+  - Linear algebra
   - Rotations
 
 ---
