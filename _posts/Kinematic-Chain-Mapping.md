@@ -146,7 +146,9 @@ Firstly, we can use the simple open kinematic chain defined above. We define cha
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
 </p>
 
-MATHEMATICALLY DESCRIBE 'def IK_simple_open_chain'
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig10.PNG" width="700">
+</p>
 
 Firstly, we must define our [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) which will be called upon sequentially throughout the mapping process.
 
@@ -188,7 +190,7 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
     return Euler_axes, Euler_angles, rotation_matrices
 ```
 
-Next, we 
+Next, we apply our method.
 ```python
 def simple_open_chain_mapping(chain_a, chain_b, dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
     """ perform inverse kinematics to map a simple kinematic chain a (an open chain without forking) to chain b, which must have the same directed graph"""
