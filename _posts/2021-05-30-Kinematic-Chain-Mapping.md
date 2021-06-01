@@ -165,7 +165,6 @@ Step 3: Perform forward kinematics on downchain joints in chain a, including the
 Step 4: Repeat steps 1 to 3 for each joint in the chain (k+1).
 
 
-Implementation for a simple open kinematic chain:
 Firstly, we can use the simple open kinematic chain defined above. We define chain b using only joint positions in the global coordinate system, and use same directed graph as chain a which we previously defined.
 
 <p align="center">
