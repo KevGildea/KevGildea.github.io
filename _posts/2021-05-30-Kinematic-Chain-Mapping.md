@@ -168,7 +168,7 @@ Step 3: Perform forward kinematics on downchain joints in chain a, including the
 Step 4: Repeat steps 1 to 3 for each joint in the chain (k+1).
 
 
-We can use the simple open kinematic chain defined previously. We also define chain b using only joint positions in the global coordinate system, and use same directed graph as chain a.
+We can use the simple open kinematic chain defined previously. We can define chain b using only joint positions, in either the conventional form for kinematic chains, or simply as positions in the global coordinate system. I have chosen to define it in the conventional form, but the solution only considers vectors in the global coordinate system. 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
