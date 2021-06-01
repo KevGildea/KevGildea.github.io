@@ -147,7 +147,7 @@ Firstly, we can use the simple open kinematic chain defined above. We define cha
 </p>
 
 <p align="center">
-  <img src="/assets/images/Kinematic-Chain-Mapping/fig10.PNG" width="700">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="700">
 </p>
 
 Firstly, we must define our [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) which will be called upon sequentially throughout the mapping process.
