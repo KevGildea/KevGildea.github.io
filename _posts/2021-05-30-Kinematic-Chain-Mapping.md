@@ -211,7 +211,7 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
     return Euler_axes, Euler_angles, rotation_matrices
 ```
 
-Next, we apply our method.
+Next, we apply our method for a discretised Euler axis-angle solution space for each joint in the Kinematic chain.
 ```python
 def simple_open_chain_mapping(chain_a, chain_b, dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
     """ perform inverse kinematics to map a simple kinematic chain a (an open chain without forking) to chain b, which must have the same directed graph"""
@@ -243,15 +243,15 @@ def simple_open_chain_mapping(chain_a, chain_b, dir_graph): # Consider renaming 
                     reori_a[downchain[k]]= ROTM @ reori_a[downchain[k]]
                 if downchain[k] != downchain[-1]:
                     repos_a[downchain[k+1]]= repos_a[j] + ROTM @ (repos_a[downchain[k+1]]-repos_a[j])
-        repos_a= repos_a + chain_a[0][2]
-
-        repos_a_EAS.append(repos_a)
-        reori_a_EAS.append(reori_a)
-        Euler_axes.append(Euler_axis)
+            repos_a= repos_a + chain_a[0][2]
+            repos_a_EAS.append(repos_a)
+            reori_a_EAS.append(reori_a)
+            Euler_axes.append(Euler_axis)
 
     return reori_a_EAS, repos_a_EAS, Euler_axes
 ```
-THE FUNCTION IS NOT OUTPUTTING THE FULL SOLUTION SPACE - EULER AXES-ANGLE SOLUTION SPACE IS ONLY BEING OUTPUT FOR THE NUMBER OF SOLUTIONS SPECIFIED FOR THE FIRST JOINT e.g. 'for i in range(1,360,5):' results in a shape of (72, 4, 3) for 'Euler_axes'. Whereas, the total number of solutions should be 72^4 = 26.873856x10^6. This shouldnt be plotted, but we should have an approach for calculating the full solution space...
+
+Plotting the output reveals valid mapping (it works!):
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig4.gif" width="700">
@@ -259,4 +259,4 @@ THE FUNCTION IS NOT OUTPUTTING THE FULL SOLUTION SPACE - EULER AXES-ANGLE SOLUTI
 
 
 ### Implications
-The method developed here does not fit the definitions of forward kinematics nor inverse kinematics in that it.... 
+The method developed here does not fit the definitions of forward kinematics nor inverse kinematics in that it 
