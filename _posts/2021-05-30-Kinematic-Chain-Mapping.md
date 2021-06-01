@@ -14,7 +14,7 @@ tags:
 ---
 
 ### Mapping kinematic chains
-Kinematic chains can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system. In this post I develop a method for calculating the solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. 
+Kinematic chains can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system. In this post I develop a method for calculating the solution space for mapping one simple open kinematic chain (i.e. no looping) (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig0.png" width="700">
@@ -34,7 +34,7 @@ If we assign an initial local coordinate system to vector a, for example, if we 
   <img src="/assets/images/Kinematic-Chain-Mapping/fig1.gif" width="700">
 </p>
 
-Alternatively, we can choose a simpler orientation, with an initial local coordinate system for vector a where the Y axis (green) is alligned with the vector. In this case, the solution space is more easily visualised. 
+Alternatively, we can choose a simpler joint orientation, with an initial local coordinate system for vector a where the local y-axis (green) is alligned with the vector. In this case, the solution space is more easily visualised. 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig2.gif" width="700">
@@ -42,9 +42,9 @@ Alternatively, we can choose a simpler orientation, with an initial local coordi
 
 ### Definining a kinematic chain and applying forward kinematics 
 
-We can define a simple open kinematic chain 'a' using a parent-child convention, where the degrees of freedom (DOFs) of child joints are expressed with respect to the parent joint DOFs; i.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. 
+We can define a simple open kinematic chain 'a' using a parent-child convention, where the degrees of freedom (DOFs) of child joints are expressed with respect to the parent joint DOFs. I.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. 
 
-Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint), where joint 0 is the root joint which is connected to the reference space. [See here](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group) for a brief overview of some relevant theory for the 3D rotation group.
+Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint), where joint a<sub>0</sub> is the root joint which is connected to the reference space. [See here](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group) for a brief overview of some relevant theory for the 3D rotation group.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig6.png" width="700">
@@ -56,7 +56,7 @@ We can use this information to calculate the joint positions and orientations in
   <img src="/assets/images/Kinematic-Chain-Mapping/fig7.png" width="700">
 </p>
 
-Using this knowledge we can programatically define a kinematic chain and plot it in the global coordinate system using forward kinematics: 
+Using this knowledge we can programatically define a kinematic chain and plot it in the global coordinate system using forward kinematics.
 
 ```python
 chain_a.append(['jnt_a0', np.array([[ 1, 0, 0],
@@ -168,7 +168,7 @@ Step 3: Perform forward kinematics on downchain joints in chain a, including the
 Step 4: Repeat steps 1 to 3 for each joint in the chain (k+1).
 
 
-We can use the simple open kinematic chain defined above. We also define chain b using only joint positions in the global coordinate system, and use same directed graph as chain a which we previously defined.
+We can use the simple open kinematic chain defined previously. We also define chain b using only joint positions in the global coordinate system, and use same directed graph as chain a.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
@@ -262,6 +262,6 @@ Plotting the output reveals valid mapping (it works!):
 
 
 ### Implications
-The method developed here does not fit the traditional definitions of forward kinematics nor inverse kinematics. Inverse kinematics is an approach used to reorient an open kinematic chain (i.e. no looping) to achieve a desidered location and orientation for the final joint in the chain (referred to as the end-effector in robotics). This problem can be solved either analytically or numerically depending on the complexity of the chain, i.e. the Degrees of freedom of the system. If the degrees of freedom of the chain exceeds the degrees of freedom of the end-effector then there exists an infinite number of solutions, and numerical optimization should be used. The method developed here takes a kinematic approach to achieve desired vector directions in the chain which resembles the aim of inverse kinematics, however we do not specify target joint orientations. The method uses a modified form of forward kinematics to propagate joint Euler axis-angle solution spaces downchain. This approach allows for the generation of all possible solutions for kinematic chain mapping, and allows for joint constraints to be applied (i.e. joint ranges of motion). 
+The method developed here does not fit the traditional definitions of forward kinematics nor inverse kinematics. Inverse kinematics is an approach used to reorient an open kinematic chain to achieve a desidered location and orientation for the final joint in the chain (referred to as the end-effector in robotics). This problem can be solved either analytically or numerically depending on the complexity of the chain, i.e. the Degrees of freedom of the system. If the degrees of freedom of the chain exceeds the degrees of freedom of the end-effector then there exists an infinite number of solutions, and numerical optimization should be used. The method developed here takes a kinematic approach to achieve desired vector directions in the chain which resembles the aim of inverse kinematics, however we do not specify target joint orientations. The method uses a modified form of forward kinematics to propagate joint Euler axis-angle solution spaces downchain. This approach allows for the generation of all possible solutions for kinematic chain mapping, and allows for joint constraints to be applied (i.e. joint ranges of motion). 
 
 The full code is available [here](https://github.com/KevGildea/RotationTheory/blob/main/Kinematic-Chain-Mapping/Kinematic-Chain-Mapping.py).
