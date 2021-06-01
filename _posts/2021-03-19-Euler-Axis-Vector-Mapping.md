@@ -5,8 +5,9 @@ categories:
   - blog
 
 tags:
-  - Linear Algebra
+  - Linear algebra
   - Rotations
+  - Kinematics
 
 ---
 
