@@ -1,5 +1,5 @@
 ---
-title: "Solution space for mapping kinematic chains: A modified inverse/forward kinematics approach"
+title: "Solution space for mapping simple kinematic chains: A modified inverse/forward kinematics approach"
 #date: 2021-05-30
 categories:
   - blog
@@ -259,4 +259,6 @@ Plotting the output reveals valid mapping (it works!):
 
 
 ### Implications
-The method developed here does not fit the definitions of forward kinematics nor inverse kinematics in that it 
+The method developed here does not fit the traditional definitions of forward kinematics nor inverse kinematics. The method takes a kinematic approach to achieve desired vector directions in the chain, which resembles the aim of inverse kinematics, however we do not specify target joint orientations. The method uses a modified form of forward kinematics to propagate joint Euler axis-angle solution spaces downchain. This approach allows for the generation of all possible solutions for kinematic chain mapping, and allows for joint constraints to be applied (i.e. joint ranges of motion). 
+
+The full code is available [here](https://github.com/KevGildea/RotationTheory/blob/main/Kinematic-Chain-Mapping/Kinematic-Chain-Mapping.py).
