@@ -140,17 +140,17 @@ Since we use the path to each joint from the directed graph, this approach also 
 
 The goal is to use kinematics knowledge to extend the [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) I previously developed for use on a kinematic chain. Specifically, I would like to develop a method for calculating the solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This will require a kinematical approach involving sequential calculations of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles in upchain joints affect the orientations and the resulting solution spaces for mapping downchain joints. 
 
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="700">
+</p>
+
 Firstly, we can use the simple open kinematic chain defined above. We define chain b using only joint positions in the global coordinate system, and use same directed graph as chain a which we previously defined.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
 </p>
 
-<p align="center">
-  <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="700">
-</p>
-
-Firstly, we must define our [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) which will be called upon sequentially throughout the mapping process.
+We must define our [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) which will be called upon sequentially throughout the mapping process.
 
 ```python
 def Vector_mapping_Euler_Axis_Space(vec1, vec2): 
