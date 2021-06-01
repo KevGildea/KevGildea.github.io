@@ -146,19 +146,19 @@ The goal is to use kinematics knowledge to extend the [vector mapping method](ht
 
 Step 1:
 ...
-<p align="center">
+<p align="leftr">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="500">
 </p>
 
 Step 2:
 ...
-<p align="center">
+<p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig11.png" width="700">
 </p>
 
 Step 3:
 ...
-<p align="center">
+<p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig12.png" width="500">
 </p>
 
