@@ -139,6 +139,21 @@ Since we use the path to each joint from the directed graph, this approach also 
   <img src="/assets/images/Kinematic-Chain-Mapping/fig9.PNG" width="700">
 </p>
 
+The usefulness of this convetion, and the use of forward kinematics can be seen if we decide to edit or reorient our kinematic chain. For example, if I would like to reorient a joint in the chain, it makes physical sense due to apply the rotation in the local coordinate system, i.e. if you rotate your elbow, the rotation is kinematically constrained to occur about a fixed axis defined in the local coordinate system (usually chosen to be a cardinal axis). Furthermore, the orientation change you make to the elbow should reorient downchain joints to the same extent (this can be applied using forward kinematics).
+
+For example, if I reorient jnt_a5 in the example above, the positions and orientations of downchain joints are transformed appropriately:
+
+```python
+chain_a_reori[5][1]=chain_a_repos[5][1] @ np.array([[ -0.3819, 0.8207, -0.425],
+                                                    [ -0.2589, -0.5365, -0.8032],
+                                                    [ -0.8872, -0.1967, 0.4174]])
+```
+
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig13.gif" width="700">
+</p>
+
+
 ### Solution space for mapping kinematic chains
 
 The goal is to use kinematics knowledge to extend the [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) I previously developed for use on a kinematic chain. Specifically, I would like to develop a method for calculating the discretised solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This will require a kinematical approach involving sequential calculations of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles applied in upchain joints affect the joint orientations and the resulting solution spaces for mapping downchain vectors.
