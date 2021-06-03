@@ -145,8 +145,8 @@ For example, if I reorient jnt_a5 in the example above, the positions and orient
 
 ```python
 chain_a[5][1]=chain_a[5][1] @ np.array([[ -0.3819, 0.8207, -0.425],
-                                                    [ -0.2589, -0.5365, -0.8032],
-                                                    [ -0.8872, -0.1967, 0.4174]])
+                                        [ -0.2589, -0.5365, -0.8032],
+                                        [ -0.8872, -0.1967, 0.4174]])
 ```
 
 <p align="center">
