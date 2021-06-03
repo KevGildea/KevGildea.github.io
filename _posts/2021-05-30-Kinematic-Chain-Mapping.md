@@ -145,7 +145,7 @@ For example, if I reorient jnt_a0, and joint_a5 in the example above by 45 degre
 
 | jnt_a0  |  jnt_a5  |
 :-------------------------:|:-------------------------:
-![](/assets/images/Kinematic-Chain-Mapping/fig13.gif)  |  ![](/assets/images/Kinematic-Chain-Mapping/fig13.gif)
+![](/assets/images/Kinematic-Chain-Mapping/fig13.gif)  |  ![](/assets/images/Kinematic-Chain-Mapping/fig14.gif)
 
 ### Solution space for mapping kinematic chains
 
