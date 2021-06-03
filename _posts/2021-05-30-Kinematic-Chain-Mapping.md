@@ -139,7 +139,7 @@ Since we use the path to each joint from the directed graph, this approach also 
   <img src="/assets/images/Kinematic-Chain-Mapping/fig9.PNG" width="700">
 </p>
 
-The usefulness of this convetion, and the use of forward kinematics can be seen if we decide to edit or reorient our kinematic chain. For example, if I would like to reorient a joint in the chain, it makes physical sense due to apply the rotation in the local coordinate system, i.e. if you rotate your elbow, the rotation is kinematically constrained to occur about a fixed axis defined in the local coordinate system (usually chosen to be a cardinal axis). Furthermore, the orientation change you make to the elbow should reorient downchain joints to the same extent (this can be applied using forward kinematics).
+The usefulness of this convetion can be seen if we decide to edit or reorient our kinematic chain. For example, if I would like to reorient a joint in the chain, it makes physical sense to apply the rotation in the local coordinate system, i.e. if you rotate your elbow, the rotation is kinematically constrained to occur about a fixed axis defined in the local coordinate system (usually chosen to be a cardinal axis). Furthermore, the orientation change you make to the elbow should reorient downchain joints to the same extent (can be applied using forward kinematics).
 
 For example, if I reorient jnt_a5 in the example above, the positions and orientations of downchain joints are transformed appropriately:
 
