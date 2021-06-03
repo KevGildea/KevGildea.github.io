@@ -141,7 +141,7 @@ Since we use the path to each joint from the directed graph, this approach also 
 
 The usefulness of this convetion can be seen if we decide to edit or reorient our kinematic chain. For example, if I would like to reorient a joint in the chain, it makes physical sense to apply the rotation in the local coordinate system, i.e. if you rotate your elbow, the rotation is kinematically constrained to occur about a fixed axis defined in the local coordinate system (usually chosen to be a cardinal axis). Furthermore, the orientation change you make to the elbow should reorient downchain joints to the same extent (can be applied using forward kinematics).
 
-For example, if I reorient jnt_a0, and joint_a5 in the example above by 45 degrees about their local x axes, the positions and orientations of downchain joints are transformed appropriately:
+For example, if I reorient jnt_a0, and joint_a5 in the example above by 45 degrees about their local x axes (shown in red), the positions and orientations of downchain joints are transformed appropriately:
 
 | jnt_a0  |  jnt_a5  |
 :-------------------------:|:-------------------------:
