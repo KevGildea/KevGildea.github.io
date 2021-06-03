@@ -1,5 +1,5 @@
 ---
-title: "Solution space for mapping simple kinematic chains: A modified inverse/forward kinematics approach"
+title: "Solution space for mapping serial kinematic chains: A modified inverse/forward kinematics approach"
 #date: 2021-05-30
 categories:
   - blog
@@ -14,7 +14,7 @@ tags:
 ---
 
 ### Mapping kinematic chains
-Kinematic chains can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system. In this post I develop a method for calculating the solution space for mapping one simple open kinematic chain (i.e. no looping) (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. 
+Kinematic chains can be described as a hierarchical system of links and joints. Kinematic chains are described by 1) the locations and orientations of each of the joints, and 2) the heirarchy of the joints in the system. In this post I develop a method for calculating the solution space for mapping one serial open kinematic chain (i.e. a chain with no branches and no looping) (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig0.png" width="700">
@@ -42,9 +42,9 @@ Alternatively, we can choose a simpler joint orientation, with an initial local 
 
 ### Definining a kinematic chain and applying forward kinematics 
 
-We can define a simple open kinematic chain 'a' using a parent-child convention, where the degrees of freedom (DOFs) of child joints are expressed with respect to the parent joint DOFs. I.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. 
+We can define a serial open kinematic chain 'a' using a parent-child convention, where the degrees of freedom (DOFs) of child joints are expressed with respect to the parent joint DOFs. I.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. 
 
-Firstly, we can consider a simple open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint), where joint a<sub>0</sub> is the root joint which is connected to the reference space. [See here](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group) for a brief overview of some relevant theory for the 3D rotation group.
+Firstly, we can consider a serial open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint), where joint a<sub>0</sub> is the root joint which is connected to the reference space. [See here](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group) for a brief overview of some relevant theory for the 3D rotation group.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig6.png" width="700">
@@ -133,7 +133,7 @@ Plotting the kinematic chain in the global coordinate sysem:
   <img src="/assets/images/Kinematic-Chain-Mapping/fig8.PNG" width="700">
 </p>
 
-Since we use the path to each joint from the directed graph, this approach also works for more complex kinematic chains with branching (i.e. where joints may have multiple children).
+Since we use the path to each joint from the directed graph, this approach also works for more complex open kinematic chains with branching (i.e. where joints may have multiple children).
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig9.PNG" width="700">
@@ -164,7 +164,7 @@ The goal is to use kinematics knowledge to extend the [vector mapping method](ht
 
 Step 1: Transform chains a and b such that the current joint a<sub>k</sub>, and b<sub>k</sub> are at the origin. i.e. first apply this to the root nodes a<sub>0</sub>, and b<sub>0</sub>.
 
-<p align="leftr">
+<p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="500">
 </p>
 
@@ -183,7 +183,7 @@ Step 3: Perform forward kinematics on downchain joints in chain a, including the
 Step 4: Repeat steps 1 to 3 for each joint in the chain (k+1).
 
 
-We can use the simple open kinematic chain defined previously. We can define chain b using only joint positions, in either the conventional form for kinematic chains, or simply as positions in the global coordinate system. I have chosen to define it in the conventional form, but the solution only considers vectors in the global coordinate system. 
+We can use the serial open kinematic chain defined previously. We can define chain b using only joint positions, in either the conventional form for kinematic chains, or simply as positions in the global coordinate system. I have chosen to define it in the conventional form, but the solution only considers vectors in the global coordinate system. 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
@@ -231,8 +231,8 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
 
 Next, we apply our method for a discretised Euler axis-angle solution space for each joint in the kinematic chain.
 ```python
-def simple_open_chain_mapping(chain_a, chain_b, dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
-    """ perform inverse kinematics to map a simple kinematic chain a (an open chain without forking) to chain b, which must have the same directed graph"""
+def serial_open_chain_mapping(chain_a, chain_b, dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
+    """ perform inverse kinematics to map a serial kinematic chain a (an open chain without forking) to chain b, which must have the same directed graph"""
     ori_a, pos_a = FK_local2global(chain_a,dir_graph)
     _, pos_b = FK_local2global(chain_b,dir_graph)
 
