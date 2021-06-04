@@ -139,13 +139,43 @@ Since we use the path to each joint from the directed graph, this approach also 
   <img src="/assets/images/Kinematic-Chain-Mapping/fig9.PNG" width="700">
 </p>
 
-The usefulness of this convetion can be seen if we decide to edit or reorient our kinematic chain. For example, if I would like to reorient a joint in the chain, it makes physical sense to apply the rotation in the local coordinate system, i.e. if you rotate your elbow, the rotation is kinematically constrained to occur about a fixed axis defined in the local coordinate system (usually chosen to be a cardinal axis). Furthermore, the orientation change you make to the elbow should reorient downchain joints to the same extent (can be applied using forward kinematics).
+The usefulness of defining a kinematic chain in this manner can be seen if we decide to edit or reorient our kinematic chain. For example, if I would like to reorient a joint in the chain, it makes physical sense to apply the rotation in the local coordinate system, i.e. if you rotate your elbow, the rotation is kinematically constrained to occur about a fixed axis defined in the local coordinate system (usually chosen to be a cardinal axis). Furthermore, the orientation change you make to the elbow should reorient downchain joints to the same extent (can be applied using forward kinematics).
 
 For example, if I reorient jnt_a0, and joint_a5 in the example above by 45 degrees about their local x axes (shown in red), the positions and orientations of downchain joints are transformed appropriately:
 
 | jnt_a0  |  jnt_a5  |
 :-------------------------:|:-------------------------:
 ![](/assets/images/Kinematic-Chain-Mapping/fig13.gif)  |  ![](/assets/images/Kinematic-Chain-Mapping/fig14.gif)
+
+Some may be more familiar with the Denavit-Hartenberg (D-H), or the Modified D-H convention, which allows for a compact expression for all 6 joint DOFs as a 4x4 transformation matrix. Where the coefficients contain information on the relative position and orientation of joint i wrt. joint i-1. The forward kinematics operation is simply a serial multiplication of all transformation matrices on the path to joint i.
+
+<p align="center">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig15.png" width="300">
+</p>
+
+Implementation:
+```python
+def FK_local2global(chain,dir_graph): 
+    """ perform forward kinematics to to convert joint orientations and position vectors into the global coordinate system"""
+    oris=[]
+    poss=[]
+    for i in range (len(chain)):
+        path = jnt_path(dir_graph, 0, i)
+        T=np.array([[ 1, 0, 0, 0],
+                    [ 0, 1, 0, 0],
+                    [ 0, 0, 1, 0],
+                    [ 0, 0, 0, 1]])
+        for j in path:
+            T= T @ chain[j][1]
+            pos=np.array([T[0][3],T[1][3],T[2][3]])
+            ori=np.array([[T[0][0],T[0][1],T[0][2]],[T[1][0],T[1][1],T[1][2]],[T[2][0],T[2][1],T[2][2]]])
+        oris.append(ori)
+        poss.append(pos)
+    return oris, poss
+```
+
+However, for practical reasons currently I am using the more explicit approach the kinematic chain mapping method, i.e. keeping rotation matrices and vectors separate in forward kinematics operations.
+
 
 ### Solution space for mapping kinematic chains
 
