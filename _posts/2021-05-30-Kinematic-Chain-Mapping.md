@@ -53,7 +53,7 @@ Firstly, we can consider a serial open kinematic chain, where the joints are arr
 We can use this information to calculate the joint positions and orientations in the global coordinate system i.e. perform forward kinematics. The most common method for this is the modified D-H convention, which allows for a compact expression for all 6 joint DOFs as a 4x4 transformation matrix. Where the coefficients contain information on the relative position and orientation of joint i wrt. joint i-1. The forward kinematics operation is simply a serial multiplication of all transformation matrices on the path to joint i.
 
 <p align="left">
-  <img src="/assets/images/Kinematic-Chain-Mapping/fig7.png" width="400">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig7.png" width="300">
 </p>
 
 Using this knowledge we can programatically define a kinematic chain and plot it in the global coordinate system using forward kinematics.
@@ -159,7 +159,7 @@ The goal is to use kinematics knowledge to extend the [vector mapping method](ht
 Step 1: Transform chains a and b such that the current joint a<sub>k</sub>, and b<sub>k</sub> are at the origin. i.e. first apply this to the root nodes a<sub>0</sub>, and b<sub>0</sub>.
 
 <p align="left">
-  <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="400">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="300">
 </p>
 
 Step 2: Determine the Euler axis-angle solution space for mapping vector a to vector b.
@@ -171,7 +171,7 @@ Step 2: Determine the Euler axis-angle solution space for mapping vector a to ve
 Step 3: Perform forward kinematics on downchain joints in chain a, including the Euler axis-angle solution space.
 
 <p align="left">
-  <img src="/assets/images/Kinematic-Chain-Mapping/fig12.png" width="400">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig12.png" width="300">
 </p>
 
 Step 4: Repeat steps 1 to 3 for each joint in the chain (k+1).
