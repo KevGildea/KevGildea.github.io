@@ -174,7 +174,7 @@ Step 3: Perform forward kinematics on downchain joints in chain a, including all
   <img src="/assets/images/Kinematic-Chain-Mapping/fig12.png" width="300">
 </p>
 
-Step 4: Repeat steps 1 to 3 for each joint in the chain (k+1).
+Step 4: Repeat steps 1 to 3 for each joint in the chain.
 
 
 We can use the serial open kinematic chain defined previously. We can define chain b using only joint positions, in either the conventional form for kinematic chains, or simply as positions in the global coordinate system. I have chosen to define it in the conventional form, but the solution only considers vectors in the global coordinate system. 
