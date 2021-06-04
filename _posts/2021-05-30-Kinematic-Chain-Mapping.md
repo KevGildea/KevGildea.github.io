@@ -50,7 +50,7 @@ Firstly, we can consider a serial open kinematic chain, where the joints are arr
   <img src="/assets/images/Kinematic-Chain-Mapping/fig6.png" width="700">
 </p>
 
-We can use this information to calculate the joint positions and orientations in the global coordinate system i.e. perform forward kinematics.
+We can use this information to calculate the joint positions and orientations in the global coordinate system i.e. perform forward kinematics. The most common method for this is the modified D-H convention, which allows for a compact expression for all 6 joint DOFs as a 4x4 transformation matrix. Where the coefficients contain information on the relative position and orientation of joint i wrt. joint i-1. The forward kinematics operation is simply a serial multiplication of all transformation matrices on the path to joint i.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig7.png" width="700">
@@ -59,26 +59,26 @@ We can use this information to calculate the joint positions and orientations in
 Using this knowledge we can programatically define a kinematic chain and plot it in the global coordinate system using forward kinematics.
 
 ```python
-chain_a.append(['jnt_a0', np.array([[ 1, 0, 0],
-                                    [ 0, 1, 0],
-                                    [ 0, 0, 1]]),
-                          np.array([0,0.2,0])])
-chain_a.append(['jnt_a1', np.array([[ 0, 1, 0],
-                                    [ 0, 0, 1],
-                                    [ 1, 0, 0]]),
-                          np.array([0,0.2,0])])
-chain_a.append(['jnt_a2', np.array([[ 1, 0, 0],
-                                    [ 0, 0, 1],
-                                    [ 0, 1, 0]]),
-                          np.array([0.5,0,0])])
-chain_a.append(['jnt_a3', np.array([[ 0, 0, 1],
-                                    [ 1, 0, 0],
-                                    [ 0, 1, 0]]),
-                          np.array([0,0.2,0])])
-chain_a.append(['jnt_a4', np.array([[ 1, 0, 0],
-                                    [ 0, 0, 1],
-                                    [ 0, 1, 0]]),
-                          np.array([0,0,0.2])])
+chain_a.append(['jnt_a0', np.array([[ 1, 0, 0, 0],
+                                    [ 0, 0.5253220, -0.8509035,0.2],
+                                    [ 0, 0.8509035, 0.5253220,0],
+                                    [ 0, 0, 0, 1]])])
+chain_a.append(['jnt_a1', np.array([[ 1, 0, 0,0],
+                                    [ 0, 0.5253220, -0.8509035,0.2],
+                                    [ 0, 0.8509035, 0.5253220,0],
+                                    [ 0, 0, 0, 1]])])               
+chain_a.append(['jnt_a2', np.array([[ 1, 0, 0, 0.5],
+                                    [ 0, 0.5253220, -0.8509035, 0],
+                                    [ 0, 0.8509035, 0.5253220, 0],
+                                    [ 0, 0, 0, 1]])])
+chain_a.append(['jnt_a3', np.array([[ 1, 0, 0, 0],
+                                    [ 0, 0.5253220, -0.8509035, 0.2],
+                                    [ 0, 0.8509035, 0.5253220, 0],
+                                    [ 0, 0, 0, 1]])])
+chain_a.append(['jnt_a4', np.array([[ 1, 0, 0, 0],
+                                    [ 0, 0.5253220, -0.8509035, 0],
+                                    [ 0, 0.8509035, 0.5253220, 0.2],
+                                    [ 0, 0, 0, 1]])])
 ```
 In order to perform kinematic operations on the chain we must also specify its heirarchical structure using a directed graph. 
 ```python
@@ -107,24 +107,22 @@ def jnt_path(graph, start, end, path=[]):
 The forward kinematics solution first defines the reference space to be at (0,0,0) with an identity matrix orientation, then reads in the locally defined joint DOFs for each joint and sequentially calculates the global DOFs along the path to the joint.
 
 ```python
-def FK_local2global(chain, dir_graph): 
-    """ perform forward kinematics to to convert locally defined joint DOFs into the global coordinate system"""
-    ref_space_ori = np.array([[1, 0, 0],
-                              [0, 1, 0],
-                              [0, 0, 1]])
-    ref_space_pos = np.array([0, 0, 0])
+def FK_MDH(chain,dir_graph): 
+    """ perform forward kinematics to to convert joint orientations and position vectors into the global coordinate system"""
     oris=[]
     poss=[]
     for i in range (len(chain)):
         path = jnt_path(dir_graph, 0, i)
-        ori = ref_space_ori
-        pos = ref_space_pos
+        T=np.array([[ 1, 0, 0, 0],
+                    [ 0, 1, 0, 0],
+                    [ 0, 0, 1, 0],
+                    [ 0, 0, 0, 1]])
         for j in path:
-            pos=pos + ori @ chain[j][2]
-            ori=ori @ chain[j][1]
+            T= T @ chain[j][1]
+            pos=np.array([T[0][3],T[1][3],T[2][3]])
+            ori=np.array([[T[0][0],T[0][1],T[0][2]],[T[1][0],T[1][1],T[1][2]],[T[2][0],T[2][1],T[2][2]]])
         oris.append(ori)
         poss.append(pos)
-    
     return oris, poss
 ```
 Plotting the kinematic chain in the global coordinate sysem:
@@ -147,34 +145,7 @@ For example, if I reorient jnt_a0, and joint_a5 in the example above by 45 degre
 :-------------------------:|:-------------------------:
 ![](/assets/images/Kinematic-Chain-Mapping/fig13.gif)  |  ![](/assets/images/Kinematic-Chain-Mapping/fig14.gif)
 
-Some may be more familiar with the Denavit-Hartenberg (D-H), or the Modified D-H convention, which allows for a compact expression for all 6 joint DOFs as a 4x4 transformation matrix. Where the coefficients contain information on the relative position and orientation of joint i wrt. joint i-1. The forward kinematics operation is simply a serial multiplication of all transformation matrices on the path to joint i.
-
-<p align="center">
-  <img src="/assets/images/Kinematic-Chain-Mapping/fig15.png" width="300">
-</p>
-
-Implementation:
-```python
-def FK_local2global(chain,dir_graph): 
-    """ perform forward kinematics to to convert joint orientations and position vectors into the global coordinate system"""
-    oris=[]
-    poss=[]
-    for i in range (len(chain)):
-        path = jnt_path(dir_graph, 0, i)
-        T=np.array([[ 1, 0, 0, 0],
-                    [ 0, 1, 0, 0],
-                    [ 0, 0, 1, 0],
-                    [ 0, 0, 0, 1]])
-        for j in path:
-            T= T @ chain[j][1]
-            pos=np.array([T[0][3],T[1][3],T[2][3]])
-            ori=np.array([[T[0][0],T[0][1],T[0][2]],[T[1][0],T[1][1],T[1][2]],[T[2][0],T[2][1],T[2][2]]])
-        oris.append(ori)
-        poss.append(pos)
-    return oris, poss
-```
-
-However, for practical reasons currently I am using the more explicit approach the kinematic chain mapping method, i.e. keeping rotation matrices and vectors separate in forward kinematics operations.
+For practical reasons, currently I am not using a modified D-H convention. I use a more explicit approach for the kinematic chain mapping method, i.e. keeping rotation matrices and vectors separate in forward kinematics operations.
 
 
 ### Solution space for mapping kinematic chains
