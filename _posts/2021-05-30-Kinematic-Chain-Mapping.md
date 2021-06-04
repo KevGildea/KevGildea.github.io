@@ -168,7 +168,7 @@ Step 2: Determine the Euler axis-angle solution space for mapping vector a to ve
   <img src="/assets/images/Kinematic-Chain-Mapping/fig11.png" width="800">
 </p>
 
-Step 3: Perform forward kinematics on downchain joints in chain a, including the Euler axis-angle solution space.
+Step 3: Perform forward kinematics on downchain joints in chain a, including all possible transformations resulting from the joint's Euler axis-angle solution space.
 
 <p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig12.png" width="300">
