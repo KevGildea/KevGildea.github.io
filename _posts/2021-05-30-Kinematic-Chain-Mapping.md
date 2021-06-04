@@ -60,24 +60,24 @@ Using this knowledge we can programatically define a kinematic chain and plot it
 
 ```python
 chain_a.append(['jnt_a0', np.array([[ 1, 0, 0, 0],
-                                    [ 0, 0.5253220, -0.8509035,0.2],
-                                    [ 0, 0.8509035, 0.5253220,0],
+                                    [ 0, 1, 0, 0.2],
+                                    [ 0, 0, 1, 0],
                                     [ 0, 0, 0, 1]])])
-chain_a.append(['jnt_a1', np.array([[ 1, 0, 0,0],
-                                    [ 0, 0.5253220, -0.8509035,0.2],
-                                    [ 0, 0.8509035, 0.5253220,0],
+chain_a.append(['jnt_a1', np.array([[ 0, 1, 0, 0],
+                                    [ 0, 0, 1, 0.2],
+                                    [ 1, 0, 0, 0],
                                     [ 0, 0, 0, 1]])])               
 chain_a.append(['jnt_a2', np.array([[ 1, 0, 0, 0.5],
-                                    [ 0, 0.5253220, -0.8509035, 0],
-                                    [ 0, 0.8509035, 0.5253220, 0],
+                                    [ 0, 0, 1, 0],
+                                    [ 0, 1, 0, 0],
                                     [ 0, 0, 0, 1]])])
-chain_a.append(['jnt_a3', np.array([[ 1, 0, 0, 0],
-                                    [ 0, 0.5253220, -0.8509035, 0.2],
-                                    [ 0, 0.8509035, 0.5253220, 0],
+chain_a.append(['jnt_a3', np.array([[ 0, 0, 1, 0],
+                                    [ 1, 0, 0, 0.2],
+                                    [ 0, 1, 0, 0],
                                     [ 0, 0, 0, 1]])])
 chain_a.append(['jnt_a4', np.array([[ 1, 0, 0, 0],
-                                    [ 0, 0.5253220, -0.8509035, 0],
-                                    [ 0, 0.8509035, 0.5253220, 0.2],
+                                    [ 0, 0, 1, 0],
+                                    [ 0, 1, 0, 0.2],
                                     [ 0, 0, 0, 1]])])
 ```
 In order to perform kinematic operations on the chain we must also specify its heirarchical structure using a directed graph. 
