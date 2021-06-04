@@ -162,7 +162,7 @@ Step 1: Transform chains a and b such that the current joint a<sub>k</sub>, and 
   <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="300">
 </p>
 
-Step 2: Determine the Euler axis-angle solution space for mapping vector a to vector b.
+Step 2: Determine the Euler axis-angle solution space for mapping vector a to vector b (see detailed formulation [here](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors)).
 
 <p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig11.png" width="800">
