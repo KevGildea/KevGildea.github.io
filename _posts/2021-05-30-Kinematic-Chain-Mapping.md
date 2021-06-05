@@ -223,7 +223,7 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
     return Euler_axes, Euler_angles, rotation_matrices
 ```
 
-Next, we apply our method for a discretised Euler axis-angle solution space for each joint in the kinematic chain.
+Next, I apply my method for a discretised Euler axis-angle solution space for each joint in the kinematic chain.
 ```python
 def Serial_open_chain_mapping(chain_a, chain_b, dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
     """ perform inverse kinematics to map a serial kinematic chain a (an open chain without forking) to chain b, which must have the same directed graph"""
