@@ -179,7 +179,7 @@ Step 4: Repeat steps 1 to 3 for each joint in the chain.
 The process can aslo be visualised as follows for joints k= [0, n], where a list of vectors for a and b are input sequentially into the vector mapping function, and the output rotation matrices in the solution space are applied to vectors downchain in a.
 
 <p align="left">
-  <img src="/assets/images/Kinematic-Chain-Mapping/fig15.png" width="700">
+  <img src="/assets/images/Kinematic-Chain-Mapping/fig15.png" width="800">
 </p>
 
 We can use the serial open kinematic chain defined previously, and define chain b using only joint positions. We can do so in either the conventional form for kinematic chains, or simply as positions in the global coordinate system. I have chosen to define it in the conventional form, but the solution only considers vectors in the global coordinate system. 
