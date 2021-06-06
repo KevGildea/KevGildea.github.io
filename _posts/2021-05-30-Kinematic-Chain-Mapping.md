@@ -178,7 +178,7 @@ The process can aslo be visualised as follows for joints k= [0, n], where a list
   <img src="/assets/images/Kinematic-Chain-Mapping/fig15.png" width="800">
 </p>
 
-We can use the serial open kinematic chain defined previously, and define chain b using only joint positions. We can do so in either the conventional form for kinematic chains, or simply as positions in the global coordinate system. I have chosen to define it in the conventional form, but the solution only considers vectors in the global coordinate system. 
+We can use the serial open kinematic chain defined previously, and define chain b. We can do so in either the conventional form for kinematic chains, or simply as positions in the global coordinate system. I have chosen to define it in the conventional form, but the solution only considers vectors in the global coordinate system. 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
