@@ -50,7 +50,7 @@ Firstly, we can consider a serial open kinematic chain, where the joints are arr
   <img src="/assets/images/Kinematic-Chain-Mapping/fig6.png" width="700">
 </p>
 
-We can use this information to calculate the joint positions and orientations in the global coordinate system i.e. perform forward kinematics. The most common method for this is the modified D-H convention, which allows for a compact expression for all 6 joint DOFs as a 4x4 transformation matrix. Where the coefficients contain information on the relative position and orientation of joint i wrt. joint i-1. The forward kinematics operation is simply a serial multiplication of all transformation matrices on the path to joint i.
+We can use this information to calculate the joint positions and orientations in the global coordinate system i.e. perform forward kinematics. The most common method for this is the modified D-H convention, which allows for a compact expression for all 6 joint DOFs as a 4x4 transformation matrix. Where the coefficients contain information on the relative position and orientation of joint j wrt. joint j-1. The forward kinematics operation is simply a serial multiplication of all transformation matrices on the path to joint j.
 
 <p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig7.png" width="300">
