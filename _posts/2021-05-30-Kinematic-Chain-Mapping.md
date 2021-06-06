@@ -228,8 +228,8 @@ Next, I apply my method for a discretised Euler axis-angle solution space for ea
 ```python
 def Serial_open_chain_mapping(chain_a, chain_b, dir_graph): # Consider renaming Could more aptly be described as a modified forward kinematics approach?
     """ perform inverse kinematics to map a serial kinematic chain a (an open chain without forking) to chain b, which must have the same directed graph"""
-    ori_a, pos_a = FK_local2global(chain_a,dir_graph)
-    _, pos_b = FK_local2global(chain_b,dir_graph)
+    ori_a, pos_a = FK_MDH(chain_a,dir_graph)
+    _, pos_b = FK_MDH(chain_b,dir_graph)
 
     pos_a= pos_a - chain_a[0][2]
     pos_b= pos_b - chain_b[0][2]
