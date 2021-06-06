@@ -172,7 +172,7 @@ Step 3: Perform forward kinematics on downchain joints in chain a, including all
 
 Step 4: Repeat steps 1 to 3 for each joint in the chain.
 
-The process can aslo be visualised as follows for joints k= [0, n], where a list of vectors for a and b are input sequentially into the vector mapping function, and the output rotation matrices in the solution space are applied to vectors downchain in a.
+The process can be visualised as follows for joints k= [0, n], where a list of vectors for a and b are input sequentially into the vector mapping function, and the output rotation matrices in the solution space are applied to vectors downchain in a.
 
 <p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig15.png" width="800">
