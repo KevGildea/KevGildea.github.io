@@ -6,7 +6,7 @@ title: "Research"
 
 The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. Novel and detailed data sources are collected and analysed to provide a comprehensive view of the vulnerabilities of cyclists as a group (i.e. Forensic Investigation Files, and self-reported collisions). Representative collision scenarios are identified to inform an engineering analysis.
 
-The engineering analysis involves combined Multibody Dynamics and Deep Learning approaches to traumatic injury biomechanics. An optimisation procedure is used to develop parametric computational models of representative collision scenarios, which are used to determine injury reduction strategies.
+The engineering analysis involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
 
 This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
 
