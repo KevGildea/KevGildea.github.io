@@ -6,7 +6,11 @@ title: "Research"
 
 The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. Novel and detailed data sources are collected and analysed to provide a comprehensive view of the vulnerabilities of cyclists as a group (i.e. Forensic Investigation Files, and self-reported collisions). Representative collision scenarios are identified to inform an engineering analysis.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">🎨 Finally got around to adding all my <a href="https://twitter.com/procreateapp">@procreateapp</a> creations with time lapse videos <a href="https://t.co/1nNbkefC3L">https://t.co/1nNbkefC3L</a> <a href="https://t.co/gcNLJoJ0Gn">pic.twitter.com/gcNLJoJ0Gn</a></p>&mdash; Michael Rose (@mmistakes) <a href="https://twitter.com/mmistakes/status/662678050795094016">November 6, 2015</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">🎨 Finally got around to adding all my <a href="https://twitter.com/procreateapp">@procreateapp</a> with  <a href="https://t.co/1nNbkefC3L">https://t.co/1nNbkefC3L</a> <a href="https://t.co/gcNLJoJ0Gn">pic.twitter.com/gcNLJoJ0Gn</a></p>&mdash; Michael Rose (@mmistakes) <a href="https://twitter.com/kgildeaTCD/status/1427240209591283712">August 16, 2021</a></blockquote>
+
+I've just published an article in @Transport_ELS with @CiaranSimms, highlighting priority cyclist collision scenarios in Ireland.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I've just published an article in <a href="https://twitter.com/Transport_ELS">@Transport_ELS</a> with <a href="https://twitter.com/CiaranSimms">@CiaranSimms</a>, highlighting priority cyclist collision scenarios in Ireland <a href="https://doi.org/10.1016/j.aap.2021.106264">https://doi.org/10.1016/j.aap.2021.106264</a>. <a href="https://t.co/gcNLJoJ0Gn">pic.twitter.com/gcNLJoJ0Gn</a></p>&mdash; Kevin Gildea (@kgildeaTCD) <a href="https://twitter.com/kgildeaTCD/status/1427240209591283712">August 16, 2021</a></blockquote>
 
 The engineering analysis involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
 
