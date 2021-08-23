@@ -6,6 +6,8 @@ title: "Research"
 
 The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. Novel and detailed data sources are collected and analysed to provide a comprehensive view of the vulnerabilities of cyclists as a group (i.e. Forensic Investigation Files, and self-reported collisions). Representative collision scenarios are identified to inform an engineering analysis.
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">🎨 Finally got around to adding all my <a href="https://twitter.com/procreateapp">@procreateapp</a> creations with time lapse videos <a href="https://t.co/1nNbkefC3L">https://t.co/1nNbkefC3L</a> <a href="https://t.co/gcNLJoJ0Gn">pic.twitter.com/gcNLJoJ0Gn</a></p>&mdash; Michael Rose (@mmistakes) <a href="https://twitter.com/mmistakes/status/662678050795094016">November 6, 2015</a></blockquote>
+
 The engineering analysis involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
 
 This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
