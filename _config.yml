@@ -66,6 +66,7 @@ author:
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google"
       url: "https://scholar.google.com/citations?user=rwRjfN8AAAAJ&hl=en/"
+      target: "_blank"
     - label: "ORCID"
       icon: "fab fa-fw fa-orcid"
       url: "https://orcid.org/0000-0003-3802-0675"
