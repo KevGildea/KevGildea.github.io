@@ -6,7 +6,7 @@ title: "Research"
 
 The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. Novel and detailed data sources are collected and analysed to provide a comprehensive view of the vulnerabilities of cyclists as a group (i.e. Forensic Investigation Files, and self-reported collisions). Representative collision scenarios are identified to inform an engineering analysis <sup>[[1](https://www.sciencedirect.com/science/article/pii/S0001457520317681), [2](https://www.sciencedirect.com/science/article/pii/S0001457521002955)]</sup>.
 
-<a href="https://twitter.com/DejanUlcej" target="_blank">My profile</a>
+<a href="https://twitter.com/DejanUlcej" target="_new">My profile</a>
 
 The engineering analysis involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
 
