@@ -25,8 +25,7 @@ Kinematic chains can be described as a hierarchical system of links and joints. 
 In a previous post, I described how in SO(3) an infinite number of rotation matrices, or Euler/Screw axis-angle combinations can be applied to map one vector (a) onto another vector (b). However, the solution space is constrained such that the Euler/Screw axis must lay on the plane that bisects the vectors.
 
 > For more information see my blog post:
-> ['Non-uniqueness of the Euler axis in vector mapping'](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/)
-
+> <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">'Non-uniqueness of the Euler axis in vector mapping'</a>
 
 If we assign an initial local coordinate system to vector a, for example, if we set it to be aligned with the global coordinate system then we can see the Euler axis-angle solution space for reorientation of this local coordinate system. 
 
@@ -44,7 +43,7 @@ Alternatively, we can choose a simpler joint orientation, with an initial local 
 
 We can define a serial open kinematic chain 'a' using a parent-child convention, where the degrees of freedom (DOFs) of child joints are expressed with respect to the parent joint DOFs. I.e. the position of the child joint is expressed as a vector in the coordinate system of the parent joint, and the orientation of the child joint is expressed as a rotation matrix which specifies the orientation of the child joint wrt. the parent joint's orientation. This is the conventional approach for defining kinematic chains because it allows for various kinematic and dynamic operations to be performed. 
 
-Firstly, we can consider a serial open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint), where joint a<sub>0</sub> is the root joint which is connected to the reference space. [See here](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group) for a brief overview of some relevant theory for the 3D rotation group.
+Firstly, we can consider a serial open kinematic chain, where the joints are arranged in series with no forking (i.e. all joints in the chain have a maximum of one child joint), where joint a<sub>0</sub> is the root joint which is connected to the reference space. <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group" target="_blank">See here</a> for a brief overview of some relevant theory for the 3D rotation group.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig6.png" width="700">
@@ -150,7 +149,7 @@ For practical reasons, currently I am not using a modified D-H convention. I use
 
 ### Solution space for mapping kinematic chains
 
-The goal is to use kinematics knowledge to extend the [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) I previously developed for use on a kinematic chain. Specifically, I would like to develop a method for calculating the discretised solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This will require a kinematical approach involving sequential calculations of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles applied in upchain joints affect the joint orientations and the resulting solution spaces for mapping downchain vectors.
+The goal is to use kinematics knowledge to extend the <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors" target="_blank">vector mapping method</a> I previously developed for use on a kinematic chain. Specifically, I would like to develop a method for calculating the discretised solution space for mapping one kinematic chain (a) to another (b), where the latter does not contain any information on joint orientations. The chains must have the same number of joints and the same joint heirarchy, but may have differing and disproportional link lengths. This will require a kinematical approach involving sequential calculations of the Euler axis-angle solution space for each joint throughout the chain. The problem is complicated by the fact that the Euler axis-angles applied in upchain joints affect the joint orientations and the resulting solution spaces for mapping downchain vectors.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig0.png" width="700">
@@ -162,7 +161,7 @@ Step 1: The vector mapping method below requires us to transform chains a and b 
   <img src="/assets/images/Kinematic-Chain-Mapping/fig10.png" width="300">
 </p>
 
-Step 2: Determine the Euler axis-angle solution space for mapping vector a to vector b (see detailed formulation [here](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors)).
+Step 2: Determine the Euler axis-angle solution space for mapping vector a to vector b (see detailed formulation <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors" target="_blank">here</a>).
 
 <p align="left">
   <img src="/assets/images/Kinematic-Chain-Mapping/fig11.png" width="800">
@@ -184,7 +183,7 @@ We can use the serial open kinematic chain defined previously, and define chain 
   <img src="/assets/images/Kinematic-Chain-Mapping/fig3.gif" width="700">
 </p>
 
-We must define our [vector mapping method](https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors) which will be called upon sequentially throughout the mapping process.
+We must define our <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors" target="_blank">vector mapping method</a> which will be called upon sequentially throughout the mapping process.
 
 ```python
 def Vector_mapping_Euler_Axis_Space(vec1, vec2): 
@@ -276,4 +275,4 @@ The method developed here does not fit the traditional definitions of forward ki
 
 This approach allows for the generation of all possible solutions for kinematic chain mapping, and since the problem is kinematically underdetermined it may allow for the development of an objective function for optimization according to kinematic constraints of a system (e.g. joint ranges of motion). 
 
-The full code is available [here](https://github.com/KevGildea/RotationTheory/blob/main/Kinematic-Chain-Mapping/Kinematic-Chain-Mapping.py).
+The full code is available <a href="https://github.com/KevGildea/RotationTheory/blob/main/Kinematic-Chain-Mapping/Kinematic-Chain-Mapping.py" target="_blank">here</a>.
