@@ -199,5 +199,4 @@ b=[-0.3,-0.1,-0.2]
 With a lack of complete basis vector representation for the two coordinate systems, there are an infinite number of rotation matrices, or axis-angle combinations that can be applied to achieve a desired vector mapping. However, here I have demonstrated that candidate Euler/Screw axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane. With this knowledge we can programatically solve for all possible vector mapping solutions. 
 
 
-The full code is available [here](https://github.com/KevGildea/RotationTheory/blob/main/Non-uniqueness%20of%20the%20Euler%20axis%20in%20vector%20mapping/Non_uniqueness_Euler_axis_vector_mapping.py).
-
+The full code is available <a href="https://github.com/KevGildea/RotationTheory/blob/main/Non-uniqueness%20of%20the%20Euler%20axis%20in%20vector%20mapping/Non_uniqueness_Euler_axis_vector_mapping.py" target="_blank">here</a>.
