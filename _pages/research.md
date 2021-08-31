@@ -24,6 +24,6 @@ This research has the potential to significantly strengthen our understanding of
 | [5] Cycling related major trauma in Ireland. Injury. 2020. (<a href="https://pubmed.ncbi.nlm.nih.gov/31784058/" target="_blank">paper</a>) |
 | <a href="https://orcid.org/0000-0003-3802-0675" target="_blank">See more...</a> |
 
-|**Media attention:**|
-| (<a href="https://www.independent.ie/irish-news/cyclists-urged-to-report-all-collisions-to-gardai-39983740.html" target="_blank">Irish Independent - 'Cyclists urged to report all collisions to gardaí'</a>) |
-| (<a href="https://dublininquirer.com/2021/01/20/research-tries-to-pin-down-what-causes-cyclists-collisions" target="_blank">Dublin Inquirer - 'Research Tries to Pin Down What Causes Cyclists’ Collisions'</a>) |
+**Media attention:**
+<a href="https://www.independent.ie/irish-news/cyclists-urged-to-report-all-collisions-to-gardai-39983740.html" target="_blank">Irish Independent - 'Cyclists urged to report all collisions to gardaí'</a>
+<a href="https://dublininquirer.com/2021/01/20/research-tries-to-pin-down-what-causes-cyclists-collisions" target="_blank">Dublin Inquirer - 'Research Tries to Pin Down What Causes Cyclists’ Collisions'</a>
