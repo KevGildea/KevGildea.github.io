@@ -14,7 +14,11 @@ The overall aim of the project is to gain a better understanding of cyclist coll
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">And an article in the <a href="https://twitter.com/thetimesIE?ref_src=twsrc%5Etfw">@thetimesIE</a> by <a href="https://twitter.com/SonjaTutty?ref_src=twsrc%5Etfw">@SonjaTutty</a>, pointing a next step we are taking – and a really unfortunate clash between two sustainable transport modes. We hope that this work will help as we move to implement more light rail systems.<a href="https://t.co/hcrsMaSSeD">https://t.co/hcrsMaSSeD</a></p>&mdash; Kevin Gildea (@kgildeaTCD) <a href="https://twitter.com/kgildeaTCD/status/1433716998928801796?ref_src=twsrc%5Etfw">September 3, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+
 The engineering analysis involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6805486956034736128" height="473" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 
 This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
 
