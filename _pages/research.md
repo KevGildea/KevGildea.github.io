@@ -41,8 +41,7 @@ This research has the potential to significantly strengthen our understanding of
 
 | **Media attention:** |
 | <a href="https://www.rte.ie/radio/radio1/clips/22000147/" target="_blank">RTÉ Radio 1 - 'Kevin Gildea, PhD Candidate at Trinity College Dublin, takes a look at new research showing they're Dangerous, Preventable and Under-reported' </a> (01/09/2021) |
-
-
-| <a href="https://www.independent.ie/irish-news/cyclists-urged-to-report-all-collisions-to-gardai-39983740.html" target="_blank">Irish Independent - Cyclists urged to report all collisions to gardaí</a> (19/01/2021) |
+| <a href="https://www.independent.ie/irish-news/cyclists-urged-to-report-all-collisions-to-gardai-39983740.html" target="_blank">Irish Independent - 'Cyclists urged to report all collisions to gardaí'</a> (19/01/2021) |
+| <a href="https://www.thetimes.co.uk/article/cyclists-suffer-shocking-number-of-accidents-crossing-luas-tram-tracks-cxn7nzfjb" target="_blank">The Times - 'Cyclists suffer ‘shocking’ number of accidents crossing Luas tram tracks' </a> (02/09/2021) |
 | <a href="https://dublininquirer.com/2021/01/20/research-tries-to-pin-down-what-causes-cyclists-collisions" target="_blank">Dublin Inquirer - Research Tries to Pin Down What Causes Cyclists’ Collisions</a> (20/01/2021) |
 
