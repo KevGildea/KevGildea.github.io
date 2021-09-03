@@ -29,17 +29,17 @@ The engineering analysis is currently in development, and involves combined Comp
 This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
 
 
-|**Selected publications:**|
-| [<a href="https://www.sciencedirect.com/science/article/pii/S0001457520317681" target="_blank">1</a>] Characteristics of cyclist collisions in Ireland: Analysis of a self-reported survey. Accident Analysis & Prevention. 2021. (<a href="https://github.com/KevGildea/kevgildea.github.io/blob/master/assets/images/Research/Survey%20questionnaire.pdf" target="_blank">questionnaire</a>) |
-| [<a href="https://www.sciencedirect.com/science/article/pii/S0001457521002955" target="_blank">2</a>] Configurations of underreported cyclist-motorised vehicle and single cyclist collisions: Analysis of a self-reported survey. Accident Analysis & Prevention. 2021. |
-| [<a href="http://www.ircobi.org/wordpress/downloads/irc20-asia/pdf-files/2029a.pdf" target="_blank">3</a>] An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence. IRCOBI. 2020. |
-| [<a href="https://journals.sagepub.com/doi/10.1177/1747954119833477" target="_blank">4</a>] Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study. International Journal of Sports Science & Coaching. 2019. |
-| [<a href="https://pubmed.ncbi.nlm.nih.gov/31784058/" target="_blank">5</a>] Cycling related major trauma in Ireland. Injury. 2020. |
-| <a href="https://orcid.org/0000-0003-3802-0675" target="_blank">See more...</a> |
+> |**Selected publications:**|
+> | [<a href="https://www.sciencedirect.com/science/article/pii/S0001457520317681" target="_blank">1</a>] Characteristics of cyclist collisions in Ireland: Analysis of a self-reported survey. Accident Analysis & Prevention. 2021. (<a href="https://github.com/KevGildea/kevgildea.github.io/blob/master/assets/images/Research/Survey%20questionnaire.pdf" target="_blank">questionnaire</a>) |
+> | [<a href="https://www.sciencedirect.com/science/article/pii/S0001457521002955" target="_blank">2</a>] Configurations of underreported cyclist-motorised vehicle and single cyclist collisions: Analysis of a self-reported survey. Accident Analysis & Prevention. 2021. |
+> | [<a href="http://www.ircobi.org/wordpress/downloads/irc20-asia/pdf-files/2029a.pdf" target="_blank">3</a>] An investigation into the effects of European vehicle type testing regulations on cyclist injury occurrence. IRCOBI. 2020. |
+> | [<a href="https://journals.sagepub.com/doi/10.1177/1747954119833477" target="_blank">4</a>] Analysis of ball carrier head motion during a rugby union tackle without direct head contact: A case study. International Journal of Sports Science & Coaching. 2019. |
+> | [<a href="https://pubmed.ncbi.nlm.nih.gov/31784058/" target="_blank">5</a>] Cycling related major trauma in Ireland. Injury. 2020. |
+> | <a href="https://orcid.org/0000-0003-3802-0675" target="_blank">See more...</a> |
 
-| **Media attention:** |
-| <a href="https://www.rte.ie/radio/radio1/clips/22000147/" target="_blank">RTÉ Radio 1 - 'Kevin Gildea, PhD Candidate at Trinity College Dublin, takes a look at new research showing they're Dangerous, Preventable and Under-reported' </a> (01/09/2021) |
-| <a href="https://www.independent.ie/irish-news/cyclists-urged-to-report-all-collisions-to-gardai-39983740.html" target="_blank">Irish Independent - 'Cyclists urged to report all collisions to gardaí'</a> (19/01/2021) |
-| <a href="https://www.thetimes.co.uk/article/cyclists-suffer-shocking-number-of-accidents-crossing-luas-tram-tracks-cxn7nzfjb" target="_blank">The Times - 'Cyclists suffer ‘shocking’ number of accidents crossing Luas tram tracks' </a> (02/09/2021) |
-| <a href="https://dublininquirer.com/2021/01/20/research-tries-to-pin-down-what-causes-cyclists-collisions" target="_blank">Dublin Inquirer - Research Tries to Pin Down What Causes Cyclists’ Collisions</a> (20/01/2021) |
+> | **Media attention:** |
+> | <a href="https://www.rte.ie/radio/radio1/clips/22000147/" target="_blank">RTÉ Radio 1 - 'Kevin Gildea, PhD Candidate at Trinity College Dublin, takes a look at new research showing they're Dangerous, Preventable and Under-reported' </a> (01/09/2021) |
+> | <a href="https://www.independent.ie/irish-news/cyclists-urged-to-report-all-collisions-to-gardai-39983740.html" target="_blank">Irish Independent - 'Cyclists urged to report all collisions to gardaí'</a> (19/01/2021) |
+> | <a href="https://www.thetimes.co.uk/article/cyclists-suffer-shocking-number-of-accidents-crossing-luas-tram-tracks-cxn7nzfjb" target="_blank">The Times - 'Cyclists suffer ‘shocking’ number of accidents crossing Luas tram tracks' </a> (02/09/2021) |
+> | <a href="https://dublininquirer.com/2021/01/20/research-tries-to-pin-down-what-causes-cyclists-collisions" target="_blank">Dublin Inquirer - Research Tries to Pin Down What Causes Cyclists’ Collisions</a> (20/01/2021) |
 
