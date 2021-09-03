@@ -17,13 +17,10 @@ The overall aim of the project is to gain a better understanding of cyclist coll
 
 The engineering analysis is currently in development, and involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
 
-> For details see my blog posts:
-
-> <a href="https://kevgildea.github.io/blog/DL-MoCap/" target="_blank">'Deep learning techniques for human motion capture: an injury biomechanics perspective'</a>
-
-> <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">'Non-uniqueness of the Euler axis in vector mapping'</a>
-
-> <a href="https://kevgildea.github.io/blog/Kinematic-Chain-Mapping/" target="_blank">'Solution space for mapping serial kinematic chains: A modified inverse/forward kinematics approach'</a>
+> | For details see my blog posts: |
+> | <a href="https://kevgildea.github.io/blog/DL-MoCap/" target="_blank">'Deep learning techniques for human motion capture: an injury biomechanics perspective'</a> |
+> | <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">'Non-uniqueness of the Euler axis in vector mapping'</a> |
+> | <a href="https://kevgildea.github.io/blog/Kinematic-Chain-Mapping/" target="_blank">'Solution space for mapping serial kinematic chains: A modified inverse/forward kinematics approach'</a> |
 
 
 <p align="center">
