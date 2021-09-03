@@ -15,17 +15,20 @@ The overall aim of the project is to gain a better understanding of cyclist coll
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">And an article in the <a href="https://twitter.com/thetimesIE?ref_src=twsrc%5Etfw">@thetimesIE</a> by <a href="https://twitter.com/SonjaTutty?ref_src=twsrc%5Etfw">@SonjaTutty</a>, pointing a next step we are taking – and a really unfortunate clash between two sustainable transport modes. We hope that this work will help as we move to implement more light rail systems.<a href="https://t.co/hcrsMaSSeD">https://t.co/hcrsMaSSeD</a></p>&mdash; Kevin Gildea (@kgildeaTCD) <a href="https://twitter.com/kgildeaTCD/status/1433716998928801796?ref_src=twsrc%5Etfw">September 3, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-The engineering analysis involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
+The engineering analysis is currently in development, and involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6805486956034736128" height="473" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-
-
-This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
+> For details see my blog posts:
+> <a href="https://kevgildea.github.io/blog/DL-MoCap/" target="_blank">'Deep learning techniques for human motion capture: an injury biomechanics perspective'</a>
+> <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">'Non-uniqueness of the Euler axis in vector mapping'</a>
+> <a href="https://kevgildea.github.io/blog/Kinematic-Chain-Mapping/" target="_blank">'Solution space for mapping serial kinematic chains: A modified inverse/forward kinematics approach'</a>
 
 
 <p align="center">
   <img src="/assets/images/Research/pipeline.png" width="900">
 </p>
+
+
+This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
 
 
 |**Selected publications:**|
@@ -37,5 +40,9 @@ This research has the potential to significantly strengthen our understanding of
 | <a href="https://orcid.org/0000-0003-3802-0675" target="_blank">See more...</a> |
 
 | **Media attention:** |
+| <a href="https://www.rte.ie/radio/radio1/clips/22000147/" target="_blank">RTÉ Radio 1 - 'Kevin Gildea, PhD Candidate at Trinity College Dublin, takes a look at new research showing they're Dangerous, Preventable and Under-reported' </a> (01/09/2021) |
+
+
 | <a href="https://www.independent.ie/irish-news/cyclists-urged-to-report-all-collisions-to-gardai-39983740.html" target="_blank">Irish Independent - Cyclists urged to report all collisions to gardaí</a> (19/01/2021) |
 | <a href="https://dublininquirer.com/2021/01/20/research-tries-to-pin-down-what-causes-cyclists-collisions" target="_blank">Dublin Inquirer - Research Tries to Pin Down What Causes Cyclists’ Collisions</a> (20/01/2021) |
+
