@@ -5,9 +5,8 @@ title: "Research"
 
 
 
-**Project aim**
 
-The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
+Recipient of the 2017 RSA-Helena Winters Scholarship for Doctoral Studies in Road Safety. The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
 
 
 **Accidentology**
