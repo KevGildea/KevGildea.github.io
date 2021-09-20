@@ -10,7 +10,7 @@ tags:
   - Kinemaics
   - Physics
   - Numerical modelling
-  - Mass-spring damper model 
+  - Mass-spring-damper model 
 ---
 
 ### Problem statement
@@ -22,10 +22,18 @@ Using differential equations of motion (EOM) we can describe the dynamics and ki
 </p>
 
 ### Defining the EOMs
+We can split the problem up into two phases, where phase 1 involves the ball in freefall. Here the equation of motion is governed by the mass of the ball, and air resistance.
 
 <p align="center">
-  <img src="/assets/images/EOM-contact-modelling/EOMs.png" width="700">
+  <img src="/assets/images/EOM-contact-modelling/EOMs1.png" width="700">
 </p>
+
+In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model.
+
+<p align="center">
+  <img src="/assets/images/EOM-contact-modelling/EOMs2.png" width="700">
+</p>
+
 
 ### Numerical integration of ODEs
 
