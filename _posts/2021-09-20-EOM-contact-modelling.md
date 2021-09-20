@@ -10,7 +10,7 @@ tags:
   - Kinemaics
   - Physics
   - Numerical modelling
-  - Mass-spring damper model
+  - Mass-spring damper model 
 ---
 
 ### Problem statement
