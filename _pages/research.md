@@ -6,7 +6,9 @@ title: "Research"
 
 
 
-I am a final year PhD student in the <a href="https://www.tcd.ie/mecheng/" target="_blank">Department of Mechanical, Manufacturing & Biomedical Engineering</a>, Trinity College Dublin, Ireland. I am a recipient of the RSA-Helena Winters Scholarship for Doctoral Studies in Road Safety. The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
+I am a final year PhD student in the <a href="https://www.tcd.ie/mecheng/" target="_blank">Department of Mechanical, Manufacturing & Biomedical Engineering</a>, Trinity College Dublin, Ireland. I am a recipient of the RSA-Helena Winters Scholarship for Doctoral Studies in Road Safety. 
+
+The overall aim of the project is to gain a better understanding of cyclist collisions in Ireland and find ways to effectively increase cyclist safety. This research has the potential to significantly strengthen our understanding of the nature and scale of cycling collisions and will assist road safety stakeholders to develop evidence-based interventions to reduce their occurrence and severity.
 
 
 **Accidentology**
