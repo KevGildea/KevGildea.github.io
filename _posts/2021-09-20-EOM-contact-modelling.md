@@ -70,7 +70,7 @@ end
 
 ### Effect of varying parameters k and c
 
-|      |  k=500 |  k=5,000 |  k=500,000 |
+|         |     k=500 |     k=5,000 |     k=500,000 |
 | c=0  |  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c0.gif) |  ![](/assets/images/EOM-contact-modelling/k500000c0.gif) |
 | c=5  |  ![](/assets/images/EOM-contact-modelling/k500c5.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) | ![](/assets/images/EOM-contact-modelling/k500000c5.gif) | 
 | c=10 |  ![](/assets/images/EOM-contact-modelling/k500c10.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c10.gif) |  ![](/assets/images/EOM-contact-modelling/k500000c10.gif) |
