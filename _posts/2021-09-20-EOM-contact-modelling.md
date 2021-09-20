@@ -44,6 +44,10 @@ Since each of the the equations of motion (for both phase 1 and phase 2) are in 
 </p>
 
 
+### Implementation
+
+
+
 ### Effect of varying parameters k and c
 
 
