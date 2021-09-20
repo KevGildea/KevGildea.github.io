@@ -28,7 +28,8 @@ We can split the problem up into two phases, where phase 1 involves the ball in 
   <img src="/assets/images/EOM-contact-modelling/EOMs1.jpg">
 </p>
 
-In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model.
+In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model. Note that x<sup>pen</sup>(t) is the displacement in the contact phase (i.e. the penetration).
+
 
 <p align="center">
   <img src="/assets/images/EOM-contact-modelling/EOMs2.jpg">
