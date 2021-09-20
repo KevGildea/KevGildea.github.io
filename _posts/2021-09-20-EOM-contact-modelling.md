@@ -1,6 +1,6 @@
 ---
 title: "Computational modelling of a bouncing ball using differential equations of motion"
-date: 2021-20-09
+date: 2021-09-20
 categories:
   - blog
 
