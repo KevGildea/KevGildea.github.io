@@ -46,7 +46,27 @@ Since each of the the equations of motion (for both phase 1 and phase 2) are in 
 
 ### Implementation
 
+```matlab
+function xdot  = ball(t,x);
 
+global acc t_temp pos
+
+k = 500; m  = 0.2; g = 9.81; h=0.2; r = 0.01; c=1;
+xdot  = zeros(2,1);
+
+%determine if penetration has occured
+pen = (x(2) + r) - h; %compute penetetration for contact 
+if pen <0 
+    xdot(1) = g; xdot(2)  = x(1);
+else xdot(1) = g - ((k*pen)/m) -((c*x(1))/m); xdot(2)  = x(1);
+    
+acc = [acc; xdot(1)];
+t_temp = [t_temp; t];
+pos= [pos; 0];
+
+end
+
+```
 
 ### Effect of varying parameters k and c
 
