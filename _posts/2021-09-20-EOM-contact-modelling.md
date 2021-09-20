@@ -46,27 +46,56 @@ Since each of the the equations of motion (for both phase 1 and phase 2) are in 
 
 ### Implementation
 
+EOM_contact_modelling.m
 ```matlab
-function xdot  = ball(t,x);
+close all; clear
 
-global acc t_temp pos
+%simulation of bouncing ball
+global g k c m h r
 
-k = 500; m  = 0.2; g = 9.81; h=0.2; r = 0.01; c=1;
+% set parameter values
+g = 9.81;k = 5000; c=5; m = 0.2; h=0.2; r = 0.01;
+
+%set integration time interval, and time step
+tspan = [0 2];
+tstep = 1e-3;
+
+%set initial conditions: velocity and displacement
+X0 = [0  0];
+
+%call ode23 function and feed relevant inputs
+OPTIONS = odeset('MaxStep',tstep); %set max integration timestep
+[tout,xout] = ode23('ball',tspan,X0,OPTIONS);
+
+```
+
+ball.m
+```matlab
+function xdot  = ball(t,x)
+
+global g k c m h r
+
 xdot  = zeros(2,1);
 
 %determine if penetration has occured
-pen = (x(2) + r) - h; %compute penetetration for contact 
+pen = (x(2) + r) - h; %compute penetetration for contact
+
 if pen <0 
     xdot(1) = g; xdot(2)  = x(1);
 else xdot(1) = g - ((k*pen)/m) -((c*x(1))/m); xdot(2)  = x(1);
-    
-acc = [acc; xdot(1)];
-t_temp = [t_temp; t];
-pos= [pos; 0];
 
 end
 
 ```
+
+Choose nominal values for k, and c, i.e. k=5,000, and c=5, and plot position and velocity time histories.
+
+POSITION & VELOCITY PLOTS
+
+<p align="center">
+  <img src="/assets/images/EOM-contact-modelling/k5000c5.gif">
+</p>
+
 
 ### Effect of varying parameters k and c
 
