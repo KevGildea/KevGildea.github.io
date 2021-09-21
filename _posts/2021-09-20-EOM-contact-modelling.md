@@ -36,12 +36,13 @@ In phase 2 we consider the contact/impact between the ball and the ground surfac
 
 
 ### Numerical integration of ODEs
-Since each of the the EOMs (for both phase 1 and phase 2) are in the form of a 2<sup>nd</sup> order ordinary differential we can apply a Runge-Kutta 4<sup>th</sup> order approach. First, we need to simply the EOMs to the form of coupled 1<sup>st</sup> order equations i.e. x<sub>1</sub>(t), and x<sub>2</sub>(t). To simplify the problem further we will disregard the effect of air resistance, i.e. set c<sub>drag</sub> to zero.
+Since each of the the EOMs (for both phase 1 and phase 2) are in the form of a 2<sup>nd</sup> order ordinary differential we can apply a Runge-Kutta numerical integration approach. First, we need to simply the EOMs to the form of coupled 1<sup>st</sup> order equations i.e. x<sub>1</sub>(t), and x<sub>2</sub>(t). To simplify the problem further we will disregard the effect of air resistance, i.e. set c<sub>drag</sub> to zero.
 
 <p align="center">
   <img src="/assets/images/EOM-contact-modelling/2ndODEto1stODE.png">
 </p>
 
+Specifically we apply the Matlab <a href="https://uk.mathworks.com/help/matlab/ref/ode23.html" target="_blank">ode23</a> function, which is an implementation of an explicit Runge-Kutta (2,3) pair of Bogacki and Shampine. There are other ODE solvers available in Matlab, for example <a href="https://uk.mathworks.com/help/matlab/ref/ode45.html" target="_blank">ode45</a>, which is a higher order method which allows for a non-constant mass matrix.
 
 ### Implementation
 
@@ -55,7 +56,7 @@ global g k c m h r
 % set parameter values
 g = 9.81;k = 5000; c=5; m = 0.2; h=0.2; r = 0.01;
 
-%set integration time interval, and time step
+%set integration time interval, and maximum time step
 tspan = [0 2];
 tstep = 1e-3;
 
@@ -87,7 +88,7 @@ end
 
 ```
 
-We would like to model a ball of mass 0.2kg, and radius 0.01m. For reference, choose nominal values for the spring constant (k) and and damping constant (c) i.e. k=5,000, and c=5.
+We would like to model a ball of mass 0.2kg, and radius 0.01m. For reference, we choose nominal values for the spring constant (k) and and damping constant (c) i.e. k=5,000, and c=5. 
 
 |  Reference  |   |
 :-------------------------:|:-------------------------:
