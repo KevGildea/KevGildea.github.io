@@ -97,22 +97,22 @@ POSITION & VELOCITY PLOTS
 </p>
 
 VARYING DROP HEIGHT
-|    |   |
+|  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
 :-------------------------:|:-------------------------:
 |  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
 
 ADDING AN INITIAL VELOCITY
-|    |   |
+|  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
 :-------------------------:|:-------------------------:
 |  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
 
 CHANGE MASS AND HEIGHT OF THE BALL
-|    |   |
+|  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
 :-------------------------:|:-------------------------:
 |  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
 
 DROPPING THE BALL ON THE MOON
-|  g=1.62m/s/s  |  g=9.81m/s/s |
+|  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
 :-------------------------:|:-------------------------:
 |  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
 
