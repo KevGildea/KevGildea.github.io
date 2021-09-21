@@ -14,7 +14,7 @@ tags:
 ---
 
 
-Using differential equations of motion (EOM) we can describe the dynamics and kinematics of objects in motion. The most general equation of motion developed is Newton's second law of motion (i.e. F = ma). In this post I will describe how the equations of motion can be calculated and applied programmatically for a simple case of a falling and bouncing ball with one translational degree of freedom - i.e. the ball is bouncing perfectly perpindicular to the ground plane with no rotational component. 
+Using differential equations of motion (EOM) we can describe the dynamics and kinematics of objects in motion. The most general equation of motion developed is Newton's second law of motion (i.e. F = ma). In this post I will describe how the equations of motion can be calculated and applied programmatically for a simple case of a falling and bouncing ball with one translational degree of freedom - i.e. a ball bouncing perfectly perpindicular to the ground plane with no rotational component. 
 
 <p align="center">
   <img src="/assets/images/EOM-contact-modelling/Bouncing ball.gif" width="700">
@@ -27,7 +27,7 @@ We can split the problem up into two phases, where phase 1 involves the ball in 
   <img src="/assets/images/EOM-contact-modelling/EOMs1.jpg">
 </p>
 
-In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model. Note that x<sub>pen</sub>(t) is the displacement in the contact phase (i.e. the penetration).
+In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model. Given appropriate model parameters, this kind of model can accurately represent overall impact/contact behaviour. Note that x<sub>pen</sub>(t) is the displacement in the contact phase (i.e. the penetration).
 
 
 <p align="center">
@@ -131,7 +131,7 @@ Effects of varying parameters k and c.
 
 ### Implications
 
-
+In this post I have developed a physics simulation/computational model of a bouncing ball. Relationships between system parameters ans effects on the motion of a dropped ball are investigated. Namely, the drop height, initial velocity, ball mass, ball size, and the ground surface stiffness and damping coefficient. Exploring this code and varying parameters may allow the user gain an understanding of the effects of contact characteristics on ball motion.
 
 
 
