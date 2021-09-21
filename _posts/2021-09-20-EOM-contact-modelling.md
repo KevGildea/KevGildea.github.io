@@ -100,6 +100,10 @@ VARYING DROP HEIGHT
 |  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
 |  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
 
+| Type of Stressor | Example | Impact/Outcome |
+| :--------------- | ------- | -------------: |
+| ![](/assets/images/EOM-contact-modelling/k500c0.gif) | ![](/assets/images/EOM-contact-modelling/k500c0.gif) | ![](/assets/images/EOM-contact-modelling/k500c0.gif) |
+
 ADDING AN INITIAL VELOCITY
 |  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
 :-------------------------:|:-------------------------:
