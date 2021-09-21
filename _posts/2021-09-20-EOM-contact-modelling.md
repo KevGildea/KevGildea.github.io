@@ -96,28 +96,25 @@ POSITION & VELOCITY PLOTS
   <img src="/assets/images/EOM-contact-modelling/k5000c5.gif">
 </p>
 
-VARYING DROP HEIGHT
-|  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
-  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
+Varying the drop height.
+|  **h=0.35m**  |  **h=0.2m** |
+:-------------------------:|:-------------------------:
+  ![](/assets/images/EOM-contact-modelling/k5000c5h0.35.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
 
-| Type of Stressor | Example | Impact/Outcome |
- :--------------- | ------- | -------------: 
- ![](/assets/images/EOM-contact-modelling/k500c0.gif) | ![](/assets/images/EOM-contact-modelling/k500c0.gif) | ![](/assets/images/EOM-contact-modelling/k500c0.gif) 
-
-ADDING AN INITIAL VELOCITY
+Adding an initial velocity to the ball.
 |  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
 :-------------------------:|:-------------------------:
-  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
+  ![](/assets/images/EOM-contact-modelling/k5000c5v-1.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
 
-CHANGE MASS AND HEIGHT OF THE BALL
-|  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
+Changing the mass and size of the ball
+|  **m=0.5kg, r=0.08m**  |  **m=0.2kg, r=0.01m** |
 :-------------------------:|:-------------------------:
-  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
+  ![](/assets/images/EOM-contact-modelling/k5000c5m0.5r0.08.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
 
-DROPPING THE BALL ON THE MOON
-|  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
+Dropping the ball in another gravitational environment.
+|  **The Moon: g=1.62m/s/s**  |  **Earth: g=9.81m/s/s** |
 :-------------------------:|:-------------------------:
-  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
+  ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
 
 
 Effect of varying parameters k and c
