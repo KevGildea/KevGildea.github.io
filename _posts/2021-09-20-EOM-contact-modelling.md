@@ -102,7 +102,7 @@ Varying the drop height.
   ![](/assets/images/EOM-contact-modelling/k5000c5h0.35.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
 
 Adding an initial velocity to the ball.
-|  **g=1.62 m/s/s**  |  **g=9.81 m/s/s** |
+|  **v=-1 m/s**  |  **v=0 m/s** |
 :-------------------------:|:-------------------------:
   ![](/assets/images/EOM-contact-modelling/k5000c5v-1.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
 
