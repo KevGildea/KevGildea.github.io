@@ -46,7 +46,9 @@ Specifically we apply the Matlab <a href="https://uk.mathworks.com/help/matlab/r
 
 ### Implementation
 
-EOM_contact_modelling.m
+The full code is available <a href="https://github.com/KevGildea/RotationTheory/blob/main/EOM-contact-modelling" target="_blank">here</a>.
+
+main.m
 ```matlab
 close all; clear
 
