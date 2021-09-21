@@ -89,31 +89,31 @@ end
 
 Choose nominal values for k, and c, i.e. k=5,000, and c=5, and plot position and velocity time histories.
 
-|  Reference  |  Position and velocity plots |
+|  Reference  |   |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/k5000c5.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5.png)
 
 Varying the drop height.
 
-|   h=0.35m  |  Position and velocity plots |
+|   h=0.35m  |   |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/k5000c5h0.35.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5h0.35.png)
 
 Adding an initial velocity to the ball.
 
-|   v=-1 m/s  |  Position and velocity plots |
+|   v=-1 m/s  |   |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/k5000c5v-1.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5v-1.png)
 
 Changing the mass and size of the ball.
 
-|   m=0.5kg, r=0.08m   |  Position and velocity plots |
+|   m=0.5kg, r=0.08m   |   |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/k5000c5m0.5r0.08.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5m0.5r0.08.png)
 
 Dropping the ball in another gravitational environment.
 
-|   The Moon: g=1.62m/s/s   |  Position and velocity plots |
+|   The Moon: g=1.62m/s/s   |   |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.png)
 
