@@ -90,7 +90,7 @@ end
 Choose nominal values for k, and c, i.e. k=5,000, and c=5, and plot position and velocity time histories.
 
 POSITION & VELOCITY PLOTS
-|  **Figure**  |  **Position and velocity plots** |
+|  **Reference**  |  **Position and velocity plots** |
 :-------------------------:|:-------------------------:
 |![](/assets/images/EOM-contact-modelling/k5000c5.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5.png) |
 
