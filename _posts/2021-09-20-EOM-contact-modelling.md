@@ -96,8 +96,24 @@ POSITION & VELOCITY PLOTS
   <img src="/assets/images/EOM-contact-modelling/k5000c5.gif">
 </p>
 
+VARYING DROP HEIGHT
 
-### Effect of varying parameters k and c
+|  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
+
+ADDING AN INITIAL VELOCITY
+
+|  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
+
+CHANGE MASS AND HEIGHT OF THE BALL
+
+|  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
+
+DROPPING THE BALL ON THE MOON
+|  g=1.62m/s/s  |  g=9.81m/s/s |
+|  ![](/assets/images/EOM-contact-modelling/k500c0.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) |
+
+
+Effect of varying parameters k and c
 
 |         |     k=500 |     k=5,000 |     k=500,000 |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
