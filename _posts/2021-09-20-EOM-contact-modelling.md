@@ -95,24 +95,24 @@ POSITION & VELOCITY PLOTS
 |![](/assets/images/EOM-contact-modelling/k5000c5.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5.png) |
 
 Varying the drop height.
-|  **h=0.35m**  |  **h=0.2m** |
+|  **h=0.35m**  |  **Position and velocity plots** |
 :-------------------------:|:-------------------------:
-  ![](/assets/images/EOM-contact-modelling/k5000c5h0.35.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
+  ![](/assets/images/EOM-contact-modelling/k5000c5h0.35.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5h0.35.png) 
 
 Adding an initial velocity to the ball.
-|  **v=-1 m/s**  |  **v=0 m/s** |
+|  **v=-1 m/s**  |  **Position and velocity plots** |
 :-------------------------:|:-------------------------:
-  ![](/assets/images/EOM-contact-modelling/k5000c5v-1.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
+  ![](/assets/images/EOM-contact-modelling/k5000c5v-1.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5v-1.png) 
 
 Changing the mass and size of the ball
-|  **m=0.5kg, r=0.08m**  |  **m=0.2kg, r=0.01m** |
+|  **m=0.5kg, r=0.08m**  |  **Position and velocity plots** |
 :-------------------------:|:-------------------------:
-  ![](/assets/images/EOM-contact-modelling/k5000c5m0.5r0.08.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
+  ![](/assets/images/EOM-contact-modelling/k5000c5m0.5r0.08.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5m0.5r0.08.png) 
 
 Dropping the ball in another gravitational environment.
-|  **The Moon: g=1.62m/s/s**  |  **Earth: g=9.81m/s/s** |
+|  **The Moon: g=1.62m/s/s**  |  **Position and velocity plots** |
 :-------------------------:|:-------------------------:
-  ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5.gif) 
+  ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.gif)  |  ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.png) 
 
 
 Effect of varying parameters k and c
