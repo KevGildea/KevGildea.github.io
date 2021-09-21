@@ -14,7 +14,7 @@ tags:
 ---
 
 
-Using differential equations of motion (EOM) we can describe the dynamics and kinematics of objects in motion. In this post I will describe how EOMs can be calculated and applied programmatically for a simple case of a falling and bouncing ball with one translational degree of freedom - i.e. a ball bouncing perfectly perpindicular to the ground plane with no rotational component. 
+Using differential equations of motion (EOM) governed by Newton's 2<sup>nd</sup> law we can describe the dynamics and kinematics of objects in motion. In this post I will describe how EOMs can be calculated and applied programmatically for a simple case of a falling and bouncing ball with one translational degree of freedom - i.e. a ball bouncing perfectly perpindicular to the ground plane with no rotational component. 
 
 <p align="center">
   <img src="/assets/images/EOM-contact-modelling/Bouncing ball.gif" width="700">
