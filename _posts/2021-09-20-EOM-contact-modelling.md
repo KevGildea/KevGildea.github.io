@@ -42,7 +42,7 @@ Since each of the the EOMs (for both phase 1 and phase 2) are in the form of a 2
   <img src="/assets/images/EOM-contact-modelling/2ndODEto1stODE.png">
 </p>
 
-Specifically we apply the Matlab <a href="https://uk.mathworks.com/help/matlab/ref/ode23.html" target="_blank">ode23</a> function, which is an implementation of an explicit Runge-Kutta (2,3) pair of Bogacki and Shampine. There are other ODE solvers available in Matlab, for example <a href="https://uk.mathworks.com/help/matlab/ref/ode45.html" target="_blank">ode45</a>, which is a higher order method which allows for a non-constant mass matrix.
+Specifically we apply the Matlab <a href="https://uk.mathworks.com/help/matlab/ref/ode23.html" target="_blank">ode23</a> function, which is an implementation of an explicit Runge-Kutta (2,3) pair of Bogacki and Shampine. There are other ODE solvers available in Matlab, for example <a href="https://uk.mathworks.com/help/matlab/ref/ode45.html" target="_blank">ode45</a>, which is a higher order method. For this simplified example the ode23 function is used as it is more computationally efficient.
 
 ### Implementation
 
