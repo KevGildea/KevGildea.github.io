@@ -92,9 +92,7 @@ Choose nominal values for k, and c, i.e. k=5,000, and c=5, and plot position and
 
 POSITION & VELOCITY PLOTS
 
-<p align="center">
-  <img src="/assets/images/EOM-contact-modelling/k5000c5.gif">
-</p>
+![](/assets/images/EOM-contact-modelling/k5000c5.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5.png) 
 
 Varying the drop height.
 |  **h=0.35m**  |  **h=0.2m** |
