@@ -13,7 +13,6 @@ tags:
   - Mass-spring-damper model 
 ---
 
-### Problem statement
 
 Using differential equations of motion (EOM) we can describe the dynamics and kinematics of objects in motion. The most general equation of motion developed is Newton's second law of motion (i.e. F = ma). In this post I will describe how the equations of motion can be calculated and applied programmatically for a simple exemplar case of a falling and bouncing ball with one translational degree of freedom - i.e. the ball is bouncing perfectly perpindicular to the ground plane with no rotational component. 
 
