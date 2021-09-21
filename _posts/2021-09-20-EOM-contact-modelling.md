@@ -131,7 +131,7 @@ Effects of varying parameters k and c.
 
 ### Implications
 
-In this post I have developed a physics simulation/computational model of a bouncing ball. Relationships between system parameters ans effects on the motion of a dropped ball are investigated. Namely, the drop height, initial velocity, ball mass, ball size, and the ground surface stiffness and damping coefficient. Exploring this code and varying parameters may allow the user gain an understanding of the effects of contact characteristics on ball motion.
+In this post I have developed a physics simulation/computational model of a bouncing ball. Relationships between system parameters and the motion of a dropped ball are investigated, namely, the drop height, initial velocity, ball mass, ball size, and the ground surface stiffness and damping coefficient. Exploring this code and varying parameters may allow the user gain an understanding of the effects of contact characteristics.
 
 
 
