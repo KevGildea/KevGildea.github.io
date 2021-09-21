@@ -20,7 +20,7 @@ Using differential equations of motion (EOM) we can describe the dynamics and ki
   <img src="/assets/images/EOM-contact-modelling/Bouncing ball.gif" width="700">
 </p>
 
-### Defining the EOMs
+### Defining the equations of motion
 We can split the problem up into two phases, where phase 1 involves the ball in freefall. Here the equation of motion is governed by the mass of the ball, and air resistance.
 
 <p align="center">
