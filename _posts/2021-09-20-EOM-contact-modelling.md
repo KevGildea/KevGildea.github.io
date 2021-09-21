@@ -35,7 +35,7 @@ In phase 2 we consider the contact/impact between the ball and the ground surfac
 </p>
 
 
-### Numerical integration of ODEs
+### Numerical integration of ordinary differential equations
 Since each of the the EOMs (for both phase 1 and phase 2) are in the form of a 2<sup>nd</sup> order ordinary differential we can apply a Runge-Kutta numerical integration approach. First, we need to simply the EOMs to the form of coupled 1<sup>st</sup> order equations i.e. x<sub>1</sub>(t), and x<sub>2</sub>(t). To simplify the problem further we will disregard the effect of air resistance, i.e. set c<sub>drag</sub> to zero.
 
 <p align="center">
