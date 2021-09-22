@@ -27,7 +27,7 @@ We can split the problem up into two phases, where phase 1 involves the ball in 
   <img src="/assets/images/EOM-contact-modelling/EOMs1.jpg">
 </p>
 
-In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model. Given appropriate model parameters, this kind of model can accurately represent overall impact/contact behaviour. Note that x<sub>pen</sub>(t) is the displacement in the contact phase (i.e. the penetration).
+In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model. Given appropriate model parameters, this kind of model can accurately represent overall impact/contact behaviour. We make the assumption that the ball is a rigid body that does not deform. Note that x<sub>pen</sub>(t) is the displacement in the contact phase (i.e. the penetration).
 
 
 <p align="center">
