@@ -21,13 +21,13 @@ Using differential equations of motion (EOMs) governed by Newton's 2<sup>nd</sup
 </p>
 
 ### Defining the equations of motion
-We can split the problem up into two phases, where phase 1 involves the ball in freefall. Here the equation of motion is governed by the mass of the ball, and air resistance.
+We can split the problem up into two phases, where phase 1 involves the ball in freefall. Here the equation of motion is governed by gravitational force, and air resistance.
 
 <p align="center">
   <img src="/assets/images/EOM-contact-modelling/EOMs1.jpg">
 </p>
 
-In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model. Given appropriate model parameters, this kind of model can accurately represent overall impact/contact behaviour. We make the assumption that the ball is a rigid body that does not deform. Note that x<sub>pen</sub>(t) is the displacement in the contact phase (i.e. the penetration).
+In phase 2 we consider the contact/impact between the ball and the ground surface as an unforced mass-spring-damper model. Given appropriate model parameters, this kind of model can accurately represent overall impact/contact behaviour. We make the assumption that the ball is a rigid body that does not deform, and x<sub>pen</sub>(t) is the ground displacement in the contact phase (i.e. the penetration).
 
 
 <p align="center">
@@ -36,7 +36,7 @@ In phase 2 we consider the contact/impact between the ball and the ground surfac
 
 
 ### Numerical integration of ordinary differential equations
-Since each of the the EOMs (for both phase 1 and phase 2) are in the form of a 2<sup>nd</sup> order ordinary differential we can apply a Runge-Kutta numerical integration approach. First, we need to simply the EOMs to the form of coupled 1<sup>st</sup> order equations i.e. x<sub>1</sub>(t), and x<sub>2</sub>(t). To simplify the problem further we will disregard the effect of air resistance, i.e. set c<sub>drag</sub> to zero.
+Since each of the the EOMs (for both phase 1 and phase 2) are in the form of a 2<sup>nd</sup> order ordinary differential we apply a Runge-Kutta numerical integration approach. First, we need to simply the EOMs to the form of coupled 1<sup>st</sup> order equations i.e. x<sub>1</sub>(t), and x<sub>2</sub>(t). To simplify the problem further we will disregard the effect of air resistance, i.e. set c<sub>drag</sub> to zero.
 
 <p align="center">
   <img src="/assets/images/EOM-contact-modelling/2ndODEto1stODE.png">
