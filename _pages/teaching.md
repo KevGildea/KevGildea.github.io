@@ -4,7 +4,7 @@ title: "Teaching"
 ---
 
 
-I have been the TA for a 4th year mechanical engineering module for the past 4 years (<a href="https://www.tcd.ie/Engineering/assets/module-descriptors/ss/MEU44B17.pdf" target="_blank">MEU44B17</a>). This module on the Dynamics of Multibody systems addresses kinematics and dynamics and is focused on applications in biomechanics. It reviews the fundamental matrix algebra required for kinematics and dynamics analysis and computations, introduces three-dimensional kinematics and dynamics, and covers the theory and procedures for modelling systems of rigid bodies connected by kinematic joints. Applications to human body modeling for gait and impact analysis, vehicle dynamics and robotics are considered.
+I have been the TA for a 4th year mechanical engineering module for the past 4 years (<a href="https://www.tcd.ie/Engineering/assets/module-descriptors/ss/MEU44B17.pdf" target="_blank">MEU44B17</a>). The subject matter relates to the the kinematics and dynamics of multibody systems (systems of rigid bodies connected by kinematic joints). It reviews fundamental linear algebra methods, and introduces students to the 3D rotation group or the special orthogonal group in three dimensions (SO(3)) for three-dimensional kinematics and dynamics operations. The module aims to equip students with theoretical and practical knowledge for computational modelling of multibody systems. Applications include human body modeling for gait and impact analysis, and robotics.
 
 **LO1.** Use vector and tensor algebra to describe three dimensional kinematics/dynamics.
 
