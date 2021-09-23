@@ -10,6 +10,8 @@ I have been the TA for a 4th year mechanical engineering module for the past 4 y
 
 **LO2.** Apply the principles of Newtonian mechanics to the analysis of physical systems in which components can be modelled as essentially rigid.
 
+{% include video id="OSsWPNQaOHI" provider="youtube" %}
+
 > | <a href="https://kevgildea.github.io/blog/EOM-contact-modelling/" target="_blank">'Computational modelling of a bouncing ball using differential equations of motion'</a> |
 
 **LO3.** Analyze the motion of linked rigid body systems in 3-D including the formulation of constraints due to kinematic joints.
