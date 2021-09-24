@@ -123,7 +123,9 @@ Effect of the gravitational environment.
 
 Effects of varying parameters k and c.
 
-|   Underdamped:  |    |
+|   Underdamped:  | ```matlab  
+TEST
+```|
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/under-damped.gif)  | ![](/assets/images/EOM-contact-modelling/under-damped.png)
 
