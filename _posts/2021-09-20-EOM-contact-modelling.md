@@ -134,7 +134,7 @@ c=sqrt(4*m*k)
 c=sqrt(4*m*k)+(9/10)*sqrt(4*m*k)
 ```
 
-|   Underdamped:  |  c < sqrt(4*m*k)  |
+|   Under-damped:  |  c < sqrt(4*m*k)  |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/under-damped.gif)  | ![](/assets/images/EOM-contact-modelling/under-damped.png)
 
@@ -142,7 +142,7 @@ c=sqrt(4*m*k)+(9/10)*sqrt(4*m*k)
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/critically-damped.gif)  | ![](/assets/images/EOM-contact-modelling/critically-damped.png)
 
-|  Critically damped:   |  c > sqrt(4*m*k)  |
+|  Over-damped:   |  c > sqrt(4*m*k)  |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/over-damped.gif)  | ![](/assets/images/EOM-contact-modelling/over-damped.png)
 
