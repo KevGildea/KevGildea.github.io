@@ -123,15 +123,15 @@ Effect of the gravitational environment.
 
 Effects of varying parameters k and c.
 
-|   Underdamped:    |   |
+|   Underdamped:      |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/under-damped.gif)  | ![](/assets/images/EOM-contact-modelling/under-damped.png)
 
-|  Critically damped:    |   |
+|  Critically damped:      |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/critically-damped.gif)  | ![](/assets/images/EOM-contact-modelling/critically-damped.png)
 
-|  Critically damped:    |   |
+|  Critically damped:      |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/over-damped.gif)  | ![](/assets/images/EOM-contact-modelling/over-damped.png)
 
