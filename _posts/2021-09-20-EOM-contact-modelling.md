@@ -121,7 +121,18 @@ Effect of the gravitational environment.
 ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.png)
 
 
-Effects of varying parameters k and c.
+Effects of varying parameters k and c on oscillatory behaviour.
+
+```matlab
+% under-damped:
+c=sqrt(4*m*k)-(9/10)*sqrt(4*m*k)
+
+% critically damped:
+c=sqrt(4*m*k)
+
+% over-damped:
+c=sqrt(4*m*k)+(9/10)*sqrt(4*m*k)
+```
 
 |   Underdamped:  |  c < sqrt(4*m*k)  |
 :-------------------------:|:-------------------------:
