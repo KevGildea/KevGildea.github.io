@@ -116,22 +116,22 @@ Effect of changing the mass and size of the ball.
 
 Effect of the gravitational environment.
 
-|   The Moon: g=1.62m/s/s   |   |
+|   The Moon:    |  g=1.62m/s/s  |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.gif)  | ![](/assets/images/EOM-contact-modelling/k5000c5g1.62.png)
 
 
 Effects of varying parameters k and c.
 
-|   Underdamped:  |  `c < sqrt(4*m*k)`  |
+|   Underdamped:  |  c < sqrt(4*m*k)  |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/under-damped.gif)  | ![](/assets/images/EOM-contact-modelling/under-damped.png)
 
-|  Critically damped:   |  `c = sqrt(4*m*k)`  |
+|  Critically damped:   |  c = sqrt(4*m*k)  |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/critically-damped.gif)  | ![](/assets/images/EOM-contact-modelling/critically-damped.png)
 
-|  Critically damped:   |  `c > sqrt(4*m*k)`  |
+|  Critically damped:   |  c > sqrt(4*m*k)  |
 :-------------------------:|:-------------------------:
 ![](/assets/images/EOM-contact-modelling/over-damped.gif)  | ![](/assets/images/EOM-contact-modelling/over-damped.png)
 
