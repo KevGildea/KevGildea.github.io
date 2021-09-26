@@ -7,7 +7,7 @@ categories:
 tags:
   - Mechanics
   - Dynamics
-  - Kinemaics
+  - Kinematics
   - Physics
   - Numerical modelling
   - Mass-spring-damper model 
