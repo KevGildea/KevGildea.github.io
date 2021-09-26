@@ -3,7 +3,6 @@ title: "Computational modelling of a bouncing ball using differential equations 
 date: 2021-09-20
 categories:
   - blog
-  - teaching
 
 tags:
   - Mechanics
