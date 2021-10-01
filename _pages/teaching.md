@@ -8,6 +8,8 @@ I have been the TA for a 4th year mechanical engineering module for the past 4 y
 
 **LO1.** Use vector and tensor algebra to describe three dimensional kinematics/dynamics.
 
+{% include video id="oYAuk6ByFp0" provider="youtube" %}
+
 **LO2.** Apply the principles of Newtonian mechanics to the analysis of physical systems in which components can be modelled as essentially rigid.
 
 {% include video id="OSsWPNQaOHI" provider="youtube" %}
