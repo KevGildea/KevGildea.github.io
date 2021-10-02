@@ -11,6 +11,7 @@ I have been the TA for a 4th year mechanical engineering module for the past 4 y
 {% include video id="oYAuk6ByFp0" provider="youtube" %}
 
 > | <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group" target="_blank">'The 3D rotation group'</a> |
+> | <a href="https://kevgildea.github.io/tutorials/T3" target="_blank">'Tutorial 3 solutions'</a> |
 
 **LO2.** Apply the principles of Newtonian mechanics to the analysis of physical systems in which components can be modelled as essentially rigid.
 
