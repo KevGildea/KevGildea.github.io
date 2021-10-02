@@ -544,12 +544,3 @@ print('Approach 2:', (A3@A2@A1).T@np.array([0,0,0.08])+(A2@A1).T@np.array([0.1,-
     Approach 2: [0.12022704 0.0463191  0.18585786]
 
 </div>
-
-</div>
-
-<div class="cell code">
-
-``` python
-```
-
-</div>
