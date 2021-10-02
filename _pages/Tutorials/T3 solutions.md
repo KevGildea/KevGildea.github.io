@@ -1,3 +1,10 @@
+---
+permalink: /tutorials/T3
+title: "Tutorial 3 solutions"
+---
+
+
+
 <div class="cell code" data-execution_count="2">
 
 ``` python
