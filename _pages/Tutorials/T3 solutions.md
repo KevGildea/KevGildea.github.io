@@ -101,11 +101,9 @@ plt.show()
 
 </div>
 
-<div class="output display_data">
-
-    <IPython.core.display.HTML object>
-
-</div>
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q1.gif" width="900">
+</p>
 
 <div class="output stream stdout">
 
@@ -183,23 +181,9 @@ ax.legend()
 
 </div>
 
-<div class="output display_data">
-
-    <IPython.core.display.Javascript object>
-
-</div>
-
-<div class="output display_data">
-
-    <IPython.core.display.HTML object>
-
-</div>
-
-<div class="output execute_result" data-execution_count="13">
-
-    <matplotlib.legend.Legend at 0x2137bb818c8>
-
-</div>
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q2.gif" width="900">
+</p>
 
 </div>
 
@@ -509,17 +493,9 @@ print('Q5 b) answer:', pos[-1])
 plt.show()
 ```
 
-<div class="output display_data">
-
-    <IPython.core.display.Javascript object>
-
-</div>
-
-<div class="output display_data">
-
-    <IPython.core.display.HTML object>
-
-</div>
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q5.gif" width="900">
+</p>
 
 <div class="output stream stdout">
 
