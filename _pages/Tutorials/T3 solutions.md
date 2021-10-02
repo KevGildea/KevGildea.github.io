@@ -95,12 +95,6 @@ print('Q1 answer:', a_rel_global)
 plt.show()
 ```
 
-<div class="output display_data">
-
-    <IPython.core.display.Javascript object>
-
-</div>
-
 <p align="center">
   <img src="/_pages/Tutorials/T3Q1.gif" width="900">
 </p>
