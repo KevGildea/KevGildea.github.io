@@ -4,9 +4,6 @@ title: "Tutorial 3 solutions"
 ---
 
 
-
-<div class="cell code" data-execution_count="2">
-
 ``` python
 #### 4B17 Week 3 tutorial – 3D Rotations
 
@@ -15,11 +12,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import mpl_toolkits.mplot3d as plt3d
 %matplotlib notebook
+
 ```
 
-</div>
-
-<div class="cell code" data-execution_count="4">
 
 ``` python
 
@@ -106,15 +101,13 @@ plt.show()
   <img src="/_pages/Tutorials/T3Q1.gif" width="900">
 </p>
 
-<div class="output stream stdout">
+
+``` python
 
     Q1 answer: [120.96003366   9.          36.57634701]
 
-</div>
-
-</div>
-
-<div class="cell code" data-execution_count="13">
+```
+    
 
 ``` python
 ############## Q2 ##############
@@ -174,21 +167,21 @@ ax.set_zlabel('Global Z')
 ax.legend()
 ```
 
-<div class="output stream stdout">
+``` python
 
     headCG_local: screw angle =  29.99999999999998 screw axis =  [0.0, 1.0000000000000007, 0.0]
     T1_local: screw angle =  15.000000000000018 screw axis =  [0.0, 0.9999999999999987, 0.0]
     Q2 answer: screw angle =  72.00102381206236 screw axis =  [0.2672275728216174, 0.5345077184492197, 0.8017878640768221]
 
-</div>
+
+```
+
 
 <p align="center">
   <img src="/_pages/Tutorials/T3Q2.gif" width="900">
 </p>
 
-</div>
 
-<div class="cell code" data-execution_count="14">
 
 ``` python
 ############## Q3 ##############
@@ -207,15 +200,14 @@ q=EulRod(A21)
 print('Q3 answer:', q)
 ```
 
-<div class="output stream stdout">
+
+``` python
 
     Q3 answer: [0.8090117428072351, 0.15707435785672944, 0.31417961761348967, 0.47128487737024993]
 
-</div>
 
-</div>
+```
 
-<div class="cell code" data-execution_count="15">
 
 ``` python
 ############## Q5 ##############
@@ -498,18 +490,16 @@ plt.show()
   <img src="/_pages/Tutorials/T3Q5.gif" width="900">
 </p>
 
-<div class="output stream stdout">
+
 
     Q5 a) answer: [[ 0.61237244  0.35355339 -0.70710678]
      [-0.5         0.8660254   0.        ]
      [ 0.61237244  0.35355339  0.70710678]]
     Q5 b) answer: [0.12022704 0.0463191  0.18585786]
 
-</div>
 
-</div>
-
-<div class="cell code" data-execution_count="16">
+```
+    
 
 ``` python
 ############## Q5 b) check ##############
@@ -545,9 +535,9 @@ A1 = RotationZ(np.radians(θ1))
 print('Approach 2:', (A3@A2@A1).T@np.array([0,0,0.08])+(A2@A1).T@np.array([0.1,-0.02,0])+(A1).T@np.array([0,0,0.2]))
 ```
 
-<div class="output stream stdout">
+``` python
 
     Approach 1: [0.12022704 0.0463191  0.18585786]
     Approach 2: [0.12022704 0.0463191  0.18585786]
 
-</div>
+```
