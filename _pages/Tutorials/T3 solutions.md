@@ -133,7 +133,7 @@ print('Q2 answer: screw angle = ', np.degrees(θ), 'screw axis = ',n)
 
 fig = plt.figure(2)
 ax = fig.add_subplot(111, projection='3d')
-fig.suptitle('4B17 Week 3 tutorial – 3D Rotations: Q5', fontsize=12)
+fig.suptitle('4B17 Week 3 tutorial – 3D Rotations: Q2', fontsize=12)
 
 dirxlocal=[1,0,0]
 dirylocal=[0,1,0]
