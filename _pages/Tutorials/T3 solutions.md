@@ -6,7 +6,7 @@ title: "Tutorial 3: 3D rotations"
 <a href="https://github.com/KevGildea/kevgildea.github.io/blob/master/_pages/Tutorials/4B17%20Tutorial%20Week%203.pdf" target="_blank">Problem sheet</a>
 
 
-# Solutions
+## Solutions
 
 ### Q1
 
