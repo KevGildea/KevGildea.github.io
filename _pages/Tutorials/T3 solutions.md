@@ -3,7 +3,7 @@ permalink: /tutorials/T3
 title: "Tutorial 3 solutions"
 ---
 
-
+### Q1
 
 <p align="center">
   <img src="/_pages/Tutorials/T3Q1.png" width="900">
@@ -11,16 +11,13 @@ title: "Tutorial 3 solutions"
 
 
 ``` python
-#### 4B17 Week 3 tutorial – 3D Rotations
-
+# Dependencies
 from math import sqrt
 import matplotlib.pyplot as plt
 import numpy as np
 import mpl_toolkits.mplot3d as plt3d
 from pyquaternion import Quaternion
-
 ```
-
 
 ``` python
 def RotationY(θy):
@@ -42,7 +39,6 @@ dirzglobal=[0,0,1]
 ax.quiver(0,0,0,dirxglobal[0],dirxglobal[1],dirxglobal[2],color='r')
 ax.quiver(0,0,0,diryglobal[0],diryglobal[1],diryglobal[2],color='g')
 ax.quiver(0,0,0,dirzglobal[0],dirzglobal[1],dirzglobal[2],color='b')
-
 
 # Plot T1
 aT1_pos = np.array([5,5,5])
@@ -96,9 +92,9 @@ print('Q1 answer:', a_rel_global)
 plt.show()
 ```
 
-    Q1 answer: [120.96003366   9.          36.57634701]
+Q1 answer: [120.96003366   9.          36.57634701]
 
-
+### Q2
 <p align="center">
   <img src="/_pages/Tutorials/T3Q2.png" width="900">
 </p>
@@ -158,11 +154,13 @@ ax.set_zlabel('Global Z')
 
 ax.legend()
 ```
-    headCG_local: screw angle =  29.99999999999998 screw axis =  [0.0, 1.0000000000000007, 0.0]
-    T1_local: screw angle =  15.000000000000018 screw axis =  [0.0, 0.9999999999999987, 0.0]
-    Q2 answer: screw angle =  72.00102381206236 screw axis =  [0.2672275728216174, 0.5345077184492197, 0.8017878640768221]
+Screw axes and angles from Q1:
+headCG_local: screw angle =  29.99999999999998 screw axis =  [0.0, 1.0000000000000007, 0.0]
+T1_local: screw angle =  15.000000000000018 screw axis =  [0.0, 0.9999999999999987, 0.0]
 
-**Q3
+Q2 answer: screw angle =  72.00102381206236 screw axis =  [0.2672275728216174, 0.5345077184492197, 0.8017878640768221]
+
+### Q3
 
 <p align="center">
   <img src="/_pages/Tutorials/T3Q3.png" width="900">
@@ -241,15 +239,15 @@ plt.show()
 ```
     Q3 answer: [0.8090117428072351, 0.15707435785672944, 0.31417961761348967, 0.47128487737024993]
 
-**Q4
+### Q4
 
 
-**Q5
-**a)
+### Q5
+### a)
 <p align="center">
   <img src="/_pages/Tutorials/T3Q5a.png" width="900">
 </p>
-**b)
+### b)
 <p align="center">
   <img src="/_pages/Tutorials/T3Q5b.png" width="900">
 </p>
