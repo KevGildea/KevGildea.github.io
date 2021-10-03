@@ -4,6 +4,12 @@ title: "Tutorial 3 solutions"
 ---
 
 
+
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q1.png" width="900">
+</p>
+
+
 ``` python
 #### 4B17 Week 3 tutorial – 3D Rotations
 
@@ -11,15 +17,12 @@ from math import sqrt
 import matplotlib.pyplot as plt
 import numpy as np
 import mpl_toolkits.mplot3d as plt3d
-%matplotlib notebook
+from pyquaternion import Quaternion
 
 ```
 
 
 ``` python
-
-############## Q1 ##############
-
 def RotationY(θy):
     """ Calculate a rotation matrix for a rotation about the Y axis"""
     ROTMy = np.array([[np.cos(θy),0,np.sin(θy)],
@@ -86,32 +89,21 @@ ax.set_xlabel('Global X')
 ax.set_ylabel('Global Y')
 ax.set_zlabel('Global Z')
 
-
 # Compute relative acceleration head CG and T1
-
 a_rel_global = aheadCG_global - aT1_global
-
 print('Q1 answer:', a_rel_global)
-
 
 plt.show()
 ```
 
-<p align="center">
-  <img src="/_pages/Tutorials/T3Q1.gif" width="900">
-</p>
-
-
-``` python
-
     Q1 answer: [120.96003366   9.          36.57634701]
 
-```
-    
+
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q2.png" width="900">
+</p>
 
 ``` python
-############## Q2 ##############
-
 def Screw(ROTM):
     """ Calculate the screw angle and axis for a given rotation matrix"""
     n=[]
@@ -166,26 +158,17 @@ ax.set_zlabel('Global Z')
 
 ax.legend()
 ```
-
-``` python
-
     headCG_local: screw angle =  29.99999999999998 screw axis =  [0.0, 1.0000000000000007, 0.0]
     T1_local: screw angle =  15.000000000000018 screw axis =  [0.0, 0.9999999999999987, 0.0]
     Q2 answer: screw angle =  72.00102381206236 screw axis =  [0.2672275728216174, 0.5345077184492197, 0.8017878640768221]
 
-
-```
-
+**Q3
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q2.gif" width="900">
+  <img src="/_pages/Tutorials/T3Q3.gif" width="900">
 </p>
 
-
-
 ``` python
-############## Q3 ##############
-
 def EulRod(ROTM):
     """ Find the Euler-Rodrigues parameters associated with a rotation matrix"""
     q=[]
@@ -194,24 +177,83 @@ def EulRod(ROTM):
     q.append(np.array(ROTM[2][0]-ROTM[0][2])/(4*q[0]))
     q.append(np.array(ROTM[0][1]-ROTM[1][0])/(4*q[0]))
     return q
+    
+def q_conjugate(q):
+    w, x, y, z = q
+    return (w, -x, -y, -z)
+
+def qv_mult(q1, v1):
+    q2 = [0, v1[0], v1[1], v1[2]]
+    q1=Quaternion(q1)
+    q1=q1.inverse
+    return q_mult(q_mult(q1, q2), q_conjugate(q1))[1:]
+
+def q_mult(q1, q2):
+    w1, x1, y1, z1 = q1
+    w2, x2, y2, z2 = q2
+    w = w1 * w2 - x1 * x2 - y1 * y2 - z1 * z2
+    x = w1 * x2 + x1 * w2 + y1 * z2 - z1 * y2
+    y = w1 * y2 + y1 * w2 + z1 * x2 - x1 * z2
+    z = w1 * z2 + z1 * w2 + x1 * y2 - y1 * x2
+    return w, x, y, z
 
 A21 = np.array([[0.3584,0.8613,-0.3603],[-0.6638,0.5064,0.5503],[0.6564,0.0420,0.7532]])
-q=EulRod(A21)
+q=np.array(EulRod(A21))
 print('Q3 answer:', q)
+
+# Perform the rotation using Euler Rodrigues parameters and plot
+fig = plt.figure(3)
+ax = fig.add_subplot(111, projection='3d')
+fig.suptitle('4B17 Week 3 tutorial – 3D Rotations: Q3', fontsize=12)
+
+dirxlocal=[1,0,0]
+dirylocal=[0,1,0]
+dirzlocal=[0,0,1]
+
+ax.quiver(0,0,0,dirxlocal[0],dirxlocal[1],dirxlocal[2],color='r',linestyle='--',label='original X axis')
+ax.quiver(0,0,0,dirylocal[0],dirylocal[1],dirylocal[2],color='g',linestyle='--',label='original Y axis')
+ax.quiver(0,0,0,dirzlocal[0],dirzlocal[1],dirzlocal[2],color='b',linestyle='--',label='original Z axis')
+# q'/(q*q')
+dirxlocal=qv_mult(q,[1,0,0])
+dirylocal=qv_mult(q,[0,1,0])
+dirzlocal=qv_mult(q,[0,0,1])
+
+ax.quiver(0,0,0,dirxlocal[0],dirxlocal[1],dirxlocal[2],color='r',label='reoriented X axis')
+ax.quiver(0,0,0,dirylocal[0],dirylocal[1],dirylocal[2],color='g',label='reoriented Y axis')
+ax.quiver(0,0,0,dirzlocal[0],dirzlocal[1],dirzlocal[2],color='b',label='reoriented Z axis')
+
+# Plot screw axis and angle 
+ax.quiver(0,0,0,n[0],n[1],n[2],color='orange',linestyle='--',label='screw axis')
+ax.text(0,0,0, '  θ = '+str(round(np.degrees(θ)))+'°', size=12, zorder=1,color='orange')
+
+# Axis limits and lables and legend
+ax.set_xlim3d(-2,2)
+ax.set_ylim3d(-2,2)
+ax.set_zlim3d(-2,2)
+
+ax.set_xlabel('Global X')
+ax.set_ylabel('Global Y')
+ax.set_zlabel('Global Z')
+
+ax.legend()
+
+plt.show()
 ```
-
-
-``` python
-
     Q3 answer: [0.8090117428072351, 0.15707435785672944, 0.31417961761348967, 0.47128487737024993]
 
+**Q4
 
-```
 
+**Q5
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q5a.png" width="900">
+</p>
+
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q5b.png" width="900">
+</p>
 
 ``` python
-############## Q5 ##############
-
 # Necessary functions for forward kinematics
 def jnt_path(graph, start, end, path=[]):
     path = path + [start]
@@ -238,7 +280,6 @@ def parent_child(graph):
                     parent_child_pairs.append(pair)
     parent_child_pairs.sort(key=takeSecond)
     return parent_child_pairs
-
 
 def FK_local2global(chain,dir_graph): 
     """ perform forward kinematics to to convert joint orientations and position vectors into the global coordinate system"""
@@ -273,7 +314,6 @@ def RotationZ(θz):
                      [-np.sin(θz),np.cos(θz),0],
                      [0,0,1]])
     return ROTMy
-
 
 # Define the Kinematic chain using local orientations (relative to parent) as 3x3 rotation matrices, and local position offset vectors (position of child relative to parent)
 chain=[]
@@ -362,14 +402,12 @@ for j in range(len(parent_child_pairs)):
     line = plt3d.art3d.Line3D(xs, ys, zs, c='gray',linestyle='--',alpha=0.5)
     ax.add_line(line)
 
-
 # Rotations we want to apply
 θ1 = 30
 θ2 = 45
 θ3 = 0
 
 # apply Q1 to the robot
-
 chain[1][1]=RotationZ(np.radians(θ1)).T @ chain[1][1]
 
 # apply forward kinematics
@@ -475,8 +513,6 @@ ax.quiver(pos[1][0],pos[1][1],pos[1][2],n[0],n[1],n[2],length=0.025,color='orang
 
 ax.legend()
 
-
-
 # Part a)
 print('Q5 a) answer:', ori[-1].T)
 
@@ -487,23 +523,14 @@ plt.show()
 
 ```
 
-<p align="center">
-  <img src="/_pages/Tutorials/T3Q5.gif" width="900">
-</p>
-
-
-``` python
     Q5 a) answer: [[ 0.61237244  0.35355339 -0.70710678]
      [-0.5         0.8660254   0.        ]
      [ 0.61237244  0.35355339  0.70710678]]
     Q5 b) answer: [0.12022704 0.0463191  0.18585786]
-
-```
-    
+   
+**Q5 b) check
 
 ``` python
-############## Q5 b) check ##############
-
 def RotationY(θy):
     """ Calculate a rotation matrix for a rotation about the Y axis"""
     ROTMy = np.array([[np.cos(θy),0,-np.sin(θy)],
@@ -535,9 +562,5 @@ A1 = RotationZ(np.radians(θ1))
 print('Approach 2:', (A3@A2@A1).T@np.array([0,0,0.08])+(A2@A1).T@np.array([0.1,-0.02,0])+(A1).T@np.array([0,0,0.2]))
 ```
 
-``` python
-
     Approach 1: [0.12022704 0.0463191  0.18585786]
     Approach 2: [0.12022704 0.0463191  0.18585786]
-
-```
