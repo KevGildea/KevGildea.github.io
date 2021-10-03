@@ -169,11 +169,11 @@ Screw axes and angles from Q1:
 
 headCG_local:
 
-screw angle =  30, screw axis =  [0.0,1,0]
+screw angle =  30, screw axis =  [0,1,0]
 
 T1_local: 
 
-screw angle =  15, screw axis =  [0.0,1,0]
+screw angle =  15, screw axis =  [0,1,0]
 
 Q2 answer: 
 
