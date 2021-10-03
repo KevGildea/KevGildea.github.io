@@ -92,7 +92,7 @@ print('Q1 answer:', a_rel_global)
 plt.show()
 ```
 
-Q1 answer: [120.96003366   9.          36.57634701]
+Q1 answer: [120.96   9.00  36.58]
 
 ### Q2
 <p align="center">
@@ -155,10 +155,10 @@ ax.set_zlabel('Global Z')
 ax.legend()
 ```
 Screw axes and angles from Q1:
-headCG_local: screw angle =  29.99999999999998 screw axis =  [0.0, 1.0000000000000007, 0.0]
-T1_local: screw angle =  15.000000000000018 screw axis =  [0.0, 0.9999999999999987, 0.0]
+headCG_local: screw angle =  30 screw axis =  [0.0,1,0]
+T1_local: screw angle =  15 screw axis =  [0.0,1,0]
 
-Q2 answer: screw angle =  72.00102381206236 screw axis =  [0.2672275728216174, 0.5345077184492197, 0.8017878640768221]
+Q2 answer: screw angle =  72 screw axis =  [0.27, 0.53, 0.80]
 
 ### Q3
 
@@ -237,7 +237,7 @@ ax.legend()
 
 plt.show()
 ```
-    Q3 answer: [0.8090117428072351, 0.15707435785672944, 0.31417961761348967, 0.47128487737024993]
+    Q3 answer: [0.81, 0.16, 0.31, 0.47]
 
 ### Q4
 
@@ -522,10 +522,12 @@ plt.show()
 
 ```
 
-    Q5 a) answer: [[ 0.61237244  0.35355339 -0.70710678]
-     [-0.5         0.8660254   0.        ]
-     [ 0.61237244  0.35355339  0.70710678]]
-    Q5 b) answer: [0.12022704 0.0463191  0.18585786]
+Q5 a) answer: 
+[[0.61  0.35 -0.71]
+[-0.5   0.89  0.00]
+[0.61   0.35  0.71]]
+
+Q5 b) answer: [0.12 0.05 0.19]
    
 **Q5 b) check
 
@@ -561,5 +563,5 @@ A1 = RotationZ(np.radians(θ1))
 print('Approach 2:', (A3@A2@A1).T@np.array([0,0,0.08])+(A2@A1).T@np.array([0.1,-0.02,0])+(A1).T@np.array([0,0,0.2]))
 ```
 
-    Approach 1: [0.12022704 0.0463191  0.18585786]
-    Approach 2: [0.12022704 0.0463191  0.18585786]
+Approach 1: [0.12 0.05  0.19]
+Approach 2: [0.12 0.05  0.19]
