@@ -92,7 +92,13 @@ print('Q1 answer:', a_rel_global)
 plt.show()
 ```
 
-Q1 answer: [120.96   9.00  36.58]
+Q1 answer: 
+
+[120.96   9.00  36.58]
+
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q1.gif" width="900">
+</p>
 
 ### Q2
 <p align="center">
@@ -155,10 +161,21 @@ ax.set_zlabel('Global Z')
 ax.legend()
 ```
 Screw axes and angles from Q1:
-headCG_local: screw angle =  30 screw axis =  [0.0,1,0]
-T1_local: screw angle =  15 screw axis =  [0.0,1,0]
 
-Q2 answer: screw angle =  72 screw axis =  [0.27, 0.53, 0.80]
+headCG_local: 
+screw angle =  30, screw axis =  [0.0,1,0]
+
+T1_local: 
+
+screw angle =  15, screw axis =  [0.0,1,0]
+
+Q2 answer: 
+
+screw angle =  72, screw axis =  [0.27, 0.53, 0.80]
+
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q2.gif" width="900">
+</p>
 
 ### Q3
 
@@ -237,7 +254,14 @@ ax.legend()
 
 plt.show()
 ```
-    Q3 answer: [0.81, 0.16, 0.31, 0.47]
+
+Q3 answer: 
+
+[0.81, 0.16, 0.31, 0.47]
+
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q3.gif" width="900">
+</p>
 
 ### Q4
 
@@ -528,6 +552,10 @@ Q5 a) answer:
 [0.61   0.35  0.71]]
 
 Q5 b) answer: [0.12 0.05 0.19]
+
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q5.gif" width="900">
+</p>
    
 **Q5 b) check
 
