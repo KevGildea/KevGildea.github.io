@@ -162,7 +162,8 @@ ax.legend()
 ```
 Screw axes and angles from Q1:
 
-headCG_local: 
+headCG_local:
+
 screw angle =  30, screw axis =  [0.0,1,0]
 
 T1_local: 
