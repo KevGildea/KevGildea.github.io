@@ -8,7 +8,7 @@ title: "Tutorial 3"
 <a href="https://kevgildea.github.io/tutorials/T3/4B17 Tutorial Week 3.pdf" target="_blank">3D rotations</a>
 
 <object data="_pages/Tutorials/4B17 Tutorial Week 3.pdf" width="1000" height="1000" 
-        type='application/pdf'></object>
+type='application/pdf'></object>
 
 # Solutions
 
