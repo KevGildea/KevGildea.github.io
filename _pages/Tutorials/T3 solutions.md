@@ -1,11 +1,10 @@
 ---
 permalink: /tutorials/T3
-title: "Tutorial 3"
+title: "Tutorial 3: 3D rotations"
 ---
 
-# Problem sheet
+<a href="https://github.com/KevGildea/kevgildea.github.io/blob/master/_pages/Tutorials/4B17%20Tutorial%20Week%203.pdf" target="_blank">Problem sheet</a>
 
-<a href="https://github.com/KevGildea/kevgildea.github.io/blob/master/_pages/Tutorials/4B17%20Tutorial%20Week%203.pdf" target="_blank">3D rotations</a>
 
 # Solutions
 
