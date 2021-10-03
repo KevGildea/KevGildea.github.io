@@ -518,7 +518,7 @@ def RotationZ(θz):
                      [0,0,1]])
     return ROTMy
 
-# Appreach 1
+# Approach 1
 
 A3 = RotationY(np.radians(θ3)).T
 A2 = RotationY(np.radians(θ2)).T
