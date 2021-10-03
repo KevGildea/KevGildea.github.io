@@ -5,10 +5,7 @@ title: "Tutorial 3"
 
 ### Problem sheet
 
-[3D rotations](http://ToadHanks.github.io/images/mihir_resume_2019v5.pdf)
-
-<sup>[<a href="https://kevgildea.github.io/tutorials/T3/4B17 Tutorial Week 3.pdf" target="_blank">3D rotations</a>
-
+<a href="https://kevgildea.github.io/tutorials/T3/4B17 Tutorial Week 3.pdf" target="_blank">3D rotations</a>
 
 ### Q1
 
