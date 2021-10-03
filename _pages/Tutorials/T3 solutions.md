@@ -245,10 +245,11 @@ plt.show()
 
 
 **Q5
+**a)
 <p align="center">
   <img src="/_pages/Tutorials/T3Q5a.png" width="900">
 </p>
-
+**b)
 <p align="center">
   <img src="/_pages/Tutorials/T3Q5b.png" width="900">
 </p>
