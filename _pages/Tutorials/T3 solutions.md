@@ -265,6 +265,9 @@ Q3 answer:
 
 ### Q4
 
+<p align="center">
+  <img src="/_pages/Tutorials/T3Q4.png" width="900">
+</p>
 
 ### Q5
 ### a)
@@ -557,7 +560,7 @@ Q5 b) answer: [0.12 0.05 0.19]
   <img src="/_pages/Tutorials/T3Q5.gif" width="900">
 </p>
    
-**Q5 b) check
+### Q5 b) check
 
 ``` python
 def RotationY(θy):
