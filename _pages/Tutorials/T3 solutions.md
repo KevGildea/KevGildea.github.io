@@ -165,7 +165,7 @@ ax.legend()
 **Q3
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q3.gif" width="900">
+  <img src="/_pages/Tutorials/T3Q3.png" width="900">
 </p>
 
 ``` python
