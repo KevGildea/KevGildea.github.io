@@ -5,7 +5,7 @@ title: "Tutorial 3"
 
 # Problem sheet
 
-<a href="https://kevgildea.github.io/tutorials/T3/4B17 Tutorial Week 3.pdf" target="_blank">3D rotations</a>
+<a href="https://github.com/KevGildea/kevgildea.github.io/blob/master/_pages/Tutorials/4B17%20Tutorial%20Week%203.pdf" target="_blank">3D rotations</a>
 
 # Solutions
 
