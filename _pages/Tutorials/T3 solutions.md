@@ -480,11 +480,9 @@ line = plt3d.art3d.Line3D(xs, ys, zs, color='orange',linestyle='--',alpha=0.5)
 ax.quiver(pos[1][0],pos[1][1],pos[1][2],n[0],n[1],n[2],length=0.025,color='orange',linestyle='--')
 ax.text(pos[1][0],pos[1][1],pos[1][2], '  θ = '+str(round(np.degrees(θ)))+'°', size=12, zorder=1,color='orange')
 
-
 # apply θ2 to the robot
 
 chain[2][1]=RotationY(np.radians(θ2)).T @ chain[2][1]
-
 
 # apply forward kinematics
 ori, pos = FK_local2global(chain,dir_graph)
@@ -524,7 +522,6 @@ line = plt3d.art3d.Line3D(xs, ys, zs, color='orange',linestyle='--',alpha=0.5)
 ax.quiver(pos[2][0],pos[2][1],pos[2][2],n[0],n[1],n[2],length=0.025,color='orange',linestyle='--')
 ax.text(pos[2][0],pos[2][1],pos[2][2], '  θ = '+str(round(np.degrees(θ)))+'°', size=12, zorder=1,color='orange')
 
-
 # Axis limits and lables
 ax.set_xlim3d(-0.25,0.25)
 ax.set_ylim3d(-0.25,0.25)
@@ -533,7 +530,6 @@ ax.set_zlim3d(0,0.5)
 ax.set_xlabel('Global X')
 ax.set_ylabel('Global Y')
 ax.set_zlabel('Global Z')
-
 
 line = plt3d.art3d.Line3D([0,0], [0,0], [0,0], c='gray',linestyle='--',alpha=0.5,label='Robot arm original orientation')
 ax.add_line(line)
@@ -556,6 +552,7 @@ plt.show()
 ```
 
 Q5 a) answer: 
+
 [[0.61  0.35 -0.71]
 [-0.5   0.89  0.00]
 [0.61   0.35  0.71]]
