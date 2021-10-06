@@ -25,9 +25,13 @@ We can use kinematic differential equations to determine both 1) where an object
 
 ### Euler Integration
 
-BACKGROUND
+<p align="center">
+  <img src="/assets/images/Kinematic-Differential-Equations/fig1.png" width="1200">
+</p>
 
-APPLIED TO ORIENTATION & ROTATION MATRIX
+<p align="center">
+  <img src="/assets/images/Kinematic-Differential-Equations/fig2.png" width="1200">
+</p>
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDEoriScrew.gif" width="1200">
