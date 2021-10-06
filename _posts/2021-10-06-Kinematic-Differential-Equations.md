@@ -30,7 +30,7 @@ BACKGROUND
 APPLIED TO ORIENTATION & ROTATION MATRIX
 
 <p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/KDEposScrew.gif" width="1200">
+  <img src="/assets/images/Kinematic-Differential-Equations/KDEoriScrew.gif" width="1200">
 </p>
 
 
