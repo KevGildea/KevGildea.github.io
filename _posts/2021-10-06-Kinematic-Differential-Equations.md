@@ -17,7 +17,7 @@ tags:
 INTRODUCTION
 
 <p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/EYECATCHINGGIFOFBALLINMOTION" width="700">
+  <img src="/assets/images/Kinematic-Differential-Equations/KDE.gif" width="700">
 </p>
 
 Simplified problem: self propelled sphere in a vacuum.
