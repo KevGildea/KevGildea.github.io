@@ -11,7 +11,7 @@ title: "Tutorial 3: 3D rotations"
 ### Q1
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q1.png" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q1.png" width="900">
 </p>
 
 
@@ -102,12 +102,12 @@ Q1 answer:
 [120.96   9.00  36.58]
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q1.gif" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q1.gif" width="900">
 </p>
 
 ### Q2
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q2.png" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q2.png" width="900">
 </p>
 
 ``` python
@@ -180,13 +180,13 @@ Q2 answer:
 screw angle =  72, screw axis =  [0.27, 0.53, 0.80]
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q2.gif" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q2.gif" width="900">
 </p>
 
 ### Q3
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q3.png" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q3.png" width="900">
 </p>
 
 ``` python
@@ -266,23 +266,23 @@ Q3 answer:
 [0.81, 0.16, 0.31, 0.47]
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q3.gif" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q3.gif" width="900">
 </p>
 
 ### Q4
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q4.png" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q4.png" width="900">
 </p>
 
 ### Q5
 ### a)
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q5a.png" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q5a.png" width="900">
 </p>
 ### b)
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q5b.png" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q5b.png" width="900">
 </p>
 
 ``` python
@@ -560,7 +560,7 @@ Q5 a) answer:
 Q5 b) answer: [0.12 0.05 0.19]
 
 <p align="center">
-  <img src="/_pages/Tutorials/T3Q5.gif" width="900">
+  <img src="/_pages/Tutorials/T3/T3Q5.gif" width="900">
 </p>
    
 ### Q5 b) check
