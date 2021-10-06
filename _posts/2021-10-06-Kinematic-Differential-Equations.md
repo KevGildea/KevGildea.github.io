@@ -14,11 +14,7 @@ tags:
 ---
 
 
-INTRODUCTION
-
-<p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/KDE.gif" width="1200">
-</p>
+Simplified problem: self propelled sphere in a vacuum.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDEpos.gif" width="1200">
@@ -26,8 +22,6 @@ INTRODUCTION
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDEori.gif" width="1200">
 </p>
-
-Simplified problem: self propelled sphere in a vacuum.
 
 ### Euler Integration
 
