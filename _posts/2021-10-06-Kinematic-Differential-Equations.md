@@ -14,7 +14,7 @@ tags:
 ---
 
 
-Simplified problem: self propelled sphere in a vacuum.
+We can use kinematic differential equations to determine both 1) where an object will be and 2) what orientation it will have after a specified amount of time, if we provide constant values for angular and linear velocity. In this post I describe how this is done for an example that can be considered representative of a self propelling sphere in a vacuum with no gravitational effect (i.e. dynamics are not considered).
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDEpos.gif" width="1200">
