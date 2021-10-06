@@ -27,9 +27,13 @@ We can use kinematic differential equations to determine both 1) where an object
 
 BACKGROUND
 
+APPLIED TO ORIENTATION & ROTATION MATRIX
+
 APPLIED TO VELOCITY
 
-APPLIED TO ORIENTATION & ROTATION MATRIX
+<p align="center">
+  <img src="/assets/images/Kinematic-Differential-Equations/KDEpos.gif" width="1200">
+</p>
 
 ### Implementation
 
