@@ -29,10 +29,15 @@ BACKGROUND
 
 APPLIED TO ORIENTATION & ROTATION MATRIX
 
+<p align="center">
+  <img src="/assets/images/Kinematic-Differential-Equations/KDEposScrew.gif" width="1200">
+</p>
+
+
 APPLIED TO VELOCITY
 
 <p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/KDEpos.gif" width="1200">
+  <img src="/assets/images/Kinematic-Differential-Equations/KDEposV.gif" width="1200">
 </p>
 
 ### Implementation
