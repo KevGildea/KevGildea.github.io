@@ -23,7 +23,8 @@ INTRODUCTION
   <img src="/assets/images/Kinematic-Differential-Equations/KDEori.gif" width="1200">
 </p>
 
-| ![](/assets/images/Kinematic-Differential-Equations/KDEpos.gif)  |  ![](/assets/images/Kinematic-Differential-Equations/KDEori.gif) |
+:-------------------------:|:-------------------------:
+![](/assets/images/Kinematic-Differential-Equations/KDEpos.gif)  |  ![](/assets/images/Kinematic-Differential-Equations/KDEori.gif)
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDE.gif" width="1200">
