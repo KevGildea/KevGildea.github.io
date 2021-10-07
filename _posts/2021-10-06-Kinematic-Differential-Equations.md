@@ -46,7 +46,7 @@ MATHS FOR
 
 ### Implementation
 
-'''python
+```python
 # Function for performing Euler integration on the rotation matrix
 def EulerInt(A0,ω,r0,v,t_step,t_end):
     At=A0
@@ -62,11 +62,11 @@ def EulerInt(A0,ω,r0,v,t_step,t_end):
         rt = rt + t_step*(At@v)
         rts.append(rt)
     return Ats,rts
-'''
+```
 
 MATHS FOR MAKING MATRIX ORTHOGONAL AND CHECKING IF IT IS A VALID ROTATION MATRIX
 
-'''python
+```python
 def isRotationMatrix(M):
     tag = False
     I = np.identity(M.shape[0])
@@ -77,11 +77,11 @@ def isRotationMatrix(M):
     check2 = isclose(np.linalg.det(M),1,abs_tol=1e-5)
     if check1.all()==True and check2==True: tag = True
     return tag
-'''
+```
 
 MUST BE INCLDED IN IMPLEMENTATION
 
-'''python
+```python
 # Function for performing Euler integration on the rotation matrix
 def EulerInt(A0,ω,r0,v,t_step,t_end):
     At=A0
@@ -101,7 +101,7 @@ def EulerInt(A0,ω,r0,v,t_step,t_end):
         rt = rt + t_step*(At@v)
         rts.append(rt)
     return Ats,rts
-'''
+```
 
 ### Implications
 
