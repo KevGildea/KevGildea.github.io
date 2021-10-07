@@ -83,7 +83,7 @@ HOWEVER, NOTE THAT THE ROTATION MATRIX MUST HAVE PROPERTIES 1) AND 2) TO RESULT 
   <img src="/assets/images/Kinematic-Differential-Equations/fig3.png" width="1200">
 </p>
 
-PLOT SHOWING HOW ERRORS COMPOUND IN THE ROTATION MATRIX
+PLOT SHOWING HOW ERRORS COMPOUND IN THE ROTATION MATRIX - plot the value for determinant and explain that the axes become non-orthogonal indicating that the rotation matix is non-orthogonal (http://www.euclideanspace.com/maths/algebra/matrix/orthogonal/). DOES THE APPROACH I USE ALSO FORCE THE ROTATION MATRIX TO HAVE A DETERMINANT OF 1??
 
 MATHS FOR MAKING MATRIX ORTHOGONAL AND CHECKING IF IT IS A VALID ROTATION MATRIX
 
