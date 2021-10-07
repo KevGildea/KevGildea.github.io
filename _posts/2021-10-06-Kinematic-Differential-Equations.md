@@ -22,7 +22,7 @@ We can integrate kinematic differential equations to determine both 1) where an 
 
 ### Euler Integration
 
-Euler integration is a 1<sup>st</sup>-order initial value numerical procedure for solving ordinary differential equations (ODEs). The method can be used to approximate the position/orientation of an object after a period of time, given the initial degrees of freedom, and their 1<sup>st</sup> derivatives (i.e. dynamics are not considered). The error in the approximation is proportional to the size of the time step used. For our problem we would like to determine both orientation and position, where angular velocity and linear velocity are specified (their 1<sup>st</sup> derivatives). 
+Euler integration is a 1<sup>st</sup> order initial value numerical procedure for solving ordinary differential equations (ODEs). The method can be used to approximate the position/orientation of an object after a period of time, given the initial degrees of freedom, and their 1<sup>st</sup> derivatives (i.e. dynamics are not considered). The error in the approximation is proportional to the size of the time step used. For our problem we would like to determine both orientation and position, where angular velocity and linear velocity are specified (their 1<sup>st</sup> derivatives). 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/fig1.png" width="1200">
