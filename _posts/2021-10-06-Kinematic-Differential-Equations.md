@@ -19,9 +19,6 @@ We can use kinematic differential equations to determine both 1) where an object
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDEpos.gif" width="1200">
 </p>
-<p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/KDEori.gif" width="1200">
-</p>
 
 ### Euler Integration
 
@@ -42,7 +39,7 @@ DETERMINING THE 1ST TIME DERIV OF A21
 EXPLAIN THAT WHEN IMPLEMENTED THE ROTATION AXIS (WHICH IS ALIGNED WITH THE DIRECTION OF THE ANGULAR VELOCITY VECTOR) IS CONSTANT IN THE LOCAL COORDINATE SYSTEM
 
 <p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/KDEoriScrew.gif" width="1200">
+  <img src="/assets/images/Kinematic-Differential-Equations/KDEposOmega.gif" width="1200">
 </p>
 
 EXPLAIN THAT IN DESCRIBING THE MOTION OF A SELF-PROPELLED OBJECT WE WANT TO SPECIFY THE VELOCITY VECTOR IN THE LOCAL COORDINATE SYSTEM
