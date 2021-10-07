@@ -25,26 +25,39 @@ We can use kinematic differential equations to determine both 1) where an object
 
 ### Euler Integration
 
+DESCRIBE EULER INTEGRATION: 1ST ORDER METHOD TO GET POSITION AND ORIENTATION FROM THEIR 1ST DERIVATIVES (ANGULAR AND LINEAR VELOCITY)
+
+EXPLAIN COORD SYSTEM PLOT
+
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/fig1.png" width="1200">
 </p>
+
+DETERMINING THE 1ST TIME DERIV OF A21
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/fig2.png" width="1200">
 </p>
 
+EXPLAIN THAT WHEN IMPLEMENTED THE ROTATION AXIS (WHICH IS ALIGNED WITH THE DIRECTION OF THE ANGULAR VELOCITY VECTOR) IS CONSTANT IN THE LOCAL COORDINATE SYSTEM
+
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDEoriScrew.gif" width="1200">
 </p>
 
+EXPLAIN THAT IN DESCRIBING THE MOTION OF A SELF-PROPELLED OBJECT WE WANT TO SPECIFY THE VELOCITY VECTOR IN THE LOCAL COORDINATE SYSTEM
 
-MATHS FOR
+PLOT WITH VECTOR IN THE GLOBAL COORDINATE SYSTEM
+
+MATHS FOR APPLYING THE ROTATION MATRIX TO THE VELOCITY VECTOR
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDEposV.gif" width="1200">
 </p>
 
 ### Implementation
+
+INTRO : I HAVE APPLIED EULER INTEGRATION FOR BOTH POSITION AND ORIENTATION IN A SINGLE FUNCTION WITH xyz SPECIFIED ```python EulerInt(A0,ω,r0,v,t_step,t_end) ```
 
 ```python
 # Function for performing Euler integration on the rotation matrix
@@ -63,6 +76,10 @@ def EulerInt(A0,ω,r0,v,t_step,t_end):
         rts.append(rt)
     return Ats,rts
 ```
+
+HOWEVER, NOTE THAT THE ROTATION MATRIX MUST HAVE PROPERTIES 1) AND 2) TO RESULT IN A VALID ROTATION
+
+PLOT SHOWING HOW ERRORS COMPOUND IN THE ROTATION MATRIX
 
 MATHS FOR MAKING MATRIX ORTHOGONAL AND CHECKING IF IT IS A VALID ROTATION MATRIX
 
