@@ -14,7 +14,7 @@ tags:
 ---
 
 
-We can use kinematic differential equations to determine both 1) where an object will be and 2) what orientation it will have after a specified amount of time. In this post I describe an example that can be considered representative of a self propelling sphere in a vacuum with no gravitational effect (i.e. dynamics are not considered), initialised with angular and linear velocity.
+We can integrate kinematic differential equations to determine both 1) where an object will be and 2) what orientation it will have after a specified amount of time. In this post I describe the mathematical proceedure, and implement the solution in Python.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/KDEpos.gif" width="1200">
@@ -22,8 +22,7 @@ We can use kinematic differential equations to determine both 1) where an object
 
 ### Euler Integration
 
-DESCRIBE EULER INTEGRATION: 1ST ORDER METHOD TO GET POSITION AND ORIENTATION FROM THEIR 1ST DERIVATIVES (ANGULAR AND LINEAR VELOCITY)
-Euler integration is a 1<sup>st</sup>-order initial value numerical procedure for solving ordinary differential equations (ODEs). The method can be used to approximate the position/orientation of an object after a period of time, given the initial degrees of freedom, and their 1<sup>st</sup> derivatives. The error in the approximation is proportional to the size of the time step used. For our problem we would like to determine both orientation and position, where angular velocity and linear velocity are specified (their 1<sup>st</sup> derivatives). 
+Euler integration is a 1<sup>st</sup>-order initial value numerical procedure for solving ordinary differential equations (ODEs). The method can be used to approximate the position/orientation of an object after a period of time, given the initial degrees of freedom, and their 1<sup>st</sup> derivatives (i.e. dynamics are not considered). The error in the approximation is proportional to the size of the time step used. For our problem we would like to determine both orientation and position, where angular velocity and linear velocity are specified (their 1<sup>st</sup> derivatives). 
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/fig1.png" width="1200">
