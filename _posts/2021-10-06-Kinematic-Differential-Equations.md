@@ -57,7 +57,7 @@ MATHS FOR APPLYING THE ROTATION MATRIX TO THE VELOCITY VECTOR
 
 ### Implementation
 
-INTRO : I HAVE APPLIED EULER INTEGRATION FOR BOTH POSITION AND ORIENTATION IN A SINGLE FUNCTION WITH xyz SPECIFIED ```python EulerInt(A0,ω,r0,v,t_step,t_end) ```
+INTRO : I HAVE APPLIED EULER INTEGRATION FOR BOTH POSITION AND ORIENTATION IN A SINGLE FUNCTION WITH xyz SPECIFIED ```EulerInt(A0,ω,r0,v,t_step,t_end)```
 
 ```python
 # Function for performing Euler integration on the rotation matrix
@@ -78,6 +78,10 @@ def EulerInt(A0,ω,r0,v,t_step,t_end):
 ```
 
 HOWEVER, NOTE THAT THE ROTATION MATRIX MUST HAVE PROPERTIES 1) AND 2) TO RESULT IN A VALID ROTATION
+
+<p align="center">
+  <img src="/assets/images/Kinematic-Differential-Equations/fig3.png" width="1200">
+</p>
 
 PLOT SHOWING HOW ERRORS COMPOUND IN THE ROTATION MATRIX
 
