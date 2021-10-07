@@ -44,7 +44,7 @@ The angular velocity is constant, and acts in the local coordinate system:
 We are modelling the motion of a self-propelled object we specify the linear velocity in the local coordinate system.
 
 <p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/fig3.png" width="1200">
+  <img src="/assets/images/Kinematic-Differential-Equations/fig4.png" width="1200">
 </p>
 
 The linear velocity is constant, and acts in the local coordinate system:
