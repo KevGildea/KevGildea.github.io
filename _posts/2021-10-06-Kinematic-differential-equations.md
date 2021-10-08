@@ -73,7 +73,7 @@ Without this correction matrix the solution becomes invalid, i.e. the rotation m
 </p>
 
 <p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/BallWOCorrectionMatrix.gif" width="1200">
+  <img src="/assets/images/Kinematic-Differential-Equations/BallWCorrectionMatrix.gif" width="1200">
 </p>
 
 
