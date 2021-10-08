@@ -21,9 +21,13 @@ Novel and detailed data sources are collected and analysed to provide a comprehe
 The engineering analysis involves combined Computer Vision, Deep Learning, and Multibody Dynamics approaches to collision causation and traumatic injury biomechanics. 
 
 > | **For details see my blog posts:** |
-> | <a href="https://kevgildea.github.io/blog/DL-MoCap/" target="_blank">'Deep learning techniques for human motion capture: an injury biomechanics perspective'</a> |
-> | <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">'Non-uniqueness of the Euler axis in vector mapping'</a> |
-> | <a href="https://kevgildea.github.io/blog/Kinematic-Chain-Mapping/" target="_blank">'Solution space for mapping serial kinematic chains: A modified inverse/forward kinematics approach'</a> |
+> | <a href="https://kevgildea.github.io/blog/DL-MoCap/" target="_blank">Deep learning techniques for human motion capture: an injury biomechanics perspective</a> |
+> | <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#the-3d-rotation-group" target="_blank">The 3D rotation group</a> |
+> | <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/#mapping-of-two-vectors" target="_blank">Non-uniqueness of the Euler axis in vector mapping</a> |
+> | <a href="https://kevgildea.github.io/blog/Kinematic-Chain-Mapping/#definining-a-kinematic-chain-and-applying-forward-kinematics" target="_blank">Definining a kinematic chain and applying forward kinematics</a> |
+> | <a href="https://kevgildea.github.io/blog/Kinematic-Chain-Mapping/#solution-space-for-mapping-kinematic-chains" target="_blank">Solution space for mapping serial kinematic chains: A modified inverse/forward kinematics approach</a> |
+> | <a href="https://kevgildea.github.io/blog/Kinematic-differential-equations/" target="_blank">Euler integration of kinematic differential equations for position and orientation</a> |
+> | <a href="https://kevgildea.github.io/blog/EOM-contact-modelling/" target="_blank">Computational modelling of a bouncing ball using differential equations of motion</a> |
 
 
 <p align="center">
