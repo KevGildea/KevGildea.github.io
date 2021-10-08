@@ -50,7 +50,7 @@ We are modelling the motion of a self-propelled object, so we specify the linear
 
 I have impelemented Euler integration for both position and orientation of an object in a single function with intitial values, derivatives, end time, and time step as inputs (```EulerInt(A0,ω,r0,v,t_step,t_end)```). 
 
-Note that for a valid rotation the rotation matrix must be 1) orthogonal and 2) have a detrminant of 1. However the Euler integration approach introduces error.
+Note that for a valid rotation the rotation matrix must be 1) orthogonal and 2) have a determinant of 1. However the Euler integration approach introduces error.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/fig3.png" width="1200">
