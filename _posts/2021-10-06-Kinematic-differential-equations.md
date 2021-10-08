@@ -64,7 +64,7 @@ Therefore I have implemented a correction term (```correction_matrix```) as desc
 
 Without this correction matrix the solution becomes invalid, i.e. the rotation matrix becomes non-orthogonal (indicated by the local coordinate system axes no longer being mutually perpindicular), and the determinant no longer equalling 1 (indicated by axes no longer being unit vectors). These errors propagate over time.
 
-| Without correction matrix            |  With correction matrix |
+| Without correction term           |  With correction term |
 :-------------------------:|:-------------------------:
 ![](/assets/images/Kinematic-Differential-Equations/MainWOCorrectionMatrix.gif)  |  ![](/assets/images/Kinematic-Differential-Equations/MainWCorrectionMatrix.gif)
 ![](/assets/images/Kinematic-Differential-Equations/BallWOCorrectionMatrix.gif)  |  ![](/assets/images/Kinematic-Differential-Equations/BallWCorrectionMatrix.gif)
