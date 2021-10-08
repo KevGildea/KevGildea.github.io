@@ -56,7 +56,7 @@ The linear velocity is constant, and acts in the local coordinate system:
 
 I have impelemented Euler integration for both position and orientation of an object in a single function with intitial values, derivatives, end time, and time step as inputs (```EulerInt(A0,ω,r0,v,t_step,t_end)```). 
 
-Note that for a valid rotation the rotation matrix must be 1) orthogonal and 2) have a detrminant of 1, therefore I have implemented a correction term (```correction_matrix```), and a function to check validity (```isRotationMatrix(M)```) (a tolerance of 1e-3 is used due to floating-point error). 
+Note that for a valid rotation the rotation matrix must be 1) orthogonal and 2) have a detrminant of 1, therefore I have implemented a correction term (```correction_matrix```), and a function to check validity (```isRotationMatrix(M)``` where a tolerance of 1e-3 is used due to floating-point error). 
 
 Without this correction matrix the solution becomes invalid, i.e. the rotation matrix becomes non-orthogonal (indicated by the coordinate system axes no longer being mutually perpindicular), and the determinant no longer equalling 1 (indicated by axes no longer being unit vectors). These errors propagate as time progresses.
 
