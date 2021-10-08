@@ -61,9 +61,7 @@ def isRotationMatrix(M):
     """ Checks whether a rotation matrix is orthogonal, and has a determinant of 1 (tolerance of 1e-3)"""
     tag = False
     I = np.identity(M.shape[0])
-    print(np.matmul(M, M.T))
     check1 = np.isclose((np.matmul(M, M.T)), I, atol=1e-3)
-    print(np.linalg.det(M))
     check2 = isclose(np.linalg.det(M),1,abs_tol=1e-3)
     if check1.all()==True and check2==True: tag = True
     return tag
