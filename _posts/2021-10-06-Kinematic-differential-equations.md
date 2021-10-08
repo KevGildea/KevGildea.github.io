@@ -54,7 +54,17 @@ The linear velocity is constant, and acts in the local coordinate system:
 
 ### Implementation
 
-I have impelemented Euler integration for both position and orientation of an object in a single function with intitial values, derivatives, end time, and time step as inputs (```EulerInt(A0,ω,r0,v,t_step,t_end)```). Note that for a valid rotation the rotation matrix must be 1) orthogonal and 2) have a detrminant of 1, therefore I have implemented a correction term (```correction_matrix```), and a function to check validity (```isRotationMatrix(M)```) (a tolerance of 1e-3 is used due to floating-point error). 
+I have impelemented Euler integration for both position and orientation of an object in a single function with intitial values, derivatives, end time, and time step as inputs (```EulerInt(A0,ω,r0,v,t_step,t_end)```). 
+
+Note that for a valid rotation the rotation matrix must be 1) orthogonal and 2) have a detrminant of 1, therefore I have implemented a correction term (```correction_matrix```), and a function to check validity (```isRotationMatrix(M)```) (a tolerance of 1e-3 is used due to floating-point error). 
+
+Without this correction matrix the solution becomes invalid:
+
+<p align="center">
+  <img src="/assets/images/Kinematic-Differential-Equations/MainWOCorrectionMatrix.gif" width="1200">
+</p>
+
+
 
 ```python
 def isRotationMatrix(M):
