@@ -60,22 +60,10 @@ Note that for a valid rotation the rotation matrix must be 1) orthogonal and 2) 
 
 Without this correction matrix the solution becomes invalid, i.e. the rotation matrix becomes non-orthogonal (indicated by the coordinate system axes no longer being mutually perpindicular), and the determinant no longer equalling 1 (indicated by axes no longer being unit vectors). These errors propagate as time progresses.
 
-<p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/MainWOCorrectionMatrix.gif" width="1200">
-</p>
-
-<p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/BallWOCorrectionMatrix.gif" width="1200">
-</p>
-
-<p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/MainWCorrectionMatrix.gif" width="1200">
-</p>
-
-<p align="center">
-  <img src="/assets/images/Kinematic-Differential-Equations/BallWCorrectionMatrix.gif" width="1200">
-</p>
-
+| Without correction matrix            |  With correction matrix |
+:-------------------------:|:-------------------------:
+![](/assets/images/Kinematic-Differential-Equations/MainWOCorrectionMatrix.gif)  |  ![](/assets/images/Kinematic-Differential-Equations/MainWCorrectionMatrix.gif)
+![](/assets/images/Kinematic-Differential-Equations/BallWOCorrectionMatrix.gif)  |  ![](/assets/images/Kinematic-Differential-Equations/BallWCorrectionMatrix.gif)
 
 
 ```python
@@ -113,11 +101,11 @@ def EulerInt(A0,ω,r0,v,t_step,t_end):
         ω = At @ RevSkewSym(ω_tilda)
         ω_tilda = SkewSym(ω)
         At = At + t_step*(-ω_tilda @ At)
-        Ats.append(At)
         correction_matrix = (3*np.array([[1, 0, 0],[0, 1, 0],[0, 0, 1]]) - (At @ At.T))/2 # correction matrix to ensure that the rotation matrix is orthogonal
         At = correction_matrix @ At
         if isRotationMatrix(At)==False:
             sys.exit('Error: Chosen integration time step is too large - try a smaller value (generally a step of <=1e-2 is recommended)')
+        Ats.append(At)
         rt = rt + t_step*(At@v)
         rts.append(rt)
     return Ats,rts
