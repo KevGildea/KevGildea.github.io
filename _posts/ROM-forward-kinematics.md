@@ -12,7 +12,7 @@ tags:
   - Biomechanics
 ---
 
-In this post I describe how rotation matrices can be constrained to produce physically plausible joint orientations in a kinematic chain, as a follow-up to the approach I developed for determining the <a href="https://kevgildea.github.io/blog/Kinematic-Chain-Mapping/" target="_blank">solution space for mapping kinematic chains</a>. In real world applications, e.g. robotics, biomechanics, kinematic chains often involve the use of physically constrained joints. Kinematic chains are often used in biomechanics applications, where joints positioned to approximate the human skeletal structure, and their rotations are rotations are kinematically constrained with differing degrees of freedom (e.g. free joint: 6DOF, ball/spherical joint: 3DOFs, hardy spicer/universal joint: 2DOFs, hinge/revolute joint: 1DOF), and ranges of motion. First, consider a joint in a 'reference' orientation.
+In this post I describe how rotation matrices can be constrained to produce physically plausible joint orientations in a kinematic chain, as a follow-up to the approach I developed for determining the <a href="https://kevgildea.github.io/blog/Kinematic-Chain-Mapping/" target="_blank">solution space for mapping kinematic chains</a>. In real-world applications, e.g. robotics, biomechanics, kinematic chains often involve the use of physically constrained joints. Kinematic chains are often used in biomechanics applications, where joints are positioned to approximate the human skeletal structure, and their rotations are kinematically constrained with differing degrees of freedom (e.g. free joint: 6DOF, ball/spherical joint: 3DOFs, hardy spicer/universal joint: 2DOFs, hinge/revolute joint: 1DOF), and ranges of motion. First, consider a joint in a 'reference' orientation.
 
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig1.png" width="1200">
@@ -24,7 +24,7 @@ In this post I describe how rotation matrices can be constrained to produce phys
 
 IMPLEMENTATION WITH A SINGLE JOINT
 
-DEGREE OF FREEDOM PLOTS:
+DEGREES OF FREEDOM PLOTS:
 1. Spherical joint 
 2. Universal joint
 3. Revolute joint
