@@ -1,5 +1,5 @@
 ---
-title: "Applying ranges of motion to constrain motion in kinematic chains"
+title: "Applying ranges of motion to constrain kinematic chains"
 date: 2021-10-15
 categories:
   - blog
