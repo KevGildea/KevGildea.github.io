@@ -22,6 +22,10 @@ In this post I describe how rotation matrices can be constrained to produce phys
   <img src="/assets/images/ROM-forward-kinematics/fig2.png" width="1200">
 </p>
 
+We know that there is an infinite Euler axis-angle solution space for mapping a vector a to another vector b, however, the axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane (as described <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">here</a>. If we set vector a to be aligned with the local X axis, and vector b aligned with the local y axis, then we can constrain the solution space for a joint which only allows rotation about its local Z axis (which obviously is within the Euler axis solution space). We do this by specifying that the rotation matrix must have a value of a<sup>21</sup><sub>21</sub> 1
+
+
+
 IMPLEMENTATION WITH A SINGLE JOINT
 
 DEGREES OF FREEDOM PLOTS:
