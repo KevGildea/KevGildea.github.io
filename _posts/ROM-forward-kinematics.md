@@ -29,6 +29,9 @@ We know that there is an infinite Euler axis-angle solution space for mapping a 
 
 
 
+
+
+
 IMPLEMENTATION WITH A SINGLE JOINT
 
 DEGREES OF FREEDOM PLOTS:
