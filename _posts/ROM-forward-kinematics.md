@@ -18,7 +18,7 @@ In this post I describe how rotation matrices can be constrained to produce phys
   <img src="/assets/images/ROM-forward-kinematics/fig1.png" width="1200">
 </p>
 
-We know that there is an infinite Euler axis-angle solution space for mapping a vector a to another vector b, however, the axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane (as described <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">here</a>. 
+We know that there is an infinite Euler axis-angle solution space for mapping a vector a to another vector b, however, the axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane (as described <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">here</a>). 
 
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig4.gif" width="1200">
