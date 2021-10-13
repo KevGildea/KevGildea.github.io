@@ -86,7 +86,6 @@ DEGREES OF FREEDOM PLOTS:
 1. Spherical joint 
 2. Universal joint
 3. Revolute joint
-4. Bracket joint
 
 RANGE OF MOTION PLOTS:
 1. Revolute joint with a range of [0,pi]
