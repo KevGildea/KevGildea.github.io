@@ -77,7 +77,7 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
 
 We can also specify joint ranges of motion using direction cosines. For example, consider a spherical joint which has a range of motion of [-π/8,π/8] between Y and y, and a range of [0,π/2] between Y and x.
 
-:-------------------------:|:-------------------------:
+
 ![](/assets/images/ROM-forward-kinematics/fig7.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig8.gif)
 ![](/assets/images/ROM-forward-kinematics/fig2.png)  |  ![](/assets/images/ROM-forward-kinematics/fig3.png)
 
