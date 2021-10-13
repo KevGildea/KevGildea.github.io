@@ -71,7 +71,10 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
     return Euler_axes, Euler_angles, rotation_matrices
 ```
 
-
+| Spherical joint           |  Revolute joint (local z-axis) |
+:-------------------------:|:-------------------------:
+![](/assets/images/ROM-forward-kinematics/fig7.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig8.gif)
+![](/assets/images/ROM-forward-kinematics/fig2.png)  |  ![](/assets/images/ROM-forward-kinematics/fig3.png)
 
 
 
