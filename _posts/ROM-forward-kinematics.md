@@ -86,7 +86,9 @@ Combining these rotations:
   <img src="/assets/images/ROM-forward-kinematics/fig10.png" width="1200">
 </p>
 
-We can also specify joint ranges of motion. First, consider a joint we would like to representat the shoulder.
+We can use this to constrain the degrees of freedome of the joint, and specify joint ranges of motion, effectively reducing the Euler axis solution space. 
+
+First, consider a joint we would like to represent the shoulder.
 
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig11.png" width="1200">
