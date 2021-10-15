@@ -74,19 +74,30 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
 ![](/assets/images/ROM-forward-kinematics/fig7.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig8.gif)
 ![](/assets/images/ROM-forward-kinematics/fig2.png)  |  ![](/assets/images/ROM-forward-kinematics/fig3.png)
 
-
-We can also specify joint ranges of motion using direction cosines. First, consider a case where vector b is not aligned with any of the cardinal axes of the local coordinate sysem.
+Consider a universal/hardy spicer joint with 2DOF, involving sequential rotations about its local x axis and local y axes.
 
 <p align="center">
-  <img src="/assets/images/ROM-forward-kinematics/fig9.gif" width="1200">
+  <img src="/assets/images/ROM-forward-kinematics/fig9.png" width="1200">
 </p>
 
-For example, consider a spherical joint which has a range of motion, i.e. [-π/10,π/10] between Y and y, and a range of [0,π/2] between Y and x.
+Combining these rotations:
+
+<p align="center">
+  <img src="/assets/images/ROM-forward-kinematics/fig10.png" width="1200">
+</p>
+
+We can also specify joint ranges of motion. First, consider a joint we would like to representat the shoulder.
+
+<p align="center">
+  <img src="/assets/images/ROM-forward-kinematics/fig11.png" width="1200">
+</p>
+
+
 
 | Spherical joint           |  Spherical joint with ROMs |
 :-------------------------:|:-------------------------:
-![](/assets/images/ROM-forward-kinematics/fig10.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig11.gif)
-![](/assets/images/ROM-forward-kinematics/fig2.png)  |  ![](/assets/images/ROM-forward-kinematics/fig12.png)
+![](/assets/images/ROM-forward-kinematics/fig12.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig14.gif)
+![](/assets/images/ROM-forward-kinematics/fig13.png)  |  ![](/assets/images/ROM-forward-kinematics/fig15.png)
 
 
 
