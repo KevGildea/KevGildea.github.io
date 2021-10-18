@@ -101,11 +101,15 @@ If we would like to map the upper arm (vector a) to point in the direction of ve
   <img src="/assets/images/ROM-forward-kinematics/fig12.png" width="1200">
 </p>
 
+<p align="center">
+  <img src="/assets/images/ROM-forward-kinematics/fig13.png" width="1200">
+</p>
+
 
 | Spherical joint           |  Universal joint with ROMs |
 :-------------------------:|:-------------------------:
-![](/assets/images/ROM-forward-kinematics/fig13.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig15.gif)
-![](/assets/images/ROM-forward-kinematics/fig14.png)  |  ![](/assets/images/ROM-forward-kinematics/fig16.png)
+![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig16.gif)
+![](/assets/images/ROM-forward-kinematics/fig15.png)  |  ![](/assets/images/ROM-forward-kinematics/fig17.png)
 
 
 
