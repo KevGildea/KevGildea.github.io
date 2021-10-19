@@ -74,7 +74,15 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
 ![](/assets/images/ROM-forward-kinematics/fig7.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig8.gif)
 ![](/assets/images/ROM-forward-kinematics/fig2.png)  |  ![](/assets/images/ROM-forward-kinematics/fig3.png)
 
-Consider a universal/hardy spicer joint with 2DOF, involving sequential rotations about its local x axis and local y axes.
+We can use the direction cosines to constrain the degrees of freedom of the joint, and specify joint ranges of motion, effectively reducing the Euler axis solution space. 
+
+First, consider a joint we would like to represent the shoulder. 
+
+<p align="center">
+  <img src="/assets/images/ROM-forward-kinematics/fig11.png" width="1200">
+</p>
+
+If we would like to map the upper arm (vector a) to point in the direction of vector b, then there are an infinite number of possible solutions, where as before, for a spherical joint with no constraints the Euler axis is constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane - all resulting in different resultant shoulder joint orientations. We would like to reduce the solution space by describing the joint as a universal/hardy spicer joint with 2DOF, and physically plausable ranges of motion about the x and y axes when performing sequential rotations. 
 
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig9.png" width="1200">
@@ -85,17 +93,6 @@ Combining these rotations:
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig10.png" width="1200">
 </p>
-
-We can use this to constrain the degrees of freedome of the joint, and specify joint ranges of motion, effectively reducing the Euler axis solution space. 
-
-First, consider a joint we would like to represent the shoulder. 
-
-<p align="center">
-  <img src="/assets/images/ROM-forward-kinematics/fig11.png" width="1200">
-</p>
-
-If we would like to map the upper arm (vector a) to point in the direction of vector b, then there are an infinite number of possible solutions, where as before, for a spherical joint with no constraints the Euler axis is constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane, which all result in different shoulder joint orientations. However, we would like to reduce the solution space by describing the joint as a universal/hardy spicer joint with 2DOF, and physically plausable ranges of motion about the x and y axes when performing sequential rotations. 
-
 
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig12.png" width="1200">
