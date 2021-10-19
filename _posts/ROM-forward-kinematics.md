@@ -94,7 +94,7 @@ First, consider a joint we would like to represent the shoulder.
   <img src="/assets/images/ROM-forward-kinematics/fig11.png" width="1200">
 </p>
 
-If we would like to map the upper arm (vector a) to point in the direction of vector b, then there are an infinite number of possible solutions, where as before, for a spherical joint with no constraints the Euler axis is constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane, which all result in different shoulder joint orientations. However, we would like to reduce the solution space by describing the joint as a universal/hardy spicer joint with 2DOF, and physically plausable ranges of motion about the x and y axes when performing sequential rotations. Specifically, we would like to specify that the rotation should be between X, and Y for the x axis, and I and J for the y axis.
+If we would like to map the upper arm (vector a) to point in the direction of vector b, then there are an infinite number of possible solutions, where as before, for a spherical joint with no constraints the Euler axis is constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane, which all result in different shoulder joint orientations. However, we would like to reduce the solution space by describing the joint as a universal/hardy spicer joint with 2DOF, and physically plausable ranges of motion about the x and y axes when performing sequential rotations. 
 
 
 <p align="center">
