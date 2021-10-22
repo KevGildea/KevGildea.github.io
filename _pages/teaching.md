@@ -8,9 +8,6 @@ I have been the TA for a 4th year mechanical engineering module for the past 4 y
 
 **Videos:**
 
-{% include video id="oYAuk6ByFp0" provider="youtube" %}
-
-
 {% include video id="JHGY1VYZuTw" provider="youtube" %}
 
 
