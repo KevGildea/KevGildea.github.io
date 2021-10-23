@@ -119,3 +119,4 @@ The full code is available <a href="https://github.com/KevGildea/RotationTheory/
 
 [my link](/assets/images/Kinematic-Differential-Equations/test.html)
 
+{% include test.html %}
