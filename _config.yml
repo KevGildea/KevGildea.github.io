@@ -22,6 +22,8 @@ github_username: KevGildea
 minimal_mistakes_skin: default
 search: true
 
+htmlwidgets: TRUE
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
