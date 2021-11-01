@@ -117,6 +117,5 @@ def EulerInt(A0,ω,r0,v,t_step,t_end):
 
 The full code is available <a href="https://github.com/KevGildea/RotationTheory/blob/main/Kinematic-Differential-Equations/Kinematic-Differential-Equations.py" target="_blank">here</a>.
 
-[my link](/assets/images/Kinematic-Differential-Equations/test.html)
 
-{% include_relative test.html %}
+
