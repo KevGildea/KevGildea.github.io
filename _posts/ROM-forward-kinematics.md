@@ -132,6 +132,6 @@ Combining these rotations:
 **180 steps**  |![]()  |  ![]()  |  ![]()
 **1,800 steps**   |![]()  |  ![]()  |  ![]()
 **18,000 steps**   |![]()  |  ![]()  |  ![]()
-**180,000 steps**   |![](/assets/images/ROM-forward-kinematics/18,0001e-5.gif)  |  ![]()  |  ![]()
+**180,000 steps**   |![](/assets/images/ROM-forward-kinematics/18,0001e-3.gif)  |  ![]()  |  ![]()
 
 # Choose best combination and use as input to Madymo
