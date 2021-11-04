@@ -124,7 +124,8 @@ Combining these rotations:
 
  - EAS step: 180, 1800, 18000, 180000
  - A21 0 tol: 1e-3, 1e-4, 1e-5
- - 100 random points, note number of solutions
+ - 100 random points, 
+ - note: number of solutions, time taken to find EAS
 
 | | a<sub>32</sub> tol: 1e-3           | a<sub>32</sub> tol: 1e-4           |  a<sub>32</sub> tol: 1e-5   |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -132,3 +133,5 @@ Combining these rotations:
 1,800 steps   |![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig15.png)  |  ![](/assets/images/ROM-forward-kinematics/fig17.png)
 18,000 steps   |![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig15.png)  |  ![](/assets/images/ROM-forward-kinematics/fig17.png)
 180,000 steps   |![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig15.png)  |  ![](/assets/images/ROM-forward-kinematics/fig17.png)
+
+# use as input to Madymo
