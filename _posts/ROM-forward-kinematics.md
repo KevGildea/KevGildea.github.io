@@ -129,9 +129,9 @@ Combining these rotations:
 
 | | a<sub>32</sub> tol: 1e-3           | a<sub>32</sub> tol: 1e-4           |  a<sub>32</sub> tol: 1e-5   |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-**180 steps**  |![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig16.gif)
-**1,800 steps**   |![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig15.png)  |  ![](/assets/images/ROM-forward-kinematics/fig17.png)
-**18,000 steps**   |![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig15.png)  |  ![](/assets/images/ROM-forward-kinematics/fig17.png)
-**180,000 steps**   |![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![]()  |  ![](/assets/images/ROM-forward-kinematics/18,0001e-5.gif)
+**180 steps**  |![]()  |  ![]()  |  ![]()
+**1,800 steps**   |![]()  |  ![]()  |  ![]()
+**18,000 steps**   |![]()  |  ![]()  |  ![]()
+**180,000 steps**   |![](/assets/images/ROM-forward-kinematics/18,0001e-5.gif)  |  ![]()  |  ![]()
 
-# use as input to Madymo
+# Choose best combination and use as input to Madymo
