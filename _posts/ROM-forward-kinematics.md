@@ -134,4 +134,7 @@ Combining these rotations:
 **18,000 steps**   |![]()  |  ![]()  |  ![]()
 **180,000 steps**   |![](/assets/images/ROM-forward-kinematics/18,0001e-3.gif)  |  ![]()  |  ![]()
 
+# Eliminate combinations from above and show the resulting EAS candidates - demonstrating that higher tolerances are worse - but we can choose the mininum value as there seems to be a single optimum solution (plot the value of a<sub>32</sub> throughout the solution set
+
+
 # Choose best combination and use as input to Madymo
