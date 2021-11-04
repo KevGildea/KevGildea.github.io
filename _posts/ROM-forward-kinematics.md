@@ -122,7 +122,7 @@ Combining these rotations:
 
 # EAS angle step vs. rotation matrix 0 element closeness 
 
- - EAS step: 360, 3600, 36000, 360000
+ - EAS step: 180, 1800, 18000, 180000
  - A21 0 tol: 1e-3, 1e-4, 1e-5
  - 100 random points, note number of solutions
 
