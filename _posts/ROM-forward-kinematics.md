@@ -20,20 +20,11 @@ In this post I describe how rotation matrices can be constrained to produce phys
 
 We know that there is an infinite Euler axis-angle solution space for mapping a vector a to another vector b, however, the axes are constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane (as described <a href="https://kevgildea.github.io/blog/Euler-Axis-Vector-Mapping/" target="_blank">here</a>). 
 
-
-# UPDATE
-
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig4.gif" width="1200">
 </p>
 
-
-# UPDATE
-
 If we set vector a to be aligned with the local x axis, and vector b aligned with the local y axis, then we can constrain the solution space for a joint which only allows rotation about its local z axis (which obviously is within the Euler axis solution space). We do this by specifying that the rotation matrix must have a value of a<sub>33</sub> = 1.
-
-
-# UPDATE
 
 | Spherical joint           |  Revolute joint (local z-axis) |
 :-------------------------:|:-------------------------:
@@ -87,15 +78,11 @@ We can use the direction cosines to constrain the degrees of freedom of the join
 
 First, consider a joint we would like to represent the shoulder. 
 
-# UPDATE
-
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig11.png" width="1200">
 </p>
 
-If we would like to map the upper arm (vector a) to point in the direction of vector b, then there are an infinite number of possible solutions, where as before, for a spherical joint with no constraints the Euler axis is constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane - all resulting in different resultant shoulder joint orientations. We would like to reduce the solution space by describing the joint as a universal/hardy spicer joint with 2DOF, and physically plausable ranges of motion about the x and y axes when performing sequential rotations. 
-
- # UPDATE
+If we would like to map the upper arm (vector a) to point in the direction of vector b, then there are an infinite number of possible solutions, where as before, for a spherical joint with no constraints the Euler axis is constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane - all resulting in different resultant shoulder joint orientations. We would like to reduce the solution space by describing the joint as a universal/hardy spicer joint with 2DOF, and physically plausable ranges of motion about the y and z axes when performing sequential rotations. 
 
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig9.png" width="1200">
@@ -103,26 +90,16 @@ If we would like to map the upper arm (vector a) to point in the direction of ve
 
 Combining these rotations:
 
-# UPDATE
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig10.png" width="1200">
 </p>
 
- # UPDATE
+Finding the Euler axis-angle solution space as follows, and constraining using the 2DOF rotation matrix, and physically plausable ranges of motion for the sequential rotations:
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig12.png" width="1200">
 </p>
 
-| Spherical joint           |  Universal joint with ROMs |
-:-------------------------:|:-------------------------:
-![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig16.gif)
-![](/assets/images/ROM-forward-kinematics/fig15.png)  |  ![](/assets/images/ROM-forward-kinematics/fig17.png)
-
-
-
-# EAS angle step vs. rotation matrix 0 element closeness 
-
-**REDO**
+There is a trade-off between the step size taken in computing the Euler axis-angle solution space (affecting compute time), and the 'closeness' tolerance required to accept a rotation matrix as a 2DOF rotation. 
 
 | | a<sub>32</sub> tol: 1e-3           | a<sub>32</sub> tol: 1e-4           |  a<sub>32</sub> tol: 1e-5   |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
