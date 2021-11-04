@@ -84,16 +84,20 @@ First, consider a joint we would like to represent the shoulder.
 
 If we would like to map the upper arm (vector a) to point in the direction of vector b, then there are an infinite number of possible solutions, where as before, for a spherical joint with no constraints the Euler axis is constrained to be on the plane that bisects the vectors, such that the normalised vectors are symmetric to the plane - all resulting in different resultant shoulder joint orientations. We would like to reduce the solution space by describing the joint as a universal/hardy spicer joint with 2DOF, and physically plausable ranges of motion about the x and y axes when performing sequential rotations. 
 
+ # UPDATE
+
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig9.png" width="1200">
 </p>
 
 Combining these rotations:
 
+# UPDATE
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig10.png" width="1200">
 </p>
 
+ # UPDATE
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig12.png" width="1200">
 </p>
@@ -105,7 +109,7 @@ Combining these rotations:
 
 
 
-
+# EAS angle step vs. rotation matrix 0 element closeness 
 
 
 
