@@ -126,5 +126,8 @@ Combining these rotations:
  - A21 0 tol: 1e-3, 1e-4, 1e-5
  - 100 random points, note number of solutions
 
-
+| Spherical joint           | Spherical joint           |  Universal joint with ROMs |
+:-------------------------:|:-------------------------:|:-------------------------:
+![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig16.gif)
+![](/assets/images/ROM-forward-kinematics/fig14.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig15.png)  |  ![](/assets/images/ROM-forward-kinematics/fig17.png)
 
