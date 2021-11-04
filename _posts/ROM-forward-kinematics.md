@@ -134,7 +134,8 @@ Combining these rotations:
 **18,000 steps**   |![](/assets/images/ROM-forward-kinematics/180001e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/180001e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/180001e-5.gif)
 **180,000 steps**   |![](/assets/images/ROM-forward-kinematics/1800001e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/1800001e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/1800001e-5.gif)
 
-# Eliminate combinations from above and show the resulting EAS candidates - demonstrating that higher tolerances are worse - but we can choose the mininum value as there seems to be a single optimum solution (plot the value of a<sub>32</sub> throughout the solution set
+# Eliminate combinations from above and show the resulting EAS candidates - demonstrating that higher tolerances are worse - but we can choose the mininum value as there seems to be a single optimum solution (plot the value of a<sub>32</sub> throughout the solution set)
 
+# Mathematical proof as to why there is a single solition for a 2DOF (universal) joint
 
 # Choose best combination and use as input to Madymo
