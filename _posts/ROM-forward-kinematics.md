@@ -78,6 +78,8 @@ We can use the direction cosines to constrain the degrees of freedom of the join
 
 First, consider a joint we would like to represent the shoulder. 
 
+# UPDATE
+
 <p align="center">
   <img src="/assets/images/ROM-forward-kinematics/fig11.png" width="1200">
 </p>
