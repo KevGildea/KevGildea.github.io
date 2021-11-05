@@ -106,6 +106,8 @@ Finding the Euler axis-angle solution space as follows, and constraining using t
 
 There is a trade-off between the step size taken in computing the Euler axis-angle solution space (affecting compute time), and the 'closeness' tolerance required to accept a rotation matrix as a 2DOF rotation. 
 
+**Perform only for 1e-3 with 200, 2,000, 20,000, and 200,000. columns: 1) b, 2) axes**
+
 | | a<sub>32</sub> tol: 1e-3           | a<sub>32</sub> tol: 1e-4           |  a<sub>32</sub> tol: 1e-5   |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 **180 steps**  |![](/assets/images/ROM-forward-kinematics/1801e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/1801e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/1801e-5.gif)
