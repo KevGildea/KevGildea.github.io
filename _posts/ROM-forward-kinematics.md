@@ -116,7 +116,7 @@ There is a trade-off between the step size taken in computing the Euler axis-ang
 
 
 **Table with 1e-3 with 20,000 steps. columns: 1) b, 2) axes**
-| | range of b vectors with successful mapping within the ROM           |  Resulting joint orientations within the ROM           |
+| | b vectors with successful mapping within the ROM           |  resultant joint orientations within the ROM           |
 :-------------------------:|:-------------------------:|:-------------------------:
 **20,000 steps**  |![](/assets/images/ROM-forward-kinematics/20001e-3b.gif)  |  ![](/assets/images/ROM-forward-kinematics/20001e-3axes.gif)
 
