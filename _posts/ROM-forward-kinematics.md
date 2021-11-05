@@ -117,11 +117,9 @@ A tolerance of 1e-3 is chosen for a<sub>32</sub>,and a step size of 20,000 is ch
 :-------------------------:|:-------------------------:|:-------------------------:
 **20,000 steps**  |![](/assets/images/ROM-forward-kinematics/20001e-3b.gif)  |  ![](/assets/images/ROM-forward-kinematics/20001e-3axes.gif)
 
+For the 53 b vectors with solutions, there is mostly one unique Euler axis-angle solition to map a (with the lowest value a<sub>32</sub> is taken to be the most accurate), however, in a minority of cases there are two unique soltions (3 cases). In both cases, the value with the lowest value a<sub>32</sub> should be taken.
 
-
-
-
-## Mathematical proof as to why there is a single solition for a 2DOF (universal) joint
+** IMPLEMENT THE ABOVE AND PUT FUNCTION HERE **
 
 ## 3DOF joint with ROMs
 
