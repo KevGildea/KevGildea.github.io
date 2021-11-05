@@ -119,7 +119,7 @@ A tolerance of 1e-3 is chosen for a<sub>32</sub>,and a step size of 20,000 is ch
 
 For the 53 b vectors with solutions, there is mostly one unique Euler axis-angle solition to map a (with the lowest value a<sub>32</sub> is taken to be the most accurate), however, in a minority of cases there are two unique soltions (3 cases). In both cases, the value with the lowest value a<sub>32</sub> should be taken.
 
-** IMPLEMENT THE ABOVE AND PUT FUNCTION HERE **
+**IMPLEMENT THE ABOVE AND PUT FUNCTION HERE**
 
 ## 3DOF joint with ROMs
 
