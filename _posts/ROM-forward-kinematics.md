@@ -104,7 +104,7 @@ Finding the Euler axis-angle solution space as follows, and constraining using t
   <img src="/assets/images/ROM-forward-kinematics/fig12.png" width="1200">
 </p>
 
-There is a trade-off between the step size taken in computing the Euler axis-angle solution space (which negatively affects compute time, and positively effects accuracy), and the 'closeness' tolerance required to accept a rotation matrix as a 2DOF rotation (higher tolerance results in better identification of solutions). For context, a tolerance of 1e-3 for a<sub>32</sub> corresponds to a tolerance of 0.057 degrees between the z axis in e<sup>2</sup> and the y axis e<sup>1</sup>, i.e. a high degree of accuracy.
+There is a trade-off between the step size taken in computing the Euler axis-angle solution space (which negatively affects compute time, and positively effects accuracy), and the 'closeness' tolerance required to accept a rotation matrix as a 2DOF rotation (higher tolerance results in better identification of solutions). 
 
 | | a<sub>32</sub> tol: 1e-3           | a<sub>32</sub> tol: 1e-4           |  a<sub>32</sub> tol: 1e-5   |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -112,7 +112,7 @@ There is a trade-off between the step size taken in computing the Euler axis-ang
 **1,800 steps**   |![](/assets/images/ROM-forward-kinematics/18001e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/18001e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/18001e-5.gif)
 **18,000 steps**   |![](/assets/images/ROM-forward-kinematics/180001e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/180001e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/180001e-5.gif)
 
-
+A tolerance of 1e-3 is chosen for a<sub>32</sub>,and a step size of 20,000 is chosen for the Euler axis-angle solution space. For context, a tolerance of 1e-3 for a<sub>32</sub> corresponds to a tolerance of 0.057 degrees between the z axis in e<sup>2</sup> and the y axis e<sup>1</sup>, i.e. a high degree of accuracy.
 
 | | b vectors with successful mapping within the ROM           |  resultant joint orientations within the ROM           |
 :-------------------------:|:-------------------------:|:-------------------------:
