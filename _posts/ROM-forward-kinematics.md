@@ -117,7 +117,7 @@ A tolerance of 1e-3 is chosen for a<sub>32</sub>,and a step size of 20,000 is ch
 :-------------------------:|:-------------------------:|:-------------------------:
 **20,000 steps**  |![](/assets/images/ROM-forward-kinematics/20001e-3b.gif)  |  ![](/assets/images/ROM-forward-kinematics/20001e-3axes.gif)
 
-For the 53 b vectors with solutions, there is mostly one unique Euler axis-angle solition to map a, however, in a minority of cases there are two unique solutions (3 cases). In both cases, the value with the lowest value a<sub>32</sub> should be taken - these solutions lay around the optimal solution because we use a tolerance for closeness to 0.
+For the 53 b vectors with solutions, there is mostly one unique Euler axis-angle solition to map a, however, in a minority of cases there are two unique solutions (3 cases). In both cases, the value with the lowest value a<sub>32</sub> should be taken - extra solutions lay around the optimal solution because we use a tolerance for closeness to 0.
 
 **IMPLEMENT THE ABOVE AND PUT FUNCTION HERE**
 
