@@ -106,16 +106,23 @@ Finding the Euler axis-angle solution space as follows, and constraining using t
 
 There is a trade-off between the step size taken in computing the Euler axis-angle solution space (affecting compute time), and the 'closeness' tolerance required to accept a rotation matrix as a 2DOF rotation. 
 
-**Perform only for 1e-3 with 200, 2,000, 20,000, and 200,000. columns: 1) b, 2) axes**
+
 
 | | a<sub>32</sub> tol: 1e-3           | a<sub>32</sub> tol: 1e-4           |  a<sub>32</sub> tol: 1e-5   |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 **180 steps**  |![](/assets/images/ROM-forward-kinematics/1801e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/1801e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/1801e-5.gif)
 **1,800 steps**   |![](/assets/images/ROM-forward-kinematics/18001e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/18001e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/18001e-5.gif)
 **18,000 steps**   |![](/assets/images/ROM-forward-kinematics/180001e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/180001e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/180001e-5.gif)
-**180,000 steps**   |![](/assets/images/ROM-forward-kinematics/1800001e-3.gif)  |  ![](/assets/images/ROM-forward-kinematics/1800001e-4.gif)  |  ![](/assets/images/ROM-forward-kinematics/1800001e-5.gif)
 
-# Eliminate combinations from above and show the resulting EAS candidates - demonstrating that higher tolerances are worse - but we can choose the mininum value as there seems to be a single optimum solution (plot the value of a<sub>32</sub> throughout the solution set)
+
+**Table with 1e-3 with 20,000 steps. columns: 1) b, 2) axes**
+| | a<sub>32</sub> tol: 1e-3           | a<sub>32</sub> tol: 1e-4           |
+:-------------------------:|:-------------------------:|:-------------------------:
+**20,000 steps**  |![](/assets/images/ROM-forward-kinematics/a.gif)  |  ![](/assets/images/ROM-forward-kinematics/b.gif)
+
+
+
+
 
 # Mathematical proof as to why there is a single solition for a 2DOF (universal) joint
 
