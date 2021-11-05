@@ -24,6 +24,9 @@ We know that there is an infinite Euler axis-angle solution space for mapping a 
   <img src="/assets/images/ROM-forward-kinematics/fig4.gif" width="1200">
 </p>
 
+# 1DOF joint with ROM 
+**INSTEAD CHOOSE A REAL REVOLUTE JOINT FROM MADYMO**
+
 If we set vector a to be aligned with the local x axis, and vector b aligned with the local y axis, then we can constrain the solution space for a joint which only allows rotation about its local z axis (which obviously is within the Euler axis solution space). We do this by specifying that the rotation matrix must have a value of a<sub>33</sub> = 1.
 
 | Spherical joint           |  Revolute joint (local z-axis) |
@@ -74,6 +77,7 @@ def Vector_mapping_Euler_Axis_Space(vec1, vec2):
 ![](/assets/images/ROM-forward-kinematics/fig7.gif)  |  ![](/assets/images/ROM-forward-kinematics/fig8.gif)
 ![](/assets/images/ROM-forward-kinematics/fig2.png)  |  ![](/assets/images/ROM-forward-kinematics/fig3.png)
 
+# 2DOF joint with ROMs
 We can use the direction cosines to constrain the degrees of freedom of the joint, and specify joint ranges of motion, effectively reducing the Euler axis solution space. 
 
 First, consider a joint we would like to represent the shoulder. 
@@ -112,4 +116,6 @@ There is a trade-off between the step size taken in computing the Euler axis-ang
 
 # Mathematical proof as to why there is a single solition for a 2DOF (universal) joint
 
-# Choose best combination and use as input to Madymo
+# 3DOF joint with ROMs
+
+
