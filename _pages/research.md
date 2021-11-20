@@ -15,6 +15,7 @@ The overall aim of the project is to gain a better understanding of cyclist coll
 
 Novel and detailed data sources are collected and analysed to provide a comprehensive view of the vulnerabilities of cyclists as a group (i.e. Forensic Investigation Files, and self-reported collisions). Representative collision scenarios are identified to inform an engineering analysis <sup>[<a href="https://www.sciencedirect.com/science/article/pii/S0001457520317681" target="_blank">1</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0001457521002955" target="_blank">2</a>]</sup>.
 
+% include video id="ST8w2ACt2bU" provider="youtube" %}
 
 **Engineering analysis**
 
