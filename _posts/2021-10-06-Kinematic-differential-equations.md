@@ -28,7 +28,7 @@ Euler integration is a 1<sup>st</sup> order initial value numerical procedure fo
   <img src="/assets/images/Kinematic-Differential-Equations/fig1.png" width="1200">
 </p>
 
-The Euler integration equation for the orientation is apparent, however, the relationship between the angular velocity vector and the 1st derivative of the rotation matrix is not.
+The Euler integration equation for the orientation is apparent, however, the relationship between the angular velocity vector and the 1st time derivative of the rotation matrix is not.
 
 <p align="center">
   <img src="/assets/images/Kinematic-Differential-Equations/fig2.png" width="1200">
