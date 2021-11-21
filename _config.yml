@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Kevin Gildea"
   avatar : "/assets/images/profilepic.png"
-  bio    : "cycling - accidentology - biomechanics - multibody physics - deep learning"
+  bio    : "cycling - accidentology - biomechanics - multibody physics - computational modelling - deep learning"
   links:
     - label: "Email"
       icon: "fa fa-envelope"
