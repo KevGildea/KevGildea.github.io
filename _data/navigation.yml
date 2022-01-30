@@ -5,8 +5,8 @@ main:
     url: /research/
   - title: "Teaching"
     url: /teaching/
-  - title: "Personal Projects"
-    url: /personalprojects/
+  - title: "KinePose"
+    url: /KinePose/
 #  - title: "Posts"
 #    url: /posts/
 #  - title: "Categories"
