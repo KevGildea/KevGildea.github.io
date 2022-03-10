@@ -28,11 +28,3 @@ I have been the TA for a 4th year mechanical engineering module for the past 4 y
 
 
 
-$\begin{matrix}
-\mathrm{\left[ \mathrm{R}^{\widehat{a}\to \widehat{b}}\right]}^{EAS} =  \\
-\left[ \begin{matrix}
-{n}_{\alpha,1}^{2} + ({n}_{\alpha,2}^{2}+ {n}_{\alpha,3}^{2})cos({\Phi}_{\alpha}) & {n}_{\alpha,1}{n}_{\alpha,2}(1-cos({\Phi}_{\alpha}))-{n}_{\alpha,3}sin({\Phi}_{\alpha}) & {n}_{\alpha,1}{n}_{\alpha,3}(1-cos({\Phi}_{\alpha}))+{n}_{\alpha,2}sin({\Phi}_{\alpha})\\
-{n}_{\alpha,1}{n}_{\alpha,2}(1-cos({\Phi}_{\alpha}))+{n}_{\alpha,3}sin({\Phi}_{\alpha}) & {n}_{\alpha,2}^{2} + ({n}_{\alpha,1}^{2}+ {n}_{\alpha,3}^{2})cos({\Phi}_{\alpha}) & {n}_{\alpha,2}{n}_{\alpha,3}(1-cos({\Phi}_{\alpha}))-{n}_{\alpha,1}sin({\Phi}_{\alpha})\\
-{n}_{\alpha,1}{n}_{\alpha,3}(1-cos({\Phi}_{\alpha}))-{n}_{\alpha,2}sin({\Phi}_{\alpha}) & {n}_{\alpha,2}{n}_{\alpha,3}(1-cos({\Phi}_{\alpha}))+{n}_{\alpha,1}sin({\Phi}_{\alpha}) & {n}_{\alpha,3}^{2} + ({n}_{\alpha,1}^{2}+ {n}_{\alpha,2}^{2})cos({\Phi}_{\alpha})
-\end{matrix} \right]
-\end{matrix}$
