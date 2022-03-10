@@ -26,4 +26,15 @@ I have been the TA for a 4th year mechanical engineering module for the past 4 y
 > | <a href="https://kevgildea.github.io/blog/Kinematic-differential-equations/" target="_blank">Euler integration of kinematic differential equations for position and orientation</a> |
 > | <a href="https://kevgildea.github.io/blog/EOM-contact-modelling/" target="_blank">Computational modelling of a bouncing ball using differential equations of motion</a> |
 
-
+\begin{align*}
+\resizebox{1\textwidth}{!}{
+\begin{matrix}
+\mathrm{\left[ \mathrm{R}^{\widehat{a}\to \widehat{b}}\right]}^{EAS} =  \\
+\left[ \begin{matrix}
+{n}_{\alpha,1}^{2} + ({n}_{\alpha,2}^{2}+ {n}_{\alpha,3}^{2})cos({\Phi}_{\alpha}) & {n}_{\alpha,1}{n}_{\alpha,2}(1-cos({\Phi}_{\alpha}))-{n}_{\alpha,3}sin({\Phi}_{\alpha}) & {n}_{\alpha,1}{n}_{\alpha,3}(1-cos({\Phi}_{\alpha}))+{n}_{\alpha,2}sin({\Phi}_{\alpha})\\
+{n}_{\alpha,1}{n}_{\alpha,2}(1-cos({\Phi}_{\alpha}))+{n}_{\alpha,3}sin({\Phi}_{\alpha}) & {n}_{\alpha,2}^{2} + ({n}_{\alpha,1}^{2}+ {n}_{\alpha,3}^{2})cos({\Phi}_{\alpha}) & {n}_{\alpha,2}{n}_{\alpha,3}(1-cos({\Phi}_{\alpha}))-{n}_{\alpha,1}sin({\Phi}_{\alpha})\\
+{n}_{\alpha,1}{n}_{\alpha,3}(1-cos({\Phi}_{\alpha}))-{n}_{\alpha,2}sin({\Phi}_{\alpha}) & {n}_{\alpha,2}{n}_{\alpha,3}(1-cos({\Phi}_{\alpha}))+{n}_{\alpha,1}sin({\Phi}_{\alpha}) & {n}_{\alpha,3}^{2} + ({n}_{\alpha,1}^{2}+ {n}_{\alpha,2}^{2})cos({\Phi}_{\alpha})
+\end{matrix} \right]
+\end{matrix}
+}
+\end{align*}
