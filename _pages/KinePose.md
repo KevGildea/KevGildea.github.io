@@ -1,6 +1,6 @@
----
-permalink: /KinePose/
-title: "KinePose"
----
+%---
+%permalink: /KinePose/
+%title: "KinePose"
+%---
 
-Under construction...
+%Under construction...
