@@ -3,4 +3,13 @@ permalink: /about/
 title: "About"
 ---
 
-Biomechanical engineer with a BAI and MAI, final year PhD student in the <a href="https://www.tcd.ie/mecheng/" target="_blank">Department of Mechanical, Manufacturing & Biomedical Engineering</a> Trinity College Dublin, Ireland. I am the recipient of the 2017 RSA-Helena Winters Scholarship for Doctoral Studies in Road Safety. 
+Currently, my research interests lie in a nexus between the fields of computer vision, multibody physics, & vulnerable road user safety.
+
+**Positions:**
+
+PhD, <a href="https://www.csimmslab.com/research-group/kevin-gildea" target="_blank">Simms Lab</a>, Trinity College Dublin, Ireland (2017-2022).
+
+PostDoc, <a href="https://portal.research.lu.se/en/organisations/transport-and-roads" target="_blank">Dept. of Technology & Society</a>, Lund University, Sweden (2022-).
+
+
+
