@@ -61,7 +61,7 @@ author:
   bio    : "Vulnerable road users - Biomechanics - Kinematics - Multibody physics - Machine learning"
   links:
     - label: "Simms Lab"
-      icon: "fad fa-browser"
+      icon: "far fa-address-card"
       url: "https://www.csimmslab.com/research-group/kevin-gildea"
     - label: "Email"
       icon: "fa fa-envelope"
