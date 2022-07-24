@@ -13,7 +13,7 @@ Code: <a href="https://github.com/" target="_blank">Github</a>
 
 - Preliminary results presented at the Congress of the European Society of Biomechanics (<a href="https://esbiomech.org/welcome-to-the-european-society-of-biomechanics-esbiomech/esb-related-publications/esb-congresses-abstracts/" target="_blank">ESB 2022</a>)
 
-- Full paper to be presented at the Irish Machine Vision & Image Processing Conference (<a href="https://imvipconference.github.io/" target="_blank">IMVIP 2022</a>).
+- Full paper to be presented at the Irish Machine Vision & Image Processing Conference (<a href="https://imvipconference.github.io/" target="_blank">IMVIP 2022</a>)
 
 
 **Abstract**
