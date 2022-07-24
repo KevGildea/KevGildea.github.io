@@ -27,3 +27,5 @@ Our temporal algorithm achieves 6DOF pose estimates with low Mean Per Joint Angu
 <p align="center">
   <img src="/assets/images/KinePose/Fall.gif" width="900">
 </p>
+
+<a href="https://github.com/KevGildea/RotationTheory/blob/main/Kinematic-Differential-Equations/Kinematic-Differential-Equations.py" target="_blank">here</a>
