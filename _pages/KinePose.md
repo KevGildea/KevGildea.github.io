@@ -7,7 +7,9 @@ title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF h
   <img src="/assets/images/KinePose/KinePose2.png" width="900">
 </p>
 
+<p style="text-align: center;">
 <a href="https://arxiv.org/" target="_blank">Paper</a> ︱ <a href="https://github.com/" target="_blank">Code</a> ︱ <a href="https://kevgildea.github.io/assets/images/KinePose/SuppMat.pdf" target="_blank">SuppMat</a>
+</p>
 
 - Congress of the European Society of Biomechanics (<a href="https://esbiomech.org/welcome-to-the-european-society-of-biomechanics-esbiomech/esb-related-publications/esb-congresses-abstracts/" target="_blank">ESB 2022</a>)
 
