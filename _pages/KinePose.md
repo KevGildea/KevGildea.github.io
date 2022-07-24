@@ -11,7 +11,7 @@ Our temporal algorithm achieves 6DOF pose estimates with low Mean Per Joint Angu
 
 **Frame-based algorithm**
 <p align="center">
-  <img src="/assets/images/KinePose/KinePose1.PNG" width="900">
+  <img src="/assets/images/KinePose/KinePose1.PNG" width="600">
 </p>
 
 **Temporal algorithm**
