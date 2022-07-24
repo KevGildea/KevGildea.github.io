@@ -19,13 +19,10 @@ Our temporal algorithm achieves 6DOF pose estimates with low Mean Per Joint Angu
   <img src="/assets/images/KinePose/KinePose2.png" width="900">
 </p>
 
-**Inference examples:**
+**Inference example:**
 <p align="center">
   <img src="/assets/images/KinePose/Baseball.gif" width="900">
 </p>
 
-<p align="center">
-  <img src="/assets/images/KinePose/Fall.gif" width="900">
-</p>
 
 <a href="https://arxiv.org/" target="_blank">Paper</a>, <a href="https://github.com/" target="_blank">Code</a>
