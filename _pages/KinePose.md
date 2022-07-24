@@ -3,9 +3,9 @@ permalink: /KinePose/
 title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints"
 ---
 
-Full paper, Irish Machine Vision & Image Processing Conference (IMVIP 2022): <a href="https://arxiv.org/" target="_blank">Arxiv</a>, 
+Full paper, Irish Machine Vision & Image Processing Conference (IMVIP 2022): <a href="https://arxiv.org/" target="_blank">Arxiv</a>
 
-Code: <a href="https://github.com/" target="_blank">Code</a>
+Code: <a href="https://github.com/" target="_blank">Github</a>
 
 
 **Abstract**
