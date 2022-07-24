@@ -9,17 +9,17 @@ Computer vision/deep learning-based 3D human pose estimation methods aim to loca
 Our temporal algorithm achieves 6DOF pose estimates with low Mean Per Joint Angular Separation (MPJAS) errors (3.7 degrees/joint). With frame-by-frame IK we obtain low errors in the case of bent elbows and knees, however, motion sequences with phases of extended/straight limbs results in ambiguity in twist angle. With temporal IK, we reduce ambiguity for these poses, resulting in lower average errors.
 
 
-**Frame-based algorithm**
+**Frame-based algorithm:**
 <p align="center">
   <img src="/assets/images/KinePose/KinePose1.PNG" width="600">
 </p>
 
-**Temporal algorithm**
+**Temporal algorithm:**
 <p align="center">
   <img src="/assets/images/KinePose/KinePose2.png" width="900">
 </p>
 
-**Inference examples**
+**Inference examples:**
 <p align="center">
   <img src="/assets/images/KinePose/Baseball.gif" width="900">
 </p>
