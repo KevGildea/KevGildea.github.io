@@ -24,7 +24,7 @@ Our temporal algorithm achieves 6DOF pose estimates with low Mean Per Joint Angu
 
 
 
-**In proceedings:**
+**Presented at:**
 
 - Congress of the European Society of Biomechanics (<a href="https://esbiomech.org/welcome-to-the-european-society-of-biomechanics-esbiomech/esb-related-publications/esb-congresses-abstracts/" target="_blank">ESB 2022</a>)
 
