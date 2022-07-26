@@ -1,6 +1,6 @@
 ---
 permalink: /KinePose/
-title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints"
+title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints (IMVIP)"
 ---
 
 <p align="center">
