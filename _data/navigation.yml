@@ -9,5 +9,7 @@ main:
 #    url: /posts/
 #  - title: "Categories"
 #    url: /categories/
+  - title: "KinePose"
+    url: /KinePose/
   - title: "Posts"
     url: /tags/
