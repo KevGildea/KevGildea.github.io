@@ -1,7 +1,7 @@
 ---
-#title: "Underreporting of cyclist collisions in Ireland"
-#date: 2021-03-07
-#categories:
+title: "Underreporting of cyclist collisions in Ireland"
+date: 2021-03-07
+categories:
   - blog
 
 tags:
