@@ -10,9 +10,3 @@ Currently, my research interests lie in a nexus between the fields of computer v
 - PhD student, <a href="https://www.csimmslab.com/research-group/kevin-gildea" target="_blank">Simms Lab</a>, Trinity College Dublin, Ireland (2017-2022).
 - Postdoctoral fellow, <a href="https://www.tos.lth.se/english/traffic-safety/traffic-safety-behaviour/" target="_blank">TOS</a>, Faculty of Engineering, Lund Univeristy(LTH), Sweden (2022-).
 
-
-
-\begin{list}{--}{}
-    \item PhD student, <a href="https://www.csimmslab.com/research-group/kevin-gildea" target="_blank">Simms Lab</a>, Trinity College Dublin, Ireland (2017-2022).
-    \item Postdoctoral fellow, <a href="https://www.tos.lth.se/english/traffic-safety/traffic-safety-behaviour/" target="_blank">TOS</a>, Faculty of Engineering, Lund Univeristy(LTH), Sweden (2022-).
-\end{list}
