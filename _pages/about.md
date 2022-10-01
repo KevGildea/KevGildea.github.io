@@ -12,12 +12,7 @@ Currently, my research interests lie in a nexus between the fields of computer v
 
 
 
-
-This is an inline equation: $$V_{sphere} = \frac{4}{3}\pi r^3$$,<br>
-followed by a display style equation:
-
-$$V_{sphere} = \frac{4}{3}\pi r^3$$
-
-
-
-
+\begin{list}{--}{}
+    \item PhD student, <a href="https://www.csimmslab.com/research-group/kevin-gildea" target="_blank">Simms Lab</a>, Trinity College Dublin, Ireland (2017-2022).
+    \item Postdoctoral fellow, <a href="https://www.tos.lth.se/english/traffic-safety/traffic-safety-behaviour/" target="_blank">TOS</a>, Faculty of Engineering, Lund Univeristy(LTH), Sweden (2022-).
+\end{list}
