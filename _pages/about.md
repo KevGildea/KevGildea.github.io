@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-Currently, my research interests lie in a nexus between the fields of computer vision, multibody physics, & vulnerable road user safety.
+Currently, my research interests are biomechanics, and vulnerable road user safety, with the application of computer vision, machine learning, and multibody physics methods.
 
 **Positions:**
 
