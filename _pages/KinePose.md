@@ -9,7 +9,7 @@ title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF h
 
 <p style="text-align: center;">
 <a href="http://arxiv.org/abs/2207.12841" target="_blank">arXiv</a> ︱ <a href="https://github.com/KevGildea/KinePose" target="_blank">Code</a> ︱ <a href="https://kevgildea.github.io/assets/docs/KinePose/SuppMat.pdf" target="_blank">SuppMat</a>
-</p>
+</p>  
    
 
 
