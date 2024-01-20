@@ -14,12 +14,12 @@ KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose est
 
 ### For use with the suite of ellipsoid human body models in MADYMO (MAthematical DYnamic MOdels)
 
-| Step                  | Description                                                  | Tool                                      | Manual                                   |
+| Step                  | Description                                                  | Tools                                     | Manuals                                  |
 |-----------------------|--------------------------------------------------------------|-------------------------------------------|------------------------------------------|
-| 2D pose (automatic)   | Initial pose estimation in pixel coordinates (using YOLOv8). | [Tool](your-google-drive-link-1){:target="_blank"} | [Manual](your-manual-url-1){:target="_blank"} |
-| 2D pose (semi-automatic) | Initial pose estimation in pixel coordinates (using YOLOv8 and manual fine-tuning). | [Tool](your-google-drive-link-2){:target="_blank"} | [Manual](your-manual-url-2){:target="_blank"} |
-| 3D pose               | Lifting from 2D to 3D pose estimation.                       | [Tool](your-google-drive-link-3){:target="_blank"} | [Manual](your-manual-url-3){:target="_blank"} |
-| 6DOF pose             | IK optimisation to a 6DOF pose (KinePose). | [Tool](https://drive.google.com/file/d/1Ruxyfq8crD_8yG9cSe3tft7OQOGFR_dj/view?usp=sharing){:target="_blank"} | [Manual](your-manual-url-4){:target="_blank"} |
+| 2D Pose               | Initial pose estimation in pixel coordinates. Options: fully automatic (YOLOv8), semi-automatic with manual refinement, and fully manual. | [Automatic Tool](your-google-drive-link-1){:target="_blank"} <br> [Semi-Automatic Tool](your-google-drive-link-2){:target="_blank"} <br> [Manual Tool](your-google-drive-link-3){:target="_blank"} | [Auto Manual](your-manual-url-1){:target="_blank"} <br> [Semi-Auto Manual](your-manual-url-2){:target="_blank"} <br> [Manual Tool Manual](your-manual-url-3){:target="_blank"} |
+| 3D Pose               | Lifting from 2D to 3D pose estimation.                       | [Tool](your-google-drive-link-4){:target="_blank"} | [Manual](your-manual-url-4){:target="_blank"} |
+| 6DOF Pose             | IK optimisation to a 6DOF pose (KinePose).                   | [Tool](https://drive.google.com/file/d/1Ruxyfq8crD_8yG9cSe3tft7OQOGFR_dj/view?usp=sharing){:target="_blank"} | [Manual](your-manual-url-5){:target="_blank"} |
+
 
 
 ### General-purpose (user customisable biomechanical model)
