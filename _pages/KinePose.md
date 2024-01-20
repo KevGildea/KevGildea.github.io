@@ -8,9 +8,12 @@ title: "KinePose: A temporally optimised inverse kinematics technique for 6DOF h
 </p>
 
 ## Introduction
-KinePose is an innovative approach to 6DOF human pose estimation, incorporating advanced inverse kinematics and biomechanical constraints. Developed for diverse applications ranging from sports to impact analysis, KinePose offers enhanced biomechanical relevance in monocular pose estimation.
+KinePose is an innovative approach to 6DOF human pose estimation, incorporating advanced inverse kinematics and biomechanical constraints. Developed for diverse applications ranging from sports to impact analysis, KinePose offers enhanced biomechanical relevance in monocular human pose estimation.
 
 ## Tools
+
+1. A
+Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation
 
 | Step        | Description                                                  | Tool Link                                  | Manual                                     |
 |-------------|--------------------------------------------------------------|--------------------------------------------|--------------------------------------------|
