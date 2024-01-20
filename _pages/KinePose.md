@@ -55,12 +55,12 @@ If you find KinePose useful in your research, please consider citing our work:
 }
 
 @article{Gildea24,
-    title = {Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation},
-    journal = {Journal of Biomechanics},
-    pages = {111959},
-    year = {2024},
-    issn = {0021-9290},
-    doi = {https://doi.org/10.1016/j.jbiomech.2024.111959},
-    author = {Kevin Gildea and Daniel Hall and Christopher Cherry and Ciaran Simms}
+    title     = {Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation},
+    journal   = {Journal of Biomechanics},
+    pages     = {111959},
+    year      = {2024},
+    issn      = {0021-9290},
+    doi       = {https://doi.org/10.1016/j.jbiomech.2024.111959},
+    author    = {Kevin Gildea and Daniel Hall and Christopher Cherry and Ciaran Simms}
 }
 ```
