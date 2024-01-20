@@ -15,12 +15,12 @@ KinePose is an innovative approach to 6DOF human pose estimation, incorporating 
 1. A
 Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation
 
-| Step        | Description                                                  | Tool Link                                  | Manual                                     |
+| Step        | Description                                                  | Tool                                  | Manual                                     |
 |-------------|--------------------------------------------------------------|--------------------------------------------|--------------------------------------------|
-| 2D pose (automatic)  | Initial pose estimation in pixel coordinates (automatic using YOLOv8).  | [Link to Automatic 2D Pose Tool](#)       | [Automatic 2D Pose Manual](#)              |
-| 2D pose (semi-automatic) | Initial pose estimation in pixel coordinates (semi-automatic). | [Link to Semi-Automatic 2D Pose Tool](#)  | [Manual](#)         |
-| 3D pose     | Lifting from 2D to 3D pose estimation.                       | [Link to 3D Pose Tool](#)                  | [Manual](#)                        |
-| 6DOF pose   | Inverse Kinematics (IK) optimisation to a 6 Degrees of Freedom (DOF) pose. | [Link to 6DOF Pose Tool](#)                | [Manual](#)                      |
+| 2D pose (automatic)  | Initial pose estimation in pixel coordinates (automatic using YOLOv8).  | [Link](#)       | [Manual](#)              |
+| 2D pose (semi-automatic) | Initial pose estimation in pixel coordinates (semi-automatic). | [Link](#)  | [Manual](#)         |
+| 3D pose     | Lifting from 2D to 3D pose estimation.                       | [Link](#)                  | [Manual](#)                        |
+| 6DOF pose   | Inverse Kinematics (IK) optimisation to a 6 Degrees of Freedom (DOF) pose. | [Link](#)                | [Manual](#)                      |
 
 
 
