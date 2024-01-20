@@ -30,38 +30,34 @@ TBD
 
 ## Example applications
 
-1. **Baseball swing**
+1. **Baseball swing analysis**
 
 
 <p align="center">
   <img src="/assets/images/KinePose/Baseball.gif" width="500">
-  <em>Figure 1: Baseball swing analysis using KinePose.</em>
 </p>
 
 
-2. **Single bicycle crash**
+2. **Single bicycle crash reconstruction**
 
 
 <p align="center">
   <img src="/assets/images/KinePose/SBC.gif" width="500">
-  <em>Figure 2: Single bicycle crash reconstruction.</em>
 </p>
 
 
-3. **Train-pedestrian impact**
+3. **Reconstruction of representative pedestrian pre-impact poses.**
 
 
 <p align="center">
-  <img src="/assets/images/KinePose/TrainPose.png" width="900">
-  <em>Figure 3: Reconstruction of representative pedestrian pre-impact poses.</em>
+  <img src="/assets/images/KinePose/TrainPose.png" width="500">
 </p>
 
-4. **Rugby tackling**
+4. **Rugby tackling pose estimation and reconstruction**
 
 
 <p align="center">
   <img src="/assets/images/KinePose/Rugby.png" width="900">
-  <em>Figure 4: Rugby tackling pose estimation and reconstruction.</em>
 </p>
 
 
