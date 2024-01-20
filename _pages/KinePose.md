@@ -12,8 +12,11 @@ KinePose is an innovative approach to 6DOF human pose estimation, incorporating 
 
 ## Tools
 
-1. A
-Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation
+1. **General-purpose (user customisable biomechanical model)**
+
+TBD
+
+3. **For use with the suite of ellipsoid human body models in MADYMO (MAthematical DYnamic MOdels)**
 
 | Step        | Description                                                  | Tool                                  | Manual                                     |
 |-------------|--------------------------------------------------------------|--------------------------------------------|--------------------------------------------|
