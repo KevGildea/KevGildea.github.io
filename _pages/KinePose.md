@@ -30,8 +30,6 @@ TBD
 
 ## Example applications
 
-
-
 1. **Baseball swing**
 <p align="center">
   <img src="/assets/images/KinePose/Baseball.gif" width="900">
