@@ -8,7 +8,7 @@ title: "KinePose: A temporally optimised inverse kinematics technique for 6DOF h
 </p>
 
 ## Introduction
-KinePose is an innovative approach for 6DOF human pose estimation, incorporating inverse kinematics and biomechanical constraints. Developed for diverse applications ranging from sports to impact analysis, KinePose offers enhanced biomechanical relevance in monocular human pose estimation.
+KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose estimation, incorporating Inverse Kinematics (IK) with biomechanical constraints. Developed for diverse applications ranging from sports to impact analysis, KinePose offers enhanced biomechanical relevance in monocular human pose estimation.
 
 ## Tools
 
@@ -16,10 +16,10 @@ KinePose is an innovative approach for 6DOF human pose estimation, incorporating
 
 | Step                  | Description                                                  | Tool                                      | Manual                                   |
 |-----------------------|--------------------------------------------------------------|-------------------------------------------|------------------------------------------|
-| 2D pose (automatic)   | Initial pose estimation in pixel coordinates (using YOLOv8). | [Download Tool](your-google-drive-link-1){:target="_blank"} | [Manual](your-manual-url-1){:target="_blank"} |
-| 2D pose (semi-automatic) | Initial pose estimation in pixel coordinates (using YOLOv8 and manual fine-tuning). | [Download Tool](your-google-drive-link-2){:target="_blank"} | [Manual](your-manual-url-2){:target="_blank"} |
-| 3D pose               | Lifting from 2D to 3D pose estimation.                       | [Download Tool](your-google-drive-link-3){:target="_blank"} | [Manual](your-manual-url-3){:target="_blank"} |
-| 6DOF pose             | Inverse Kinematics (IK) optimisation to a 6 Degrees of Freedom (DOF) pose. | [Download Tool](your-google-drive-link-4){:target="_blank"} | [Manual](your-manual-url-4){:target="_blank"} |
+| 2D pose (automatic)   | Initial pose estimation in pixel coordinates (using YOLOv8). | [Tool](your-google-drive-link-1){:target="_blank"} | [Manual](your-manual-url-1){:target="_blank"} |
+| 2D pose (semi-automatic) | Initial pose estimation in pixel coordinates (using YOLOv8 and manual fine-tuning). | [Tool](your-google-drive-link-2){:target="_blank"} | [Manual](your-manual-url-2){:target="_blank"} |
+| 3D pose               | Lifting from 2D to 3D pose estimation.                       | [Tool](your-google-drive-link-3){:target="_blank"} | [Manual](your-manual-url-3){:target="_blank"} |
+| 6DOF pose             | IK optimisation to a 6DOF pose (KinePose). | [Tool](your-google-drive-link-4){:target="_blank"} | [Manual](your-manual-url-4){:target="_blank"} |
 
 
 ### General-purpose (user customisable biomechanical model)
