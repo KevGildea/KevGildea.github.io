@@ -51,7 +51,7 @@ KinePose is an innovative approach to 6DOF human pose estimation, incorporating 
 - [Congress of the European Society of Biomechanics (ESB 2022)](https://esbiomech.org/welcome-to-the-european-society-of-biomechanics-esbiomech/esb-related-publications/esb-congresses-abstracts/)
 - [Irish Machine Vision & Image Processing Conference (IMVIP 2022)](https://imvipconference.github.io/)
 
-## Cite Our Work
+## Cite our methods papers
 If you find KinePose useful in your research, please consider citing our work:
 
 ```
