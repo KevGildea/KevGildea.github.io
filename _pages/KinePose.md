@@ -32,13 +32,13 @@ TBD
 
 1. **Baseball swing**
 <p align="center">
-  <img src="/assets/images/KinePose/Baseball.gif" width="900">
+  <img src="/assets/images/KinePose/Baseball.gif" width="500">
   <em>Figure 1: Baseball swing analysis using KinePose.</em>
 </p>
 
 2. **Single bicycle crash**
 <p align="center">
-  <img src="/assets/images/KinePose/SBC.gif" width="900">
+  <img src="/assets/images/KinePose/SBC.gif" width="500">
   <em>Figure 2: Single bicycle crash reconstruction.</em>
 </p>
 
