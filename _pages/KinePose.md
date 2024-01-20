@@ -14,10 +14,10 @@ KinePose is an innovative approach to 6DOF human pose estimation, incorporating 
 
 | Step        | Description                                                  | Tool Link                                  | Manual                                     |
 |-------------|--------------------------------------------------------------|--------------------------------------------|--------------------------------------------|
-| 2D Pose     | Initial pose estimation in pixel coordinates.                   | [Link to 2D Pose Tool](#)                  | [2D Pose Manual](#)                        |
-| 3D Pose     | Lifting from 2D to 3D pose estimation.                    | [Link to 3D Pose Tool](#)                  | [3D Pose Manual](#)                        |
-| 6DOF Pose   | Inverse Kinematics (IK) optimisation to a 6 Degrees of Freedom (DOF) pose.    | [Link to 6DOF Pose Tool](#)                | [6DOF Pose Manual](#)                      |
-
+| 2D Pose (Automatic)  | Initial pose estimation in pixel coordinates (automatic).  | [Link to Automatic 2D Pose Tool](#)       | [Automatic 2D Pose Manual](#)              |
+| 2D Pose (Semi-Automatic) | Initial pose estimation in pixel coordinates (semi-automatic). | [Link to Semi-Automatic 2D Pose Tool](#)  | [Semi-Automatic 2D Pose Manual](#)         |
+| 3D Pose     | Lifting from 2D to 3D pose estimation.                       | [Link to 3D Pose Tool](#)                  | [3D Pose Manual](#)                        |
+| 6DOF Pose   | Inverse Kinematics (IK) optimisation to a 6 Degrees of Freedom (DOF) pose. | [Link to 6DOF Pose Tool](#)                | [6DOF Pose Manual](#)                      |
 
 
 
