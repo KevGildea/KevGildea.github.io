@@ -12,11 +12,7 @@ KinePose is an innovative approach to 6DOF human pose estimation, incorporating 
 
 ## Tools
 
-1. **General-purpose (user customisable biomechanical model)**
-
-TBD
-
-3. **For use with the suite of ellipsoid human body models in MADYMO (MAthematical DYnamic MOdels)**
+### For use with the suite of ellipsoid human body models in MADYMO (MAthematical DYnamic MOdels)
 
 | Step        | Description                                                  | Tool                                  | Manual                                     |
 |-------------|--------------------------------------------------------------|--------------------------------------------|--------------------------------------------|
@@ -25,6 +21,9 @@ TBD
 | 3D pose     | Lifting from 2D to 3D pose estimation.                       | [Link](#)                  | [Manual](#)                        |
 | 6DOF pose   | Inverse Kinematics (IK) optimisation to a 6 Degrees of Freedom (DOF) pose. | [Link](#)                | [Manual](#)                      |
 
+### General-purpose (user customisable biomechanical model)
+
+TBD
 
 
 
