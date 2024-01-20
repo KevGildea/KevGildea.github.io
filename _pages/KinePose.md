@@ -1,16 +1,23 @@
 ---
 permalink: /KinePose/
-title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints (IMVIP)"
+title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints"
 ---
 
 <p align="center">
   <img src="/assets/images/KinePose/KinePose2.png" width="900">
 </p>
 
+
+**Methods paper 1**
+<p style="text-align: center;">
+<a href="http://arxiv.org/abs/2207.12841" target="_blank">arXiv</a> ︱ <a href="https://github.com/KevGildea/KinePose" target="_blank">Code</a> ︱ <a href="https://kevgildea.github.io/assets/docs/KinePose/SuppMat.pdf" target="_blank">SuppMat</a>
+</p>
+
+**Methods paper 2**
 <p style="text-align: center;">
 <a href="http://arxiv.org/abs/2207.12841" target="_blank">arXiv</a> ︱ <a href="https://github.com/KevGildea/KinePose" target="_blank">Code</a> ︱ <a href="https://kevgildea.github.io/assets/docs/KinePose/SuppMat.pdf" target="_blank">SuppMat</a>
 </p>  
-   
+
 
 
 **Abstract**
