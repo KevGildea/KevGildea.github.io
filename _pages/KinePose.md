@@ -16,9 +16,9 @@ KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose est
 
 | Step                  | Description                                                  | Tools                                     | Manuals                                  |
 |-----------------------|--------------------------------------------------------------|-------------------------------------------|------------------------------------------|
-| 2D Pose               | Initial pose estimation in pixel coordinates. <br> 1) fully automatic (YOLOv8), <br> 2) semi-automatic with manual refinement, <br> 3) fully manual. | [Tools](your-google-drive-link-1){:target="_blank"} | [Manual](your-manual-url-1){:target="_blank"} |
+| 2D Pose               | Initial pose estimation in pixel coordinates. <br> 1) fully automatic (YOLOv8), <br> 2) semi-automatic with manual refinement, <br> 3) fully manual. | [Tools](https://drive.google.com/file/d/17kg8gPE_3GLgzm0N8T30WZ-OGaaxGW5b/view?usp=sharing){:target="_blank"} | [Manual](#){:target="_blank"} |
 | 3D Pose               | Lifting from 2D to 3D pose estimation.                       | TBD | TBD |
-| 6DOF Pose             | IK optimisation to a 6DOF pose (KinePose).                   | [Tool](https://drive.google.com/file/d/1Ruxyfq8crD_8yG9cSe3tft7OQOGFR_dj/view?usp=sharing){:target="_blank"} | [Manual](your-manual-url-5){:target="_blank"} |
+| 6DOF Pose             | IK optimisation to a 6DOF pose (KinePose).                   | [Tool](https://drive.google.com/file/d/12kGWue4mzFBMf21Ud6nYXUxYg7tRIGRZ/view?usp=sharing){:target="_blank"} | [Manual](#){:target="_blank"} |
 
 
 
