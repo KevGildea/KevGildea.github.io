@@ -45,7 +45,7 @@ KinePose is an innovative approach to 6DOF human pose estimation, incorporating 
 ## Cite Our Work
 If you find KinePose useful in your research, please consider citing our work:
 
-```bibtex
+```
 @inproceedings{Gildea22,
     author    = {Gildea, Kevin and Mercadal-Baudart, Clara and Blythman, Richard and Smolic, Aljosa and Simms, Ciaran},
     title     = {KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints},
@@ -63,3 +63,4 @@ If you find KinePose useful in your research, please consider citing our work:
     doi = {https://doi.org/10.1016/j.jbiomech.2024.111959},
     author = {Kevin Gildea and Daniel Hall and Christopher Cherry and Ciaran Simms}
 }
+```
