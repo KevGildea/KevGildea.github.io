@@ -7,55 +7,45 @@ title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF h
   <img src="/assets/images/KinePose/KinePose2.png" width="900">
 </p>
 
+## Introduction
+KinePose is an innovative approach to 6DOF human pose estimation, incorporating advanced inverse kinematics and biomechanical constraints. Developed for diverse applications ranging from sports to accident analysis, KinePose offers enhanced accuracy and biomechanical relevance in pose estimation.
 
-**Methods paper 1**
-<p style="text-align: center;">
-<a href="http://arxiv.org/abs/2207.12841" target="_blank">arXiv</a> ︱ <a href="https://github.com/KevGildea/KinePose" target="_blank">Code</a> ︱ <a href="https://kevgildea.github.io/assets/docs/KinePose/SuppMat.pdf" target="_blank">SuppMat</a>
-</p>
-
-**Methods paper 2**
-
-
-
-**Example applications**
-1. Baseball
+**Example applications:**
+1. **Baseball Analysis**
 <p align="center">
   <img src="/assets/images/KinePose/Baseball.gif" width="900">
+  <em>Figure 1: Baseball swing analysis using KinePose.</em>
 </p>
-2. Single bicycle crash
+
+2. **Single Bicycle Crash Reconstruction**
 <p align="center">
   <img src="/assets/images/KinePose/SBC.gif" width="900">
+  <em>Figure 2: Single bicycle crash pose estimation.</em>
 </p>
 
-2. Train crash pose
+3. **Train Crash Pose Estimation**
 <p align="center">
   <img src="/assets/images/KinePose/TrainPose.png" width="900">
+  <em>Figure 3: Train crash pose analysis.</em>
 </p>
 
-3. Rugby tackling
+4. **Rugby Tackling Dynamics**
 <p align="center">
   <img src="/assets/images/KinePose/Rugby.png" width="900">
+  <em>Figure 4: Rugby tackling pose estimation.</em>
 </p>
 
+## Methods Papers
+[Link or list of relevant methods papers or publications]
 
-**Methods papers:**
+## Conference Presentations
+- [Congress of the European Society of Biomechanics (ESB 2022)](https://esbiomech.org/welcome-to-the-european-society-of-biomechanics-esbiomech/esb-related-publications/esb-congresses-abstracts/)
+- [Irish Machine Vision & Image Processing Conference (IMVIP 2022)](https://imvipconference.github.io/)
 
+## Cite Our Work
+If you find KinePose useful in your research, please consider citing our work:
 
-
-
-
-
-**Presented at:**
-
-- Congress of the European Society of Biomechanics (<a href="https://esbiomech.org/welcome-to-the-european-society-of-biomechanics-esbiomech/esb-related-publications/esb-congresses-abstracts/" target="_blank">ESB 2022</a>)
-
-- Irish Machine Vision & Image Processing Conference (<a href="https://imvipconference.github.io/" target="_blank">IMVIP 2022</a>)
-
-
-
-**Cite:**
-
-```
+```bibtex
 @inproceedings{Gildea22,
     author    = {Gildea, Kevin and Mercadal-Baudart, Clara and Blythman, Richard and Smolic, Aljosa and Simms, Ciaran},
     title     = {KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints},
@@ -73,5 +63,3 @@ title: "KinePose: A temporally optimized inverse kinematics technique for 6DOF h
     doi = {https://doi.org/10.1016/j.jbiomech.2024.111959},
     author = {Kevin Gildea and Daniel Hall and Christopher Cherry and Ciaran Simms}
 }
-```
-
