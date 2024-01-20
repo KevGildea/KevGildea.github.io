@@ -31,18 +31,21 @@ TBD
 ## Example applications
 
 1. **Baseball swing**
+
 <p align="center">
   <img src="/assets/images/KinePose/Baseball.gif" width="500">
   <em>Figure 1: Baseball swing analysis using KinePose.</em>
 </p>
 
 2. **Single bicycle crash**
+
 <p align="center">
   <img src="/assets/images/KinePose/SBC.gif" width="500">
   <em>Figure 2: Single bicycle crash reconstruction.</em>
 </p>
 
 3. **Train-pedestrian impact**
+
 <p align="center">
   <img src="/assets/images/KinePose/TrainPose.png" width="900">
   <em>Figure 3: Reconstruction of representative pedestrian pre-impact poses.</em>
