@@ -57,7 +57,7 @@ TBD
 
 
 <p align="center">
-  <img src="/assets/images/KinePose/Rugby.png" width="900">
+  <img src="/assets/images/KinePose/Rugby.PNG" width="900">
 </p>
 
 
