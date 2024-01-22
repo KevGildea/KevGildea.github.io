@@ -30,7 +30,7 @@ TBD
 
 ## Example applications
 
-1) **Baseball swing analysis**
+1) Baseball swing analysis
 
 
 <p align="center">
@@ -38,7 +38,7 @@ TBD
 </p>
 
 
-2) **Single bicycle crash reconstruction**
+2) Single bicycle crash reconstruction
 
 
 <p align="center">
@@ -46,14 +46,14 @@ TBD
 </p>
 
 
-3) **Reconstruction of representative pedestrian pre-impact poses.**
+3) Reconstruction of representative pedestrian pre-impact poses
 
 
 <p align="center">
   <img src="/assets/images/KinePose/Train.png" width="500">
 </p>
 
-4) **Rugby tackling pose estimation and reconstruction**
+4) Rugby tackling pose estimation and reconstruction
 
 
 <p align="center">
