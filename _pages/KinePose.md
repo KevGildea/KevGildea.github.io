@@ -50,7 +50,7 @@ TBD
 
 
 <p align="center">
-  <img src="/assets/images/KinePose/TrainPose.png" width="500">
+  <img src="/assets/images/KinePose/Train.png" width="500">
 </p>
 
 4) **Rugby tackling pose estimation and reconstruction**
