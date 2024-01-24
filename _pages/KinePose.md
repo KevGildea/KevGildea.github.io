@@ -10,6 +10,10 @@ title: "KinePose: A temporally optimised inverse kinematics technique for 6DOF h
 ## Introduction
 KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose estimation, incorporating Inverse Kinematics (IK) with biomechanical constraints. Developed for diverse applications ranging from sports to impact analysis, KinePose offers enhanced biomechanical relevance in monocular human pose estimation.
 
+<p align="center">
+  <img src="/assets/images/KinePose/KinePose_pipeline_3.png" width="900">
+</p>
+
 ## Tools
 
 ### For use with the suite of ellipsoid human body models in MADYMO (MAthematical DYnamic MOdels)
