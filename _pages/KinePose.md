@@ -27,11 +27,13 @@ KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose est
 ### For use with the SAFER HBM
 
 TBD
+
 [comment]: <> (https://www-esv.nhtsa.dot.gov/Proceedings/27/27ESV-000242.pdf)
 
 ### For use with the OpenSim HBM
 
 TBD
+
 [comment]: <> ()
 
 ### General-purpose (user customisable biomechanical model)
