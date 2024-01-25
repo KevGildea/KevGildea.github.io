@@ -31,6 +31,7 @@ KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose est
 TBD
 
 
+[comment]: <> (https://www-esv.nhtsa.dot.gov/Proceedings/27/27ESV-000242.pdf)
 
 ## Example applications
 
