@@ -54,5 +54,4 @@ If you find SafeCross useful in your research, please consider citing our work:
    title = {Computer vision-based assessment of cyclist-tram track interactions for predictive modeling of crossing success},
    year = {2023}
 }
-
 ```
