@@ -81,22 +81,10 @@ TBD
 ## Cite our methods papers
 If you find KinePose useful in your research, please consider citing our work:
 
-```
-@inproceedings{Gildea22,
-    author    = {Gildea, Kevin and Mercadal-Baudart, Clara and Blythman, Richard and Smolic, Aljosa and Simms, Ciaran},
-    title     = {KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints},
-    booktitle = {Irish Machine Vision \& Image Processing Conference (IMVIP)},
-    year      = {2022},
-    doi       = {10.56541/QTUV2945}
-}
+1. Gildea, K., Mercadal-Baudart, C., Blythman, R., Smolic, A., & Simms, C. (2022). KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints. In *Irish Machine Vision & Image Processing Conference (IMVIP)*. [https://doi.org/10.56541/QTUV2945](https://arxiv.org/pdf/2207.12841.pdf)
 
-@article{Gildea24,
-    title     = {Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation},
-    journal   = {Journal of Biomechanics},
-    pages     = {111959},
-    year      = {2024},
-    issn      = {0021-9290},
-    doi       = {https://doi.org/10.1016/j.jbiomech.2024.111959},
-    author    = {Kevin Gildea and Daniel Hall and Christopher Cherry and Ciaran Simms}
-}
-```
+2. Gildea, K., Hall, D., Cherry, C., & Simms, C. (2024). Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation. *Journal of Biomechanics, 111959*. [https://doi.org/10.1016/j.jbiomech.2024.111959](https://doi.org/10.1016/j.jbiomech.2024.111959)
+
+<a href="/assets/images/KinePose/KinePose_Citation.bib" download>Download citation (.bib)</a>
+
+
