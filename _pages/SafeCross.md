@@ -4,7 +4,7 @@ title: "SafeCross: Open source application for predictive modelling of cyclist c
 ---
 
 <p align="center">
-  <img src="/assets/images/SafeCross/SafeCross_tool.gif" width="900">
+  <img src="/assets/images/SafeCross/SafeCross_AUTO.gif" width="900">
 </p>
 
 ## Introduction
