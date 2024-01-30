@@ -39,6 +39,7 @@ The tool is a standalone Windows application, and was designed with ease-of-use 
 
 ## Conference presentations
 - [International Cycling Safety Conference (ICSC 2022)](https://cyclingsafety.net/)
+- [Cycling & Society Annual Symposium (2023)](http://www.cyclingandsociety.org/)
 
 ## Cite our methods paper
 If you find SafeCross useful in your research, please consider citing our work:
