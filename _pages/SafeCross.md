@@ -33,7 +33,7 @@ The tool is a standalone Windows application, and was designed with ease-of-use 
 
 ## Example application in Dublin, Ireland
 <p align="center">
-  <img src="/assets/images/SafeCross/SafeCross_Dublin.jpg" width="400">
+  <img src="/assets/images/SafeCross/SafeCross_Dublin.jpg" width="900">
 </p>
 
 
