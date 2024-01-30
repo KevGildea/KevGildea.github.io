@@ -1,14 +1,20 @@
 ---
 permalink: /SafeCross/
-title: "KinePose: A temporally optimised inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints"
+title: "SafeCross: Open source application for predictive modelling of cyclist crossing success on tram tracks"
 ---
 
 <p align="center">
-  <img src="/assets/images/SafeCross/SafeCross_output.gif" width="400">
+  <img src="/assets/images/SafeCross/SafeCross_tool.gif" width="900">
 </p>
 
 ## Introduction
-KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose estimation, incorporating Inverse Kinematics (IK) with biomechanical constraints. Developed for diverse applications ranging from sports to impact analysis, KinePose offers enhanced biomechanical relevance in monocular human pose estimation.
+
+SafeCross is an open-source framework for proactively assessing risk for single bicycle crashes at locations where cyclists interact with tram tracks. 
+
+Cyclist detection and tracking is automatically performed using advanced computer vision and deep learning techniques. The trajectories are then automatically processed to calculate the angles at which the cyclists crossed the tracks. These are then fed into a risk model for predicting the probability of crossing success. Risk estimates are then compiled to predict the number of unsuccessful crossings that may occur over time, and to generate a risk heatmap which highlights risky sections of the tracks.
+
+The tool is a standalone Windows application, and was designed with ease-of-use in mind. It can be run using a standard CPU, without the need for a cuda-enabled GPU, or any coding/manual data processing.
+
 
 <p align="center">
   <img src="/assets/images/SafeCrossSafeCross_pipeline.png" width="900">
