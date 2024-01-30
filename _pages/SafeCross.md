@@ -45,4 +45,4 @@ If you find SafeCross useful in your research, please consider citing our work:
 
 Gildea, K., Hall, D., Mercadal-Baudart, C., Caulfield, B., & Simms, C. (2023). Computer vision-based assessment of cyclist-tram track interactions for predictive modeling of crossing success. *Journal of Safety Research*. [https://doi.org/10.1016/J.JSR.2023.09.017](https://doi.org/10.1016/J.JSR.2023.09.017)
 
-<a href="/assets/images/SafeCross/SafeCross_Citation" download>Download citation (.bib)</a>
+<a href="/assets/images/SafeCross/SafeCross_Citation.bib" download>Download citation (.bib)</a>
