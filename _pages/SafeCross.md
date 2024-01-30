@@ -43,6 +43,8 @@ The tool is a standalone Windows application, and was designed with ease-of-use 
 ## Cite our methods papers
 If you find SafeCross useful in your research, please consider citing our work:
 
+Gildea, K., Hall, D., Mercadal-Baudart, C., Caulfield, B., & Simms, C. (2023). Computer vision-based assessment of cyclist-tram track interactions for predictive modeling of crossing success. *Journal of Safety Research*. [https://doi.org/10.1016/J.JSR.2023.09.017](https://doi.org/10.1016/J.JSR.2023.09.017)
+
 ```
 @article{Gildea2023,
    author = {Kevin Gildea and Daniel Hall and Clara Mercadal-Baudart and Brian Caulfield and Ciaran Simms},
