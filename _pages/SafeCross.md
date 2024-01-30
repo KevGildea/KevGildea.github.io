@@ -28,7 +28,7 @@ The tool is a standalone Windows application, and was designed with ease-of-use 
 | T-calibration               |                        | [Tools](){:target="_blank"} | TBD |
 | SafeCross TA               |                        | [Tool](){:target="_blank"} | TBD |
 | SafeCross AUTO             |                        | [Tool](){:target="_blank"} | TBD |
-
+| SafeCross SMoS             |                        | [Tool](){:target="_blank"} | TBD |
 
 
 ## Example application in Dublin, Ireland
