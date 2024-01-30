@@ -17,7 +17,7 @@ The tool is a standalone Windows application, and was designed with ease-of-use 
 
 
 <p align="center">
-  <img src="/assets/images/SafeCrossSafeCross_pipeline.png" width="900">
+  <img src="/assets/images/SafeCross/SafeCross_pipeline.png" width="900">
 </p>
 
 ## Tools
