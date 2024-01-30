@@ -25,7 +25,7 @@ The tool is a standalone Windows application, and was designed with ease-of-use 
 
 | Step                  | Description                                                  | Tools                                     | Manuals                                  |
 |-----------------------|--------------------------------------------------------------|-------------------------------------------|------------------------------------------|
-| T-calibration               |                        | [Tools](){:target="_blank"} | TBD |
+| T-calibration               |                        | [Tool](){:target="_blank"} | TBD |
 | SafeCross TA               |                        | [Tool](){:target="_blank"} | TBD |
 | SafeCross AUTO             |                        | [Tool](){:target="_blank"} | TBD |
 | SafeCross SMoS             |                        | [Tool](){:target="_blank"} | TBD |
