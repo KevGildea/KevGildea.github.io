@@ -9,6 +9,8 @@ main:
 #    url: /posts/
 #  - title: "Categories"
 #    url: /categories/
+  - title: "SafeCross"
+    url: /SafeCross/
   - title: "KinePose"
     url: /KinePose/
   - title: "Posts"
