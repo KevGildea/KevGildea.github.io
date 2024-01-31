@@ -55,7 +55,7 @@ TBD
 
 
 <p align="center">
-  <img src="/assets/images/KinePose/KinePose_SBC.gif" width="500">
+  <img src="/assets/images/KinePose/SBC.gif" width="500">
 </p>
 
 
