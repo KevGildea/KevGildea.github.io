@@ -63,7 +63,7 @@ TBD
 
 
 <p align="center">
-  <img src="/assets/images/KinePose/Train.png" width="400">
+  <img src="/assets/images/KinePose/Train.png" width="600">
 </p>
 
 4) Rugby tackling pose estimation and reconstruction
