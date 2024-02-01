@@ -75,8 +75,9 @@ TBD
 
 
 ## Conference presentations
-- [Congress of the European Society of Biomechanics (ESB 2022)](https://esbiomech.org/welcome-to-the-european-society-of-biomechanics-esbiomech/esb-related-publications/esb-congresses-abstracts/)
-- [Irish Machine Vision & Image Processing Conference (IMVIP 2022)](https://imvipconference.github.io/)
+
+- Congress of the European Society of Biomechanics (<a href="https://esbiomech.org/welcome-to-the-european-society-of-biomechanics-esbiomech/esb-related-publications/esb-congresses-abstracts/" target="_blank">ESB 2022</a>)
+- Irish Machine Vision & Image Processing Conference (<a href="https://imvipconference.github.io/" target="_blank">IMVIP 2022</a>)
 
 ## Cite our methods papers
 If you find KinePose useful in your research, please consider citing our work:
