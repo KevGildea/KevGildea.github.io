@@ -38,14 +38,14 @@ The tool is a standalone Windows application, and was designed with ease-of-use 
 
 
 ## Conference presentations
-- [International Cycling Safety Conference (ICSC 2022)](https://cyclingsafety.net/)
-- [Cycling & Society Annual Symposium (2023)](http://www.cyclingandsociety.org/)
+- <a href="https://cyclingsafety.net/" target="_blank">International Cycling Safety Conference (ICSC 2022)</a>
+- <a href="http://www.cyclingandsociety.org/" target="_blank">Cycling & Society Annual Symposium (2023)</a>
 
 ## Cite our methods paper
 If you find SafeCross useful in your research, please consider citing our work:
 
 <small>
-Gildea, K., Hall, D., Mercadal-Baudart, C., Caulfield, B., & Simms, C. (2023). Computer vision-based assessment of cyclist-tram track interactions for predictive modeling of crossing success. *Journal of Safety Research*. [https://doi.org/10.1016/J.JSR.2023.09.017](https://doi.org/10.1016/J.JSR.2023.09.017)
+Gildea, K., Hall, D., Mercadal-Baudart, C., Caulfield, B., & Simms, C. (2023). Computer vision-based assessment of cyclist-tram track interactions for predictive modeling of crossing success. *Journal of Safety Research*. <a href="https://doi.org/10.1016/J.JSR.2023.09.017" target="_blank">10.1016/J.JSR.2023.09.017</a>
 </small>
   
 <a href="/assets/images/SafeCross/SafeCross_Citation.bib" download>Download citation (.bib)</a>
