@@ -82,7 +82,7 @@ TBD
 If you find KinePose useful in your research, please consider citing our work:
 
 <small>
-Gildea, K., Mercadal-Baudart, C., Blythman, R., Smolic, A., & Simms, C. (2022). KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints. In *Irish Machine Vision & Image Processing Conference (IMVIP)*. [https://doi.org/10.56541/QTUV2945](https://arxiv.org/pdf/2207.12841.pdf)
+Gildea, K., Mercadal-Baudart, C., Blythman, R., Smolic, A., & Simms, C. (2022). KinePose: A temporally optimized inverse kinematics technique for 6DOF human pose estimation with biomechanical constraints. In *Irish Machine Vision & Image Processing Conference (IMVIP)*. [https://doi.org/10.56541/QTUV2945](https://arxiv.org/pdf/2207.12841.pdf)  <a href="https://kevgildea.github.io/assets/docs/KinePose/SuppMat.pdf" target="_blank">SuppMat</a>
 </small>
 
 
