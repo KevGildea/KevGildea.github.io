@@ -87,7 +87,7 @@ Gildea, K., Mercadal-Baudart, C., Blythman, R., Smolic, A., & Simms, C. (2022). 
 
 
 <small>
-Gildea, K., Hall, D., Cherry, C., & Simms, C. (2024). Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation. *Journal of Biomechanics, 111959*. <a href="https://doi.org/10.1016/j.jbiomech.2024.111959" target="_blank">10.1016/j.jbiomech.2024.111959</a>
+Gildea, K., Hall, D., Cherry, C., & Simms, C. (2024). Forward dynamics computational modelling of a cyclist fall with the inclusion of protective response using deep learning-based human pose estimation. *Journal of Biomechanics. <a href="https://doi.org/10.1016/j.jbiomech.2024.111959" target="_blank">10.1016/j.jbiomech.2024.111959</a>
 </small>
 
 
