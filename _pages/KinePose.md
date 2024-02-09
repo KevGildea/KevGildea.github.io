@@ -32,15 +32,19 @@ KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose est
 
 ### For use with SMPL/SMPL-X
 
-WIP
+Work in progress...
 
 <p align="center">
-  <img src="/assets/images/KinePose/SMPLX.PNG" width="250">
+  <img src="/assets/images/KinePose/SMPLX.PNG" width="350">
 </p>
 
 ### For use with the PIPER HBM
 
-TBD
+Work in progress...
+
+<p align="center">
+  <img src="/assets/images/KinePose/PIPERCHILD.PNG" width="200">
+</p>
 
 ### For use with VIVA+ HBMs
 
