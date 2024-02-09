@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Kevin Gildea"
   avatar : "/assets/images/profilepic.png"
-  bio    : "Vulnerable road users - Biomechanics - Kinematics - Multibody physics - Machine learning"
+  bio    : "Vulnerable Road Users - Biomechanics - Multibody Dynamics - Computer Vision - Artificial Intelligence"
   links:
     - label: "Research profile"
       icon: "far fa-address-card"
