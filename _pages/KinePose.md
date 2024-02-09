@@ -20,7 +20,7 @@ KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose est
 ### For use with the suite of ellipsoid human body models in MADYMO (MAthematical DYnamic MOdels)
 
 <p align="center">
-  <img src="/assets/images/KinePose/MADYMO-KinePose.jpg" width="300">
+  <img src="/assets/images/KinePose/MADYMO-KinePose.jpg" width="250">
 </p>
 
 | Step                  | Description                                                  | Tools                                     | Manuals                                  |
