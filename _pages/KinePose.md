@@ -43,7 +43,7 @@ Work in progress...
 Work in progress...
 
 <p align="center">
-  <img src="/assets/images/KinePose/PIPERCHILD.PNG" width="200">
+  <img src="/assets/images/KinePose/PIPERCHILD.png" width="200">
 </p>
 
 ### For use with VIVA+ HBMs
