@@ -24,10 +24,13 @@ KinePose is an innovative approach for 6 Degrees of Freedom (DOF) human pose est
 | 3D Pose               | Lifting from 2D to 3D pose (MotionBERT).                       | [Tool](https://drive.google.com/file/d/1FNhjppB2Ct-3V9M_CYxV5xXChSUIXVcI/view?usp=sharing){:target="_blank"} | TBD |
 | 6DOF Pose             | IK optimisation to a 6DOF pose (KinePose).                   | [Tool](https://drive.google.com/file/d/12kGWue4mzFBMf21Ud6nYXUxYg7tRIGRZ/view?usp=sharing){:target="_blank"} | TBD |
 
-### For use with the SAFER HBM
+### For use with the PIPER HBM
 
 TBD
 
+### For use with VIVA+ HBMs
+
+TBD
 [comment]: <> (https://www-esv.nhtsa.dot.gov/Proceedings/27/27ESV-000242.pdf)
 
 ### For use with the OpenSim HBM
